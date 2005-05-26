@@ -39,6 +39,7 @@ int main(int argc, char *argv[])
 	int i=dir.findRev('/',-1);
 	dir.remove(i+1, dir.length());
 	db=dir+"cocktail.db";
+	ImportUnits("Einheiten.txt", db);
 	ReadIngredientslist("zutatenliste.txt");
 	WriteIngredientslistToSQL(db);
 	ReadCocktaillist("cocktailliste.txt");

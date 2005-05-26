@@ -104,7 +104,6 @@
     <LICENSEFILE>COPYING</LICENSEFILE>
     <VERSION>0.1</VERSION>
     <YEAR>2005</YEAR>
-    <dest>/home/benjamin/c++/cocktailconverter</dest>
   </substmap>
   <kdevcppsupport>
     <references/>
