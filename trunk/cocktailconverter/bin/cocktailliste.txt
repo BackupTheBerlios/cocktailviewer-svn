@@ -1,0 +1,650 @@
+Cocktailliste
+AsciiGJ
+Name	Beschreibung	Benotung	Zutaten	Cocktailart	Geschmack1	Geschmacl2
+19th Hole%§?§%§0%§3(§cl(§scotc604(§$§2(§cl(§Southe(§$§1(§cl(§manda283(§$§8(§cl(§Maracu(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+4th of July%§?§%§0%§3(§cl(§whisky(§$§1(§cl(§Aprico(§$§1(§cl(§zitros(§$§5(§cl(§osaft(§$§%§?§%§?§%§?§%§
+A Lulu%§?§%§0%§4(§cl(§rumw(§$§2(§cl(§nu_li986(§$§3(§cl(§Maracu(§$§3(§cl(§osaft(§$§%§?§%§?§%§?§%§
+A.M.B.A.%§?§%§0%§2,5(§cl(§scotc604(§$§2(§cl(§rumb(§$§1(§cl(§Vermo2(§$§0,5(§cl(§Cointr(§$§1(§St(§orang944(§$§1(§St(§cockt944(§$§%§?§%§?§%§?§%§
+Abseits%§?§%§0%§3(§cl(§rumb(§$§2(§cl(§Amaret(§$§1(§cl(§limet712(§$§4(§cl(§creoc(§$§4(§cl(§ananss(§$§%§?§%§?§%§?§%§
+Acapulco Dream%§?§%§0%§3(§cl(§tequi286(§$§1(§cl(§rumb(§$§10(§cl(§ananss(§$§4(§cl(§graps(§$§%§?§%§?§%§?§%§
+Adam and Eve%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Drambu(§$§2(§cl(§angbi(§$§1(§cl(§zitros(§$§1(§ds(§Grenad(§$§%§?§%§?§%§?§%§
+Adelle Special%§?§%§0%§5(§cl(§scotc604(§$§1(§cl(§Orange0(§$§%§?§%§?§%§?§%§
+Adios Amigos%§?§%§0%§3(§cl(§rumw(§$§1(§cl(§Vermo1(§$§1(§cl(§bittle(§$§1(§cl(§gin(§$§2(§cl(§limet712(§$§%§?§%§?§%§?§%§
+Admiral Cocktail%§?§%§0%§4(§cl(§gin(§$§2(§cl(§kirsli(§$§2(§cl(§zitros(§$§%§?§%§?§%§?§%§
+After the Storm%§?§%§0%§2(§cl(§gin(§$§1(§cl(§scotc604(§$§1(§cl(§Creme2(§$§2(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Alaska%§?§%§0%§4(§cl(§gin(§$§2(§cl(§Chartr(§$§1(§St(§zitro986(§$§%§?§%§?§%§?§%§
+Alcudia%§?§%§0%§2,5(§cl(§gin(§$§1,5(§cl(§banan549(§$§1,5(§cl(§Gallia(§$§1,5(§cl(§graps(§$§%§?§%§?§%§?§%§
+Aleluia%§?§%§0%§2,5(§cl(§teqw(§$§1,5(§cl(§Marasc(§$§1,5(§cl(§curabl(§$§1,5(§cl(§zitros(§$§1(§ds(§eiwei712(§$§22(§af(§bitte734(§$§%§?§%§?§%§?§%§
+Alexander Wodka%§?§%§0%§3(§cl(§wodka(§$§1,5(§cl(§Creme2(§$§1,5(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Alexander's Sister%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Creme3(§$§2(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Alexandra Cocktail (braun)%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Creme1(§$§2(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Alexandra Cocktail (weiß)%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Creme2(§$§2(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Amaro%§?§%§0%§4(§cl(§rumw(§$§2(§cl(§Amaret(§$§%§?§%§?§%§?§%§
+Amato%§?§%§0%§2(§cl(§wodka(§$§2(§cl(§Vermo1(§$§2(§cl(§Mandar0(§$§%§?§%§?§%§?§%§
+Amber Glow%§?§%§0%§3(§cl(§gin(§$§3(§cl(§rumw(§$§3(§cl(§Limett0(§$§21(§af(§sodaw(§$§1(§BL(§Grenad(§$§%§?§%§?§%§?§%§
+America%§?§%§0%§5(§cl(§whisky(§$§1,5(§cl(§Limett0(§$§2(§BL(§Grenad(§$§1(§St(§limet604(§$§%§?§%§?§%§?§%§
+Amour Marie%§?§%§0%§3(§cl(§gin(§$§1,5(§cl(§Parfai0(§$§1,5(§cl(§Vermo1(§$§%§?§%§?§%§?§%§
+Ananas Fizz%§?§%§0%§4(§cl(§gin(§$§2(§cl(§zucks(§$§2(§cl(§ananss(§$§2(§BL(§zitros(§$§20(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Angel's Face%§Gerührt, nicht geschüttelt!%§0%§2(§cl(§gin(§$§2(§cl(§calva604(§$§2(§cl(§Aprico(§$§%§?§%§?§%§?§%§
+Apricot Daily%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§Aprico(§$§1(§cl(§zitros(§$§23(§af(§bitte734(§$§%§?§%§?§%§?§%§
+Apricot Lady%§?§%§0%§3(§cl(§rumb(§$§2(§cl(§Aprico(§$§1(§cl(§curaor(§$§0,5(§St(§eiwei712(§$§2(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Aprikosenblüte%§?§%§0%§2(§cl(§gin(§$§2(§cl(§aprik549(§$§1(§BL(§Limett0(§$§2(§ds(§angbi(§$§25(§af(§tonwa(§$§%§?§%§?§%§?§%§
+Arawak%§?§%§0%§3(§cl(§rumb(§$§3(§cl(§sherr986(§$§1(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Astoria Cocktail%§?§%§0%§4(§cl(§gin(§$§2(§cl(§Vermo1(§$§2(§ds(§orabi(§$§%§?§%§?§%§?§%§
+Atlas%§?§%§0%§3(§cl(§rumb(§$§1(§cl(§calva604(§$§2(§cl(§Cointr(§$§1(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Atta Boy%§Gerührt, nicht geschüttelt!%§0%§3(§cl(§gin(§$§1,5(§cl(§Vermo1(§$§1(§BL(§Grenad(§$§%§?§%§?§%§?§%§
+Aviation%§?§%§0%§3(§cl(§wodka(§$§2(§ds(§Marasc(§$§1(§BL(§Aprico(§$§1,5(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Azzuro%§Mit Crushed ice%§0%§2(§cl(§pisan549(§$§2(§cl(§curabl(§$§2(§cl(§osaft(§$§4(§cl(§Maracu(§$§1(§ds(§Frothe0(§$§%§Longdrink%§fruchtig%§?§%§
+Baby Doc%§?§%§0%§2(§cl(§gin(§$§2(§cl(§kiwil944(§$§2(§cl(§ananss(§$§0,5(§cl(§pfeff604(§$§23,5(§af(§tonwa(§$§%§?§%§?§%§?§%§
+Babyface%§?§%§0%§2(§cl(§wodka(§$§2(§cl(§sahne(§$§2(§cl(§credc(§$§%§?§%§?§%§?§%§
+Bacardi Cocktail%§?§%§0%§3(§cl(§rumw(§$§2(§cl(§zitros(§$§1(§cl(§Grenad(§$§%§?§%§?§%§?§%§
+Bacardi Cooler%§?§%§0%§4(§cl(§rumw(§$§2(§cl(§zitros(§$§1(§cl(§Grenad(§$§23(§af(§tonwa(§$§%§?§%§?§%§?§%§
+Bahia I%§?§%§0%§3(§cl(§rumb(§$§3(§cl(§rumw(§$§3(§cl(§creoc(§$§4(§cl(§mango604(§$§%§?§%§?§%§?§%§
+Bahia II%§?§%§0%§6(§cl(§rumw(§$§8(§cl(§ananss(§$§2(§BL(§creoc(§$§%§?§%§?§%§?§%§
+Bali Dream%§?§%§0%§3(§cl(§rumw(§$§3(§cl(§pisan549(§$§2(§cl(§creoc(§$§8(§cl(§ananss(§$§%§?§%§?§%§?§%§
+Balla Balla%§Gerührt, nicht geschüttelt!%§0%§1,5(§cl(§gin(§$§1,5(§cl(§Curaca(§$§1,5(§cl(§Campar(§$§10(§af(§trock283(§$§%§?§%§?§%§?§%§
+Baltic%§?§%§0%§3,5(§cl(§wodka(§$§0,5(§cl(§curabl(§$§1,5(§cl(§Maracu(§$§0,5(§cl(§zitros(§$§24(§af(§osaft(§$§%§?§%§?§%§?§%§
+Banana Cow%§?§%§0%§6(§cl(§rumb(§$§3(§cl(§zucks(§$§0,5(§St(§banan604(§$§10(§cl(§Milch(§$§%§?§%§?§%§?§%§
+Banana Daiquiri 1%§?§%§0%§6(§cl(§rumb(§$§3(§cl(§zitros(§$§2(§cl(§zucks(§$§0,25(§St(§banan712(§$§%§?§%§?§%§?§%§
+Banana Daiquiri 2%§?§%§0%§6(§cl(§rumw(§$§3(§cl(§zitros(§$§2(§cl(§zucks(§$§0,25(§St(§banan712(§$§%§?§%§?§%§?§%§
+Banana Daiquiri Cocktail 1%§?§%§0%§3(§cl(§rumb(§$§2(§cl(§banan549(§$§3(§cl(§zitros(§$§1(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Banana Daiquiri Cocktail 2%§?§%§0%§3(§cl(§rumw(§$§2(§cl(§banan549(§$§3(§cl(§zitros(§$§1(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Bananzas%§?§%§0%§2,5(§cl(§gin(§$§1,5(§cl(§Creme(§$§1,5(§cl(§Drambu(§$§1,5(§cl(§graps(§$§%§?§%§?§%§?§%§
+Banjino Cocktail%§?§%§0%§3(§cl(§gin(§$§3(§cl(§osaft(§$§1(§ds(§banan549(§$§%§?§%§?§%§?§%§
+Barbados%§?§%§0%§4(§cl(§rumb(§$§1(§cl(§Grenad(§$§8(§cl(§osaft(§$§1(§cl(§zitros(§$§1(§ds(§orabi(§$§%§?§%§?§%§?§%§
+Barbados Swizzle%§Mit Crushed Ice auffüllen und umrühren.%§0%§5(§cl(§rumw(§$§2(§cl(§Limett0(§$§1(§cl(§zucks(§$§1(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Barbara%§?§%§0%§2(§cl(§wodka(§$§2(§cl(§Creme2(§$§2(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Barbicane%§?§%§0%§3(§cl(§scotc604(§$§1(§cl(§Drambu(§$§3(§cl(§marac986(§$§1(§ds(§zitros(§$§%§?§%§?§%§?§%§
+Barett%§?§%§0%§4(§cl(§whisky(§$§1(§cl(§Gallia(§$§1(§cl(§Amaret(§$§%§?§%§?§%§?§%§
+Barfly's Dream%§?§%§0%§2(§cl(§gin(§$§2(§cl(§rumb(§$§2(§cl(§ananss(§$§%§?§%§?§%§?§%§
+Barnum%§?§%§0%§3(§cl(§gin(§$§2(§cl(§Aprico(§$§2(§ds(§angbi(§$§3(§ds(§zitros(§$§%§?§%§?§%§?§%§
+Batista%§?§%§0%§4(§cl(§rumb(§$§2(§cl(§Grand(§$§1(§St(§orang944(§$§%§?§%§?§%§?§%§
+Beach%§?§%§0%§4(§cl(§rumw(§$§2(§cl(§Cremm(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Beau Rivage%§?§%§0%§2(§cl(§rumw(§$§2(§cl(§gin(§$§1(§cl(§Vermo1(§$§1(§cl(§Vermo2(§$§3(§cl(§osaft(§$§1(§ds(§Grenad(§$§%§?§%§?§%§?§%§
+Bellrive Jubilee Cocktail%§?§%§0%§4(§cl(§whisky(§$§2(§cl(§Vermo2(§$§1(§ds(§Curaca(§$§%§?§%§?§%§?§%§
+Benni #irgendwas%§?§%§0%§8(§cl(§rumb(§$§2(§cl(§Curaca(§$§4(§cl(§Erdbee(§$§70(§cl(§cola(§$§%§?§%§?§%§?§%§
+Berentzer Paradiescocktail%§?§%§0%§2,5(§cl(§wodka(§$§2,5(§cl(§Apfell(§$§1,5(§cl(§osaft(§$§1(§ds(§Campar(§$§%§?§%§?§%§?§%§
+Bermuda%§?§%§0%§6(§cl(§gin(§$§2(§cl(§peach549(§$§1(§BL(§curabl(§$§1(§BL(§osaft(§$§%§?§%§?§%§?§%§
+Bermuda Rose%§?§%§0%§4(§cl(§gin(§$§1(§BL(§Aprico(§$§2(§ds(§Grenad(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Big Ben%§?§%§0%§5(§cl(§gin(§$§4(§cl(§osaft(§$§2(§cl(§zitros(§$§1(§cl(§Grenad(§$§10(§cl(§bitte734(§$§%§?§%§?§%§?§%§
+Big John%§?§%§0%§3(§cl(§scotc604(§$§2(§cl(§marac604(§$§4(§cl(§osaft(§$§2(§cl(§zitros(§$§2(§cl(§ananss(§$§%§?§%§?§%§?§%§
+Bijou%§?§%§0%§3(§cl(§gin(§$§2(§cl(§Vermo1(§$§1(§cl(§chart549(§$§%§?§%§?§%§?§%§
+Bishop%§?§%§0%§3(§cl(§canad604(§$§1(§cl(§Vermo2(§$§1(§cl(§osaft(§$§1(§BL(§chart549(§$§%§?§%§?§%§?§%§
+Bitter Sweet I%§?§%§0%§1(§St(§zitro604(§$§2(§cl(§wodka(§$§2(§cl(§graps(§$§2(§cl(§zitro944(§$§23(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Black Russian%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§Kaffe0(§$§%§?§%§?§%§?§%§
+Blinker%§?§%§0%§3(§cl(§canad604(§$§3(§cl(§graps(§$§2(§cl(§Grenad(§$§%§?§%§?§%§?§%§
+Blue Aegean%§?§%§0%§2(§cl(§wodka(§$§2(§cl(§curabl(§$§2(§cl(§Grand(§$§12(§af(§ananss(§$§12(§af(§zitros(§$§%§?§%§?§%§?§%§
+Blue Boy%§?§%§0%§3(§cl(§rumw(§$§3(§cl(§Vermo2(§$§1(§ds(§orabi(§$§1(§ds(§angbi(§$§1(§St(§zitro986(§$§%§?§%§?§%§?§%§
+Blue Day%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§curabl(§$§1(§ds(§orabi(§$§%§?§%§?§%§?§%§
+Blue Devil%§?§%§0%§4(§cl(§gin(§$§2(§cl(§curabl(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Blue Diamond%§?§%§0%§2(§cl(§gin(§$§2(§cl(§curabl(§$§2(§cl(§zitros(§$§9(§af(§Sekt(§$§%§?§%§?§%§?§%§
+Blue Eyes%§?§%§0%§3(§cl(§gin(§$§2(§cl(§Vermo0(§$§1(§cl(§curabl(§$§24(§af(§ginale(§$§%§?§%§?§%§?§%§
+Blue Grass%§?§%§0%§3(§cl(§whisky(§$§1,5(§cl(§curabl(§$§1,5(§cl(§Southe(§$§2(§cl(§Limett0(§$§2(§cl(§Limett0(§$§3(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Blue Lady%§?§%§0%§2(§cl(§gin(§$§2(§cl(§curabl(§$§2(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Blue Lagoon%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§curabl(§$§1(§BL(§zitros(§$§24(§af(§zitro283(§$§%§?§%§?§%§?§%§
+Blue Moon 2%§?§%§0%§3(§cl(§tequi286(§$§2(§cl(§Gallia(§$§1(§cl(§curabl(§$§4(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Blue Moon I%§?§%§0%§2,5(§cl(§gin(§$§1(§cl(§curabl(§$§1(§cl(§Cointr(§$§1(§cl(§ananss(§$§24,5(§af(§zitro283(§$§%§?§%§?§%§?§%§
+Blue Velvet%§?§%§0%§2,5(§cl(§gin(§$§2(§cl(§curabl(§$§1,5(§cl(§Vermo1(§$§%§Shortdrink%§trocken%§?§%§
+Bodil%§?§%§0%§2(§cl(§Parfai0(§$§1(§cl(§kakao604(§$§2(§cl(§Creme3(§$§1(§cl(§sahne(§$§%§Shortdrink%§cremig/sahnig%§?§%§
+Bombay Punch%§Mit Crushed Ice!%§0%§4(§cl(§rumb(§$§1(§cl(§Orange0(§$§4(§cl(§osaft(§$§4(§cl(§ananss(§$§2(§cl(§zitros(§$§1(§cl(§Grenad(§$§%§?§%§?§%§?§%§
+Bonn 2000%§Rühren%§0%§2(§cl(§pfemin(§$§2(§cl(§Noilly0(§$§1(§cl(§willi986(§$§%§Shortdrink%§halbtrocken%§?§%§
+Bossa Nova%§?§%§0%§3(§cl(§rumb(§$§2(§cl(§Gallia(§$§1(§cl(§Aprico(§$§6(§cl(§ananss(§$§%§?§%§?§%§?§%§
+Botnia 84%§Gerührt, nicht geschüttelt!%§0%§1,5(§cl(§rumw(§$§1(§cl(§Aprico(§$§1,5(§cl(§Grand(§$§4(§cl(§osaft(§$§22(§af(§ginale(§$§%§?§%§?§%§?§%§
+Bourbon Car%§?§%§0%§4(§cl(§whisky(§$§2(§cl(§Cointr(§$§2(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Bourbon Dream%§?§%§0%§3(§cl(§whisky(§$§3(§cl(§Aprico(§$§20(§af(§osaft(§$§%§Longdrink%§fruchtig%§mild%§
+Bourbon Flip%§?§%§0%§3(§cl(§whisky(§$§1(§cl(§rumb(§$§3(§cl(§sahne(§$§1(§cl(§zucks(§$§1(§St(§Eigelb(§$§1(§St(§gerie986(§$§%§?§%§?§%§?§%§
+Bourbon Highball%§?§%§0%§4(§cl(§whisky(§$§1(§St(§zitro986(§$§26(§af(§ginale(§$§%§?§%§?§%§?§%§
+Bourbon Silver Fizz%§?§%§0%§3(§cl(§whisky(§$§1(§BL(§zitros(§$§1(§BL(§Limett0(§$§1(§BL(§zucks(§$§1(§St(§eiwei712(§$§24(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Bourbon Skin%§?§%§0%§5(§cl(§whisky(§$§1(§BL(§Grenad(§$§2(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Bourbon-Cola-Highball%§?§%§0%§4(§cl(§whisky(§$§24(§af(§cola(§$§%§?§%§?§%§?§%§
+Bourbonnaise%§?§%§0%§4(§cl(§whisky(§$§1(§cl(§Vermo1(§$§1(§cl(§credc(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Brainstorming%§?§%§0%§5(§cl(§irish712(§$§2(§ds(§Benedi(§$§2(§ds(§Vermo1(§$§1(§St(§orang944(§$§%§?§%§?§%§?§%§
+Brave Bull%§?§%§0%§3(§cl(§tequi286(§$§3(§cl(§kahlu761(§$§%§?§%§?§%§?§%§
+Bronx%§?§%§0%§2(§cl(§gin(§$§1(§cl(§Vermo2(§$§1(§cl(§Vermo1(§$§2(§cl(§osaft(§$§%§Shortdrink%§trocken%§?§%§
+Brooklyn%§?§%§0%§4(§cl(§canad604(§$§2(§cl(§Vermo1(§$§2(§ds(§Marasc(§$§%§?§%§?§%§?§%§
+Bull Dog Cooler%§?§%§0%§3(§cl(§gin(§$§3(§cl(§osaft(§$§1(§cl(§Curaca(§$§23(§af(§ginale(§$§%§?§%§?§%§?§%§
+Butterfly%§?§%§0%§2(§cl(§genev549(§$§1(§cl(§wodka(§$§1(§cl(§Creme(§$§2(§cl(§ananss(§$§1(§ds(§Frothe0(§$§%§Shortdrink%§aromatisch%§?§%§
+Caipigina%§Limette achteln und zusammen mit dem Zucker zerdrücken. Gin hinzugeben und mit Crushed Ice auffüllen.%§0%§1(§St(§Limett(§$§1(§EL(§brauzu(§$§6(§cl(§gin(§$§%§?§%§?§%§?§%§
+Caipirinha%§Limette achteln und zusammen mit dem Zucker zerdrücken. Pitú hinzugeben und mit Crushed Ice auffüllen.%§0%§1(§St(§Limett(§$§1(§EL(§brauzu(§$§6(§cl(§pitu(§$§%§?§%§?§%§?§%§
+Caipirissima%§Limette achteln und zusammen mit dem Zucker zerdrücken. Rum hinzugeben und mit Crushed Ice auffüllen.%§0%§1(§St(§Limett(§$§1(§EL(§brauzu(§$§6(§cl(§rumw(§$§%§?§%§?§%§?§%§
+Caipiroska%§Limette achteln und zusammen mit dem Zucker zerdrücken. Wodka hinzugeben und mit Crushed Ice auffüllen.%§0%§1(§St(§Limett(§$§1(§EL(§brauzu(§$§6(§cl(§wodka(§$§%§?§%§?§%§?§%§
+Calcutta Flip%§?§%§0%§4(§cl(§rumb(§$§1(§cl(§Orange0(§$§2(§cl(§zucks(§$§4(§cl(§sahne(§$§1(§St(§Eigelb(§$§1(§St(§gerie986(§$§%§?§%§?§%§?§%§
+Cameron's Kick%§?§%§0%§2(§cl(§irish712(§$§2(§cl(§scotc604(§$§1(§cl(§Mandel0(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Camurai%§?§%§0%§3(§cl(§wodka(§$§1,5(§cl(§curabl(§$§1,5(§cl(§creoc(§$§24(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Canada%§?§%§0%§3(§cl(§canad604(§$§1(§cl(§Curaca(§$§2(§ds(§angbi(§$§1(§cl(§ahorn986(§$§%§?§%§?§%§?§%§
+Canadian Ginger%§?§%§0%§4(§cl(§canad604(§$§26(§af(§ginale(§$§%§?§%§?§%§?§%§
+Canadian Sour%§?§%§0%§4(§cl(§canad604(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Canadian Squash%§?§%§0%§4(§cl(§canad604(§$§1(§cl(§Drambu(§$§6(§cl(§osaft(§$§2(§cl(§graps(§$§1(§BL(§zitros(§$§%§Longdrink%§fruchtig%§feinherb%§
+Canadian Summer%§?§%§0%§3(§cl(§canad604(§$§2(§cl(§Creme2(§$§1(§cl(§Creme3(§$§24(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Carabinieri%§?§%§0%§3(§cl(§tequi286(§$§2(§cl(§Gallia(§$§2(§cl(§Limett0(§$§8(§cl(§osaft(§$§1(§St(§Eigelb(§$§%§?§%§?§%§?§%§
+Caramba I%§?§%§0%§4(§cl(§tequi286(§$§2(§cl(§graps(§$§2(§BL(§zucks(§$§22(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Cardicas%§?§%§0%§3(§cl(§rumw(§$§1,5(§cl(§Cointr(§$§1,5(§cl(§Portwe(§$§%§?§%§?§%§?§%§
+Carib%§?§%§0%§3(§cl(§rumb(§$§3(§cl(§gin(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Caribbean Caper%§?§%§0%§5(§cl(§rumb(§$§4(§cl(§creoc(§$§21(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Caribbean Night%§?§%§0%§4(§cl(§rumb(§$§4(§cl(§ananss(§$§3(§cl(§osaft(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Caribic Cassis%§?§%§50%§4(§cl(§credc(§$§2(§cl(§rumw(§$§2(§cl(§zitros(§$§12(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Carin%§?§%§0%§3(§cl(§gin(§$§1,5(§cl(§Dubonn(§$§1,5(§cl(§Mandar0(§$§1(§St(§zitro986(§$§%§Shortdrink%§lieblich%§?§%§
+Casablanca%§?§%§0%§3(§cl(§wodka(§$§2(§cl(§Eierli(§$§2(§cl(§zitros(§$§4(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Casino%§?§%§0%§4(§cl(§gin(§$§1(§cl(§Marasc(§$§1(§cl(§zitros(§$§1(§ds(§orabi(§$§%§?§%§?§%§?§%§
+Champagner Fizz%§?§%§0%§3(§cl(§gin(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§6(§cl(§Sekt(§$§%§?§%§?§%§?§%§
+Champion%§?§%§0%§2(§cl(§whisky(§$§2(§cl(§Vermo1(§$§1(§cl(§Benedi(§$§1(§cl(§Curaca(§$§%§?§%§?§%§?§%§
+Cherry Blossom II%§?§%§0%§3(§cl(§irish712(§$§1(§cl(§zitros(§$§1(§cl(§Grenad(§$§1(§BL(§eiwei712(§$§10(§af(§sodaw(§$§%§Longdrink%§fruchtig%§feinherb%§
+Cherry Daiquiri%§?§%§0%§3(§cl(§rumw(§$§2(§cl(§Cherry(§$§1(§cl(§Kirsch(§$§2(§cl(§limet712(§$§%§?§%§?§%§?§%§
+Cherry Rum%§?§%§0%§3(§cl(§rumw(§$§2(§cl(§kirsli(§$§3(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Chocolate Coco%§?§%§0%§3(§cl(§malib283(§$§3(§cl(§rumw(§$§2(§cl(§zitros(§$§6(§cl(§ananss(§$§2(§cl(§schok556(§$§%§?§%§?§%§?§%§
+Churchill%§?§%§0%§6(§cl(§scotc604(§$§2(§cl(§Vermo2(§$§1(§ds(§Curaca(§$§1(§ds(§zitros(§$§%§?§%§?§%§?§%§
+Clarendon Cocktail%§?§%§0%§4(§cl(§rumw(§$§1,5(§cl(§limet712(§$§2(§cl(§graps(§$§2(§BL(§pudzu(§$§1(§BL(§Grenad(§$§%§?§%§?§%§?§%§
+Claridge%§?§%§0%§1,5(§cl(§gin(§$§1,5(§cl(§Vermo1(§$§1(§cl(§Aprico(§$§1(§cl(§Curaca(§$§%§?§%§?§%§?§%§
+Clover Club%§?§%§0%§3(§cl(§gin(§$§2(§cl(§zitros(§$§1(§cl(§Grenad(§$§1(§BL(§eiwei712(§$§%§?§%§?§%§?§%§
+Coaxer%§?§%§0%§5(§cl(§whisky(§$§2(§BL(§zucks(§$§2(§cl(§zitros(§$§1(§St(§eiwei712(§$§%§?§%§?§%§?§%§
+Cocktail Nr. 13%§?§%§0%§2(§cl(§whisky(§$§2(§cl(§aprik549(§$§2(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Coco Loco%§?§%§0%§3(§cl(§rumb(§$§3(§cl(§malib283(§$§3(§cl(§Maracu(§$§3(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Coconut Tequila%§?§%§0%§3(§cl(§tequi286(§$§1(§cl(§creoc(§$§1(§cl(§zitros(§$§1(§BL(§Marasc(§$§%§?§%§?§%§?§%§
+Cocos Kiss%§?§%§0%§3(§cl(§rumb(§$§3(§cl(§malib283(§$§4(§cl(§osaft(§$§3(§cl(§Maracu(§$§%§?§%§?§%§?§%§
+Colonel Collins%§Verrühren.%§0%§6(§cl(§whisky(§$§3(§cl(§zitros(§$§2(§cl(§zucks(§$§15(§af(§sodaw(§$§%§Longdrink%§fruchtig%§süß-säuerlich%§
+Colonel Kremlin%§?§%§0%§4(§cl(§wodka(§$§1(§cl(§Limett0(§$§1(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Colt Cruiser%§?§%§0%§2(§cl(§rumw(§$§1(§cl(§Creme(§$§1(§cl(§Amaret(§$§2(§cl(§zitros(§$§24(§af(§zitro283(§$§%§?§%§?§%§?§%§
+Columbia%§?§%§0%§4(§cl(§rumw(§$§2(§cl(§Himbee(§$§3(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Columbus%§?§%§0%§3(§cl(§rumb(§$§1(§cl(§aprik549(§$§1(§cl(§Grenad(§$§26(§af(§bitte734(§$§%§?§%§?§%§?§%§
+Con-Tico%§?§%§0%§3(§cl(§rumw(§$§1(§cl(§Southe(§$§1(§cl(§Cointr(§$§1(§cl(§rosso549(§$§12(§cl(§ananss(§$§%§?§%§?§%§?§%§
+Conca D'Oro%§?§%§0%§4(§cl(§gin(§$§1(§cl(§Cherry(§$§1(§cl(§Marasc(§$§1(§cl(§Curacw(§$§1(§St(§orang944(§$§%§?§%§?§%§?§%§
+Concorde%§?§%§0%§3(§cl(§gin(§$§1(§cl(§Aprico(§$§1(§cl(§Campar(§$§1(§cl(§Grenad(§$§%§Shortdrink%§fruchtig%§feinherb%§
+Continental Sour%§?§%§0%§5(§cl(§whisky(§$§2(§cl(§zitros(§$§3(§cl(§Grenad(§$§1(§St(§eiwei712(§$§1(§ds(§rotwe944(§$§%§?§%§?§%§?§%§
+Copa de Oro%§?§%§0%§2(§cl(§tequi286(§$§1(§cl(§Grand(§$§1(§cl(§zucks(§$§1(§St(§Eigelb(§$§%§?§%§?§%§?§%§
+Corall Sea%§?§%§0%§3(§cl(§rumw(§$§2(§cl(§curabl(§$§5(§cl(§creoc(§$§5(§cl(§ananss(§$§1(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Cowboy Cocktail%§?§%§0%§4(§cl(§whisky(§$§2(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Cream Dream%§?§%§0%§3(§cl(§tia_m944(§$§2(§cl(§Amaret(§$§1(§cl(§Gallia(§$§2(§cl(§sahne(§$§%§Shortdrink%§cremig/sahnig%§lieblich%§
+Creole%§?§%§0%§2(§cl(§whisky(§$§2(§cl(§Vermo2(§$§1(§cl(§Benedi(§$§%§?§%§?§%§?§%§
+Crista Solar%§?§%§0%§3(§cl(§wodka(§$§1(§cl(§Curaca(§$§1(§cl(§pitu(§$§1(§cl(§Vermo1(§$§2(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Cuba Libre (braun)%§?§%§0%§4(§cl(§rumb(§$§1(§cl(§zitros(§$§20(§af(§cola(§$§%§?§%§?§%§?§%§
+Cuba Libre (weiß)%§?§%§0%§4(§cl(§rumw(§$§1(§cl(§zitros(§$§20(§af(§cola(§$§%§?§%§?§%§?§%§
+Daiquiri (Limettensaft)%§Die Zutaten im Shaker mit Eis schütteln und in das Glas seihen.%§0%§3(§cl(§rumw(§$§2(§cl(§Limett0(§$§1(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Daiquiri (Zitronensaft)%§Die Zutaten im Shaker mit Eis schütteln und in das Glas seihen.%§0%§3(§cl(§rumw(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Dandy%§?§%§0%§3(§cl(§rye_w283(§$§3(§cl(§Dubonn(§$§3(§ds(§angbi(§$§1(§ds(§zitros(§$§1(§St(§zitro986(§$§1(§St(§orang944(§$§%§?§%§?§%§?§%§
+Dannys Spezialcocktail%§?§%§0%§2,5(§cl(§whisky(§$§2,5(§cl(§Grand(§$§2(§BL(§zitros(§$§%§?§%§?§%§?§%§
+Dash Madney%§?§%§0%§3(§cl(§genev549(§$§1,5(§cl(§Marasc(§$§1,5(§cl(§Creme(§$§24(§af(§bitte734(§$§%§?§%§?§%§?§%§
+Davis%§?§%§0%§2(§cl(§rumb(§$§2(§cl(§Vermo1(§$§1(§cl(§Grenad(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Day Dreamer%§?§%§0%§3(§cl(§wodka(§$§1(§cl(§Vermo1(§$§1(§cl(§Sherry0(§$§%§?§%§?§%§?§%§
+De Rigneur%§?§%§0%§4(§cl(§whisky(§$§4(§cl(§graps(§$§2(§BL(§honig861(§$§%§?§%§?§%§?§%§
+Debutante%§?§%§0%§3(§cl(§tequi286(§$§2,5(§cl(§pfemin(§$§0,5(§cl(§pfeff604(§$§1(§BL(§zitros(§$§%§?§%§?§%§?§%§
+Deep Dream%§?§%§0%§3(§cl(§whisky(§$§2(§cl(§Aprico(§$§1(§cl(§Vermo1(§$§24(§af(§osaft(§$§%§?§%§?§%§?§%§
+Delta%§?§%§0%§3(§cl(§whisky(§$§1(§cl(§Southe(§$§1(§cl(§limet712(§$§%§?§%§?§%§?§%§
+Derby%§?§%§0%§6(§cl(§gin(§$§2(§ds(§peach604(§$§%§?§%§?§%§?§%§
+Despertador%§?§%§0%§3(§cl(§tequi286(§$§1(§cl(§Cointr(§$§2(§cl(§Grenad(§$§1(§BL(§honig861(§$§23(§af(§graps(§$§%§?§%§?§%§?§%§
+Don Frederico%§?§%§0%§3(§cl(§rumw(§$§1,5(§cl(§Gallia(§$§2(§ds(§Aprico(§$§1,5(§cl(§Grenad(§$§24(§af(§osaft(§$§%§?§%§?§%§?§%§
+Don José%§?§%§0%§2(§cl(§whisky(§$§2(§cl(§Vermo2(§$§1(§cl(§banan549(§$§%§?§%§?§%§?§%§
+Dorado%§?§%§0%§5(§cl(§tequi286(§$§2(§cl(§zitros(§$§2(§BL(§honig861(§$§%§?§%§?§%§?§%§
+Dream%§?§%§0%§2(§cl(§rumw(§$§2(§cl(§Creme(§$§1(§cl(§ananss(§$§1(§cl(§sahne(§$§1(§ds(§Grenad(§$§%§?§%§?§%§?§%§
+Dream of Naples%§?§%§0%§3(§cl(§whisky(§$§1(§cl(§Campar(§$§1(§cl(§Curaca(§$§1(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Dunlop%§?§%§0%§4(§cl(§rumw(§$§2(§cl(§sherr549(§$§1(§ds(§angbi(§$§1(§St(§zitro986(§$§%§?§%§?§%§?§%§
+Eastwind%§?§%§0%§2(§cl(§wodka(§$§2(§cl(§Vermo1(§$§2(§cl(§Vermo2(§$§%§?§%§?§%§?§%§
+El Presidente%§?§%§0%§3(§cl(§rumb(§$§2(§cl(§osaft(§$§1(§cl(§Vermo1(§$§1(§ds(§Grenad(§$§1(§ds(§curaor(§$§%§?§%§?§%§?§%§
+Eldorado I%§?§%§0%§4(§cl(§rumw(§$§2(§cl(§Eierli(§$§2(§cl(§Creme1(§$§2(§BL(§kokos986(§$§%§?§%§?§%§?§%§
+Elisa%§?§%§0%§3(§cl(§rumb(§$§1(§cl(§amaro712(§$§1(§cl(§Aprico(§$§1(§cl(§Vermo0(§$§1(§cl(§trock283(§$§%§?§%§?§%§?§%§
+Emerald%§?§%§0%§3(§cl(§gin(§$§1(§cl(§chart549(§$§1(§cl(§Chartr(§$§1(§St(§olive549(§$§%§?§%§?§%§?§%§
+Empire%§?§%§0%§3(§cl(§gin(§$§1,5(§cl(§calva604(§$§1,5(§cl(§Aprico(§$§%§?§%§?§%§?§%§
+Empire State%§?§%§0%§4(§cl(§gin(§$§2(§cl(§Cognac(§$§2(§cl(§Aprico(§$§1(§ds(§orabi(§$§%§?§%§?§%§?§%§
+English Rose%§?§%§0%§2(§cl(§gin(§$§1(§cl(§Aprico(§$§1(§cl(§Vermo1(§$§1(§BL(§Grenad(§$§3(§ds(§zitros(§$§%§?§%§?§%§?§%§
+Erans%§?§%§0%§4(§cl(§whisky(§$§1(§cl(§Aprico(§$§1(§cl(§Cointr(§$§%§?§%§?§%§?§%§
+Esquire Manhattan%§?§%§0%§2,5(§cl(§whisky(§$§2,5(§cl(§Vermo2(§$§1(§ds(§orabi(§$§%§?§%§?§%§?§%§
+Euphoria%§?§%§0%§5(§cl(§rumw(§$§1(§cl(§Curaca(§$§2(§cl(§graps(§$§1(§cl(§ananss(§$§%§?§%§?§%§?§%§
+Everything But%§?§%§0%§3(§cl(§whisky(§$§3(§cl(§gin(§$§1(§EL(§Aprico(§$§2(§cl(§zitros(§$§2(§cl(§osaft(§$§1(§St(§Eigelb(§$§1(§BL(§zucks(§$§%§?§%§?§%§?§%§
+Exotic (braun)%§?§%§0%§3(§cl(§gin(§$§1,5(§cl(§Creme1(§$§1,5(§cl(§Creme(§$§%§?§%§?§%§?§%§
+Exotic (weiß)%§?§%§0%§3(§cl(§gin(§$§1,5(§cl(§Creme2(§$§1,5(§cl(§Creme(§$§%§?§%§?§%§?§%§
+Exploration%§?§%§0%§3(§cl(§scotc604(§$§2(§cl(§Sherry0(§$§2(§BL(§Amaret(§$§2(§BL(§zitros(§$§1(§St(§zitro986(§$§%§?§%§?§%§?§%§
+Exterminator%§?§%§0%§3(§cl(§gin(§$§2(§cl(§Cointr(§$§4(§cl(§graps(§$§11(§af(§Sekt(§$§%§?§%§?§%§?§%§
+Fallen Angel%§?§%§0%§4(§cl(§gin(§$§2(§cl(§zitros(§$§2(§ds(§Cremm(§$§1(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Fedora Punch%§Glas zur Hälfte mit Crushed Ice füllen.%§0%§3(§cl(§rumb(§$§1(§cl(§Cognac(§$§1(§cl(§whisky(§$§1(§cl(§curaor(§$§2(§cl(§zitros(§$§2(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Feigenblatt%§?§%§0%§4(§cl(§rumw(§$§3(§cl(§Vermo2(§$§2(§cl(§Limett0(§$§%§?§%§?§%§?§%§
+Festrus%§?§%§0%§2(§cl(§wodka(§$§2(§cl(§Grand(§$§2(§cl(§cinza549(§$§%§?§%§?§%§?§%§
+Finish Cockbull%§?§%§0%§3(§cl(§wodka(§$§2(§cl(§Amaret(§$§1(§cl(§Kaffe0(§$§%§?§%§?§%§?§%§
+Finish Virgin%§?§%§0%§5(§cl(§wodka(§$§1(§BL(§orabi(§$§1(§BL(§Mandel0(§$§1(§BL(§Limett0(§$§%§?§%§?§%§?§%§
+Finlady%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§Aprico(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Finlandia Bite%§?§%§0%§3(§cl(§wodka(§$§3(§cl(§Southe(§$§2(§cl(§sahne(§$§1(§ds(§zitros(§$§%§?§%§?§%§?§%§
+Finndinhy%§?§%§0%§2(§cl(§rumb(§$§2(§cl(§malib283(§$§1(§cl(§Maracu(§$§6(§cl(§ananss(§$§1(§ds(§zitros(§$§%§?§%§?§%§?§%§
+Fireman's Sour%§?§%§0%§2(§cl(§rumw(§$§2(§cl(§zitros(§$§1(§cl(§Grenad(§$§15(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Flamingo%§?§%§0%§4(§cl(§gin(§$§2(§cl(§Aprico(§$§2(§cl(§zitros(§$§2(§ds(§Grenad(§$§%§?§%§?§%§?§%§
+Fluffy Ruffles%§?§%§0%§4(§cl(§rumw(§$§2(§cl(§Vermo1(§$§1(§St(§zitro986(§$§%§?§%§?§%§?§%§
+Flying I%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Cointr(§$§2(§cl(§zitros(§$§9(§af(§trock283(§$§%§?§%§?§%§?§%§
+Folkeboot Cocktail%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§curabl(§$§1(§cl(§marac604(§$§1(§ds(§Limett0(§$§6(§cl(§ananss(§$§%§?§%§?§%§?§%§
+Football Player%§?§%§0%§3(§cl(§scotc604(§$§1(§cl(§Cointr(§$§1(§cl(§graps(§$§%§?§%§?§%§?§%§
+Four Flush%§?§%§0%§3(§cl(§rumw(§$§2(§cl(§Vermo1(§$§1(§cl(§Marasc(§$§2(§ds(§Grenad(§$§%§?§%§?§%§?§%§
+Foxtrott%§?§%§0%§4(§cl(§rumw(§$§1(§cl(§Cointr(§$§2(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Freedom%§?§%§0%§2(§cl(§wodka(§$§1(§cl(§Curaca(§$§1(§cl(§credc(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Freefall%§?§%§0%§3(§cl(§scotc604(§$§2(§cl(§malib283(§$§1(§cl(§marac604(§$§1(§cl(§zitros(§$§6(§cl(§ananss(§$§%§?§%§?§%§?§%§
+French 75%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Cointr(§$§2(§cl(§zitros(§$§1(§ds(§Pernod0(§$§10(§af(§Sekt(§$§%§Sektcocktail%§aromatisch%§?§%§
+Frisco Sour%§?§%§0%§4(§cl(§whisky(§$§2(§cl(§Benedi(§$§3(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Frogger%§Entstand während einer feuchtfröhlichen Party in der Münchner Innenstadt.%§2%§3(§cl(§Limett0(§$§5(§cl(§ananss(§$§3(§cl(§curabl(§$§2(§cl(§kokos549(§$§1(§BL(§sahne(§$§%§?§%§?§%§?§%§
+Frozen Blackberry Tequila%§?§%§0%§4(§cl(§tequi286(§$§2(§cl(§bromb986(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Frozen Daiquiri (Limettensaft)%§Die Zutaten im Shaker mit Crushed ice schütteln und ins Glas geben.%§0%§3(§cl(§rumw(§$§2(§cl(§Limett0(§$§1(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Frozen Daiquiri (Zitronensaft)%§Die Zutaten im Shaker mit Crushed ice schütteln und ins Glas geben.%§0%§3(§cl(§rumw(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Frozen Sun%§?§%§0%§4(§cl(§tequi286(§$§1(§cl(§Limett0(§$§1(§cl(§Grenad(§$§%§?§%§?§%§?§%§
+Frozen Tequila%§?§%§0%§3(§cl(§tequi286(§$§4(§cl(§ananss(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Galliano Mist%§Mit Crushed Ice. Zitrone auspressen und ins Glas geben.%§0%§6(§cl(§Gallia(§$§0,125(§St(§zitro549(§$§%§Shortdrink%§fruchtig%§würzig%§
+Galliano Sour%§?§%§0%§2(§cl(§Gallia(§$§2(§cl(§whisk604(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§%§Sour%§fruchtig%§würzig%§
+Galway Sunrise%§?§%§0%§1,5(§cl(§wodka(§$§1(§cl(§Curaca(§$§3(§cl(§Honigl0(§$§2,5(§cl(§orabi(§$§1(§ds(§Frothe0(§$§%§?§%§?§%§?§%§
+Game%§?§%§0%§3(§cl(§gin(§$§1(§cl(§Aprico(§$§1(§cl(§Amaret(§$§%§?§%§?§%§?§%§
+Gibson Dry%§?§%§0%§4(§cl(§gin(§$§2(§cl(§Vermo1(§$§%§?§%§?§%§?§%§
+Gimlet%§?§%§0%§4(§cl(§gin(§$§2(§cl(§rose_549(§$§1(§St(§zitro986(§$§1(§St(§limet604(§$§%§?§%§?§%§?§%§
+Gin and French%§?§%§0%§4(§cl(§gin(§$§2(§cl(§Vermo1(§$§1(§St(§zitro986(§$§%§?§%§?§%§?§%§
+Gin and It%§?§%§0%§3(§cl(§gin(§$§3(§cl(§Vermo2(§$§%§?§%§?§%§?§%§
+Gin and Sin%§?§%§0%§4(§cl(§gin(§$§2(§cl(§osaft(§$§2(§cl(§zitros(§$§2(§BL(§Grenad(§$§%§?§%§?§%§?§%§
+Gin Buck%§?§%§0%§4(§cl(§gin(§$§2(§cl(§zitros(§$§24(§af(§ginale(§$§%§?§%§?§%§?§%§
+Gin Cocktail%§?§%§0%§5(§cl(§gin(§$§3(§ds(§orabi(§$§%§?§%§?§%§?§%§
+Gin Crusta%§?§%§0%§4(§cl(§gin(§$§1(§BL(§kirsli(§$§2(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Gin Fizz%§?§%§0%§4(§cl(§gin(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§13(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Gin Orange%§?§%§0%§4(§cl(§gin(§$§11(§af(§osaft(§$§%§?§%§?§%§?§%§
+Gin Sour%§?§%§0%§4(§cl(§gin(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§0,5(§St(§zitsch(§$§1(§St(§cockt944(§$§%§?§%§?§%§?§%§
+Gin Stinger%§Rühren!%§0%§3(§cl(§gin(§$§3(§cl(§Creme3(§$§%§Shortdrink%§aromatisch%§?§%§
+Gin Tonic%§?§%§0%§4(§cl(§gin(§$§26(§af(§tonwa(§$§0,5(§St(§zitsch(§$§%§?§%§?§%§?§%§
+Gloom Lifter%§?§%§0%§3(§cl(§irish712(§$§1(§cl(§zitros(§$§1(§cl(§zucks(§$§1(§ds(§eiwei712(§$§%§?§%§?§%§?§%§
+God Father%§?§%§0%§4(§cl(§whisky(§$§2(§cl(§Amaret(§$§%§?§%§?§%§?§%§
+God Mother%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§Amaret(§$§%§?§%§?§%§?§%§
+Gold Digger%§?§%§0%§1,5(§cl(§gin(§$§1,5(§cl(§kiwil944(§$§1,5(§cl(§melon712(§$§1,5(§cl(§apero283(§$§24(§af(§osaft(§$§%§?§%§?§%§?§%§
+Golden Clipper%§?§%§0%§4(§cl(§rumw(§$§2(§cl(§peach549(§$§2(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Golden Colada%§Glas mit Crushed Ice halb voll machen.%§0%§3(§cl(§rumb(§$§2(§cl(§rumw(§$§1(§cl(§Gallia(§$§2(§cl(§creoc(§$§2(§cl(§osaft(§$§2(§cl(§ananss(§$§1(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Golden Dawn%§?§%§0%§3(§cl(§gin(§$§2(§cl(§osaft(§$§1(§cl(§zitros(§$§1(§BL(§Aprico(§$§3(§ds(§Grenad(§$§%§?§%§?§%§?§%§
+Golden Fizz%§?§%§0%§4(§cl(§gin(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§1(§St(§Eigelb(§$§20(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Golden Nail%§?§%§0%§3(§cl(§whisky(§$§2(§cl(§Southe(§$§%§?§%§?§%§?§%§
+Golden Volcano%§?§%§0%§1,5(§cl(§tequi286(§$§0,5(§cl(§Curaca(§$§1,5(§cl(§Gallia(§$§1(§cl(§sahne(§$§1(§cl(§Limett0(§$§1(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Goldfinger%§?§%§0%§2(§cl(§wodka(§$§4(§cl(§Vermo2(§$§1(§cl(§osaft(§$§1(§ds(§orabi(§$§%§?§%§?§%§?§%§
+Gospodin%§?§%§0%§3(§cl(§wodka(§$§2(§cl(§Aprico(§$§%§?§%§?§%§?§%§
+Grace of Monaco%§?§%§0%§2(§cl(§teqw(§$§2(§cl(§Aprico(§$§2,5(§cl(§Mandar0(§$§%§?§%§?§%§?§%§
+Gradeal Special%§?§%§0%§3(§cl(§rumw(§$§2(§cl(§Aprico(§$§1(§cl(§gin(§$§%§?§%§?§%§?§%§
+Grande Duchesse%§?§%§0%§3(§cl(§wodka(§$§1(§cl(§rumw(§$§1(§cl(§zitros(§$§1(§BL(§Grenad(§$§%§?§%§?§%§?§%§
+Gray Hound%§?§%§0%§6(§cl(§wodka(§$§6(§cl(§graps(§$§%§?§%§?§%§?§%§
+Green Cat%§?§%§0%§4(§cl(§kiwil944(§$§2(§cl(§rumw(§$§2(§ds(§zitros(§$§1(§ds(§Frothe0(§$§%§Shortdrink%§säuerlich%§?§%§
+Green Hope%§?§%§0%§3(§cl(§wodka(§$§1,5(§cl(§Curaca0(§$§1(§cl(§Creme(§$§1(§cl(§tonwa(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Green Orange%§Rühren.%§0%§4(§cl(§pisan549(§$§8(§cl(§osaft(§$§%§Longdrink%§fruchtig%§mild%§
+Green Peace I%§?§%§0%§1,5(§cl(§wodka(§$§1(§cl(§Aprico(§$§1,5(§cl(§Vermo1(§$§1,5(§cl(§pisan549(§$§24(§af(§ananss(§$§%§?§%§?§%§?§%§
+Green Peace II%§?§%§0%§3(§cl(§gin(§$§1(§cl(§Creme3(§$§3(§BL(§zitros(§$§2(§BL(§Zucker(§$§1(§St(§eiwei712(§$§%§Shortdrink%§herb%§würzig%§
+Green Sea%§?§%§0%§1,5(§cl(§wodka(§$§1,5(§cl(§Creme3(§$§1,5(§cl(§Vermo1(§$§%§?§%§?§%§?§%§
+Green Spider%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§pfeff556(§$§24(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Haberfield%§?§%§0%§4(§cl(§gin(§$§1(§cl(§Vermo1(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Habitant%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Vermo2(§$§2(§cl(§ahorn986(§$§2(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Hair Raiser%§?§%§0%§2(§cl(§wodka(§$§2(§cl(§Drambu(§$§2(§cl(§tonwa(§$§%§?§%§?§%§?§%§
+Haiti Night%§Mit Crushed Ice.%§0%§4(§cl(§pfemin(§$§2(§cl(§manda283(§$§8(§cl(§Maracu(§$§1(§cl(§zitros(§$§%§Longdrink%§fruchtig%§alkoholarm%§
+Handlebar%§?§%§0%§3(§cl(§scotc604(§$§1(§cl(§Drambu(§$§1(§cl(§Limett0(§$§%§?§%§?§%§?§%§
+Hansekogge%§?§%§0%§3(§cl(§scotc604(§$§1(§cl(§manda283(§$§4(§cl(§osaft(§$§4(§cl(§Maracu(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Happy Birthday%§?§%§0%§4(§cl(§genev549(§$§1,5(§cl(§curaor(§$§1,5(§cl(§rumw(§$§1,5(§cl(§pfemin(§$§1,5(§cl(§ananss(§$§5(§af(§champ604(§$§%§?§%§?§%§?§%§
+Happy Fin%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§pfemin(§$§24(§af(§osaft(§$§%§?§%§?§%§?§%§
+Harvey Wallbanger%§?§%§0%§3(§cl(§wodka(§$§26(§af(§osaft(§$§1(§cl(§Gallia(§$§%§?§%§?§%§?§%§
+Hasel%§Mit Crushed Ice. Den Curacao zum Schluss über den Cocktail geben.%§0%§3(§cl(§pirsh549(§$§2(§cl(§wodka(§$§3(§cl(§creoc(§$§4(§cl(§ananss(§$§1(§cl(§curabl(§$§%§Longdrink%§lieblich%§?§%§
+Havanna Club%§?§%§0%§4(§cl(§rumw(§$§2(§cl(§Vermo2(§$§1(§St(§zitro986(§$§%§?§%§?§%§?§%§
+Hawaiian%§?§%§0%§4(§cl(§rumb(§$§4(§cl(§ananss(§$§2(§cl(§Grenad(§$§1(§St(§eiwei712(§$§%§?§%§?§%§?§%§
+Hawaiian Banger%§Gerührt, nicht geschüttelt!%§0%§4(§cl(§rumb(§$§2(§cl(§Gallia(§$§8(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Hawaiian Cocktail%§?§%§0%§3(§cl(§gin(§$§2(§cl(§osaft(§$§1(§cl(§Curaca(§$§%§?§%§?§%§?§%§
+Hawk%§?§%§0%§2(§cl(§whisky(§$§2(§cl(§gin(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Heartbreaker%§?§%§0%§3(§cl(§rumb(§$§2(§cl(§Cherry(§$§6(§cl(§osaft(§$§6(§cl(§ananss(§$§%§?§%§?§%§?§%§
+Heaven So Sweet%§?§%§0%§4(§cl(§wodka(§$§1(§cl(§Amaret(§$§1(§cl(§Gallia(§$§%§?§%§?§%§?§%§
+Highland Cooler%§?§%§0%§4(§cl(§scotc604(§$§2(§ds(§angbi(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§21(§af(§ginale(§$§%§?§%§?§%§?§%§
+Highland Moon%§?§%§0%§3(§cl(§scotc604(§$§3(§cl(§Drambu(§$§%§?§%§?§%§?§%§
+Hill Street%§?§%§0%§4(§cl(§whisky(§$§1(§cl(§rumb(§$§5(§cl(§Maracu(§$§2(§cl(§ananss(§$§%§?§%§?§%§?§%§
+Holiday Egg-Nog%§?§%§0%§4(§cl(§whisky(§$§2(§cl(§rumb(§$§1(§cl(§zucks(§$§4(§cl(§Milch(§$§1(§St(§Ei(§$§%§Egg-Nog%§lieblich%§?§%§
+Holland House%§?§%§0%§3(§cl(§gin(§$§1,5(§cl(§Vermo1(§$§4(§ds(§Marasc(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Honeybee%§?§%§0%§3(§cl(§rumw(§$§1(§cl(§zitros(§$§1(§cl(§honig861(§$§%§?§%§?§%§?§%§
+Honeymoon I%§?§%§0%§4(§cl(§gin(§$§2(§cl(§Aprico(§$§0,5(§cl(§zitros(§$§0,5(§cl(§Grenad(§$§%§?§%§?§%§?§%§
+Honolulu%§?§%§0%§2(§cl(§gin(§$§1(§cl(§Benedi(§$§1(§cl(§Marasc(§$§%§?§%§?§%§?§%§
+Honolulu Juicer%§1/3 Crushed Ice.%§0%§4(§cl(§Southe(§$§2(§cl(§rumb(§$§6(§cl(§ananss(§$§2(§cl(§zitros(§$§2(§cl(§limet712(§$§%§Longdrink%§fruchtig%§mild%§
+Horse's Neck I%§?§%§0%§4(§cl(§gin(§$§2(§BL(§Grenad(§$§25(§af(§ginale(§$§%§?§%§?§%§?§%§
+Horse's Neck II%§?§%§0%§4(§cl(§whisky(§$§2(§ds(§angbi(§$§25,5(§af(§ginale(§$§%§?§%§?§%§?§%§
+Hula Hula%§?§%§0%§3(§cl(§rumb(§$§3(§cl(§rumw(§$§3(§cl(§zucks(§$§3(§cl(§zitros(§$§5(§cl(§Maracu(§$§%§?§%§?§%§?§%§
+Hurricane I%§?§%§0%§2(§cl(§whisky(§$§2(§cl(§gin(§$§2(§cl(§pfeff604(§$§%§?§%§?§%§?§%§
+Ice Rickey%§?§%§0%§1(§St(§zitro604(§$§4(§cl(§scotc604(§$§3(§cl(§limet712(§$§2(§cl(§zitros(§$§1(§ds(§Grenad(§$§10(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Imperial%§?§%§0%§3(§cl(§gin(§$§3(§cl(§Vermo1(§$§1(§ds(§angbi(§$§1(§ds(§Marasc(§$§%§?§%§?§%§?§%§
+Indianapolis%§?§%§0%§2(§cl(§wodka(§$§2(§cl(§curabl(§$§2(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Ines%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Vermo1(§$§2(§cl(§vermo549(§$§1(§cl(§Amaret(§$§%§?§%§?§%§?§%§
+Inspiration%§Verrühren.%§0%§1,5(§cl(§gin(§$§1,5(§cl(§Vermo1(§$§1,5(§cl(§calva604(§$§1,5(§cl(§Grand(§$§%§?§%§?§%§?§%§
+Irish Orange%§?§%§0%§4(§cl(§irish712(§$§1(§cl(§zitros(§$§1(§cl(§Grenad(§$§10(§af(§bitte986(§$§%§Longdrink%§fruchtig%§herb%§
+Irish Rose%§?§%§0%§4(§cl(§irish712(§$§2(§cl(§zitros(§$§1(§cl(§Grenad(§$§%§?§%§?§%§?§%§
+Isle of Skye%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Drambu(§$§2(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Iwan Collins%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§23(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Jalapa%§?§%§0%§3(§cl(§tequi286(§$§3(§cl(§Limett0(§$§3(§cl(§Maracu(§$§%§?§%§?§%§?§%§
+Jamaica Green%§?§%§0%§4(§cl(§rumw(§$§2(§cl(§Creme3(§$§3(§cl(§zitros(§$§2(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Jamaica Kiss%§?§%§0%§2(§cl(§rumb(§$§2(§cl(§cr_me986(§$§2(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Jimmy Lopez Manhattan%§?§%§0%§3(§cl(§whisky(§$§2(§cl(§Vermo1(§$§1(§BL(§Aprico(§$§%§?§%§?§%§?§%§
+John Collins%§?§%§0%§4(§cl(§genev549(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§23(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Johnnie Red%§?§%§0%§3(§cl(§genev549(§$§1,5(§cl(§Parfai0(§$§1,5(§cl(§Creme(§$§1(§ds(§Grenad(§$§23(§af(§osaft(§$§%§?§%§?§%§?§%§
+Joker%§?§%§0%§3(§cl(§scotc604(§$§1,5(§cl(§Grand(§$§1,5(§cl(§Dubonn(§$§%§?§%§?§%§?§%§
+Journalist%§?§%§0%§3(§cl(§gin(§$§1(§cl(§Vermo1(§$§1(§cl(§Vermo2(§$§1(§BL(§Curaca(§$§1(§BL(§zitros(§$§1(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Juliet%§?§%§0%§2(§cl(§teqb(§$§2(§cl(§pisan549(§$§3(§cl(§ananss(§$§1(§ds(§Grenad(§$§%§?§%§?§%§?§%§
+Jungle Bird%§?§%§0%§4(§cl(§tequi286(§$§4(§cl(§papay604(§$§4(§cl(§zitros(§$§1(§cl(§marac604(§$§%§?§%§?§%§?§%§
+Jungle Juice%§Mit Crushed Ice%§0%§2(§cl(§pisan549(§$§1(§cl(§Aprico(§$§1(§cl(§gin(§$§5(§cl(§osaft(§$§2(§cl(§zitros(§$§%§Longdrink%§fruchtig%§lieblich%§
+Jzcaragua%§?§%§0%§1,5(§cl(§scotc604(§$§1,5(§cl(§Vermo1(§$§1,5(§cl(§Amaret(§$§1,5(§cl(§Creme(§$§1(§St(§zitro986(§$§%§?§%§?§%§?§%§
+Kangaroo%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§Vermo1(§$§%§?§%§?§%§?§%§
+Kentucky Bourbon%§?§%§0%§4(§cl(§whisky(§$§2(§cl(§Benedi(§$§%§?§%§?§%§?§%§
+Kentucky Lemon%§?§%§0%§4(§cl(§whisky(§$§2(§cl(§zitros(§$§20(§af(§bitte734(§$§%§Longdrink%§herb%§fruchtig%§
+King's Cross%§?§%§0%§3(§cl(§whisky(§$§3(§cl(§Vermo2(§$§1(§ds(§Benedi(§$§1(§St(§zitro986(§$§%§?§%§?§%§?§%§
+King's Cup%§Mit Crushed Ice. Verrühren.%§0%§4(§cl(§Gallia(§$§2(§cl(§sahne(§$§%§Shortdrink%§würzig%§mild%§
+Knock Out I%§?§%§0%§5(§cl(§tequi286(§$§1(§cl(§Gallia(§$§2(§cl(§zitros(§$§1(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Konsul%§?§%§0%§3(§cl(§wodka(§$§2(§cl(§Himbee0(§$§4(§cl(§graps(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+La Conga%§?§%§0%§4(§cl(§tequi286(§$§2(§BL(§ananss(§$§2(§ds(§angbi(§$§11(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Lady Brown%§?§%§0%§3(§cl(§gin(§$§1,5(§cl(§Grand(§$§1,5(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Lady Chatterly%§?§%§0%§3(§cl(§gin(§$§1(§cl(§Curaca(§$§1(§cl(§Vermo1(§$§1(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Lady Di%§?§%§0%§2(§cl(§gin(§$§1(§cl(§Benedi(§$§1(§cl(§osaft(§$§2(§ds(§orabi(§$§1(§BL(§Grenad(§$§10(§af(§trock283(§$§%§?§%§?§%§?§%§
+Lady Killer%§?§%§0%§2(§cl(§gin(§$§1(§cl(§Cointr(§$§1(§cl(§Aprico(§$§3(§cl(§Maracu(§$§3(§cl(§ananss(§$§%§?§%§?§%§?§%§
+Lafayette%§?§%§0%§3(§cl(§whisky(§$§1(§cl(§Vermo1(§$§1(§cl(§Dubonn(§$§2(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Laser%§?§%§0%§3(§cl(§rumw(§$§2(§cl(§Southe(§$§1(§cl(§manda283(§$§6(§cl(§Maracu(§$§2(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Le Mans%§?§%§0%§3(§cl(§wodka(§$§3(§cl(§Cointr(§$§24(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Lena%§?§%§0%§3(§cl(§whisky(§$§1(§cl(§Gallia(§$§1(§cl(§Campar(§$§1,5(§cl(§Vermo2(§$§1(§cl(§Vermo1(§$§%§?§%§?§%§?§%§
+Liebestraum%§Mit Crushed Ice.%§0%§3(§cl(§pfemin(§$§1(§cl(§curabl(§$§2(§cl(§malib283(§$§1(§cl(§zitros(§$§8(§cl(§ananss(§$§%§Longdrink%§fruchtig%§?§%§
+Little Devil%§?§%§0%§2(§cl(§rumw(§$§2(§cl(§gin(§$§1(§cl(§Cointr(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Little Princess%§?§%§0%§2(§cl(§rumw(§$§2(§cl(§Vermo2(§$§%§?§%§?§%§?§%§
+London Fever%§?§%§0%§3(§cl(§gin(§$§2(§cl(§rumw(§$§3(§cl(§limet712(§$§1(§BL(§Grenad(§$§12(§af(§sodaw(§$§%§?§%§?§%§?§%§
+London Sour%§?§%§0%§3(§cl(§scotc604(§$§1(§cl(§Mandel0(§$§2(§cl(§zitros(§$§2(§cl(§osaft(§$§1(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Long Island Icetea%§Verrühren.%§0%§1(§cl(§wodka(§$§1(§cl(§gin(§$§1(§cl(§rumw(§$§1(§cl(§Curaca(§$§1(§cl(§teqw(§$§1(§cl(§zitros(§$§24(§af(§cola(§$§%§?§%§?§%§?§%§
+Long Island Icetea (stark)%§?§%§0%§2(§cl(§rumw(§$§2(§cl(§tequi286(§$§2(§cl(§Cointr(§$§2(§cl(§gin(§$§2(§cl(§wodka(§$§4(§cl(§zitros(§$§16(§af(§cola(§$§%§?§%§?§%§?§%§
+Looking at You%§Mit Crushed Ice auffüllen.%§0%§2(§cl(§rumw(§$§1(§cl(§rumb(§$§3(§cl(§sambu549(§$§10(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Lord Byron%§?§%§0%§3(§cl(§scotc604(§$§1(§cl(§Orange0(§$§1(§cl(§Vermo2(§$§1(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Los Angeles%§?§%§0%§3(§cl(§scotc604(§$§1(§ds(§Vermo0(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§1(§St(§Ei(§$§%§?§%§?§%§?§%§
+Lover's Nocturne%§?§%§0%§4(§cl(§wodka(§$§1(§cl(§Drambu(§$§1(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Lumumba II%§?§%§0%§4(§cl(§rumb(§$§10(§cl(§?§(§$§%§?§%§?§%§?§%§
+Magic Queen%§?§%§0%§4(§cl(§rumb(§$§1(§cl(§Curaca(§$§1(§cl(§banan549(§$§3(§cl(§osaft(§$§2(§cl(§ananss(§$§1(§cl(§zitros(§$§1(§BL(§Grenad(§$§%§?§%§?§%§?§%§
+Mahukona%§Verrühren und eine gewürfelte Ananasscheibe sowie drei  Cocktailkirschen ins Glas geben.%§0%§4(§cl(§rumw(§$§2(§cl(§Curaca(§$§3(§cl(§zitros(§$§2(§cl(§zucks(§$§1(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Mai Tai%§?§%§0%§4(§cl(§rumb(§$§2(§cl(§rum__944(§$§1(§cl(§Curacw(§$§1(§cl(§Mandel0(§$§2(§cl(§zitros(§$§4(§cl(§ananss(§$§2(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Mallorca%§?§%§0%§3(§cl(§rumb(§$§1(§cl(§Vermo1(§$§1(§cl(§Creme(§$§1(§cl(§Drambu(§$§%§?§%§?§%§?§%§
+Manbols%§?§%§0%§2(§cl(§wodka(§$§4(§cl(§Mandar0(§$§2(§cl(§zitros(§$§1(§cl(§Grenad(§$§21(§af(§tonwa(§$§%§?§%§?§%§?§%§
+Mandy%§?§%§0%§2(§cl(§gin(§$§0,5(§cl(§pfemin(§$§0,5(§cl(§red_o944(§$§3,5(§cl(§osaft(§$§0,5(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Manhattan%§?§%§0%§4(§cl(§canad604(§$§2(§cl(§Vermo2(§$§1(§ds(§angbi(§$§1(§St(§cockt944(§$§%§?§%§?§%§?§%§
+Manhattan Dry%§?§%§0%§4(§cl(§canad604(§$§2(§cl(§Vermo1(§$§1(§St(§olive604(§$§%§?§%§?§%§?§%§
+Manhattan Perfect%§?§%§0%§4(§cl(§whisky(§$§1(§cl(§Vermo1(§$§1(§cl(§Vermo2(§$§%§?§%§?§%§?§%§
+Manhattan Sweet%§?§%§0%§4(§cl(§canad604(§$§2(§cl(§Vermo2(§$§1(§ds(§orabi(§$§2(§ds(§Curacw(§$§%§?§%§?§%§?§%§
+Mar del Plata%§?§%§0%§3(§cl(§gin(§$§2(§cl(§Vermo1(§$§1(§cl(§Benedi(§$§1(§St(§zitro986(§$§%§?§%§?§%§?§%§
+Marawod%§?§%§0%§3(§cl(§wodka(§$§1(§cl(§Kirsch(§$§1(§cl(§Marasc(§$§%§?§%§?§%§?§%§
+Marionette%§?§%§0%§2,5(§cl(§rumw(§$§1,5(§cl(§Aprico(§$§1,5(§cl(§Sherry0(§$§1,5(§cl(§sherr604(§$§%§?§%§?§%§?§%§
+Marlon Brando's Puebla Flip%§?§%§0%§3(§cl(§tequi286(§$§1(§BL(§brauzu(§$§1(§BL(§Creme1(§$§0,5(§St(§vanil549(§$§1(§St(§Eigelb(§$§%§?§%§?§%§?§%§
+Martini Dry%§Gerührt, nicht geschüttelt!%§0%§4(§cl(§gin(§$§2(§cl(§Vermo1(§$§%§Shortdrink%§trocken%§?§%§
+Martini Extra Dry%§Gerührt, nicht geschüttelt!%§0%§5(§cl(§gin(§$§1(§cl(§Vermo1(§$§%§Shortdrink%§kräftig/hochprozentig%§?§%§
+Martini Mayador%§Gerührt, nicht geschüttelt!%§0%§4(§cl(§tequi286(§$§2(§cl(§Vermo1(§$§%§?§%§?§%§?§%§
+Martini Medium%§Gerührt, nicht geschüttelt!%§0%§4(§cl(§gin(§$§1(§cl(§Vermo1(§$§1(§cl(§Vermo2(§$§%§Shortdrink%§halbtrocken%§?§%§
+Martini Sweet%§Gerührt, nicht geschüttelt!%§0%§4(§cl(§gin(§$§2(§cl(§Vermo2(§$§%§Shortdrink%§lieblich%§?§%§
+Maxim Cocktail%§?§%§0%§3(§cl(§gin(§$§2(§cl(§Vermo2(§$§1(§cl(§Creme2(§$§%§?§%§?§%§?§%§
+May Fair%§?§%§0%§3(§cl(§gin(§$§3(§cl(§osaft(§$§3(§ds(§Aprico(§$§%§?§%§?§%§?§%§
+McKinley's Delight%§?§%§0%§3(§cl(§whisky(§$§3(§cl(§Vermo1(§$§1(§BL(§Pernod0(§$§2(§BL(§kirsli(§$§%§?§%§?§%§?§%§
+Meiner%§?§%§0%§3(§cl(§gin(§$§25(§af(§osaft(§$§0,5(§St(§orang712(§$§2(§cl(§Campar(§$§%§?§%§?§%§?§%§
+Melissa%§?§%§0%§3(§cl(§rumw(§$§1(§cl(§Curaca(§$§1(§cl(§bols_604(§$§1(§cl(§limet712(§$§1(§ds(§Grenad(§$§%§?§%§?§%§?§%§
+Messicano%§?§%§0%§2(§cl(§gin(§$§2,5(§cl(§Gallia(§$§0,5(§cl(§Amaret(§$§2,5(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Mexican Guayaba%§?§%§0%§3(§cl(§tequi286(§$§1(§cl(§osaft(§$§1(§cl(§Limett0(§$§1(§cl(§guave604(§$§%§?§%§?§%§?§%§
+Mexican Mockingbird%§?§%§0%§4(§cl(§tequi286(§$§2(§cl(§Creme3(§$§1(§cl(§Limett0(§$§23(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Mexican Night%§?§%§0%§4(§cl(§tequi286(§$§2(§ds(§limet712(§$§0,25(§St(§zitro549(§$§22(§af(§bitte734(§$§%§?§%§?§%§?§%§
+Mexican Old Fashioned%§?§%§0%§1(§St(§zucke604(§$§1(§ds(§angbi(§$§0,25(§St(§zitro549(§$§0,125(§St(§orang986(§$§1(§St(§cockt944(§$§5(§cl(§tequi286(§$§22(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Mexican Screwdriver%§?§%§0%§4(§cl(§tequi286(§$§10(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Mexicana%§?§%§0%§4(§cl(§tequi286(§$§2(§cl(§zitros(§$§1(§cl(§ananss(§$§1(§BL(§Grenad(§$§%§?§%§?§%§?§%§
+Mexikanischer Traum%§?§%§0%§2(§cl(§tequi286(§$§2(§cl(§bittle(§$§2(§cl(§zitros(§$§1(§BL(§Grenad(§$§%§?§%§?§%§?§%§
+Million Dollar%§?§%§0%§3(§cl(§gin(§$§3(§cl(§Vermo2(§$§1(§BL(§Grenad(§$§1(§BL(§ananss(§$§1(§BL(§eiwei712(§$§%§?§%§?§%§?§%§
+Mint Cooler (grün)%§?§%§0%§4(§cl(§scotc604(§$§1(§BL(§Creme3(§$§26(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Mint Cooler (weiß)%§?§%§0%§4(§cl(§scotc604(§$§1(§BL(§Cremm(§$§26(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Mint Fizz%§?§%§0%§5(§cl(§gin(§$§1(§cl(§Creme3(§$§2(§cl(§zucks(§$§3(§cl(§zitros(§$§19(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Mint Julep%§?§%§0%§2(§BL(§wasse986(§$§1(§cl(§zucks(§$§4(§cl(§whisky(§$§%§?§%§?§%§?§%§
+Mississippi I%§?§%§0%§3(§cl(§gin(§$§3(§cl(§credc(§$§4(§ds(§osaft(§$§%§?§%§?§%§?§%§
+Mississippi II%§Verrühren.%§0%§3(§cl(§Southe(§$§1(§cl(§whisky(§$§1(§cl(§Vermo1(§$§%§Shortdrink%§kräftig/hochprozentig%§?§%§
+Missouri Mule%§?§%§0%§4(§cl(§whisky(§$§1(§cl(§credc(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Modern Girl%§?§%§0%§2(§cl(§whisky(§$§2(§cl(§rumw(§$§1(§BL(§Pernod0(§$§1(§BL(§orabi(§$§2(§BL(§zitros(§$§%§?§%§?§%§?§%§
+Mojito (Limettensaft)%§Minzblätter im Glas zerdrücken. Mit reichlich Crushed Ice umrühren. Mit Soda abspritzen.%§0%§2(§cl(§Limett0(§$§1(§cl(§zucks(§$§4(§cl(§rumw(§$§1(§St(§sodaw604(§$§%§?§%§?§%§?§%§
+Mojito (Zitronensaft)%§Minzblätter im Glas zerdrücken. Mit reichlich Crushed Ice umrühren. Mit Soda abspritzen.%§0%§2(§cl(§zitros(§$§1(§cl(§zucks(§$§4(§cl(§rumw(§$§1(§St(§sodaw604(§$§%§?§%§?§%§?§%§
+Monte Carlo%§?§%§0%§4(§cl(§whisky(§$§2(§cl(§Benedi(§$§1(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Monte Carlo Imperial%§?§%§0%§2(§cl(§gin(§$§1(§cl(§Cremm(§$§12(§af(§Sekt(§$§%§Sektcocktail%§erfrischend%§?§%§
+Montego Bay%§Glas zur Hälte mit Crushed Ice füllen.%§0%§4(§cl(§rumw(§$§1(§cl(§curabl(§$§2(§cl(§zitros(§$§2(§cl(§Limett0(§$§0,25(§St(§Limett(§$§%§?§%§?§%§?§%§
+Morning Glory%§?§%§0%§4(§cl(§scotc604(§$§1(§cl(§Pernod0(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§1(§St(§eiwei712(§$§10(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Morton's Special%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§teqw(§$§4(§cl(§osaft(§$§1(§ds(§Grenad(§$§%§?§%§?§%§?§%§
+Moscow Mule%§?§%§0%§6(§cl(§wodka(§$§1(§ds(§zitros(§$§24(§af(§ginale(§$§%§?§%§?§%§?§%§
+Moulin Rouge%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Aprico(§$§2(§cl(§zitros(§$§1(§BL(§Grenad(§$§%§?§%§?§%§?§%§
+Mr. Bear%§?§%§0%§4(§cl(§canad604(§$§1(§cl(§honig861(§$§1(§St(§zitro986(§$§%§?§%§?§%§?§%§
+My Fair Lady%§?§%§0%§3(§cl(§gin(§$§1(§cl(§osaft(§$§1(§cl(§zitros(§$§1(§ds(§Grenad(§$§1(§BL(§eiwei712(§$§%§?§%§?§%§?§%§
+Navy Punch%§Mit Chrushed Ice!%§0%§6(§cl(§rumb(§$§4(§cl(§osaft(§$§1(§cl(§zitros(§$§2(§cl(§Grenad(§$§%§?§%§?§%§?§%§
+Negroni%§Gerührt, nicht geschüttelt!%§0%§2(§cl(§gin(§$§2(§cl(§Campar(§$§2(§cl(§Vermo2(§$§%§?§%§?§%§?§%§
+Neptun's Fair%§?§%§0%§2(§cl(§gin(§$§1(§cl(§pisan549(§$§1(§cl(§jambo986(§$§2(§cl(§zitros(§$§24(§af(§bitte734(§$§%§?§%§?§%§?§%§
+Netzroller%§?§%§0%§2(§cl(§gin(§$§2(§cl(§marac549(§$§2(§cl(§osaft(§$§%§?§%§?§%§?§%§
+New Orleans%§Mit Crushed Ice%§0%§3(§cl(§Southe(§$§2(§cl(§whisky(§$§1(§cl(§mande549(§$§4(§cl(§osaft(§$§2(§cl(§zitros(§$§%§Longdrink%§fruchtig%§mild%§
+New Orleans Fizz%§?§%§0%§4(§cl(§gin(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§3(§ds(§orabi(§$§1(§St(§eiwei712(§$§1(§cl(§sahne(§$§6(§cl(§sodaw(§$§%§?§%§?§%§?§%§
+New Orleans Sazerac%§?§%§0%§1(§St(§zucke604(§$§4(§cl(§whisky(§$§1(§cl(§Pernod0(§$§1(§ds(§angbi(§$§25(§af(§wasse986(§$§%§?§%§?§%§?§%§
+New Wave%§?§%§0%§3(§cl(§pfemin(§$§1(§cl(§Gallia(§$§1,5(§cl(§ananss(§$§1,5(§cl(§sahne(§$§%§Shortdrink%§lieblich%§?§%§
+New York Flip%§?§%§0%§3(§cl(§whisky(§$§2(§cl(§Portwe(§$§2(§cl(§sahne(§$§1(§cl(§zucks(§$§1(§St(§Eigelb(§$§1(§St(§gerie986(§$§%§?§%§?§%§?§%§
+New Yorker%§?§%§0%§4(§cl(§whisky(§$§2(§cl(§zitros(§$§2(§BL(§Grenad(§$§%§?§%§?§%§?§%§
+Nicky%§?§%§0%§3(§cl(§gin(§$§3(§cl(§Aprico(§$§1(§ds(§rumb(§$§3(§ds(§zitros(§$§23(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Night Shadows%§?§%§0%§3(§cl(§whisky(§$§1(§cl(§Vermo2(§$§1(§cl(§osaft(§$§1(§BL(§Chartr(§$§%§?§%§?§%§?§%§
+Nikko%§?§%§0%§3,5(§cl(§wodka(§$§1,5(§cl(§curabl(§$§0,5(§cl(§zitros(§$§0,5(§cl(§ananss(§$§24(§af(§osaft(§$§%§?§%§?§%§?§%§
+Nordic Summer%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§marac604(§$§2(§cl(§Limett0(§$§8(§cl(§osaft(§$§1(§ds(§Grenad(§$§%§?§%§?§%§?§%§
+Nordlicht 02%§?§%§0%§3(§cl(§gin(§$§1(§cl(§johan549(§$§1(§cl(§Curaca(§$§1(§cl(§zitros(§$§1(§ds(§Frothe0(§$§%§Shortdrink%§leicht%§lieblich%§
+North Pole%§?§%§0%§3(§cl(§wodka(§$§1(§cl(§Drambu(§$§1(§cl(§Campar(§$§%§?§%§?§%§?§%§
+Northamericano%§?§%§0%§4(§cl(§tequi286(§$§1(§cl(§Sherry0(§$§%§?§%§?§%§?§%§
+Ocho Rios%§?§%§0%§4(§cl(§rumb(§$§2(§cl(§zucks(§$§2(§cl(§limet712(§$§2(§cl(§sahne(§$§4(§cl(§guave944(§$§%§?§%§?§%§?§%§
+Ohio Old Fashiond%§?§%§0%§5(§cl(§whisky(§$§1(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Old Fashioned Bourbon Cocktail%§?§%§0%§1(§St(§zucke604(§$§3(§ds(§angbi(§$§4(§cl(§whisky(§$§1(§St(§wasse986(§$§%§?§%§?§%§?§%§
+Old Pal%§?§%§0%§2(§cl(§whisky(§$§2(§cl(§Campar(§$§2(§cl(§Vermo1(§$§%§?§%§?§%§?§%§
+Old Pale%§?§%§0%§3(§cl(§whisky(§$§2(§cl(§Campar(§$§1(§BL(§limet712(§$§1(§St(§zitro986(§$§%§?§%§?§%§?§%§
+Ole%§?§%§0%§3(§cl(§teqw(§$§3(§cl(§Creme(§$§1(§ds(§curabl(§$§%§?§%§?§%§?§%§
+Olympia%§?§%§0%§1,5(§cl(§canad604(§$§1,5(§cl(§Vermo1(§$§1(§cl(§chart549(§$§1(§cl(§escor549(§$§1(§cl(§reine604(§$§%§?§%§?§%§?§%§
+One Ireland%§Vanilleeis in ein breites Glas geben. Zum Schluss mit Milch auffüllen.%§0%§2(§St(§kugel549(§$§4(§cl(§irish712(§$§2(§BL(§Cremm(§$§20(§af(§Milch(§$§%§Longdrink%§feinherb%§?§%§
+Opening I%§?§%§0%§4(§cl(§whisky(§$§2(§cl(§Vermo2(§$§1(§cl(§Grenad(§$§%§?§%§?§%§?§%§
+Opening II%§?§%§0%§3(§cl(§canad604(§$§1,5(§cl(§Vermo2(§$§1(§cl(§Grenad(§$§%§?§%§?§%§?§%§
+Opera%§?§%§0%§4(§cl(§gin(§$§1(§cl(§Dubonn(§$§1(§cl(§Marasc(§$§%§?§%§?§%§?§%§
+Optimist%§?§%§0%§3(§cl(§gin(§$§2(§cl(§credc(§$§2(§cl(§ananss(§$§23(§af(§osaft(§$§1(§ds(§marac604(§$§%§?§%§?§%§?§%§
+Oracabessa%§?§%§0%§4(§cl(§rumb(§$§2(§cl(§banan549(§$§3(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Orange Blossom%§?§%§0%§3(§cl(§gin(§$§3(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Orange Wodka%§?§%§0%§3(§cl(§wodka(§$§1(§cl(§Orange0(§$§1(§cl(§Limett0(§$§%§?§%§?§%§?§%§
+Orange-Grapefruit%§Grapefruitsaft erst zum Schluss hinzugeben.%§0%§5(§cl(§Grand(§$§1(§cl(§Grenad(§$§20(§af(§graps(§$§%§Longdrink%§fruchtig%§mild%§
+Orangenflip%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Curaca(§$§4(§cl(§osaft(§$§1(§cl(§sahne(§$§1(§St(§Eigelb(§$§1(§St(§gerie986(§$§%§?§%§?§%§?§%§
+Ovidio%§?§%§0%§3(§cl(§wodka(§$§2(§cl(§curabl(§$§2(§cl(§graps(§$§10(§af(§Sekt(§$§%§?§%§?§%§?§%§
+Pacific Blue%§?§%§0%§1(§cl(§wodka(§$§1(§cl(§Creme(§$§1(§cl(§curabl(§$§1(§cl(§Kokosl0(§$§%§?§%§?§%§?§%§
+Pacifico%§?§%§0%§4(§cl(§tequi286(§$§2(§cl(§marac604(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Pall Mall Cocktail%§?§%§0%§4(§cl(§gin(§$§1(§cl(§Vermo2(§$§1(§cl(§Vermo1(§$§%§?§%§?§%§?§%§
+Pancho Villa%§?§%§0%§2(§cl(§rumb(§$§2(§cl(§Cherry(§$§2(§cl(§Aprico(§$§6(§cl(§ananss(§$§%§?§%§?§%§?§%§
+Paradise%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Aprico(§$§2(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Paradiso%§?§%§0%§3(§cl(§gin(§$§2(§cl(§Aprico(§$§10(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Parisian Blond%§?§%§0%§2(§cl(§rumb(§$§2(§cl(§Curaca(§$§2(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Park Lane%§?§%§0%§4(§cl(§gin(§$§2(§cl(§Aprico(§$§4(§cl(§osaft(§$§1(§ds(§Grenad(§$§1(§ds(§zitros(§$§%§?§%§?§%§?§%§
+Peachnuts%§?§%§0%§3(§cl(§hasel549(§$§1(§cl(§pfemin(§$§1(§cl(§rumw(§$§2(§cl(§sahne(§$§%§Shortdrink%§lieblich%§cremig/sahnig%§
+Pedi Cocktail%§?§%§0%§3(§cl(§wodka(§$§2(§cl(§Campar(§$§1(§cl(§Curaca(§$§%§?§%§?§%§?§%§
+Pedro Collins%§?§%§0%§4(§cl(§rumw(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§23(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Perfect Gin Cocktail%§?§%§0%§4(§cl(§gin(§$§1(§cl(§Vermo1(§$§1(§cl(§Vermo2(§$§%§?§%§?§%§?§%§
+Petite Fleur%§?§%§0%§2(§cl(§rumw(§$§2(§cl(§Cointr(§$§2(§cl(§graps(§$§%§?§%§?§%§?§%§
+Piccadilly%§?§%§0%§4(§cl(§gin(§$§2(§cl(§Vermo1(§$§1(§ds(§Grenad(§$§1(§ds(§Pernod0(§$§%§?§%§?§%§?§%§
+Picnic%§?§%§0%§1(§cl(§canad604(§$§1(§cl(§Mandar0(§$§4(§cl(§ananss(§$§24(§af(§ginale(§$§%§?§%§?§%§?§%§
+Pierre%§?§%§0%§3(§cl(§whisky(§$§2(§cl(§Aprico(§$§2(§BL(§zitros(§$§1(§St(§zitro986(§$§%§?§%§?§%§?§%§
+Pikaki%§?§%§0%§4(§cl(§rumb(§$§1(§cl(§Grenad(§$§3(§cl(§osaft(§$§2(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Pimm's No. 1%§?§%§0%§4(§cl(§pimm_549(§$§26(§af(§zitro283(§$§1(§St(§gurke604(§$§0,5(§St(§orang712(§$§0,5(§St(§zitsch(§$§2(§St(§cockt944(§$§%§?§%§?§%§?§%§
+Pimm's Royal%§?§%§0%§4(§cl(§pimm_549(§$§26(§af(§Sekt(§$§1(§St(§gurke604(§$§0,5(§St(§orang712(§$§0,5(§St(§zitsch(§$§2(§St(§cockt944(§$§%§?§%§?§%§?§%§
+Pink Lady%§?§%§0%§4(§cl(§gin(§$§2(§cl(§zitros(§$§1(§cl(§Grenad(§$§0,5(§St(§eiwei712(§$§%§?§%§?§%§?§%§
+Pink Margarita%§?§%§0%§3(§cl(§tequi286(§$§1(§cl(§Himbee0(§$§1(§cl(§zitros(§$§1(§BL(§Grenad(§$§%§?§%§?§%§?§%§
+Pink Rose Cocktail%§?§%§0%§4(§cl(§gin(§$§1(§BL(§Grenad(§$§1(§BL(§zitros(§$§1(§BL(§sahne(§$§1(§St(§eiwei712(§$§%§?§%§?§%§?§%§
+Pink Rum%§Verrühren, Limette in den Drink ausdrücken und dazugeben.%§0%§4(§cl(§rumb(§$§2(§cl(§limet712(§$§2(§cl(§Grenad(§$§22(§af(§bitte734(§$§0,25(§St(§Limett(§$§%§?§%§?§%§?§%§
+Pirat%§?§%§0%§2(§cl(§gin(§$§3(§cl(§sherr604(§$§4(§cl(§Maracu(§$§1(§cl(§zitros(§$§20(§af(§tonwa(§$§%§?§%§?§%§?§%§
+Pisang Pistacha%§?§%§0%§3(§cl(§pisan549(§$§1(§cl(§Amaret(§$§2(§cl(§sahne(§$§%§Shortdrink%§süß%§?§%§
+Pitú Blue%§?§%§0%§2(§cl(§pitu(§$§3(§cl(§curabl(§$§2(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Pitú Cola%§?§%§0%§2(§cl(§pitu(§$§20(§af(§cola(§$§%§?§%§?§%§?§%§
+Piña Colada%§?§%§0%§4(§cl(§rumw(§$§5(§cl(§creoc(§$§5(§cl(§ananss(§$§1(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Planter's Cocktail I%§?§%§0%§5(§cl(§rumb(§$§3(§cl(§osaft(§$§2(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Planter's Cocktail II%§?§%§0%§4(§cl(§rumb(§$§2(§cl(§zitros(§$§0,5(§BL(§pudzu(§$§%§?§%§?§%§?§%§
+Planter's Punch (GJ Edition)%§?§%§0%§5(§cl(§rumb(§$§4(§cl(§osaft(§$§4(§cl(§ananss(§$§3(§cl(§zitros(§$§2(§cl(§kirsli(§$§1(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Planter's Punch I%§?§%§0%§5(§cl(§rumb(§$§4(§cl(§osaft(§$§4(§cl(§ananss(§$§3(§cl(§zitros(§$§2(§cl(§Grenad(§$§1(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Planter's Punch II%§?§%§0%§3(§cl(§rumw(§$§3(§cl(§rumb(§$§2(§cl(§zitros(§$§2(§cl(§osaft(§$§1(§cl(§zucks(§$§1(§BL(§Grenad(§$§%§?§%§?§%§?§%§
+Planter's Punch III%§?§%§0%§6(§cl(§rumb(§$§4(§cl(§Limett0(§$§1(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Planter's Punch IV%§?§%§0%§2(§cl(§rumw(§$§2(§cl(§rumb(§$§1(§cl(§Grenad(§$§1(§ds(§angbi(§$§5(§cl(§osaft(§$§2(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Plaza%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§marac549(§$§2(§cl(§creoc(§$§22(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Pogo Stick%§?§%§0%§3(§cl(§gin(§$§2(§cl(§Cointr(§$§6(§cl(§graps(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Prado%§?§%§0%§3(§cl(§tequi286(§$§1(§cl(§Marasc(§$§1,5(§cl(§Limett0(§$§1(§BL(§Grenad(§$§1(§St(§eiwei712(§$§%§?§%§?§%§?§%§
+President%§?§%§0%§3(§cl(§rumw(§$§2(§cl(§osaft(§$§1(§BL(§Grenad(§$§%§?§%§?§%§?§%§
+Prince Charlie%§?§%§0%§3(§cl(§scotc604(§$§2(§cl(§Drambu(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Puerto Punch%§?§%§0%§2(§cl(§rumb(§$§2(§cl(§Southe(§$§4(§cl(§osaft(§$§4(§cl(§ananss(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Quattro%§?§%§0%§1,5(§cl(§canad604(§$§1,5(§cl(§Amaret(§$§1,5(§cl(§credc(§$§1,5(§cl(§Vermo1(§$§%§?§%§?§%§?§%§
+Quebeck%§?§%§0%§2(§cl(§gin(§$§2(§cl(§canad604(§$§2(§cl(§zitros(§$§1(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Queen's Cocktail%§?§%§0%§2(§cl(§gin(§$§1(§cl(§Vermo2(§$§1(§cl(§Vermo1(§$§2(§cl(§ananss(§$§%§?§%§?§%§?§%§
+Ramcooler%§?§%§0%§4,5(§cl(§rumw(§$§1,5(§cl(§Gallia(§$§6(§cl(§Limett0(§$§%§?§%§?§%§?§%§
+Rauhreif I%§?§%§0%§1(§cl(§gin(§$§1(§cl(§Curacw(§$§1(§cl(§rumw(§$§1(§cl(§Grenad(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Rauhreif I%§?§%§0%§2(§cl(§rumb(§$§2(§cl(§gin(§$§1(§cl(§zitros(§$§1(§cl(§Curaca(§$§1(§BL(§Grenad(§$§%§?§%§?§%§?§%§
+Red Colada%§?§%§0%§3(§cl(§rumw(§$§3(§cl(§red_o944(§$§5(§cl(§creoc(§$§5(§cl(§ananss(§$§1(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Red Dreams I%§?§%§0%§3(§cl(§wodka(§$§1(§cl(§kirsli(§$§1(§cl(§Limett0(§$§%§?§%§?§%§?§%§
+Red Gin%§?§%§0%§4(§cl(§gin(§$§1(§cl(§Cherry(§$§%§?§%§?§%§?§%§
+Red Lion Cocktail%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Grand(§$§1(§cl(§osaft(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Red Russian%§?§%§0%§3(§cl(§wodka(§$§2(§cl(§kirsli(§$§%§?§%§?§%§?§%§
+Red Sunshine%§?§%§0%§3(§cl(§gin(§$§2(§cl(§cassi549(§$§2(§cl(§zitros(§$§23(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Resolute%§?§%§0%§2(§cl(§gin(§$§1(§cl(§Aprico(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Rheingold%§?§%§0%§2,5(§cl(§gin(§$§1,5(§cl(§Cointr(§$§1(§cl(§Vermo1(§$§1(§cl(§Campar(§$§1(§St(§orang944(§$§%§?§%§?§%§?§%§
+Rickey%§?§%§0%§4(§cl(§scotc604(§$§1(§cl(§zitros(§$§1(§cl(§limet712(§$§20(§af(§sodaw(§$§%§Longdrink%§fruchtig%§säuerlich%§
+Ridley%§?§%§0%§3(§cl(§tequi286(§$§3(§cl(§gin(§$§1(§ds(§Gallia(§$§%§?§%§?§%§?§%§
+Ritz Old Fashiond%§?§%§0%§4(§cl(§whisky(§$§2(§cl(§Grand(§$§1(§ds(§zitros(§$§1(§ds(§Marasc(§$§%§?§%§?§%§?§%§
+Rob Roy%§?§%§0%§4(§cl(§scotc604(§$§2(§cl(§Vermo2(§$§1(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Robby%§?§%§0%§2,5(§cl(§canad604(§$§1,5(§cl(§Vermo1(§$§1,5(§cl(§Vermo0(§$§%§?§%§?§%§?§%§
+Roberta%§?§%§0%§2(§cl(§wodka(§$§2(§cl(§Vermo1(§$§2(§cl(§kirsli(§$§2(§ds(§Campar(§$§2(§ds(§Creme(§$§%§?§%§?§%§?§%§
+Robinson Crusoe%§?§%§0%§4(§cl(§rumw(§$§4(§cl(§ananss(§$§%§?§%§?§%§?§%§
+Robson 1%§?§%§0%§3(§cl(§rumb(§$§1,5(§cl(§Grenad(§$§1,5(§cl(§osaft(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Robson 2%§?§%§0%§3(§cl(§rumw(§$§1,5(§cl(§Grenad(§$§1,5(§cl(§osaft(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Rosette Merola%§?§%§0%§1,5(§cl(§gin(§$§1,5(§cl(§gold_549(§$§1,5(§cl(§kiwil944(§$§1,5(§cl(§apero283(§$§24(§af(§osaft(§$§%§?§%§?§%§?§%§
+Roter Platz%§?§%§0%§2(§cl(§wodka(§$§2(§cl(§Creme2(§$§1(§cl(§zitros(§$§0,5(§BL(§Grenad(§$§%§?§%§?§%§?§%§
+Roulette%§?§%§0%§3(§cl(§wodka(§$§3(§cl(§Campar(§$§1(§cl(§Grenad(§$§3(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Royal Cocktail%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Vermo1(§$§2(§cl(§Cherry(§$§1(§ds(§Marasc(§$§%§?§%§?§%§?§%§
+Royal Fizz%§?§%§0%§4(§cl(§gin(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§1(§St(§Ei(§$§20(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Royal Turkey%§?§%§0%§2(§cl(§whisky(§$§2(§cl(§Aprico(§$§2(§cl(§gin(§$§4(§cl(§ananss(§$§20(§af(§zitro283(§$§%§?§%§?§%§?§%§
+Rum Alexander Cocktail%§?§%§0%§2(§cl(§rumb(§$§2(§cl(§Creme1(§$§2(§cl(§sahne(§$§1(§St(§gerie986(§$§%§?§%§?§%§?§%§
+Rum Collins%§?§%§0%§4(§cl(§rumb(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§23(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Rum Daisy%§?§%§0%§4(§cl(§rumb(§$§2(§cl(§himbe549(§$§2(§cl(§zitros(§$§22(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Rum Egg-Nog%§?§%§0%§4(§cl(§rumb(§$§1(§cl(§zucks(§$§10(§cl(§Milch(§$§1(§St(§Eigelb(§$§1(§St(§gerie986(§$§%§?§%§?§%§?§%§
+Rum Fantasy%§?§%§0%§4(§cl(§rumb(§$§1(§cl(§peach549(§$§2(§cl(§limet712(§$§%§?§%§?§%§?§%§
+Rum Gimlet%§?§%§0%§4(§cl(§rumb(§$§2(§cl(§limet712(§$§0,25(§St(§Limett(§$§%§?§%§?§%§?§%§
+Rum Kum%§?§%§0%§4(§cl(§rumb(§$§2(§cl(§curaor(§$§3(§cl(§limet712(§$§%§?§%§?§%§?§%§
+Rum Sour 1%§?§%§0%§5(§cl(§rumb(§$§2(§cl(§zucks(§$§2(§cl(§zitros(§$§1(§St(§schus549(§$§%§?§%§?§%§?§%§
+Rum Sour 2%§?§%§0%§5(§cl(§rumw(§$§2(§cl(§zucks(§$§2(§cl(§zitros(§$§1(§St(§schus549(§$§%§?§%§?§%§?§%§
+Rum Stinger%§?§%§0%§4(§cl(§rumb(§$§2(§cl(§Cremm(§$§%§?§%§?§%§?§%§
+Rum Tonic%§?§%§0%§4(§cl(§rumb(§$§26(§af(§tonwa(§$§0,25(§St(§Limett(§$§%§?§%§?§%§?§%§
+Russian Car%§?§%§0%§4(§cl(§wodka(§$§1(§cl(§Gallia(§$§1(§cl(§Creme2(§$§4(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Russian Cocktail%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§Creme1(§$§%§?§%§?§%§?§%§
+Russian Fruit%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§Himbee0(§$§%§?§%§?§%§?§%§
+Russische Nacht%§?§%§0%§4(§cl(§wodka(§$§1(§cl(§curabl(§$§1(§ds(§Pernod0(§$§%§?§%§?§%§?§%§
+Rusty Nail%§?§%§0%§3(§cl(§scotc604(§$§3(§cl(§Drambu(§$§%§?§%§?§%§?§%§
+Salty Dog%§?§%§0%§4(§cl(§wodka(§$§26(§af(§graps(§$§%§?§%§?§%§?§%§
+Sandy Collins%§?§%§0%§4(§cl(§scotc604(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§23(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Santo Domingo%§?§%§0%§4(§cl(§rumw(§$§2(§cl(§curabl(§$§6(§cl(§osaft(§$§3(§cl(§Maracu(§$§%§?§%§?§%§?§%§
+Scorpion%§?§%§0%§3(§cl(§rumb(§$§2(§cl(§rumw(§$§1(§cl(§Grenad(§$§5(§cl(§Maracu(§$§3(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Scottie%§?§%§0%§3(§cl(§scotc604(§$§2(§cl(§pfemin(§$§6(§cl(§ananss(§$§4(§cl(§Maracu(§$§1(§cl(§Grenad(§$§%§?§%§?§%§?§%§
+Screw Driver%§?§%§0%§4(§cl(§wodka(§$§26(§af(§osaft(§$§%§?§%§?§%§?§%§
+September Morning%§?§%§0%§6(§cl(§rumw(§$§1(§cl(§Grenad(§$§2(§cl(§Limett0(§$§1(§St(§eiwei712(§$§%§?§%§?§%§?§%§
+Serrera%§?§%§0%§3(§cl(§wodka(§$§2(§cl(§curabl(§$§1(§cl(§zitros(§$§24(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Seven Sea%§?§%§0%§2(§cl(§gin(§$§4(§cl(§pisan549(§$§1(§ds(§Creme(§$§24(§af(§tonwa(§$§%§?§%§?§%§?§%§
+Sex Rouge%§?§%§0%§3(§cl(§gin(§$§3(§cl(§b_n_d604(§$§1(§ds(§Grenad(§$§11,5(§af(§osaft(§$§11,5(§af(§ginale(§$§%§?§%§?§%§?§%§
+Show%§?§%§0%§3(§cl(§rumw(§$§2,5(§cl(§Aprico(§$§0,5(§cl(§chart549(§$§1(§ds(§Grenad(§$§1(§ds(§zitros(§$§%§?§%§?§%§?§%§
+Sierra Gringo%§?§%§0%§2(§cl(§teqb(§$§1(§cl(§whisky(§$§1(§cl(§zitros(§$§5(§cl(§Maracu(§$§%§?§%§?§%§?§%§
+Sierra Margarita%§?§%§0%§4(§cl(§teqw(§$§1(§cl(§Orange0(§$§2(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Sierra Sunrise%§?§%§0%§5(§cl(§teqw(§$§10(§cl(§osaft(§$§2(§cl(§Grenad(§$§%§?§%§?§%§?§%§
+Silver Fizz%§?§%§0%§4(§cl(§gin(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§1(§St(§eiwei712(§$§20(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Silver Fizz Wodka%§?§%§0%§6(§cl(§wodka(§$§3(§cl(§zitros(§$§2(§cl(§zucks(§$§1(§St(§eiwei712(§$§15(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Silver Jubilee%§?§%§0%§4(§cl(§gin(§$§2(§cl(§banan549(§$§4(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Siminen Rakkaus%§?§%§0%§2(§cl(§wodka(§$§1(§cl(§Parfai0(§$§2(§cl(§Creme(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Singapore Gin Sling%§?§%§0%§4(§cl(§gin(§$§2(§cl(§Cherry(§$§2(§cl(§zitros(§$§22(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Singapore Sling Original%§?§%§0%§3(§cl(§gin(§$§1(§cl(§sherr604(§$§1(§ds(§Benedi(§$§1(§ds(§Cointr(§$§1(§ds(§angbi(§$§13(§af(§Limett0(§$§13(§af(§ananss(§$§%§?§%§?§%§?§%§
+Smirnoff Cocktail%§?§%§0%§2,5(§cl(§wodka(§$§1,5(§cl(§Creme2(§$§1,5(§cl(§Creme3(§$§1,5(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Snap%§?§%§0%§2(§cl(§wodka(§$§2(§cl(§Vermo1(§$§2(§cl(§Limett0(§$§%§?§%§?§%§?§%§
+Snow White Cocktail%§?§%§0%§4(§cl(§rumw(§$§2(§cl(§zitros(§$§2(§cl(§ananss(§$§1(§BL(§zucks(§$§1(§St(§eiwei712(§$§%§?§%§?§%§?§%§
+Softy%§?§%§0%§4(§cl(§scotc604(§$§1(§cl(§Drambu(§$§6(§cl(§osaft(§$§%§Longdrink%§fruchtig%§?§%§
+Sonja Cocktail%§?§%§0%§3(§cl(§wodka(§$§3(§cl(§pfeff604(§$§%§?§%§?§%§?§%§
+South Pacific%§?§%§0%§2(§cl(§gin(§$§1(§cl(§curabl(§$§1(§cl(§Gallia(§$§26(§af(§bitte734(§$§%§?§%§?§%§?§%§
+Southern Cola%§Kurz Umrühren.%§0%§4(§cl(§Southe(§$§26(§af(§cola(§$§%§Longdrink%§lieblich%§?§%§
+Southern Comfort Pink%§?§%§0%§2(§cl(§Southe(§$§2(§cl(§rumw(§$§1(§cl(§graps(§$§2(§ds(§Grenad(§$§%§Shortdrink%§würzig%§mild%§
+Southern Comfort Sour%§?§%§0%§4(§cl(§Southe(§$§4(§cl(§zitros(§$§2(§cl(§osaft(§$§1(§cl(§zucks(§$§%§Sour%§erfrischend%§?§%§
+Southern Summer%§?§%§0%§4(§cl(§Southe(§$§2(§cl(§canad604(§$§4(§cl(§pfirs986(§$§1(§cl(§zitros(§$§19(§af(§ginale(§$§%§Longdrink%§fruchtig%§mild%§
+Spencer%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Aprico(§$§1(§ds(§angbi(§$§1(§BL(§osaft(§$§%§?§%§?§%§?§%§
+Springtime%§Mit Crushed Ice.%§0%§4(§cl(§pfemin(§$§2(§cl(§creoc(§$§8(§cl(§ananss(§$§1(§cl(§zitros(§$§%§Longdrink%§lieblich%§?§%§
+St. Vincent%§?§%§0%§2(§cl(§gin(§$§2(§cl(§sahne(§$§2(§cl(§Gallia(§$§3(§ds(§Grenad(§$§%§?§%§?§%§?§%§
+Star%§Mit Crushed Ice.%§0%§3(§cl(§pirsh549(§$§2(§cl(§trisec(§$§3(§cl(§marac549(§$§1(§cl(§zitros(§$§4(§cl(§creoc(§$§%§Longdrink%§lieblich%§erfrischend%§
+Starmania%§?§%§0%§2(§cl(§gin(§$§1(§cl(§Aprico(§$§0,5(§cl(§Campar(§$§1(§cl(§Maracu(§$§1(§ds(§Curaca0(§$§25(§af(§ginale(§$§%§?§%§?§%§?§%§
+Steamboat%§Umrühren.%§0%§4(§cl(§Southe(§$§10(§cl(§sodaw(§$§%§Longdrink%§erfrischend%§?§%§
+Strawberry Daiquiri Frozen%§?§%§0%§5(§cl(§rumw(§$§1(§cl(§erdbe549(§$§2(§cl(§zitros(§$§2(§St(§erdbe604(§$§1(§BL(§pudzu(§$§%§?§%§?§%§?§%§
+Stroumf%§?§%§0%§2,5(§cl(§gin(§$§2,5(§cl(§Aprico(§$§1(§cl(§Amaret(§$§1(§ds(§zitros(§$§24(§af(§osaft(§$§%§?§%§?§%§?§%§
+Suzy Wong%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Mandar0(§$§2(§cl(§zitros(§$§9(§af(§trock283(§$§%§?§%§?§%§?§%§
+Sweet Lady%§?§%§0%§4(§cl(§scotc604(§$§1(§cl(§Creme2(§$§1(§cl(§peach549(§$§%§?§%§?§%§?§%§
+Sweet Mary%§?§%§0%§1,5(§cl(§gin(§$§4,5(§cl(§Creme(§$§1(§ds(§credc(§$§24(§af(§zitro283(§$§%§?§%§?§%§?§%§
+Sweet Memories%§?§%§0%§2(§cl(§rumw(§$§2(§cl(§Orange0(§$§2(§cl(§Noilly0(§$§%§?§%§?§%§?§%§
+Sweet Pear%§Mit Crushed Ice.%§0%§3(§cl(§willi712(§$§1(§cl(§red_o944(§$§2(§cl(§creoc(§$§8(§cl(§osaft(§$§%§Longdrink%§lieblich%§?§%§
+Sweet Scotch%§?§%§0%§3(§cl(§scotc604(§$§2(§cl(§Creme2(§$§25(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Swimming Pool%§?§%§0%§3(§cl(§rumw(§$§2(§cl(§wodka(§$§5(§cl(§creoc(§$§5(§cl(§ananss(§$§1(§cl(§sahne(§$§1(§cl(§curabl(§$§%§?§%§?§%§?§%§
+Swinger%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§Amaret(§$§1(§cl(§Limett0(§$§8(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Südseetraum%§?§%§0%§2(§cl(§rumw(§$§3(§cl(§pisan549(§$§5(§cl(§creoc(§$§5(§cl(§ananss(§$§1(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Tahiti%§?§%§0%§3(§cl(§rumb(§$§3(§cl(§malib283(§$§8(§cl(§osaft(§$§2(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Taiga%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§curabl(§$§6(§cl(§osaft(§$§4(§cl(§graps(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Take Five%§?§%§0%§3(§cl(§gin(§$§3(§cl(§zitros(§$§1(§cl(§osaft(§$§2(§cl(§zucks(§$§1(§cl(§Grenad(§$§%§?§%§?§%§?§%§
+Tampico%§?§%§0%§4(§cl(§tequi286(§$§2(§cl(§papay604(§$§2(§ds(§orabi(§$§%§?§%§?§%§?§%§
+Tango%§?§%§0%§3(§cl(§gin(§$§1,5(§cl(§Vermo2(§$§1,5(§cl(§Vermo1(§$§1(§cl(§osaft(§$§2(§ds(§curaor(§$§1(§St(§orang944(§$§%§?§%§?§%§?§%§
+Tapico%§?§%§0%§4(§cl(§teqw(§$§2(§cl(§cassi556(§$§2(§cl(§banan734(§$§22(§af(§tonwa(§$§%§?§%§?§%§?§%§
+Tarantella%§?§%§0%§1,5(§cl(§wodka(§$§1,5(§cl(§Curaca(§$§1,5(§cl(§Campar(§$§10(§af(§Sekt(§$§%§?§%§?§%§?§%§
+Tebonnet%§?§%§0%§3(§cl(§tequi286(§$§3(§cl(§Dubonn(§$§%§?§%§?§%§?§%§
+Tempest%§?§%§0%§3(§cl(§tequi286(§$§1(§cl(§manda283(§$§4(§cl(§Maracu(§$§4(§cl(§osaft(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Tennessee%§?§%§0%§4(§cl(§whisky(§$§1(§cl(§Marasc(§$§1(§ds(§zitros(§$§%§?§%§?§%§?§%§
+Tequas%§?§%§0%§3(§cl(§tequi286(§$§4(§cl(§zitros(§$§2(§cl(§anana286(§$§%§?§%§?§%§?§%§
+Tequila Bitter Sweet%§?§%§0%§3(§cl(§tequi286(§$§1,5(§cl(§erdbe549(§$§1(§cl(§zitros(§$§2(§ds(§orabi(§$§%§?§%§?§%§?§%§
+Tequila Fever%§?§%§0%§4(§cl(§teqb(§$§1(§cl(§red_o944(§$§6(§cl(§Maracu(§$§4(§cl(§mango283(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Tequila Gimlet%§?§%§0%§4(§cl(§tequi286(§$§2(§cl(§zitros(§$§2(§cl(§Limett0(§$§%§?§%§?§%§?§%§
+Tequila Martini%§?§%§0%§4(§cl(§tequi286(§$§2(§cl(§Vermo1(§$§%§?§%§?§%§?§%§
+Tequila Sour%§?§%§0%§5(§cl(§tequi286(§$§3(§cl(§zitros(§$§2(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Tequila Special Sour%§?§%§0%§3(§cl(§tequi286(§$§1,5(§cl(§Aprico(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Tequila Sunrise%§ %§0%§4(§cl(§teqw(§$§23(§af(§osaft(§$§0,5(§St(§orang712(§$§2(§cl(§Grenad(§$§%§?§%§?§%§?§%§
+Tequin%§?§%§0%§2(§cl(§tequi286(§$§1(§cl(§gin(§$§1(§cl(§Limett0(§$§%§?§%§?§%§?§%§
+Theater%§?§%§0%§2(§cl(§gin(§$§2(§cl(§peach549(§$§1(§cl(§banan549(§$§1(§cl(§ananss(§$§1(§ds(§zitros(§$§8(§af(§trock283(§$§%§?§%§?§%§?§%§
+Tip Top%§?§%§0%§4(§cl(§rumb(§$§4(§cl(§banan734(§$§4(§cl(§Maracu(§$§2(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Todesengel 1 (Benni)%§?§%§0%§100(§ml(§rumw(§$§100(§ml(§rumb(§$§100(§ml(§Grenad(§$§8,5(§cl(§Southe(§$§%§?§%§?§%§?§%§
+Todesengel 2 (Matthias)%§?§%§0%§0,75(§l(§ananss(§$§5(§cl(§rumw(§$§4(§cl(§wodka(§$§10(§cl(§rumb(§$§4(§cl(§Grenad(§$§8,5(§cl(§zitros(§$§10(§cl(§gin(§$§%§?§%§?§%§?§%§
+Todesengel 3 (Maria)%§?§%§0%§200(§ml(§curabl(§$§20(§cl(§Curaca(§$§%§?§%§?§%§?§%§
+Tom Collins%§?§%§0%§4(§cl(§gin(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§23(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Ton Cœur%§?§%§0%§2(§cl(§rumb(§$§2(§cl(§Southe(§$§1(§cl(§Grenad(§$§8(§cl(§osaft(§$§17(§af(§tonwa(§$§%§?§%§?§%§?§%§
+Tonic of the South%§Umrühren.%§0%§4(§cl(§Southe(§$§26(§af(§tonwa(§$§%§Longdrink%§bittersüß%§?§%§
+Toreador%§?§%§0%§3(§cl(§tequi286(§$§1(§cl(§Creme1(§$§1(§cl(§sahne(§$§%§?§%§?§%§?§%§
+Tornado%§?§%§0%§3(§cl(§tequi286(§$§2(§cl(§pfemin(§$§4(§cl(§graps(§$§4(§cl(§Maracu(§$§1(§cl(§limet712(§$§%§?§%§?§%§?§%§
+Toronto%§?§%§0%§6(§cl(§canad604(§$§2(§cl(§ferne986(§$§1(§BL(§zucks(§$§1(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Trinity%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Vermo2(§$§2(§cl(§Vermo1(§$§%§?§%§?§%§?§%§
+Trip%§?§%§0%§2(§cl(§wodka(§$§2(§cl(§Limett1(§$§2(§cl(§Noilly0(§$§%§?§%§?§%§?§%§
+Tropenzauber I%§?§%§0%§4(§cl(§pisan549(§$§8(§af(§Maracu(§$§%§Longdrink%§fruchtig%§mild%§
+Trophäe%§?§%§0%§6(§cl(§rumb(§$§2(§cl(§Limett0(§$§1(§BL(§pudzu(§$§3(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Tropic Sun%§?§%§0%§4(§cl(§gin(§$§2(§cl(§marac604(§$§1(§cl(§zitros(§$§23(§af(§tropi556(§$§1(§ds(§Grenad(§$§%§?§%§?§%§?§%§
+Tropical Wonder%§?§%§0%§4(§cl(§rumw(§$§4(§cl(§Maracu(§$§4(§cl(§osaft(§$§4(§cl(§ananss(§$§%§?§%§?§%§?§%§
+Tutiosi%§?§%§0%§2,5(§cl(§canad604(§$§1,5(§cl(§trisec(§$§1,5(§cl(§Vermo2(§$§1(§cl(§Gallia(§$§1(§cl(§Mandar0(§$§1(§St(§orang944(§$§%§?§%§?§%§?§%§
+Union Club%§?§%§0%§4(§cl(§whisky(§$§2(§cl(§Curaca(§$§2(§cl(§zitros(§$§1(§BL(§eiwei712(§$§2(§ds(§Grenad(§$§%§?§%§?§%§?§%§
+Up to Date%§?§%§0%§3(§cl(§canad604(§$§2(§cl(§Vermo1(§$§1(§cl(§Grand(§$§1(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Upton%§?§%§0%§2(§cl(§rumb(§$§2(§cl(§ananss(§$§1(§cl(§osaft(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+V. W.%§Verrühren.%§0%§3(§cl(§willi712(§$§3(§cl(§Vermo0(§$§%§Shortdrink%§aromatisch%§?§%§
+Velvet Hammer%§?§%§0%§2(§cl(§tia_m944(§$§2(§cl(§Cointr(§$§2(§cl(§sahne(§$§%§Shortdrink%§lieblich%§?§%§
+Vintage 84%§Mit Obststücken servieren.%§0%§2(§cl(§rumw(§$§1(§cl(§Aprico(§$§1,5(§cl(§osaft(§$§1,5(§cl(§ananss(§$§1(§ds(§Grenad(§$§%§?§%§?§%§?§%§
+Virgin Cocktail%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Cremm(§$§2(§cl(§Curaca(§$§%§?§%§?§%§?§%§
+Viva%§?§%§0%§4(§cl(§teqw(§$§2(§cl(§red_o944(§$§6(§cl(§Maracu(§$§6(§cl(§osaft(§$§1(§cl(§Limett0(§$§%§?§%§?§%§?§%§
+Vodkatini%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§Vermo1(§$§%§?§%§?§%§?§%§
+Waldorf Astoria%§?§%§0%§4(§cl(§whisky(§$§2(§cl(§Portwe(§$§1(§cl(§zucks(§$§10(§cl(§Milch(§$§1(§cl(§sahne(§$§2(§St(§Eigelb(§$§1(§St(§gerie986(§$§%§?§%§?§%§?§%§
+Ward Eight%§?§%§0%§4(§cl(§whisky(§$§2(§cl(§zitros(§$§2(§cl(§osaft(§$§1(§cl(§Grenad(§$§1(§BL(§zucks(§$§%§?§%§?§%§?§%§
+Wedding Bells%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Dubonn(§$§1(§cl(§bittle(§$§2(§cl(§osaft(§$§%§Shortdrink%§kräftig/hochprozentig%§?§%§
+Wembley%§?§%§0%§2(§cl(§scotc604(§$§2(§cl(§Vermo1(§$§2(§cl(§ananss(§$§%§?§%§?§%§?§%§
+Western Rose%§?§%§0%§2(§cl(§gin(§$§1(§cl(§Aprico(§$§1(§cl(§Vermo1(§$§3(§ds(§zitros(§$§%§?§%§?§%§?§%§
+Whiskey Cream%§?§%§0%§2(§cl(§Southe(§$§2(§cl(§sahne(§$§2(§cl(§Creme2(§$§%§Shortdrink%§würzig%§lieblich%§
+Whiskey Sangaree%§?§%§0%§4(§cl(§whisky(§$§1(§cl(§Cherry(§$§1(§BL(§honig861(§$§1(§St(§gerie986(§$§%§?§%§?§%§?§%§
+Whiskey Sling%§Verrühren.%§0%§4(§cl(§whisky(§$§4(§cl(§zucks(§$§2(§cl(§zitros(§$§10(§af(§sodaw(§$§%§Sling%§fruchtig%§mild%§
+Whiskey Sour%§?§%§0%§4(§cl(§whisky(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§1(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Whiskey Twist%§?§%§0%§4(§cl(§irish712(§$§1(§cl(§zitros(§$§1(§BL(§Cherry(§$§1(§BL(§Himbee(§$§%§?§%§?§%§?§%§
+Whisky Crusta%§?§%§0%§3(§cl(§scotc604(§$§1(§ds(§angbi(§$§3(§BL(§Marasc(§$§4(§BL(§zitros(§$§1(§BL(§Zucker(§$§%§?§%§?§%§?§%§
+Whisky Fizz%§?§%§0%§4(§cl(§scotc604(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§13(§af(§sodaw(§$§%§?§%§?§%§?§%§
+Whisky Soda%§?§%§0%§4(§cl(§scotc604(§$§12(§af(§sodaw(§$§%§?§%§?§%§?§%§
+White Cap%§?§%§0%§3(§cl(§wodka(§$§1(§cl(§mokka986(§$§1(§cl(§Portwe(§$§1(§cl(§sahne944(§$§%§?§%§?§%§?§%§
+White Lady%§?§%§0%§2(§cl(§gin(§$§2(§cl(§Cointr(§$§2(§cl(§zitros(§$§%§?§%§?§%§?§%§
+White Wings%§Rühren!%§0%§3(§cl(§gin(§$§1,5(§cl(§Cremm(§$§%§Shortdrink%§herb%§trocken%§
+Wild Irish Rose%§?§%§0%§4(§cl(§irish712(§$§1(§cl(§zitros(§$§1(§cl(§Grenad(§$§10(§af(§sodaw(§$§%§Longdrink%§fruchtig%§?§%§
+Windjammer%§?§%§0%§4(§cl(§rumw(§$§2(§cl(§Vermo1(§$§2(§BL(§Grenad(§$§%§?§%§?§%§?§%§
+Wodka and Peppermint%§?§%§0%§2(§cl(§wodka(§$§2(§cl(§pfeff556(§$§26(§af(§tonwa(§$§%§?§%§?§%§?§%§
+Wodka Gibson%§?§%§0%§4(§cl(§wodka(§$§1(§cl(§Vermo1(§$§%§?§%§?§%§?§%§
+Wodka Gimlet%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§Limett0(§$§%§?§%§?§%§?§%§
+Wodka Side Car%§?§%§0%§2(§cl(§wodka(§$§2(§cl(§Curaca(§$§1(§BL(§zitros(§$§%§?§%§?§%§?§%§
+Wodka Sling%§ %§0%§4(§cl(§wodka(§$§2(§cl(§kirsli(§$§10(§cl(§ananss(§$§3(§cl(§zitros(§$§1(§cl(§Grenad(§$§%§?§%§?§%§?§%§
+Wodka Sour%§?§%§0%§4(§cl(§wodka(§$§2(§cl(§zitros(§$§1(§cl(§zucks(§$§%§?§%§?§%§?§%§
+Wodka Special%§?§%§0%§3(§cl(§wodka(§$§1(§cl(§Creme2(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Wodka Stinger%§?§%§0%§3(§cl(§wodka(§$§2(§cl(§Creme3(§$§%§?§%§?§%§?§%§
+Wolga Clipper%§?§%§0%§3(§cl(§wodka(§$§2(§cl(§Aprico(§$§3(§cl(§osaft(§$§%§?§%§?§%§?§%§
+Wolga Clipper Long%§?§%§0%§3(§cl(§wodka(§$§2(§cl(§Aprico(§$§3(§cl(§osaft(§$§22(§af(§bitte986(§$§%§?§%§?§%§?§%§
+Xanthia%§Verrühren.%§0%§2(§cl(§gin(§$§2(§cl(§chart549(§$§2(§cl(§Cherry(§$§%§?§%§?§%§?§%§
+XYZ%§?§%§0%§3(§cl(§rumb(§$§2(§cl(§Cointr(§$§2(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Yankee Dutch%§?§%§0%§1,5(§cl(§whisky(§$§1,5(§cl(§Cherry(§$§1,5(§cl(§Curaca(§$§1,5(§cl(§wodka(§$§1(§St(§orang944(§$§%§?§%§?§%§?§%§
+Yellow Bird%§?§%§0%§3(§cl(§rumw(§$§1(§cl(§Gallia(§$§1(§cl(§Cointr(§$§1(§cl(§zitros(§$§%§?§%§?§%§?§%§
+Yellow Daisy%§?§%§0%§3(§cl(§gin(§$§2(§cl(§Vermo1(§$§1(§cl(§Grand(§$§%§?§%§?§%§?§%§
+Yellow Finger%§?§%§0%§2(§cl(§gin(§$§2(§cl(§bromb549(§$§1(§cl(§banan549(§$§1(§ds(§sahne(§$§%§?§%§?§%§?§%§
+Yellow Sea%§?§%§0%§2,5(§cl(§wodka(§$§1(§cl(§Marasc(§$§1,5(§cl(§rumw(§$§1,5(§cl(§Gallia(§$§1(§cl(§Limett0(§$§1(§BL(§zucks(§$§%§?§%§?§%§?§%§
+York%§?§%§0%§6(§cl(§whisky(§$§2(§cl(§Vermo2(§$§3(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Za Za%§?§%§0%§3(§cl(§gin(§$§3(§cl(§Dubonn(§$§1(§ds(§angbi(§$§%§?§%§?§%§?§%§
+Zazarac I%§?§%§0%§2(§cl(§scotc604(§$§2(§cl(§Aniset(§$§2(§cl(§rumw(§$§1(§ds(§angbi(§$§1(§ds(§Grenad(§$§%§?§%§?§%§?§%§
+Zitronenflip%§?§%§0%§3(§cl(§gin(§$§2(§cl(§Curaca(§$§4(§cl(§zitros(§$§1(§St(§Eigelb(§$§%§?§%§?§%§?§%§
+Zombie (Limettensaft)%§ %§0%§2(§cl(§rumw(§$§2(§cl(§rumb(§$§1(§cl(§Aprico(§$§5(§cl(§ananss(§$§2(§cl(§Limett0(§$§2(§cl(§rum__944(§$§%§?§%§?§%§?§%§
+Zombie (Zitronensaft)%§ %§0%§2(§cl(§rumw(§$§2(§cl(§rumb(§$§1(§cl(§Aprico(§$§5(§cl(§ananss(§$§2(§cl(§zitros(§$§2(§cl(§rum__944(§$§%§?§%§?§%§?§%§
+Erik 1%§?§%§0%§5(§cl(§pfeff556(§$§5(§cl(§rumw(§$§2(§cl(§gin(§$§%§?§%§?§%§?§%§
+Erik 2%§?§%§0%§20(§cl(§rumw(§$§10(§cl(§gin(§$§75(§cl(§ananss(§$§10(§cl(§zitros(§$§9(§cl(§marac604(§$§%§?§%§?§%§?§%§

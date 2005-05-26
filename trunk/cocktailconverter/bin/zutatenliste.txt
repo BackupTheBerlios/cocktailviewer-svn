@@ -1,0 +1,204 @@
+Zutatenliste
+GJZL
+Kennung	Genauer Name	Menge	Preis	Alkoholgehalt	Bestand
+ahorn986	Ahornsirup	300	4	0	0
+Amaret	Amaretto	700	4	21,5	0
+amaro712	Amaro Averna (Bitter)	1000	0	0	0
+ananss	Ananassaft	750	0,99	0	1
+anana286	Ananassirup	500	4	0	0
+angbi	Angostura Bitter	200	4,09	48	1
+Aniset	Anisette	500	7	20	0
+apero283	Aperol	700	5	25	0
+Apfell	Apfellikör	10	0	0	0
+Aprico	Apricot Brandy	750	20	35	0
+aprik549	Aprikosenlikör	500	5	25	0
+Armagn	Armagnac	1000	10	30	0
+banan712	Banane (geschält, in Scheiben)	1	0	0	0
+banan604	Banane (geschält, zerdrückt)	1000	0	0	0
+banan549	Bananenlikör	500	4	25	0
+banan734	Bananensaft	1000	1	0	0
+batdc	Batida de Coco	700	7,66	16	0
+b_n_d604	Bénédictine	500	7	30	0
+Benedi	Bénédictine D.O.M.	10	1	20	0
+bitte734	Bitter Lemon	1000	0,71	0	3
+bitte986	Bitter Orange	500	1	0	0
+bols_604	Bols Tropical	1000	0	0	0
+whisky	Bourbon Whiskey	700	10,23	40	1
+bittle	Brandy	10	1	1	0
+brauzu	Brauner Zucker	1	0	0	1
+bromb549	Brombeerbrandy	700	6	30	0
+bromb986	Brombeerlikör	500	4	25	0
+cacha944	Cachaça	1000	0	0	0
+calva604	Calvados	700	9,49	37,5	0
+Campar	Campari	500	5	30	0
+canad604	Canadian Whisky	700	10,23	40	1
+cassi556	Cassis	1000	0	0	0
+cassi549	Cassislikör	700	6	25	0
+champ604	Champagner	700	15	12	0
+Chartr	Chartreuse gelb	500	5	25	0
+chart549	Chartreuse grün	1000	0	0	0
+Cherry	Cherry Brandy	500	7	30	0
+sherr604	Cherry Heering (Kirschlikör)	1000	0	0	0
+cinza549	Cinzano-Bitter	500	8	20	0
+cockt944	Cocktailkirsche	1	0	0	5
+Cognac	Cognac	10	0	0	0
+Cointr	Cointreau (oder Triple Sec)	700	9	40	1
+cola	Cola	1500	0,79	0	1
+creoc	Cream of Coconut	250	1,25	0	0
+Creme	Crème de Banane	500	5	20	0
+Creme1	Crème de Cacao braun	10	1	10	0
+Creme2	Crème de Cacao weiß	500	5	20	0
+cr_me986	Crème de Café	1000	0	0	0
+credc	Crème de Cassis	700	6,49	16	1
+Creme3	Crème de Menthe grün	500	5	20	0
+Cremm	Crème de Menthe weiß	10	1	10	0
+curabl	Curaçao Blue	500	3,57	20	2
+Curaca0	Curaçao Grün	500	5	20	0
+curaor	Curaçao Orange	500	6	24	1
+Curaca	Curaçao Triple Sec	700	9	40	1
+Curacw	Curaçao Weiß	500	5	20	0
+Drambu	Drambuie	1000	10	0	0
+Dubonn	Dubonnet	10	0	0	0
+Ei	Ei	1	0,5	0	0
+Eierli	Eierlikör	500	5	25	0
+Eigelb	Eigelb	1	0,5	0	0
+eiwei712	Eiweiß	1	0,5	0	0
+erdbe604	Erdbeer(en) (groß)	1	0	0	1
+erdbe549	Erdbeerlikör	500	5	20	0
+Erdbee	Erdbeersirup	700	3,99	0	1
+escor549	Escorial	700	8	30	0
+ferne986	Fernet Branca	500	7	30	0
+Frothe0	Frothee	500	7	40	0
+Gallia	Galliano	10	0	0	0
+genev549	Genever	700	7	40	0
+gin	Gin	700	5	37,5	1
+ginale	Ginger Ale	1000	0,99	0	1
+gold_549	Gold Digger Likör	500	7	30	0
+Grand	Grand Marnier	500	6	40	0
+graps	Grapefruitsaft	750	0,99	0	2
+Grenad	Grenadine	750	4,29	0	1
+guave944	Guavennektar	500	1	0	0
+guave604	Guavensirup	500	4	0	0
+gurke604	Gurkenschale	1	0	0	0
+hasel549	Haselnusslikör	1000	0	0	0
+Himbee0	Himbeerlikör	500	5	20	0
+himbe549	Himbeersaft	500	1	0	0
+Himbee	Himbeersirup	500	3	0	0
+honig861	Honig	1000	0	0	4
+Honigl0	Honiglikör	10	0	0	0
+irish712	Irish Whiskey	700	20	40	1
+jambo986	Jambosala	1000	10	30	0
+johan549	Johannisbeerlikör	700	7	25	0
+Kaffee	Kaffee (schwarz, kalt)	1000	1	0	0
+Kaffe0	Kaffeelikör	10	0	0	0
+kahlu761	Kahlúa	5500	6	25	0
+Kakao 	Kakao (kalt)	1000	1	0	0
+kakao604	Kakaolikör	1000	0	0	0
+kirsli	Kirschlikör	500	3,57	20	1
+Kirsch	Kirschwasser	500	6	20	0
+kiwil944	Kiwilikör	700	7	25	0
+Kokosl0	Kokoslikör	10	0	0	0
+kokos986	Kokosraspel	1	0	0	0
+kokos549	Kokossirup	1000	0	0	0
+kugel549	Kugel(n) Vanilleeis	1	0	0	0
+Limett	Limette	1	0,3	0	0
+Limett1	Limettenlikör	500	6	25	0
+Limett0	Limettensaft	50	0,3	0	0
+limet604	Limettenschale	1	0	0	0
+limet712	Limettensirup	500	4	0	0
+malib283	Malibu	500	6	30	0
+Mandar0	Mandarinenlikör	500	7	30	0
+manda283	Mandarinensirup	500	4	0	0
+mande549	Mandellikör	700	0	25	0
+Mandel0	Mandelsirup	10	0	0	0
+mango604	Mangosaft	1000	0	0	0
+mango283	Mango-Zitronen-Saft	1000	1	0	0
+marac549	Maracujalikör	500	6	25	0
+marac986	Maracujanektar	1000	1	0	0
+Maracu	Maracujasaft	1000	1	0	0
+marac604	Maracujasirup	500	4	0	1
+Marasc	Maraschino	500	5	25	0
+melon712	Melonenlikör	700	7	25	0
+Milch	Milch	1000	0	0	0
+minze549	Minzeblätter	1	0	0	0
+minzz	Minzzweig	1	0	0	0
+mokka986	Mokkalikör	500	6	25	0
+gerie986	Muskatnuss (gerieben)	1	0	0	0
+Noilly0	Noilly Prat	500	7	30	0
+nu_li986	Nußlikör	500	6	25	0
+olive604	Olive (grün)	1	0	0	0
+olive549	Olive (grün, mit Paprika gefüllt)	1	0	0	0
+orang986	Orange	1	0	0	1
+orabi	Orange Bitter	200	4,09	40	1
+Orange0	Orangenlikör (oder Triple Sec)	700	9	40	1
+osaft	Orangensaft	1000	0,59	0	1
+orang944	Orangenschale	1	0	0	54
+orang712	Orangenscheibe	1	0	0	4
+papay604	Papayasaft	500	1	0	0
+Parfai0	Parfait Amour	10	0	0	0
+Pastis	Pastis	500	5	30	0
+peach549	Peach Brandy	1000	0	0	0
+peach604	Peach-Bitter	300	6	40	0
+Pernod0	Pernod	500	7	40	0
+pfeff604	Pfefferminzlikör 	500	6	20	0
+pfeff556	Pfefferminzsirup	700	3,83	0	1
+pfemin	Pfirsichlikör	500	5	25	0
+pfirs986	Pfirsichsaft	1000	0	0	0
+pimm_549	Pimm's No. 1	700	7	30	0
+pirsh549	Pirshou	1000	0	0	0
+pisan549	Pisang Ambon	500	7	30	0
+pitu	Pitú	700	11	40	0
+Portwe	Portwein	0	0	0	0
+pudzu	Puderzucker	1	0	0	5
+red_o944	Red Orange	500	6	24	1
+reine604	Reineclaudensirup	500	4	0	0
+rose_549	Rose's Lime Juice	1000	1	0	0
+rosso549	Rosso antico (oder Vermouth)	750	3,32	15	1
+rotwe944	Rotwein	700	2	12	0
+rumb	Rum (braun)	700	6,99	37,5	1
+rum__944	Rum (braun, 75%)	700	8	0	0
+rumw	Rum (weiß)	700	5	37,5	1
+rye_w283	Rye Whiskey	700	10	40	0
+sahne	Sahne	200	0,5	0	1
+sahne944	Sahne, leicht geschlagen	200	0	0	0
+sambu549	Sambuca	1000	0	0	0
+schok556	Schokoladensirup	500	3	0	0
+schus549	Schuss Sodawasser nach Belieben	1000	0	0	1
+scotc604	Scotch Whisky	700	11	40	1
+Sekt	Sekt	1000	12	12	0
+trock283	Sekt (trocken)	1000	0	0	0
+sherr986	Sherry cream	500	7	30	0
+Sherry0	Sherry dry	500	8	40	0
+sherr549	Sherry fino	1000	0	0	0
+sodaw	Sodawasser	500	0	0	2
+sodaw604	Sodawasser zum Abspritzen	1000	0	0	1
+Southe	Southern Comfort	700	13,79	37,5	1
+tequi286	Tequila	700	12	37,5	1
+teqb	Tequila (braun)	700	10	37,5	1
+teqw	Tequila (weiß)	700	12	37,5	1
+tia_m944	Tia Maria	700	0	0	0
+tonwa	Tonicwater	1000	1	0	1
+Traube0	Traubensaft	10	0	0	0
+tropi556	Tropical Bitter	1000	2	0	0
+vanil549	Vanillezucker Päckchen	1	0	0	0
+Vermo0	Vermouth bianco	750	3,88	15	1
+Vermo1	Vermouth dry	750	3,88	15	1
+vermo549	Vermouth rosé	700	6	17	0
+Vermo2	Vermouth rosso	750	3,32	15	1
+wasse986	Wasser	1	0	0	2
+trisec	Weinbrand	1000	10	40	0
+Weißwe	Weißwein	1000	3	11	0
+whisk604	Whisky	700	8	0	1
+willi712	William's Liqueur	700	0	0	0
+willi986	Williamsbirne	1000	0	0	0
+wodka	Wodka	700	5	37,5	1
+zitro549	Zitrone	1	0,3	0	4
+zitro604	Zitroneneis Kugel	1	0,5	0	0
+zitro283	Zitronenlimo	1000	1	0	0
+zitros	Zitronensaft	750	0,89	0	2
+zitro986	Zitronenschale	1	0	0	5
+zitsch	Zitronenscheibe	1	0	0	5
+zitro944	Zitronensirup	500	4	0	0
+Zucker	Zucker	1	0	0	100
+zucks	Zuckersirup	200	1	0	1
+zucke604	Zuckerwürfel	1	0	0	1

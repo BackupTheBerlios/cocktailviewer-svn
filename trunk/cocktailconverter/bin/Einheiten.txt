@@ -1,0 +1,7 @@
+1;cl;10;cl
+2;ml;1;ml
+3;Barlöffel;5;BL
+4;l;1000;l
+5;Stück;1;St
+6;Spritzer;1;ds
+7;Esslöffel;15;EL
