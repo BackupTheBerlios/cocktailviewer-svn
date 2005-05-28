@@ -72,10 +72,10 @@
                                 <cstring>checkBox1</cstring>
                             </property>
                             <property name="text">
-                                <string>&amp;show only available cocktails</string>
+                                <string>sho&amp;w only available cocktails</string>
                             </property>
                             <property name="accel">
-                                <string>Alt+S</string>
+                                <string>Alt+W</string>
                             </property>
                         </widget>
                     </hbox>
@@ -183,7 +183,7 @@
                             </property>
                             <property name="maximumSize">
                                 <size>
-                                    <width>200</width>
+                                    <width>220</width>
                                     <height>32767</height>
                                 </size>
                             </property>
@@ -215,25 +215,6 @@
                                 </property>
                                 <property name="alignment">
                                     <set>AlignCenter</set>
-                                </property>
-                            </widget>
-                            <widget class="QComboBox">
-                                <property name="name">
-                                    <cstring>comboBox1</cstring>
-                                </property>
-                                <property name="geometry">
-                                    <rect>
-                                        <x>15</x>
-                                        <y>35</y>
-                                        <width>170</width>
-                                        <height>20</height>
-                                    </rect>
-                                </property>
-                                <property name="editable">
-                                    <bool>true</bool>
-                                </property>
-                                <property name="autoCompletion">
-                                    <bool>true</bool>
                                 </property>
                             </widget>
                             <widget class="QComboBox">
@@ -291,6 +272,92 @@
                                 </property>
                                 <property name="autoCompletion">
                                     <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QComboBox">
+                                <property name="name">
+                                    <cstring>comboBox1</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>15</x>
+                                        <y>35</y>
+                                        <width>170</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="editable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="autoCompletion">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>pushButton5</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>190</x>
+                                        <y>125</y>
+                                        <width>20</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>X</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>pushButton4</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>190</x>
+                                        <y>95</y>
+                                        <width>20</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>X</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>pushButton3</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>190</x>
+                                        <y>65</y>
+                                        <width>20</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>X</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>pushButton2</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>190</x>
+                                        <y>35</y>
+                                        <width>20</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>X</string>
+                                </property>
+                                <property name="accel">
+                                    <string></string>
                                 </property>
                             </widget>
                         </widget>
@@ -430,6 +497,30 @@
         <signal>textChanged(const QString&amp;)</signal>
         <receiver>cocktailviewerwidgetbase</receiver>
         <slot>ComboBox4Changed()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton2</sender>
+        <signal>clicked()</signal>
+        <receiver>comboBox1</receiver>
+        <slot>clearEdit()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton3</sender>
+        <signal>clicked()</signal>
+        <receiver>comboBox2</receiver>
+        <slot>clearEdit()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton4</sender>
+        <signal>clicked()</signal>
+        <receiver>comboBox3</receiver>
+        <slot>clearEdit()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton5</sender>
+        <signal>clicked()</signal>
+        <receiver>comboBox4</receiver>
+        <slot>clearEdit()</slot>
     </connection>
 </connections>
 <slots>
