@@ -24,6 +24,9 @@
 #include <qlineedit.h>
 #include <qcheckbox.h>
 #include <qcombobox.h>
+#include <qdatetime.h>
+#include <qstringlist.h>
+#include <qregexp.h>
 
 #include "cocktailviewerwidget.h"
 
@@ -127,6 +130,11 @@ void cocktailviewerWidget::UpdateListView1()
 	char *zErrMsg = 0;
 	int rc, nrow, ncolumn, nrow2, ncolumn2;
 	char **Result, **Result2;
+	int counter=0;
+	QString Box1=comboBox1->currentText();
+	QString Box2=comboBox2->currentText();
+	QString Box3=comboBox3->currentText();
+	QString Box4=comboBox4->currentText();
 	rc = sqlite3_get_table(db, "SELECT ID,Name,rating FROM Cocktails WHERE Name LIKE \"%"+lineEdit1->text()+"%\"", &Result, &nrow, &ncolumn, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
@@ -152,7 +160,7 @@ void cocktailviewerWidget::UpdateListView1()
 		QString relativeAlcohol=QString::number(QString(Result2[13]).toFloat()*100,'f', 1);
 		if(!checkBox1->isChecked() || available=="0")
 		{
-			if((comboBox1->currentText()=="" || checkFilterlist( ID, 1 , nrowFilterResult1)) && (comboBox2->currentText()=="" || checkFilterlist( ID, 2 , nrowFilterResult2)) && (comboBox3->currentText()=="" || checkFilterlist( ID, 3, nrowFilterResult3)) && (comboBox4->currentText()=="" || checkFilterlist( ID, 4, nrowFilterResult4 )))
+			if((Box1=="" || checkFilterlist( ID, 1 , nrowFilterResult1)) && (Box2=="" || checkFilterlist( ID, 2 , nrowFilterResult2)) && (Box3=="" || checkFilterlist( ID, 3, nrowFilterResult3)) && (Box4=="" || checkFilterlist( ID, 4, nrowFilterResult4 )))
 			{
 				QListViewItem *item = new MyListViewItem( listView1 );
 				item->setText( 0,  name);
@@ -162,8 +170,10 @@ void cocktailviewerWidget::UpdateListView1()
 				item->setText( 4,  relativeAlcohol);
 				item->setText( 5,  absolutAlcohol);
 				item->setText( 6,  ID);
+				counter++;
 			}
 		}
+	textLabel1_5->setText(QString::number(counter)+" Cocktails");
 	}
 }
 
@@ -262,34 +272,59 @@ QString cocktailviewerWidget::printStars(int rating)
 
 int cocktailviewerWidget::createFilteredCocktaillist(QComboBox *box, int FilterNo )
 {
+	switch(FilterNo)
+	{
+		case 1: FilterList1.clear();
+			break;
+		case 2: FilterList2.clear();
+			break;
+		case 3: FilterList3.clear();
+			break;
+		case 4: FilterList4.clear();
+			break;
+	}
 	int nrow;
 	QString ID=getID("Ingredients", "name", box->currentText());
 	if( ID!="-1" )
 	{
+		QTime t;
+		t.start();
 		char *zErrMsg = 0;
 		int rc, ncolumn;
 		char **result;
-		sqlite3_exec(db, "DROP TABLE TMPFilter"+QString::number(FilterNo)+";", 0, 0, &zErrMsg);
+		//sqlite3_exec(db, "DROP TABLE TMPFilter"+QString::number(FilterNo)+";", 0, 0, &zErrMsg);
 		rc = sqlite3_get_table(db, "SELECT CocktailID FROM CocktailIngredients WHERE IngredientID="+ID, &result, &nrow, &ncolumn, &zErrMsg);
 		if( rc!=SQLITE_OK )
 		{
 			fprintf(stderr, "SQL error: %s\n", zErrMsg);
 		}
-		rc = sqlite3_exec(db, "CREATE TABLE TMPFilter"+QString::number(FilterNo)+" (CocktailID NUMERIC);", 0, 0, &zErrMsg);
+		/*rc = sqlite3_exec(db, "CREATE TABLE TMPFilter"+QString::number(FilterNo)+" (CocktailID NUMERIC);", 0, 0, &zErrMsg);
 		if( rc!=SQLITE_OK )
 		{
 			fprintf(stderr, "SQL error: %s\n", zErrMsg);
-		}
-		sqlite3_exec(db, "BEGIN TRANSACTION", 0, 0, &zErrMsg);
+		}*/
+		//sqlite3_exec(db, "BEGIN TRANSACTION", 0, 0, &zErrMsg);
 		for(int i=1;i<=nrow;i++)
 		{
-			rc = sqlite3_exec(db, "INSERT INTO TMPFilter"+QString::number(FilterNo)+" VALUES ("+result[i]+");", 0, 0, &zErrMsg);
+			switch(FilterNo)
+			{
+				case 1: FilterList1.append(result[i]);
+					break;
+				case 2: FilterList2.append(result[i]);
+					break;
+				case 3: FilterList3.append(result[i]);
+					break;
+				case 4: FilterList4.append(result[i]);
+					break;
+			}
+			/*rc = sqlite3_exec(db, "INSERT INTO TMPFilter"+QString::number(FilterNo)+" VALUES ("+result[i]+");", 0, 0, &zErrMsg);
 			if( rc!=SQLITE_OK )
 			{
 				fprintf(stderr, "SQL error: %s\n", zErrMsg);
-			}
+			}*/
 		}
-		sqlite3_exec(db, "COMMIT TRANSACTION", 0, 0, &zErrMsg);
+		//sqlite3_exec(db, "COMMIT TRANSACTION", 0, 0, &zErrMsg);
+		qDebug( "%d ms", t.elapsed() );
 	}
 	else
 		nrow=-1;
@@ -324,7 +359,7 @@ bool cocktailviewerWidget::checkFilterlist(QString ID, int Filter, int nrowFilte
 {
 	if(nrowFilterResult==-1)
 		return false;
-	char *zErrMsg = 0;
+	/*char *zErrMsg = 0;
 	int rc, nrow, ncolumn;
 	char **Result;
 	rc = sqlite3_get_table(db, "SELECT CocktailID FROM TMPFilter"+QString::number(Filter)+" WHERE CocktailID="+ID, &Result, &nrow, &ncolumn, &zErrMsg);
@@ -335,7 +370,23 @@ bool cocktailviewerWidget::checkFilterlist(QString ID, int Filter, int nrowFilte
 	if(nrow>0)
 		return true;
 	else
+		return false;*/
+	QStringList result;
+	switch(Filter)
+	{
+		case 1: result=FilterList1.grep(QRegExp("^"+ID+"$"));
+			break;
+		case 2: result=FilterList2.grep(QRegExp("^"+ID+"$"));
+			break;
+		case 3: result=FilterList3.grep(QRegExp("^"+ID+"$"));
+			break;
+		case 4: result=FilterList4.grep(QRegExp("^"+ID+"$"));
+			break;
+	}
+	if(result.empty())
 		return false;
+	else
+		return true;
 }
 
 void cocktailviewerWidget::writeIngredientsIntoComboBoxes()

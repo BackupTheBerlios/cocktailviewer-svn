@@ -36,6 +36,7 @@ public:
     /*$PUBLIC_FUNCTIONS$*/
 
     int nrowFilterResult1, nrowFilterResult2, nrowFilterResult3, nrowFilterResult4;
+    QStringList FilterList1, FilterList2, FilterList3, FilterList4;
 
 public slots:
     /*$PUBLIC_SLOTS$*/
