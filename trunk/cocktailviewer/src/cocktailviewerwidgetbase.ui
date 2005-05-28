@@ -219,6 +219,25 @@
                             </widget>
                             <widget class="QComboBox">
                                 <property name="name">
+                                    <cstring>comboBox1</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>15</x>
+                                        <y>35</y>
+                                        <width>170</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="editable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="autoCompletion">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QComboBox">
+                                <property name="name">
                                     <cstring>comboBox2</cstring>
                                 </property>
                                 <property name="geometry">
@@ -230,6 +249,9 @@
                                     </rect>
                                 </property>
                                 <property name="editable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="autoCompletion">
                                     <bool>true</bool>
                                 </property>
                             </widget>
@@ -248,6 +270,9 @@
                                 <property name="editable">
                                     <bool>true</bool>
                                 </property>
+                                <property name="autoCompletion">
+                                    <bool>true</bool>
+                                </property>
                             </widget>
                             <widget class="QComboBox">
                                 <property name="name">
@@ -264,20 +289,7 @@
                                 <property name="editable">
                                     <bool>true</bool>
                                 </property>
-                            </widget>
-                            <widget class="QComboBox">
-                                <property name="name">
-                                    <cstring>comboBox1</cstring>
-                                </property>
-                                <property name="geometry">
-                                    <rect>
-                                        <x>15</x>
-                                        <y>35</y>
-                                        <width>170</width>
-                                        <height>20</height>
-                                    </rect>
-                                </property>
-                                <property name="editable">
+                                <property name="autoCompletion">
                                     <bool>true</bool>
                                 </property>
                             </widget>

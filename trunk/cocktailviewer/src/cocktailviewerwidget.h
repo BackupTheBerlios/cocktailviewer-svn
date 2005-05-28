@@ -35,7 +35,6 @@ public:
     ~cocktailviewerWidget();
     /*$PUBLIC_FUNCTIONS$*/
 
-    char **FilterResult1, **FilterResult2, **FilterResult3, **FilterResult4;
     int nrowFilterResult1, nrowFilterResult2, nrowFilterResult3, nrowFilterResult4;
 
 public slots:
@@ -53,8 +52,9 @@ protected:
     QString getitFromID(QString ID, QString table, QString value);
     QString getID(QString table, QString value, QString string);
     QString printStars(int rating);
-    void createFilteredCocktaillist(QComboBox *box, char **result, int &nrow );
-    bool checkFilterlist(QString ID, char **result, int &nrow);
+    int createFilteredCocktaillist(QComboBox *box, int FilterNo );
+    bool checkFilterlist(QString ID, int Filter, int nrowFilterResult);
+    void writeIngredientsIntoComboBoxes();
 
     sqlite3 *db;
 
