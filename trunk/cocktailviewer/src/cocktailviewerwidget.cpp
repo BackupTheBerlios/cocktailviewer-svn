@@ -39,7 +39,6 @@ cocktailviewerWidget::cocktailviewerWidget(QWidget* parent, const char* name, WF
 	QString dbfile;
 	dbfile="cocktail.db";
 	int rc;
-	char *zErrMsg = 0;
 	rc = sqlite3_open(dbfile, &db);
 	if( rc )
 	{
@@ -47,10 +46,6 @@ cocktailviewerWidget::cocktailviewerWidget(QWidget* parent, const char* name, WF
 		sqlite3_close(db);
 		return;
 	}
-	sqlite3_exec(db, "DROP TABLE TMPFilter1;", 0, 0, &zErrMsg);
-	sqlite3_exec(db, "DROP TABLE TMPFilter2;", 0, 0, &zErrMsg);
-	sqlite3_exec(db, "DROP TABLE TMPFilter3;", 0, 0, &zErrMsg);
-	sqlite3_exec(db, "DROP TABLE TMPFilter4;", 0, 0, &zErrMsg);
 	nrowFilterResult1=-1;
 	nrowFilterResult2=-1;
 	nrowFilterResult3=-1;
@@ -287,23 +282,14 @@ int cocktailviewerWidget::createFilteredCocktaillist(QComboBox *box, int FilterN
 	QString ID=getID("Ingredients", "name", box->currentText());
 	if( ID!="-1" )
 	{
-		QTime t;
-		t.start();
 		char *zErrMsg = 0;
 		int rc, ncolumn;
 		char **result;
-		//sqlite3_exec(db, "DROP TABLE TMPFilter"+QString::number(FilterNo)+";", 0, 0, &zErrMsg);
 		rc = sqlite3_get_table(db, "SELECT CocktailID FROM CocktailIngredients WHERE IngredientID="+ID, &result, &nrow, &ncolumn, &zErrMsg);
 		if( rc!=SQLITE_OK )
 		{
 			fprintf(stderr, "SQL error: %s\n", zErrMsg);
 		}
-		/*rc = sqlite3_exec(db, "CREATE TABLE TMPFilter"+QString::number(FilterNo)+" (CocktailID NUMERIC);", 0, 0, &zErrMsg);
-		if( rc!=SQLITE_OK )
-		{
-			fprintf(stderr, "SQL error: %s\n", zErrMsg);
-		}*/
-		//sqlite3_exec(db, "BEGIN TRANSACTION", 0, 0, &zErrMsg);
 		for(int i=1;i<=nrow;i++)
 		{
 			switch(FilterNo)
@@ -317,14 +303,8 @@ int cocktailviewerWidget::createFilteredCocktaillist(QComboBox *box, int FilterN
 				case 4: FilterList4.append(result[i]);
 					break;
 			}
-			/*rc = sqlite3_exec(db, "INSERT INTO TMPFilter"+QString::number(FilterNo)+" VALUES ("+result[i]+");", 0, 0, &zErrMsg);
-			if( rc!=SQLITE_OK )
-			{
-				fprintf(stderr, "SQL error: %s\n", zErrMsg);
-			}*/
 		}
-		//sqlite3_exec(db, "COMMIT TRANSACTION", 0, 0, &zErrMsg);
-		qDebug( "%d ms", t.elapsed() );
+
 	}
 	else
 		nrow=-1;
@@ -359,18 +339,6 @@ bool cocktailviewerWidget::checkFilterlist(QString ID, int Filter, int nrowFilte
 {
 	if(nrowFilterResult==-1)
 		return false;
-	/*char *zErrMsg = 0;
-	int rc, nrow, ncolumn;
-	char **Result;
-	rc = sqlite3_get_table(db, "SELECT CocktailID FROM TMPFilter"+QString::number(Filter)+" WHERE CocktailID="+ID, &Result, &nrow, &ncolumn, &zErrMsg);
-	if( rc!=SQLITE_OK )
-	{
-		fprintf(stderr, "SQL error: %s\n", zErrMsg);
-	}
-	if(nrow>0)
-		return true;
-	else
-		return false;*/
 	QStringList result;
 	switch(Filter)
 	{
