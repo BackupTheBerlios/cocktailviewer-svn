@@ -150,6 +150,13 @@
                     <property name="name">
                         <cstring>listView1</cstring>
                     </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>234</red>
+                            <green>234</green>
+                            <blue>234</blue>
+                        </color>
+                    </property>
                     <property name="allColumnsShowFocus">
                         <bool>true</bool>
                     </property>

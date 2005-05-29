@@ -22,6 +22,7 @@
 #include <qapplication.h>
 #include "cocktailviewer.h"
 
+
 int main( int argc, char ** argv ) {
     QApplication a( argc, argv );
     cocktailviewer * mw = new cocktailviewer();

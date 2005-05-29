@@ -153,11 +153,11 @@ void cocktailviewerWidget::UpdateListView1()
 		QString price=QString::number(QString(Result2[11]).toFloat(),'f', 2);
 		QString absolutAlcohol=QString::number(QString(Result2[12]).toFloat(),'f', 2);
 		QString relativeAlcohol=QString::number(QString(Result2[13]).toFloat()*100,'f', 1);
-		if(!checkBox1->isChecked() || available=="0")
+		if(!checkBox1->isChecked() || available=="1")
 		{
 			if((Box1=="" || checkFilterlist( ID, 1 , nrowFilterResult1)) && (Box2=="" || checkFilterlist( ID, 2 , nrowFilterResult2)) && (Box3=="" || checkFilterlist( ID, 3, nrowFilterResult3)) && (Box4=="" || checkFilterlist( ID, 4, nrowFilterResult4 )))
 			{
-				QListViewItem *item = new MyListViewItem( listView1 );
+				QListViewItem *item = new MyListViewItem( listView1, available );
 				item->setText( 0,  name);
 				item->setText( 1,  rating);
 				item->setText( 2,  price);
@@ -385,6 +385,11 @@ cocktailviewerWidget::~cocktailviewerWidget()
 	sqlite3_close(db);
 }
 
+MyListViewItem::MyListViewItem( QListView* parent, QString a ) : QListViewItem(parent)
+{
+	available = a;
+}
+
 int MyListViewItem::compare ( QListViewItem * i, int col, bool ascending ) const
 {
 	float val1, val2;
@@ -401,4 +406,15 @@ int MyListViewItem::compare ( QListViewItem * i, int col, bool ascending ) const
         return QListViewItem::compare(i, col, ascending);
 }
 
+void MyListViewItem::paintCell( QPainter *p, const QColorGroup &cg, int column, int width, int alignment )
+{
+	QColorGroup _cg( cg );
+	QColor c = _cg.text();
+	if( available=="0" )
+		_cg.setColor( QColorGroup::Text, Qt::red.dark(100) );
+	else
+		_cg.setColor( QColorGroup::Text, Qt::green.dark(200) );
+	QListViewItem::paintCell( p, _cg, column, width, alignment );
+	_cg.setColor( QColorGroup::Text, c );
+}
 //#include "cocktailviewerwidget.moc"
