@@ -36,6 +36,8 @@ cocktailviewerWidget::cocktailviewerWidget(QWidget* parent, const char* name, WF
 	//QString dir=argv[0];
 	//int i=dir.findRev('/',-1);
 	//dir.remove(i+1, dir.length());
+	green.load( "./green.bmp" );
+	red.load( "./red.bmp" );
 	QString dbfile;
 	dbfile="cocktail.db";
 	int rc;
@@ -359,10 +361,14 @@ bool cocktailviewerWidget::checkFilterlist(QString ID, int Filter, int nrowFilte
 
 void cocktailviewerWidget::writeIngredientsIntoComboBoxes()
 {
+	comboBox1->clear();
+	comboBox2->clear();
+	comboBox3->clear();
+	comboBox4->clear();
 	char *zErrMsg = 0;
 	int rc, ncolumn, nrow;
 	char **result;
-	rc = sqlite3_get_table(db, "SELECT name FROM Ingredients ORDER BY name", &result, &nrow, &ncolumn, &zErrMsg);
+	rc = sqlite3_get_table(db, "SELECT name,stock FROM Ingredients ORDER BY name", &result, &nrow, &ncolumn, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
 		fprintf(stderr, "SQL error: %s\n", zErrMsg);
@@ -373,11 +379,47 @@ void cocktailviewerWidget::writeIngredientsIntoComboBoxes()
 	comboBox4->insertItem("");
 	for(int i=1;i<=nrow;i++)
 	{
-		comboBox1->insertItem(result[i]);
-		comboBox2->insertItem(result[i]);
-		comboBox3->insertItem(result[i]);
-		comboBox4->insertItem(result[i]);
+		if(QString(result[2*i+1])!="0")
+		{
+			comboBox1->insertItem( green, result[2*i] );
+			comboBox2->insertItem( green, result[2*i] );
+			comboBox3->insertItem( green, result[2*i] );
+			comboBox4->insertItem( green, result[2*i] );
+		}
+		else
+		{
+			comboBox1->insertItem( red, result[2*i] );
+			comboBox2->insertItem( red, result[2*i] );
+			comboBox3->insertItem( red, result[2*i] );
+			comboBox4->insertItem( red, result[2*i] );
+		}
+
 	}
+}
+
+void cocktailviewerWidget::checkBox1Clicked()
+{
+	UpdateListView1();
+}
+
+void cocktailviewerWidget::pushButton2Clicked()
+{
+	comboBox1->setCurrentItem( 0 );
+}
+
+void cocktailviewerWidget::pushButton3Clicked()
+{
+	comboBox2->setCurrentItem( 0 );
+}
+
+void cocktailviewerWidget::pushButton4Clicked()
+{
+	comboBox3->setCurrentItem( 0 );
+}
+
+void cocktailviewerWidget::pushButton5Clicked()
+{
+	comboBox4->setCurrentItem( 0 );
 }
 
 cocktailviewerWidget::~cocktailviewerWidget()

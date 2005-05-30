@@ -329,25 +329,6 @@
                                     <string>X</string>
                                 </property>
                             </widget>
-                            <widget class="QPushButton">
-                                <property name="name">
-                                    <cstring>pushButton2</cstring>
-                                </property>
-                                <property name="geometry">
-                                    <rect>
-                                        <x>190</x>
-                                        <y>35</y>
-                                        <width>20</width>
-                                        <height>20</height>
-                                    </rect>
-                                </property>
-                                <property name="text">
-                                    <string>X</string>
-                                </property>
-                                <property name="accel">
-                                    <string></string>
-                                </property>
-                            </widget>
                             <widget class="QComboBox">
                                 <property name="name">
                                     <cstring>comboBox3</cstring>
@@ -373,9 +354,9 @@
                                 </property>
                                 <property name="geometry">
                                     <rect>
-                                        <x>20</x>
+                                        <x>5</x>
                                         <y>250</y>
-                                        <width>185</width>
+                                        <width>210</width>
                                         <height>26</height>
                                     </rect>
                                 </property>
@@ -386,6 +367,28 @@
                                     </font>
                                 </property>
                                 <property name="text">
+                                    <string>1000 Cocktails</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>pushButton2</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>190</x>
+                                        <y>35</y>
+                                        <width>20</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>X</string>
+                                </property>
+                                <property name="accel">
                                     <string></string>
                                 </property>
                             </widget>
@@ -489,7 +492,7 @@
         <sender>checkBox1</sender>
         <signal>clicked()</signal>
         <receiver>cocktailviewerwidgetbase</receiver>
-        <slot>UpdateListView1()</slot>
+        <slot>checkBox1Clicked()</slot>
     </connection>
     <connection>
         <sender>pushButton1</sender>
@@ -530,26 +533,26 @@
     <connection>
         <sender>pushButton2</sender>
         <signal>clicked()</signal>
-        <receiver>comboBox1</receiver>
-        <slot>clearEdit()</slot>
+        <receiver>cocktailviewerwidgetbase</receiver>
+        <slot>pushButton2Clicked()</slot>
     </connection>
     <connection>
         <sender>pushButton3</sender>
         <signal>clicked()</signal>
-        <receiver>comboBox2</receiver>
-        <slot>clearEdit()</slot>
+        <receiver>cocktailviewerwidgetbase</receiver>
+        <slot>pushButton3Clicked()</slot>
     </connection>
     <connection>
         <sender>pushButton4</sender>
         <signal>clicked()</signal>
-        <receiver>comboBox3</receiver>
-        <slot>clearEdit()</slot>
+        <receiver>cocktailviewerwidgetbase</receiver>
+        <slot>pushButton4Clicked()</slot>
     </connection>
     <connection>
         <sender>pushButton5</sender>
         <signal>clicked()</signal>
-        <receiver>comboBox4</receiver>
-        <slot>clearEdit()</slot>
+        <receiver>cocktailviewerwidgetbase</receiver>
+        <slot>pushButton5Clicked()</slot>
     </connection>
 </connections>
 <slots>
@@ -559,6 +562,11 @@
     <slot>ComboBox2Changed()</slot>
     <slot>ComboBox3Changed()</slot>
     <slot>ComboBox4Changed()</slot>
+    <slot>checkBox1Clicked()</slot>
+    <slot>pushButton2Clicked()</slot>
+    <slot>pushButton3Clicked()</slot>
+    <slot>pushButton4Clicked()</slot>
+    <slot>pushButton5Clicked()</slot>
 </slots>
 <layoutdefaults spacing="2" margin="2"/>
 </UI>

@@ -25,6 +25,7 @@
 #include "cocktailviewerwidgetbase.h"
 #include <sqlite3.h>
 #include <qlistview.h>
+#include <qpixmap.h>
 
 class cocktailviewerWidget : public cocktailviewerWidgetBase
 {
@@ -46,6 +47,11 @@ public slots:
     void ComboBox2Changed();
     void ComboBox3Changed();
     void ComboBox4Changed();
+    void checkBox1Clicked();
+    void pushButton2Clicked();
+    void pushButton3Clicked();
+    void pushButton4Clicked();
+    void pushButton5Clicked();
 
 protected:
     /*$PROTECTED_FUNCTIONS$*/
@@ -58,6 +64,8 @@ protected:
     void writeIngredientsIntoComboBoxes();
 
     sqlite3 *db;
+    QPixmap green, red;
+
 
 protected slots:
     /*$PROTECTED_SLOTS$*/
