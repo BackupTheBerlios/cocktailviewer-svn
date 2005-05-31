@@ -52,6 +52,7 @@ public slots:
     void pushButton3Clicked();
     void pushButton4Clicked();
     void pushButton5Clicked();
+    void writeIngredientsIntoComboBoxes();
 
 protected:
     /*$PROTECTED_FUNCTIONS$*/
@@ -62,7 +63,8 @@ protected:
     QString printStars(int rating);
     int createFilteredCocktaillist(QComboBox *box, int FilterNo );
     bool checkFilterlist(QString ID, int Filter, int nrowFilterResult);
-    void writeIngredientsIntoComboBoxes();
+    void writeTastesIntoComboBoxes();
+    void writeTypesIntoComboBoxes();
 
     sqlite3 *db;
     QPixmap green, red;

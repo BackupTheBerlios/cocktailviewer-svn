@@ -8,7 +8,7 @@
         <rect>
             <x>0</x>
             <y>0</y>
-            <width>797</width>
+            <width>750</width>
             <height>590</height>
         </rect>
     </property>
@@ -41,43 +41,6 @@
                         <property name="name">
                             <cstring>unnamed</cstring>
                         </property>
-                        <widget class="QLabel">
-                            <property name="name">
-                                <cstring>textLabel1_2</cstring>
-                            </property>
-                            <property name="font">
-                                <font>
-                                    <bold>1</bold>
-                                </font>
-                            </property>
-                            <property name="text">
-                                <string>Search:</string>
-                            </property>
-                        </widget>
-                        <widget class="QPushButton">
-                            <property name="name">
-                                <cstring>pushButton1</cstring>
-                            </property>
-                            <property name="text">
-                                <string>X</string>
-                            </property>
-                        </widget>
-                        <widget class="QLineEdit">
-                            <property name="name">
-                                <cstring>lineEdit1</cstring>
-                            </property>
-                        </widget>
-                        <widget class="QCheckBox">
-                            <property name="name">
-                                <cstring>checkBox1</cstring>
-                            </property>
-                            <property name="text">
-                                <string>sho&amp;w only available cocktails</string>
-                            </property>
-                            <property name="accel">
-                                <string>Alt+W</string>
-                            </property>
-                        </widget>
                     </hbox>
                 </widget>
                 <widget class="QListView">
@@ -190,7 +153,7 @@
                             </property>
                             <property name="maximumSize">
                                 <size>
-                                    <width>220</width>
+                                    <width>250</width>
                                     <height>32767</height>
                                 </size>
                             </property>
@@ -206,22 +169,181 @@
                                 </property>
                                 <property name="geometry">
                                     <rect>
-                                        <x>6</x>
-                                        <y>6</y>
-                                        <width>190</width>
-                                        <height>25</height>
+                                        <x>5</x>
+                                        <y>5</y>
+                                        <width>235</width>
+                                        <height>16</height>
                                     </rect>
                                 </property>
                                 <property name="font">
                                     <font>
-                                        <pointsize>14</pointsize>
+                                        <pointsize>12</pointsize>
+                                        <bold>1</bold>
                                     </font>
                                 </property>
                                 <property name="text">
-                                    <string>Filter</string>
+                                    <string>Filters</string>
                                 </property>
                                 <property name="alignment">
                                     <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox">
+                                <property name="name">
+                                    <cstring>checkBox2</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>15</x>
+                                        <y>195</y>
+                                        <width>180</width>
+                                        <height>19</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>list only available Ingredients</string>
+                                </property>
+                                <property name="accel">
+                                    <string></string>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox">
+                                <property name="name">
+                                    <cstring>checkBox1</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>15</x>
+                                        <y>60</y>
+                                        <width>180</width>
+                                        <height>19</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>sho&amp;w only available cocktails</string>
+                                </property>
+                                <property name="accel">
+                                    <string>Alt+W</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>pushButton3</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>220</x>
+                                        <y>125</y>
+                                        <width>20</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>X</string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit">
+                                <property name="name">
+                                    <cstring>lineEdit1</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>15</x>
+                                        <y>40</y>
+                                        <width>195</width>
+                                        <height>21</height>
+                                    </rect>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>pushButton1</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>220</x>
+                                        <y>40</y>
+                                        <width>20</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>X</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>pushButton2</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>220</x>
+                                        <y>100</y>
+                                        <width>20</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>X</string>
+                                </property>
+                                <property name="accel">
+                                    <string></string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>pushButton4</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>220</x>
+                                        <y>150</y>
+                                        <width>20</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>X</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_2_2</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>15</x>
+                                        <y>80</y>
+                                        <width>80</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <bold>1</bold>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Ingredients:</string>
+                                </property>
+                            </widget>
+                            <widget class="QComboBox">
+                                <property name="name">
+                                    <cstring>comboBox3</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>15</x>
+                                        <y>150</y>
+                                        <width>195</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="editable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="autoCompletion">
+                                    <bool>true</bool>
                                 </property>
                             </widget>
                             <widget class="QComboBox">
@@ -231,8 +353,8 @@
                                 <property name="geometry">
                                     <rect>
                                         <x>15</x>
-                                        <y>65</y>
-                                        <width>170</width>
+                                        <y>125</y>
+                                        <width>195</width>
                                         <height>20</height>
                                     </rect>
                                 </property>
@@ -243,23 +365,25 @@
                                     <bool>true</bool>
                                 </property>
                             </widget>
-                            <widget class="QComboBox">
+                            <widget class="QLabel">
                                 <property name="name">
-                                    <cstring>comboBox4</cstring>
+                                    <cstring>textLabel1_2</cstring>
                                 </property>
                                 <property name="geometry">
                                     <rect>
                                         <x>15</x>
-                                        <y>125</y>
-                                        <width>170</width>
+                                        <y>20</y>
+                                        <width>95</width>
                                         <height>20</height>
                                     </rect>
                                 </property>
-                                <property name="editable">
-                                    <bool>true</bool>
+                                <property name="font">
+                                    <font>
+                                        <bold>1</bold>
+                                    </font>
                                 </property>
-                                <property name="autoCompletion">
-                                    <bool>true</bool>
+                                <property name="text">
+                                    <string>Cocktail search:</string>
                                 </property>
                             </widget>
                             <widget class="QComboBox">
@@ -269,8 +393,8 @@
                                 <property name="geometry">
                                     <rect>
                                         <x>15</x>
-                                        <y>35</y>
-                                        <width>170</width>
+                                        <y>100</y>
+                                        <width>195</width>
                                         <height>20</height>
                                     </rect>
                                 </property>
@@ -287,40 +411,8 @@
                                 </property>
                                 <property name="geometry">
                                     <rect>
-                                        <x>190</x>
-                                        <y>125</y>
-                                        <width>20</width>
-                                        <height>20</height>
-                                    </rect>
-                                </property>
-                                <property name="text">
-                                    <string>X</string>
-                                </property>
-                            </widget>
-                            <widget class="QPushButton">
-                                <property name="name">
-                                    <cstring>pushButton4</cstring>
-                                </property>
-                                <property name="geometry">
-                                    <rect>
-                                        <x>190</x>
-                                        <y>95</y>
-                                        <width>20</width>
-                                        <height>20</height>
-                                    </rect>
-                                </property>
-                                <property name="text">
-                                    <string>X</string>
-                                </property>
-                            </widget>
-                            <widget class="QPushButton">
-                                <property name="name">
-                                    <cstring>pushButton3</cstring>
-                                </property>
-                                <property name="geometry">
-                                    <rect>
-                                        <x>190</x>
-                                        <y>65</y>
+                                        <x>220</x>
+                                        <y>175</y>
                                         <width>20</width>
                                         <height>20</height>
                                     </rect>
@@ -331,13 +423,13 @@
                             </widget>
                             <widget class="QComboBox">
                                 <property name="name">
-                                    <cstring>comboBox3</cstring>
+                                    <cstring>comboBox4</cstring>
                                 </property>
                                 <property name="geometry">
                                     <rect>
                                         <x>15</x>
-                                        <y>95</y>
-                                        <width>170</width>
+                                        <y>175</y>
+                                        <width>195</width>
                                         <height>20</height>
                                     </rect>
                                 </property>
@@ -348,6 +440,64 @@
                                     <bool>true</bool>
                                 </property>
                             </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>pushButton7</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>220</x>
+                                        <y>245</y>
+                                        <width>20</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>X</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_2_3_2</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>15</x>
+                                        <y>245</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <bold>1</bold>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Type:</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_2_3</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>15</x>
+                                        <y>220</y>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <bold>1</bold>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Taste:</string>
+                                </property>
+                            </widget>
                             <widget class="QLabel">
                                 <property name="name">
                                     <cstring>textLabel1_5</cstring>
@@ -355,14 +505,14 @@
                                 <property name="geometry">
                                     <rect>
                                         <x>5</x>
-                                        <y>250</y>
-                                        <width>210</width>
-                                        <height>26</height>
+                                        <y>276</y>
+                                        <width>240</width>
+                                        <height>20</height>
                                     </rect>
                                 </property>
                                 <property name="font">
                                     <font>
-                                        <pointsize>14</pointsize>
+                                        <pointsize>12</pointsize>
                                         <bold>1</bold>
                                     </font>
                                 </property>
@@ -375,12 +525,12 @@
                             </widget>
                             <widget class="QPushButton">
                                 <property name="name">
-                                    <cstring>pushButton2</cstring>
+                                    <cstring>pushButton6</cstring>
                                 </property>
                                 <property name="geometry">
                                     <rect>
-                                        <x>190</x>
-                                        <y>35</y>
+                                        <x>220</x>
+                                        <y>220</y>
                                         <width>20</width>
                                         <height>20</height>
                                     </rect>
@@ -388,8 +538,43 @@
                                 <property name="text">
                                     <string>X</string>
                                 </property>
-                                <property name="accel">
-                                    <string></string>
+                            </widget>
+                            <widget class="QComboBox">
+                                <property name="name">
+                                    <cstring>comboBox5</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>60</x>
+                                        <y>220</y>
+                                        <width>150</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="editable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="autoCompletion">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QComboBox">
+                                <property name="name">
+                                    <cstring>comboBox6</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>60</x>
+                                        <y>245</y>
+                                        <width>150</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="editable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="autoCompletion">
+                                    <bool>true</bool>
                                 </property>
                             </widget>
                         </widget>
@@ -483,24 +668,6 @@
         <slot>ListView1Clicked(QListViewItem*)</slot>
     </connection>
     <connection>
-        <sender>lineEdit1</sender>
-        <signal>textChanged(const QString&amp;)</signal>
-        <receiver>cocktailviewerwidgetbase</receiver>
-        <slot>UpdateListView1()</slot>
-    </connection>
-    <connection>
-        <sender>checkBox1</sender>
-        <signal>clicked()</signal>
-        <receiver>cocktailviewerwidgetbase</receiver>
-        <slot>checkBox1Clicked()</slot>
-    </connection>
-    <connection>
-        <sender>pushButton1</sender>
-        <signal>clicked()</signal>
-        <receiver>lineEdit1</receiver>
-        <slot>clear()</slot>
-    </connection>
-    <connection>
         <sender>listView1</sender>
         <signal>clicked(QListViewItem*)</signal>
         <receiver>cocktailviewerwidgetbase</receiver>
@@ -554,6 +721,54 @@
         <receiver>cocktailviewerwidgetbase</receiver>
         <slot>pushButton5Clicked()</slot>
     </connection>
+    <connection>
+        <sender>checkBox1</sender>
+        <signal>clicked()</signal>
+        <receiver>cocktailviewerwidgetbase</receiver>
+        <slot>UpdateListView1()</slot>
+    </connection>
+    <connection>
+        <sender>lineEdit1</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>cocktailviewerwidgetbase</receiver>
+        <slot>UpdateListView1()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton1</sender>
+        <signal>clicked()</signal>
+        <receiver>lineEdit1</receiver>
+        <slot>clear()</slot>
+    </connection>
+    <connection>
+        <sender>checkBox2</sender>
+        <signal>clicked()</signal>
+        <receiver>cocktailviewerwidgetbase</receiver>
+        <slot>writeIngredientsIntoComboBoxes()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton6</sender>
+        <signal>clicked()</signal>
+        <receiver>comboBox5</receiver>
+        <slot>clearEdit()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton7</sender>
+        <signal>clicked()</signal>
+        <receiver>comboBox6</receiver>
+        <slot>clearEdit()</slot>
+    </connection>
+    <connection>
+        <sender>comboBox5</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>cocktailviewerwidgetbase</receiver>
+        <slot>UpdateListView1()</slot>
+    </connection>
+    <connection>
+        <sender>comboBox6</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>cocktailviewerwidgetbase</receiver>
+        <slot>UpdateListView1()</slot>
+    </connection>
 </connections>
 <slots>
     <slot>ListView1Clicked(QListViewItem *Item)</slot>
@@ -567,6 +782,7 @@
     <slot>pushButton3Clicked()</slot>
     <slot>pushButton4Clicked()</slot>
     <slot>pushButton5Clicked()</slot>
+    <slot>writeIngredientsIntoComboBoxes()</slot>
 </slots>
 <layoutdefaults spacing="2" margin="2"/>
 </UI>

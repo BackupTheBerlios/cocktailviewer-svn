@@ -55,6 +55,8 @@ cocktailviewerWidget::cocktailviewerWidget(QWidget* parent, const char* name, WF
 	createTMPCocktailExtras();
 	UpdateListView1();
 	writeIngredientsIntoComboBoxes();
+	writeTastesIntoComboBoxes();
+	writeTypesIntoComboBoxes();
 }
 
 void cocktailviewerWidget::createTMPCocktailExtras()
@@ -132,7 +134,9 @@ void cocktailviewerWidget::UpdateListView1()
 	QString Box2=comboBox2->currentText();
 	QString Box3=comboBox3->currentText();
 	QString Box4=comboBox4->currentText();
-	rc = sqlite3_get_table(db, "SELECT ID,Name,rating FROM Cocktails WHERE Name LIKE \"%"+lineEdit1->text()+"%\"", &Result, &nrow, &ncolumn, &zErrMsg);
+	QString Box5=comboBox5->currentText();
+	QString Box6=comboBox6->currentText();
+	rc = sqlite3_get_table(db, "SELECT ID,Name,rating,taste1ID,taste2ID,typeID FROM Cocktails WHERE Name LIKE \"%"+lineEdit1->text()+"%\"", &Result, &nrow, &ncolumn, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
 		qDebug("0");
@@ -141,9 +145,12 @@ void cocktailviewerWidget::UpdateListView1()
 	listView1->clear();
 	for(int i=1;i<=nrow;i++)
 	{
-		QString ID=Result[3*i];
-		QString name=Result[3*i+1];
-		QString rating=Result[3*i+2];
+		QString ID=Result[6*i];
+		QString name=Result[6*i+1];
+		QString rating=Result[6*i+2];
+		QString taste1ID=Result[6*i+3];
+		QString taste2ID=Result[6*i+4];
+		QString typeID=Result[6*i+5];
 		rc = sqlite3_get_table(db, "SELECT * FROM TMPCocktailExtras WHERE ID="+ID, &Result2, &nrow2, &ncolumn2, &zErrMsg);
 		if( rc!=SQLITE_OK )
 		{
@@ -157,7 +164,7 @@ void cocktailviewerWidget::UpdateListView1()
 		QString relativeAlcohol=QString::number(QString(Result2[13]).toFloat()*100,'f', 1);
 		if(!checkBox1->isChecked() || available=="1")
 		{
-			if((Box1=="" || checkFilterlist( ID, 1 , nrowFilterResult1)) && (Box2=="" || checkFilterlist( ID, 2 , nrowFilterResult2)) && (Box3=="" || checkFilterlist( ID, 3, nrowFilterResult3)) && (Box4=="" || checkFilterlist( ID, 4, nrowFilterResult4 )))
+			if( (Box1=="" || checkFilterlist( ID, 1 , nrowFilterResult1)) && (Box2=="" || checkFilterlist( ID, 2 , nrowFilterResult2)) && (Box3=="" || checkFilterlist( ID, 3, nrowFilterResult3)) && (Box4=="" || checkFilterlist( ID, 4, nrowFilterResult4 )) && (Box5=="" || (taste1ID!="-1" && taste1ID==getID("tastes", "taste", Box5)) || (taste2ID!="-1" && taste2ID==getID("tastes", "taste", Box5))) && (Box6=="" || (typeID!="-1" && typeID==getID("types", "type", Box6))) )
 			{
 				QListViewItem *item = new MyListViewItem( listView1, available );
 				item->setText( 0,  name);
@@ -403,13 +410,53 @@ void cocktailviewerWidget::writeIngredientsIntoComboBoxes()
 		}
 		else
 		{
-			comboBox1->insertItem( red, result[2*i] );
-			comboBox2->insertItem( red, result[2*i] );
-			comboBox3->insertItem( red, result[2*i] );
-			comboBox4->insertItem( red, result[2*i] );
+			if( !checkBox2->isChecked() )
+			{
+				comboBox1->insertItem( red, result[2*i] );
+				comboBox2->insertItem( red, result[2*i] );
+				comboBox3->insertItem( red, result[2*i] );
+				comboBox4->insertItem( red, result[2*i] );
+			}
 		}
 
 	}
+}
+
+void cocktailviewerWidget::writeTastesIntoComboBoxes()
+{
+	comboBox5->clear();
+	char *zErrMsg = 0;
+	int rc, ncolumn, nrow;
+	char **result;
+	rc = sqlite3_get_table(db, "SELECT taste FROM tastes ORDER BY taste", &result, &nrow, &ncolumn, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	comboBox5->insertItem("");
+	for(int i=1;i<=nrow;i++)
+	{
+		comboBox5->insertItem( result[i] );
+	}
+}
+
+void cocktailviewerWidget::writeTypesIntoComboBoxes()
+{
+	comboBox6->clear();
+	char *zErrMsg = 0;
+	int rc, ncolumn, nrow;
+	char **result;
+	rc = sqlite3_get_table(db, "SELECT type FROM types ORDER BY type", &result, &nrow, &ncolumn, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	comboBox6->insertItem("");
+	for(int i=1;i<=nrow;i++)
+	{
+		comboBox6->insertItem( result[i] );
+	}
+
 }
 
 void cocktailviewerWidget::checkBox1Clicked()
