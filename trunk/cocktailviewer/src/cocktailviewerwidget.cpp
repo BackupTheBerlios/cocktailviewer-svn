@@ -238,10 +238,16 @@ void cocktailviewerWidget::loadCocktail(QString ID, QString Name)
 		qDebug("4");
 		fprintf(stderr, "SQL error: %s\n", zErrMsg);
 	}
-	Text2+=description+"<br><br><b>"+QString::number(QString(Result2[11]).toFloat(),'f', 2)+" EUR</b>";
+	Text2+=description;
 	textLabel1_3->setText(Text2);
-	Text="<font size=\"+2\">"+Name+" "+printStars(rating.toInt())+"</font><br><font size=\"-4\"><b>"+type+" "+taste1+" "+taste2+"<b></font>";
+	Text=Name;
+	QString Stars=printStars(rating.toInt());
+	if(Stars!="")
+		Text+="<br>"+Stars;
+	if(type!="" || taste1!="" || taste2!="")
+		Text+="<br><font size=\"-4\">"+type+" "+taste1+" "+taste2+"</font>";
 	textLabel1_4->setText(Text);
+	textLabel1_6->setText("<b>"+QString::number(QString(Result2[11]).toFloat(),'f', 2)+" EUR</b>");
 }
 
 QString cocktailviewerWidget::getitFromID(QString ID, QString table, QString value)

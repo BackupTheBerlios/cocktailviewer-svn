@@ -8,15 +8,22 @@
         <rect>
             <x>0</x>
             <y>0</y>
-            <width>750</width>
-            <height>590</height>
+            <width>720</width>
+            <height>550</height>
         </rect>
     </property>
     <property name="minimumSize">
         <size>
-            <width>750</width>
-            <height>590</height>
+            <width>720</width>
+            <height>550</height>
         </size>
+    </property>
+    <property name="paletteBackgroundColor">
+        <color>
+            <red>202</red>
+            <green>236</green>
+            <blue>255</blue>
+        </color>
     </property>
     <property name="caption">
         <string>cocktailviewerwidgetbase</string>
@@ -27,22 +34,12 @@
         </property>
         <widget class="QLayoutWidget" row="0" column="0">
             <property name="name">
-                <cstring>layout23</cstring>
+                <cstring>layout11</cstring>
             </property>
             <vbox>
                 <property name="name">
                     <cstring>unnamed</cstring>
                 </property>
-                <widget class="QLayoutWidget">
-                    <property name="name">
-                        <cstring>layout1</cstring>
-                    </property>
-                    <hbox>
-                        <property name="name">
-                            <cstring>unnamed</cstring>
-                        </property>
-                    </hbox>
-                </widget>
                 <widget class="QListView">
                     <column>
                         <property name="text">
@@ -113,10 +110,24 @@
                     <property name="name">
                         <cstring>listView1</cstring>
                     </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>7</hsizetype>
+                            <vsizetype>7</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
                     <property name="paletteBackgroundColor">
                         <color>
-                            <red>255</red>
-                            <green>255</green>
+                            <red>225</red>
+                            <green>239</green>
                             <blue>255</blue>
                         </color>
                     </property>
@@ -242,19 +253,6 @@
                                     <string>X</string>
                                 </property>
                             </widget>
-                            <widget class="QLineEdit">
-                                <property name="name">
-                                    <cstring>lineEdit1</cstring>
-                                </property>
-                                <property name="geometry">
-                                    <rect>
-                                        <x>15</x>
-                                        <y>40</y>
-                                        <width>195</width>
-                                        <height>21</height>
-                                    </rect>
-                                </property>
-                            </widget>
                             <widget class="QPushButton">
                                 <property name="name">
                                     <cstring>pushButton1</cstring>
@@ -327,44 +325,6 @@
                                     <string>Ingredients:</string>
                                 </property>
                             </widget>
-                            <widget class="QComboBox">
-                                <property name="name">
-                                    <cstring>comboBox3</cstring>
-                                </property>
-                                <property name="geometry">
-                                    <rect>
-                                        <x>15</x>
-                                        <y>150</y>
-                                        <width>195</width>
-                                        <height>20</height>
-                                    </rect>
-                                </property>
-                                <property name="editable">
-                                    <bool>true</bool>
-                                </property>
-                                <property name="autoCompletion">
-                                    <bool>true</bool>
-                                </property>
-                            </widget>
-                            <widget class="QComboBox">
-                                <property name="name">
-                                    <cstring>comboBox2</cstring>
-                                </property>
-                                <property name="geometry">
-                                    <rect>
-                                        <x>15</x>
-                                        <y>125</y>
-                                        <width>195</width>
-                                        <height>20</height>
-                                    </rect>
-                                </property>
-                                <property name="editable">
-                                    <bool>true</bool>
-                                </property>
-                                <property name="autoCompletion">
-                                    <bool>true</bool>
-                                </property>
-                            </widget>
                             <widget class="QLabel">
                                 <property name="name">
                                     <cstring>textLabel1_2</cstring>
@@ -386,25 +346,6 @@
                                     <string>Cocktail search:</string>
                                 </property>
                             </widget>
-                            <widget class="QComboBox">
-                                <property name="name">
-                                    <cstring>comboBox1</cstring>
-                                </property>
-                                <property name="geometry">
-                                    <rect>
-                                        <x>15</x>
-                                        <y>100</y>
-                                        <width>195</width>
-                                        <height>20</height>
-                                    </rect>
-                                </property>
-                                <property name="editable">
-                                    <bool>true</bool>
-                                </property>
-                                <property name="autoCompletion">
-                                    <bool>true</bool>
-                                </property>
-                            </widget>
                             <widget class="QPushButton">
                                 <property name="name">
                                     <cstring>pushButton5</cstring>
@@ -419,25 +360,6 @@
                                 </property>
                                 <property name="text">
                                     <string>X</string>
-                                </property>
-                            </widget>
-                            <widget class="QComboBox">
-                                <property name="name">
-                                    <cstring>comboBox4</cstring>
-                                </property>
-                                <property name="geometry">
-                                    <rect>
-                                        <x>15</x>
-                                        <y>175</y>
-                                        <width>195</width>
-                                        <height>20</height>
-                                    </rect>
-                                </property>
-                                <property name="editable">
-                                    <bool>true</bool>
-                                </property>
-                                <property name="autoCompletion">
-                                    <bool>true</bool>
                                 </property>
                             </widget>
                             <widget class="QPushButton">
@@ -539,6 +461,130 @@
                                     <string>X</string>
                                 </property>
                             </widget>
+                            <widget class="QLineEdit">
+                                <property name="name">
+                                    <cstring>lineEdit1</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>15</x>
+                                        <y>40</y>
+                                        <width>195</width>
+                                        <height>21</height>
+                                    </rect>
+                                </property>
+                                <property name="paletteBackgroundColor">
+                                    <color>
+                                        <red>225</red>
+                                        <green>239</green>
+                                        <blue>255</blue>
+                                    </color>
+                                </property>
+                            </widget>
+                            <widget class="QComboBox">
+                                <property name="name">
+                                    <cstring>comboBox1</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>15</x>
+                                        <y>100</y>
+                                        <width>195</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="paletteBackgroundColor">
+                                    <color>
+                                        <red>225</red>
+                                        <green>239</green>
+                                        <blue>255</blue>
+                                    </color>
+                                </property>
+                                <property name="editable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="autoCompletion">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QComboBox">
+                                <property name="name">
+                                    <cstring>comboBox2</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>15</x>
+                                        <y>125</y>
+                                        <width>195</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="paletteBackgroundColor">
+                                    <color>
+                                        <red>225</red>
+                                        <green>239</green>
+                                        <blue>255</blue>
+                                    </color>
+                                </property>
+                                <property name="editable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="autoCompletion">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QComboBox">
+                                <property name="name">
+                                    <cstring>comboBox3</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>15</x>
+                                        <y>150</y>
+                                        <width>195</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="paletteBackgroundColor">
+                                    <color>
+                                        <red>225</red>
+                                        <green>239</green>
+                                        <blue>255</blue>
+                                    </color>
+                                </property>
+                                <property name="editable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="autoCompletion">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QComboBox">
+                                <property name="name">
+                                    <cstring>comboBox4</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>15</x>
+                                        <y>175</y>
+                                        <width>195</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="paletteBackgroundColor">
+                                    <color>
+                                        <red>225</red>
+                                        <green>239</green>
+                                        <blue>255</blue>
+                                    </color>
+                                </property>
+                                <property name="editable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="autoCompletion">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
                             <widget class="QComboBox">
                                 <property name="name">
                                     <cstring>comboBox5</cstring>
@@ -550,6 +596,13 @@
                                         <width>150</width>
                                         <height>20</height>
                                     </rect>
+                                </property>
+                                <property name="paletteBackgroundColor">
+                                    <color>
+                                        <red>225</red>
+                                        <green>239</green>
+                                        <blue>255</blue>
+                                    </color>
                                 </property>
                                 <property name="editable">
                                     <bool>true</bool>
@@ -570,6 +623,13 @@
                                         <height>20</height>
                                     </rect>
                                 </property>
+                                <property name="paletteBackgroundColor">
+                                    <color>
+                                        <red>225</red>
+                                        <green>239</green>
+                                        <blue>255</blue>
+                                    </color>
+                                </property>
                                 <property name="editable">
                                     <bool>true</bool>
                                 </property>
@@ -580,46 +640,129 @@
                         </widget>
                         <widget class="QLayoutWidget" row="0" column="1">
                             <property name="name">
-                                <cstring>layout5</cstring>
+                                <cstring>layout9</cstring>
                             </property>
                             <vbox>
                                 <property name="name">
                                     <cstring>unnamed</cstring>
                                 </property>
-                                <widget class="QLabel">
+                                <widget class="QFrame">
                                     <property name="name">
-                                        <cstring>textLabel1_4</cstring>
+                                        <cstring>frame5</cstring>
                                     </property>
                                     <property name="minimumSize">
                                         <size>
                                             <width>0</width>
-                                            <height>63</height>
+                                            <height>65</height>
                                         </size>
                                     </property>
                                     <property name="maximumSize">
                                         <size>
                                             <width>32767</width>
-                                            <height>63</height>
+                                            <height>75</height>
                                         </size>
                                     </property>
-                                    <property name="font">
-                                        <font>
-                                            <pointsize>18</pointsize>
-                                            <bold>1</bold>
-                                        </font>
+                                    <property name="paletteBackgroundColor">
+                                        <color>
+                                            <red>202</red>
+                                            <green>236</green>
+                                            <blue>255</blue>
+                                        </color>
+                                    </property>
+                                    <property name="backgroundOrigin">
+                                        <enum>WidgetOrigin</enum>
                                     </property>
                                     <property name="frameShape">
-                                        <enum>StyledPanel</enum>
+                                        <enum>NoFrame</enum>
                                     </property>
                                     <property name="frameShadow">
                                         <enum>Raised</enum>
                                     </property>
-                                    <property name="text">
-                                        <string></string>
-                                    </property>
-                                    <property name="alignment">
-                                        <set>WordBreak|AlignTop|AlignHCenter</set>
-                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel" row="0" column="1">
+                                            <property name="name">
+                                                <cstring>textLabel1_6</cstring>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>78</width>
+                                                    <height>32767</height>
+                                                </size>
+                                            </property>
+                                            <property name="paletteBackgroundColor">
+                                                <color>
+                                                    <red>248</red>
+                                                    <green>255</green>
+                                                    <blue>57</blue>
+                                                </color>
+                                            </property>
+                                            <property name="font">
+                                                <font>
+                                                    <pointsize>12</pointsize>
+                                                    <bold>1</bold>
+                                                </font>
+                                            </property>
+                                            <property name="frameShape">
+                                                <enum>StyledPanel</enum>
+                                            </property>
+                                            <property name="frameShadow">
+                                                <enum>Raised</enum>
+                                            </property>
+                                            <property name="text">
+                                                <string>1,50 EUR</string>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>WordBreak|AlignCenter</set>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel1_4</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>0</width>
+                                                    <height>70</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>32767</width>
+                                                    <height>32767</height>
+                                                </size>
+                                            </property>
+                                            <property name="paletteBackgroundColor">
+                                                <color>
+                                                    <red>96</red>
+                                                    <green>183</green>
+                                                    <blue>255</blue>
+                                                </color>
+                                            </property>
+                                            <property name="font">
+                                                <font>
+                                                    <pointsize>16</pointsize>
+                                                    <bold>1</bold>
+                                                </font>
+                                            </property>
+                                            <property name="frameShape">
+                                                <enum>StyledPanel</enum>
+                                            </property>
+                                            <property name="frameShadow">
+                                                <enum>Raised</enum>
+                                            </property>
+                                            <property name="text">
+                                                <string>Cuba Libre (weißer Rum)&lt;br&gt;
+****&lt;br&gt;
+&lt;font size="-4"&gt;Longdrink fruchtig würzig&lt;/font&gt;</string>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>WordBreak|AlignCenter</set>
+                                            </property>
+                                        </widget>
+                                    </grid>
                                 </widget>
                                 <widget class="QLabel">
                                     <property name="name">
