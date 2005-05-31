@@ -238,7 +238,7 @@ void cocktailviewerWidget::loadCocktail(QString ID, QString Name)
 		qDebug("4");
 		fprintf(stderr, "SQL error: %s\n", zErrMsg);
 	}
-	Text2+=description;
+	Text2+="<br><font size=\"-1\">"+description+"</font>";
 	textLabel1_3->setText(Text2);
 	Text=Name;
 	QString Stars=printStars(rating.toInt());
