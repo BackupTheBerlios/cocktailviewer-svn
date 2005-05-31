@@ -42,7 +42,7 @@ public:
 public slots:
     /*$PUBLIC_SLOTS$*/
     void UpdateListView1();
-    void ListView1Clicked();
+    void ListView1Clicked(QListViewItem *Item);
     void ComboBox1Changed();
     void ComboBox2Changed();
     void ComboBox3Changed();
@@ -56,6 +56,7 @@ public slots:
 protected:
     /*$PROTECTED_FUNCTIONS$*/
     void createTMPCocktailExtras();
+    void loadCocktail(QString ID, QString Name);
     QString getitFromID(QString ID, QString table, QString value);
     QString getID(QString table, QString value, QString string);
     QString printStars(int rating);
@@ -77,7 +78,7 @@ class MyListViewItem : public QListViewItem
     public:
 	MyListViewItem( QListView* parent, QString a );
 	int compare ( QListViewItem * i, int col, bool ascending ) const;
-	virtual void paintCell( QPainter *p, const QColorGroup &cg, int column, int width, int alignment );
+	//virtual void paintCell( QPainter *p, const QColorGroup &cg, int column, int width, int alignment );
     private:
         QString available;
     };

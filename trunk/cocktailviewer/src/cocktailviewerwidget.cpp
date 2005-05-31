@@ -178,13 +178,24 @@ void cocktailviewerWidget::UpdateListView1()
 	}
 }
 
-void cocktailviewerWidget::ListView1Clicked()
+void cocktailviewerWidget::ListView1Clicked(QListViewItem *Item)
 {
-	QListViewItem *item;
-	QString ID, Name, description, rating, type, taste1, taste2;
-	item=listView1->selectedItem();
-	ID=item->text(6);
-	Name=item->text(0);
+	if(Item)
+	{
+		QString ID=Item->text(6);
+		QString Name=Item->text(0);
+		loadCocktail( ID, Name);
+	}
+}
+
+void cocktailviewerWidget::loadCocktail(QString ID, QString Name)
+{
+	//QListViewItem *item;
+	//QString ID, Name, description, rating, type, taste1, taste2;
+	QString description, rating, type, taste1, taste2;
+	//item=listView1->selectedItem();
+	//ID=item->text(6);
+	//Name=item->text(0);
 	char *zErrMsg = 0;
 	int rc, nrow, ncolumn, nrow2, ncolumn2;
 	char **Result, **Result2;
@@ -452,15 +463,16 @@ int MyListViewItem::compare ( QListViewItem * i, int col, bool ascending ) const
         return QListViewItem::compare(i, col, ascending);
 }
 
-void MyListViewItem::paintCell( QPainter *p, const QColorGroup &cg, int column, int width, int alignment )
+/*void MyListViewItem::paintCell( QPainter *p, const QColorGroup &cg, int column, int width, int alignment )
 {
 	QColorGroup _cg( cg );
 	QColor c = _cg.text();
-	/*if( available=="0" )
+	if( available=="0" )
 		_cg.setColor( QColorGroup::Text, Qt::red.dark(100) );
 	else
-		_cg.setColor( QColorGroup::Text, Qt::green.dark(200) );*/
+		_cg.setColor( QColorGroup::Text, Qt::green.dark(200) );
 	QListViewItem::paintCell( p, _cg, column, width, alignment );
 	_cg.setColor( QColorGroup::Text, c );
-}
+}*/
+
 //#include "cocktailviewerwidget.moc"

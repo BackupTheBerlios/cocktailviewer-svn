@@ -480,7 +480,7 @@
         <sender>listView1</sender>
         <signal>currentChanged(QListViewItem*)</signal>
         <receiver>cocktailviewerwidgetbase</receiver>
-        <slot>ListView1Clicked()</slot>
+        <slot>ListView1Clicked(QListViewItem*)</slot>
     </connection>
     <connection>
         <sender>lineEdit1</sender>
@@ -504,7 +504,7 @@
         <sender>listView1</sender>
         <signal>clicked(QListViewItem*)</signal>
         <receiver>cocktailviewerwidgetbase</receiver>
-        <slot>ListView1Clicked()</slot>
+        <slot>ListView1Clicked(QListViewItem*)</slot>
     </connection>
     <connection>
         <sender>comboBox1</sender>
@@ -556,7 +556,7 @@
     </connection>
 </connections>
 <slots>
-    <slot>ListView1Clicked()</slot>
+    <slot>ListView1Clicked(QListViewItem *Item)</slot>
     <slot>UpdateListView1()</slot>
     <slot>ComboBox1Changed()</slot>
     <slot>ComboBox2Changed()</slot>
