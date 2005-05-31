@@ -152,9 +152,9 @@
                     </property>
                     <property name="paletteBackgroundColor">
                         <color>
-                            <red>234</red>
-                            <green>234</green>
-                            <blue>234</blue>
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
                         </color>
                     </property>
                     <property name="allColumnsShowFocus">

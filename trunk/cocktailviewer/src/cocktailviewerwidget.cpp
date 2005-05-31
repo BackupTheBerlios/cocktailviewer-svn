@@ -167,6 +167,10 @@ void cocktailviewerWidget::UpdateListView1()
 				item->setText( 4,  relativeAlcohol);
 				item->setText( 5,  absolutAlcohol);
 				item->setText( 6,  ID);
+				if( available=="1")
+					item->setPixmap( 0, green );
+				else
+					item->setPixmap( 0, red );
 				counter++;
 			}
 		}
@@ -452,10 +456,10 @@ void MyListViewItem::paintCell( QPainter *p, const QColorGroup &cg, int column, 
 {
 	QColorGroup _cg( cg );
 	QColor c = _cg.text();
-	if( available=="0" )
+	/*if( available=="0" )
 		_cg.setColor( QColorGroup::Text, Qt::red.dark(100) );
 	else
-		_cg.setColor( QColorGroup::Text, Qt::green.dark(200) );
+		_cg.setColor( QColorGroup::Text, Qt::green.dark(200) );*/
 	QListViewItem::paintCell( p, _cg, column, width, alignment );
 	_cg.setColor( QColorGroup::Text, c );
 }
