@@ -166,7 +166,7 @@ void cocktailviewerWidget::UpdateListView1()
 		{
 			if( (Box1=="" || checkFilterlist( ID, 1 , nrowFilterResult1)) && (Box2=="" || checkFilterlist( ID, 2 , nrowFilterResult2)) && (Box3=="" || checkFilterlist( ID, 3, nrowFilterResult3)) && (Box4=="" || checkFilterlist( ID, 4, nrowFilterResult4 )) && (Box5=="" || (taste1ID!="-1" && taste1ID==getID("tastes", "taste", Box5)) || (taste2ID!="-1" && taste2ID==getID("tastes", "taste", Box5))) && (Box6=="" || (typeID!="-1" && typeID==getID("types", "type", Box6))) )
 			{
-				QListViewItem *item = new MyListViewItem( listView1, available );
+				QListViewItem *item = new MyListViewItem( listView1 );
 				item->setText( 0,  name);
 				item->setText( 1,  rating);
 				item->setText( 2,  price);
@@ -197,12 +197,7 @@ void cocktailviewerWidget::ListView1Clicked(QListViewItem *Item)
 
 void cocktailviewerWidget::loadCocktail(QString ID, QString Name)
 {
-	//QListViewItem *item;
-	//QString ID, Name, description, rating, type, taste1, taste2;
 	QString description, rating, type, taste1, taste2;
-	//item=listView1->selectedItem();
-	//ID=item->text(6);
-	//Name=item->text(0);
 	char *zErrMsg = 0;
 	int rc, nrow, ncolumn, nrow2, ncolumn2;
 	char **Result, **Result2;
@@ -238,9 +233,10 @@ void cocktailviewerWidget::loadCocktail(QString ID, QString Name)
 		qDebug("4");
 		fprintf(stderr, "SQL error: %s\n", zErrMsg);
 	}
-	Text2+="<br><font size=\"-1\">"+description+"</font>";
+	if(description!="")
+		Text2+="<br><font size=\"-1\">"+description+"</font>";
 	textLabel1_3->setText(Text2);
-	Text=Name;
+	Text="<font size=\"+1\">"+Name+"</font>";
 	QString Stars=printStars(rating.toInt());
 	if(Stars!="")
 		Text+="<br>"+Stars;
@@ -495,9 +491,8 @@ cocktailviewerWidget::~cocktailviewerWidget()
 	sqlite3_close(db);
 }
 
-MyListViewItem::MyListViewItem( QListView* parent, QString a ) : QListViewItem(parent)
+MyListViewItem::MyListViewItem( QListView* parent ) : QListViewItem(parent)
 {
-	available = a;
 }
 
 int MyListViewItem::compare ( QListViewItem * i, int col, bool ascending ) const

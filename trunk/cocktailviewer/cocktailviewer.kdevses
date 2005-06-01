@@ -3,10 +3,10 @@
 <KDevPrjSession>
  <DocsAndViews NumberOfDocuments="2" >
   <Doc0 NumberOfViews="1" URL="file:///home/benjamin/c%2B%2B/cocktailtools/cocktailviewer/src/cocktailviewerwidget.cpp" >
-   <View0 line="249" Type="Source" />
+   <View0 line="238" Type="Source" />
   </Doc0>
   <Doc1 NumberOfViews="1" URL="file:///home/benjamin/c%2B%2B/cocktailtools/cocktailviewer/src/cocktailviewerwidget.h" >
-   <View0 line="49" Type="Source" />
+   <View0 line="80" Type="Source" />
   </Doc1>
  </DocsAndViews>
  <pluginList>

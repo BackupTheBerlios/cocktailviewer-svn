@@ -78,7 +78,7 @@ protected slots:
 class MyListViewItem : public QListViewItem
     {
     public:
-	MyListViewItem( QListView* parent, QString a );
+	MyListViewItem( QListView* parent );
 	int compare ( QListViewItem * i, int col, bool ascending ) const;
 	//virtual void paintCell( QPainter *p, const QColorGroup &cg, int column, int width, int alignment );
     private:
