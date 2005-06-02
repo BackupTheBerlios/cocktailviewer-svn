@@ -61,6 +61,8 @@ cocktailviewerWidget::cocktailviewerWidget(QWidget* parent, const char* name, WF
 
 void cocktailviewerWidget::createTMPCocktailExtras()
 {
+	QTime t;
+	t.start();
 	char *zErrMsg = 0;
 	int rc, nrow, ncolumn, nrow2, ncolumn2, nrow3, ncolumn3;
 	char **Result, **Result2, **Result3;
@@ -114,6 +116,7 @@ void cocktailviewerWidget::createTMPCocktailExtras()
 			CocktailAmount+=amountInCocktail*mlfactor;
 			if(stock=="0")
 				available="0";
+			sqlite3_free_table(Result3);
 		}
 		RelativeAlcohol=AbsolutAlcohol/CocktailAmount;
 		rc = sqlite3_exec(db, "INSERT INTO TMPCocktailExtras VALUES(NULL,"+CocktailID+","+available+","+QString::number(CocktailAmount)+","+QString::number(CocktailPrice)+","+QString::number(AbsolutAlcohol)+","+QString::number(RelativeAlcohol)+")", 0, 0, &zErrMsg);
@@ -122,10 +125,13 @@ void cocktailviewerWidget::createTMPCocktailExtras()
 			qDebug("1");
 			fprintf(stderr, "SQL error: %s\n", zErrMsg);
 		}
+		sqlite3_free_table(Result2);
 		fprintf(stderr, ".");
 	}
+	sqlite3_free_table(Result);
 	fprintf(stderr, "\n");
 	rc = sqlite3_exec(db, "COMMIT TRANSACTION", 0, 0, &zErrMsg);
+	qDebug(QString::number(t.elapsed())+" ms");
 }
 
 void cocktailviewerWidget::UpdateListView1()
@@ -223,6 +229,7 @@ void cocktailviewerWidget::loadCocktail(QString ID, QString Name)
 	type=getitFromID(Result[11], "types", "type");
 	taste1=getitFromID(Result[12], "tastes", "taste");
 	taste2=getitFromID(Result[13], "tastes", "taste");
+	sqlite3_free_table(Result);
 	rc = sqlite3_get_table(db, "SELECT * FROM CocktailIngredients WHERE cocktailID="+ID, &Result, &nrow, &ncolumn, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
@@ -237,6 +244,7 @@ void cocktailviewerWidget::loadCocktail(QString ID, QString Name)
 		ingredient=getitFromID(Result[5*i+4], "ingredients", "name");
 		Text2+=amount+" "+unit+" "+ingredient+"<br>";
 	}
+	sqlite3_free_table(Result);
 	rc = sqlite3_get_table(db, "SELECT * FROM TMPCocktailExtras WHERE cocktailID="+ID, &Result2, &nrow2, &ncolumn2, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
@@ -254,6 +262,7 @@ void cocktailviewerWidget::loadCocktail(QString ID, QString Name)
 		Text+="<br><font size=\"-4\">"+type+" "+taste1+" "+taste2+"</font>";
 	textLabel1_4->setText(Text);
 	textLabel1_6->setText("<b>"+QString::number(QString(Result2[11]).toFloat(),'f', 2)+" EUR</b>");
+	sqlite3_free_table(Result2);
 }
 
 QString cocktailviewerWidget::getitFromID(QString ID, QString table, QString value)
@@ -272,6 +281,7 @@ QString cocktailviewerWidget::getitFromID(QString ID, QString table, QString val
 	}
 	if(nrow>0)
 		ResultString=Result[1];
+	sqlite3_free_table(Result);
 	return ResultString;
 }
 
@@ -288,6 +298,7 @@ QString cocktailviewerWidget::getID(QString table, QString value, QString string
 	}
 	if(nrow>0)
 		ID=Result[1];
+	sqlite3_free_table(Result);
 	return ID;
 }
 
@@ -340,7 +351,7 @@ int cocktailviewerWidget::createFilteredCocktaillist(QComboBox *box, int FilterN
 					break;
 			}
 		}
-
+		sqlite3_free_table(result);
 	}
 	else
 		nrow=-1;
@@ -395,6 +406,10 @@ bool cocktailviewerWidget::checkFilterlist(QString ID, int Filter, int nrowFilte
 
 void cocktailviewerWidget::writeIngredientsIntoComboBoxes()
 {
+	comboBox1->disconnect(this);
+	comboBox2->disconnect(this);
+	comboBox3->disconnect(this);
+	comboBox4->disconnect(this);
 	comboBox1->clear();
 	comboBox2->clear();
 	comboBox3->clear();
@@ -432,10 +447,16 @@ void cocktailviewerWidget::writeIngredientsIntoComboBoxes()
 		}
 
 	}
+	sqlite3_free_table(result);
+	connect( comboBox1, SIGNAL(textChanged(const QString&)), this, SLOT(ComboBox1Changed()) );
+	connect( comboBox2, SIGNAL(textChanged(const QString&)), this, SLOT(ComboBox2Changed()) );
+	connect( comboBox3, SIGNAL(textChanged(const QString&)), this, SLOT(ComboBox3Changed()) );
+	connect( comboBox4, SIGNAL(textChanged(const QString&)), this, SLOT(ComboBox4Changed()) );
 }
 
 void cocktailviewerWidget::writeTastesIntoComboBoxes()
 {
+	comboBox5->disconnect(this);
 	comboBox5->clear();
 	char *zErrMsg = 0;
 	int rc, ncolumn, nrow;
@@ -450,10 +471,13 @@ void cocktailviewerWidget::writeTastesIntoComboBoxes()
 	{
 		comboBox5->insertItem( result[i] );
 	}
+	sqlite3_free_table(result);
+	connect( comboBox5, SIGNAL(textChanged(const QString&)), this, SLOT(UpdateListView1()) );
 }
 
 void cocktailviewerWidget::writeTypesIntoComboBoxes()
 {
+	comboBox6->disconnect(this);
 	comboBox6->clear();
 	char *zErrMsg = 0;
 	int rc, ncolumn, nrow;
@@ -468,7 +492,8 @@ void cocktailviewerWidget::writeTypesIntoComboBoxes()
 	{
 		comboBox6->insertItem( result[i] );
 	}
-
+	sqlite3_free_table(result);
+	connect( comboBox6, SIGNAL(textChanged(const QString&)), this, SLOT(UpdateListView1()) );
 }
 
 void cocktailviewerWidget::checkBox1Clicked()
