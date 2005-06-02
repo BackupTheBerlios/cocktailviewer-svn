@@ -67,6 +67,8 @@ void cocktailviewerWidget::createTMPCocktailExtras()
 	QString stock;
 	float CocktailPrice, AbsolutAlcohol, CocktailAmount, RelativeAlcohol;
 	float amountInBottle=0, priceOfBottle=0, alcohol=0;
+	
+	fprintf(stderr, "Creating TMPCocktailExtras ");
 	rc = sqlite3_exec(db, "DROP TABLE TMPCocktailExtras;", 0, 0, &zErrMsg);
 	rc = sqlite3_exec(db, "CREATE TABLE TMPCocktailExtras (ID INTEGER PRIMARY KEY, cocktailID NUMERIC, available NUMERIC, amount NUMERIC, price NUMERIC, absolutAlc NUMERIC, relativeAlc NUMERIC);", 0, 0, &zErrMsg);
 	rc = sqlite3_get_table(db, "SELECT ID FROM Cocktails", &Result, &nrow, &ncolumn, &zErrMsg);
@@ -120,7 +122,9 @@ void cocktailviewerWidget::createTMPCocktailExtras()
 			qDebug("1");
 			fprintf(stderr, "SQL error: %s\n", zErrMsg);
 		}
+		fprintf(stderr, ".");
 	}
+	fprintf(stderr, "\n");
 	rc = sqlite3_exec(db, "COMMIT TRANSACTION", 0, 0, &zErrMsg);
 }
 
@@ -136,6 +140,8 @@ void cocktailviewerWidget::UpdateListView1()
 	QString Box4=comboBox4->currentText();
 	QString Box5=comboBox5->currentText();
 	QString Box6=comboBox6->currentText();
+	
+	fprintf(stderr, "Updating ListView ");
 	rc = sqlite3_get_table(db, "SELECT ID,Name,rating,taste1ID,taste2ID,typeID FROM Cocktails WHERE Name LIKE \"%"+lineEdit1->text()+"%\"", &Result, &nrow, &ncolumn, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
@@ -145,12 +151,12 @@ void cocktailviewerWidget::UpdateListView1()
 	listView1->clear();
 	for(int i=1;i<=nrow;i++)
 	{
-		QString ID=Result[6*i];
-		QString name=Result[6*i+1];
-		QString rating=Result[6*i+2];
-		QString taste1ID=Result[6*i+3];
-		QString taste2ID=Result[6*i+4];
-		QString typeID=Result[6*i+5];
+		QString ID=Result[ncolumn*i];
+		QString name=Result[ncolumn*i+1];
+		QString rating=Result[ncolumn*i+2];
+		QString taste1ID=Result[ncolumn*i+3];
+		QString taste2ID=Result[ncolumn*i+4];
+		QString typeID=Result[ncolumn*i+5];
 		rc = sqlite3_get_table(db, "SELECT * FROM TMPCocktailExtras WHERE ID="+ID, &Result2, &nrow2, &ncolumn2, &zErrMsg);
 		if( rc!=SQLITE_OK )
 		{
@@ -181,8 +187,12 @@ void cocktailviewerWidget::UpdateListView1()
 				counter++;
 			}
 		}
-	textLabel1_5->setText(QString::number(counter)+" Cocktails");
+		sqlite3_free_table(Result2);
+		textLabel1_5->setText(QString::number(counter)+" Cocktails");
+		fprintf(stderr, ".");
 	}
+	fprintf(stderr, "\n");
+	sqlite3_free_table(Result);
 }
 
 void cocktailviewerWidget::ListView1Clicked(QListViewItem *Item)
