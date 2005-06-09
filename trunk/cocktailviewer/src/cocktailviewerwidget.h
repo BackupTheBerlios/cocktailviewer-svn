@@ -35,7 +35,9 @@ public:
     cocktailviewerWidget(QWidget* parent = 0, const char* name = 0, WFlags fl = 0 );
     ~cocktailviewerWidget();
     /*$PUBLIC_FUNCTIONS$*/
-
+    /*int globalIngredientsnrow, globalIngredientsncolumn;
+    char **globalIngredientsResult;
+    QString globalResult1, globalResult2, globalResult3, globalResult4;*/
     int nrowFilterResult1, nrowFilterResult2, nrowFilterResult3, nrowFilterResult4;
     QStringList FilterList1, FilterList2, FilterList3, FilterList4;
 
@@ -53,9 +55,12 @@ public slots:
     void pushButton4Clicked();
     void pushButton5Clicked();
     void writeIngredientsIntoComboBoxes();
+    void exitClicked();
 
 protected:
     /*$PROTECTED_FUNCTIONS$*/
+    //void makeIngredientsSearchList();
+    //void searchIngredientsList(QString ID);
     void createTMPCocktailExtras();
     void loadCocktail(QString ID, QString Name);
     QString getitFromID(QString ID, QString table, QString value);

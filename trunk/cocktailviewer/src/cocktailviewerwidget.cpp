@@ -52,12 +52,39 @@ cocktailviewerWidget::cocktailviewerWidget(QWidget* parent, const char* name, WF
 	nrowFilterResult2=-1;
 	nrowFilterResult3=-1;
 	nrowFilterResult4=-1;
+	//makeIngredientsSearchList();
 	createTMPCocktailExtras();
 	UpdateListView1();
 	writeIngredientsIntoComboBoxes();
 	writeTastesIntoComboBoxes();
 	writeTypesIntoComboBoxes();
 }
+
+/*void cocktailviewerWidget::makeIngredientsSearchList()
+{
+	char *zErrMsg = 0;
+	int rc;
+	rc = sqlite3_get_table(db, "SELECT amount,price,alcohol,stock,ID FROM Ingredients", &globalIngredientsResult, &globalIngredientsnrow, &globalIngredientsncolumn, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	
+}
+
+void cocktailviewerWidget::searchIngredientsList(QString ID)
+{
+	for(int i=1;i<=globalIngredientsnrow;i++)
+	{
+		if(globalIngredientsResult[5*i+4]==ID)
+		{
+		globalResult1=globalIngredientsResult[5*i];
+		globalResult2=globalIngredientsResult[5*i+1];
+		globalResult3=globalIngredientsResult[5*i+2];
+		globalResult4=globalIngredientsResult[5*i+3];
+		}
+	}
+}*/
 
 void cocktailviewerWidget::createTMPCocktailExtras()
 {
@@ -110,6 +137,11 @@ void cocktailviewerWidget::createTMPCocktailExtras()
 				alcohol=QString(Result3[6]).toFloat();
 				stock=Result3[7];
 			}
+			/*searchIngredientsList(IngredientID);
+			amountInBottle=globalResult1.toFloat();
+			priceOfBottle=globalResult2.toFloat();
+			alcohol=globalResult3.toFloat();
+			stock=globalResult4;*/
 			if(amountInBottle!=0)
 				CocktailPrice+=amountInCocktail*mlfactor*(priceOfBottle/amountInBottle);
 			AbsolutAlcohol+=amountInCocktail*mlfactor*(alcohol/100);
@@ -519,6 +551,11 @@ void cocktailviewerWidget::pushButton4Clicked()
 void cocktailviewerWidget::pushButton5Clicked()
 {
 	comboBox4->setCurrentItem( 0 );
+}
+
+void cocktailviewerWidget::exitClicked()
+{
+	exit(0);
 }
 
 cocktailviewerWidget::~cocktailviewerWidget()
