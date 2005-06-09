@@ -1,0 +1,175 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>ingredientseditorwidgetbase</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>ingredientseditorwidgetbase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>480</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QPushButton" row="2" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>pushButton8</cstring>
+            </property>
+            <property name="text">
+                <string>OK</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="2" column="3" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>pushButton9</cstring>
+            </property>
+            <property name="text">
+                <string>Abbrechen</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="0" column="1">
+            <property name="name">
+                <cstring>pushButton10</cstring>
+            </property>
+            <property name="text">
+                <string>X</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="0" column="2" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>lineEdit2</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="0">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="text">
+                <string>Search:</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="0" column="5">
+            <property name="name">
+                <cstring>pushButton12</cstring>
+            </property>
+            <property name="text">
+                <string>delete Ingredient</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="0" column="4">
+            <property name="name">
+                <cstring>pushButton11</cstring>
+            </property>
+            <property name="text">
+                <string>add Ingredient</string>
+            </property>
+        </widget>
+        <widget class="QTable" row="1" column="0" rowspan="1" colspan="6">
+            <column>
+                <property name="text">
+                    <string>ID</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>Name</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>Content</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>Price</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>Alcohol</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>Stock</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </column>
+            <row>
+                <property name="text">
+                    <string>1</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </row>
+            <row>
+                <property name="text">
+                    <string>2</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </row>
+            <row>
+                <property name="text">
+                    <string>3</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </row>
+            <property name="name">
+                <cstring>table1</cstring>
+            </property>
+            <property name="numRows">
+                <number>3</number>
+            </property>
+            <property name="numCols">
+                <number>6</number>
+            </property>
+            <property name="selectionMode">
+                <enum>Single</enum>
+            </property>
+            <property name="focusStyle">
+                <enum>SpreadSheet</enum>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButton9</sender>
+        <signal>clicked()</signal>
+        <receiver>ingredientseditorwidgetbase</receiver>
+        <slot>close()</slot>
+    </connection>
+</connections>
+<layoutdefaults spacing="4" margin="4"/>
+</UI>

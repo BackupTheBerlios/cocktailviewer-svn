@@ -56,6 +56,7 @@ public slots:
     void pushButton5Clicked();
     void writeIngredientsIntoComboBoxes();
     void exitClicked();
+    void editIngredientsClicked();
 
 protected:
     /*$PROTECTED_FUNCTIONS$*/

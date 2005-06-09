@@ -553,6 +553,11 @@ void cocktailviewerWidget::pushButton5Clicked()
 	comboBox4->setCurrentItem( 0 );
 }
 
+void cocktailviewerWidget::editIngredientsClicked()
+{
+
+}
+
 void cocktailviewerWidget::exitClicked()
 {
 	exit(0);
