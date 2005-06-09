@@ -29,6 +29,7 @@
 #include <qregexp.h>
 
 #include "cocktailviewerwidget.h"
+#include "ingredientseditorwidget.h"
 
 cocktailviewerWidget::cocktailviewerWidget(QWidget* parent, const char* name, WFlags fl)
         : cocktailviewerWidgetBase(parent,name,fl)
@@ -38,16 +39,7 @@ cocktailviewerWidget::cocktailviewerWidget(QWidget* parent, const char* name, WF
 	//dir.remove(i+1, dir.length());
 	green.load( "./green.bmp" );
 	red.load( "./red.bmp" );
-	QString dbfile;
-	dbfile="cocktail.db";
-	int rc;
-	rc = sqlite3_open(dbfile, &db);
-	if( rc )
-	{
-		fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
-		sqlite3_close(db);
-		return;
-	}
+	openDB();
 	nrowFilterResult1=-1;
 	nrowFilterResult2=-1;
 	nrowFilterResult3=-1;
@@ -58,6 +50,20 @@ cocktailviewerWidget::cocktailviewerWidget(QWidget* parent, const char* name, WF
 	writeIngredientsIntoComboBoxes();
 	writeTastesIntoComboBoxes();
 	writeTypesIntoComboBoxes();
+}
+
+void cocktailviewerWidget::openDB()
+{
+	QString dbfile;
+	dbfile="cocktail.db";
+	int rc;
+	rc = sqlite3_open(dbfile, &db);
+	if( rc )
+	{
+		fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+		sqlite3_close(db);
+		return;
+	}
 }
 
 /*void cocktailviewerWidget::makeIngredientsSearchList()
@@ -555,7 +561,13 @@ void cocktailviewerWidget::pushButton5Clicked()
 
 void cocktailviewerWidget::editIngredientsClicked()
 {
-
+	sqlite3_close(db);
+	ingredientseditorwidget *IngredientsEditor;
+	IngredientsEditor=new ingredientseditorwidget(this, "IngredientsEditor");
+	IngredientsEditor->setCaption( "IngredientsEditor" );
+	IngredientsEditor->exec();
+	delete IngredientsEditor;
+	openDB();
 }
 
 void cocktailviewerWidget::exitClicked()

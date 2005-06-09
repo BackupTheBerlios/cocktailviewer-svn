@@ -8,8 +8,8 @@
         <rect>
             <x>0</x>
             <y>0</y>
-            <width>600</width>
-            <height>480</height>
+            <width>667</width>
+            <height>471</height>
         </rect>
     </property>
     <property name="caption">
@@ -75,14 +75,6 @@
         <widget class="QTable" row="1" column="0" rowspan="1" colspan="6">
             <column>
                 <property name="text">
-                    <string>ID</string>
-                </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
-                </property>
-            </column>
-            <column>
-                <property name="text">
                     <string>Name</string>
                 </property>
                 <property name="pixmap">
@@ -91,7 +83,7 @@
             </column>
             <column>
                 <property name="text">
-                    <string>Content</string>
+                    <string>available</string>
                 </property>
                 <property name="pixmap">
                     <pixmap></pixmap>
@@ -99,7 +91,7 @@
             </column>
             <column>
                 <property name="text">
-                    <string>Price</string>
+                    <string>Content (ml)</string>
                 </property>
                 <property name="pixmap">
                     <pixmap></pixmap>
@@ -107,7 +99,7 @@
             </column>
             <column>
                 <property name="text">
-                    <string>Alcohol</string>
+                    <string>Price (€)</string>
                 </property>
                 <property name="pixmap">
                     <pixmap></pixmap>
@@ -115,7 +107,15 @@
             </column>
             <column>
                 <property name="text">
-                    <string>Stock</string>
+                    <string>Alcohol (%)</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>ID</string>
                 </property>
                 <property name="pixmap">
                     <pixmap></pixmap>
@@ -148,14 +148,32 @@
             <property name="name">
                 <cstring>table1</cstring>
             </property>
+            <property name="mouseTracking">
+                <bool>false</bool>
+            </property>
+            <property name="focusPolicy">
+                <enum>WheelFocus</enum>
+            </property>
+            <property name="resizePolicy">
+                <enum>Default</enum>
+            </property>
+            <property name="vScrollBarMode">
+                <enum>AlwaysOn</enum>
+            </property>
             <property name="numRows">
                 <number>3</number>
             </property>
             <property name="numCols">
                 <number>6</number>
             </property>
+            <property name="showGrid">
+                <bool>true</bool>
+            </property>
+            <property name="sorting">
+                <bool>false</bool>
+            </property>
             <property name="selectionMode">
-                <enum>Single</enum>
+                <enum>NoSelection</enum>
             </property>
             <property name="focusStyle">
                 <enum>SpreadSheet</enum>
@@ -170,6 +188,29 @@
         <receiver>ingredientseditorwidgetbase</receiver>
         <slot>close()</slot>
     </connection>
+    <connection>
+        <sender>pushButton11</sender>
+        <signal>clicked()</signal>
+        <receiver>ingredientseditorwidgetbase</receiver>
+        <slot>addIngredientClicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton12</sender>
+        <signal>clicked()</signal>
+        <receiver>ingredientseditorwidgetbase</receiver>
+        <slot>deleteIngredientClicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton8</sender>
+        <signal>clicked()</signal>
+        <receiver>ingredientseditorwidgetbase</receiver>
+        <slot>OkClicked()</slot>
+    </connection>
 </connections>
+<slots>
+    <slot>addIngredientClicked()</slot>
+    <slot>deleteIngredientClicked()</slot>
+    <slot>OkClicked()</slot>
+</slots>
 <layoutdefaults spacing="4" margin="4"/>
 </UI>

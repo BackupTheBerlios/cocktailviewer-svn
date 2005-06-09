@@ -71,6 +71,7 @@ protected:
     bool checkFilterlist(QString ID, int Filter, int nrowFilterResult);
     void writeTastesIntoComboBoxes();
     void writeTypesIntoComboBoxes();
+    void openDB();
 
     sqlite3 *db;
     QPixmap green, red;

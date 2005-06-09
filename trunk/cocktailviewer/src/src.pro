@@ -6,10 +6,12 @@
 FORMS += cocktailviewerwidgetbase.ui \
          ingredientseditorwidgetbase.ui 
 HEADERS += cocktailviewer.h \
-           cocktailviewerwidget.h 
+           cocktailviewerwidget.h \
+           ingredientseditorwidget.h 
 SOURCES += cocktailviewer.cpp \
            main.cpp \
-           cocktailviewerwidget.cpp 
+           cocktailviewerwidget.cpp \
+           ingredientseditorwidget.cpp 
 LIBS += -lsqlite3
 TARGET = ../cocktailviewer
 CONFIG += release \
