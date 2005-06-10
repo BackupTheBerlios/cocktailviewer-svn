@@ -75,7 +75,7 @@
         <widget class="QTable" row="1" column="0" rowspan="1" colspan="6">
             <column>
                 <property name="text">
-                    <string>Name</string>
+                    <string>available</string>
                 </property>
                 <property name="pixmap">
                     <pixmap></pixmap>
@@ -83,7 +83,7 @@
             </column>
             <column>
                 <property name="text">
-                    <string>available</string>
+                    <string>Name</string>
                 </property>
                 <property name="pixmap">
                     <pixmap></pixmap>
@@ -206,11 +206,18 @@
         <receiver>ingredientseditorwidgetbase</receiver>
         <slot>OkClicked()</slot>
     </connection>
+    <connection>
+        <sender>table1</sender>
+        <signal>valueChanged(int,int)</signal>
+        <receiver>ingredientseditorwidgetbase</receiver>
+        <slot>tableChanged()</slot>
+    </connection>
 </connections>
 <slots>
     <slot>addIngredientClicked()</slot>
     <slot>deleteIngredientClicked()</slot>
     <slot>OkClicked()</slot>
+    <slot>tableChanged()</slot>
 </slots>
 <layoutdefaults spacing="4" margin="4"/>
 </UI>

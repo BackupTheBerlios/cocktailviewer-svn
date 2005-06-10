@@ -62,6 +62,8 @@ protected:
     /*$PROTECTED_FUNCTIONS$*/
     //void makeIngredientsSearchList();
     //void searchIngredientsList(QString ID);
+    void initialize();
+    void LoadData();
     void createTMPCocktailExtras();
     void loadCocktail(QString ID, QString Name);
     QString getitFromID(QString ID, QString table, QString value);

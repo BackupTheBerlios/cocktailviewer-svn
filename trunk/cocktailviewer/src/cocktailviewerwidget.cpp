@@ -34,6 +34,12 @@
 cocktailviewerWidget::cocktailviewerWidget(QWidget* parent, const char* name, WFlags fl)
         : cocktailviewerWidgetBase(parent,name,fl)
 {
+	initialize();
+	LoadData();
+}
+
+void cocktailviewerWidget::initialize()
+{
 	//QString dir=argv[0];
 	//int i=dir.findRev('/',-1);
 	//dir.remove(i+1, dir.length());
@@ -44,6 +50,10 @@ cocktailviewerWidget::cocktailviewerWidget(QWidget* parent, const char* name, WF
 	nrowFilterResult2=-1;
 	nrowFilterResult3=-1;
 	nrowFilterResult4=-1;
+}
+
+void cocktailviewerWidget::LoadData()
+{
 	//makeIngredientsSearchList();
 	createTMPCocktailExtras();
 	UpdateListView1();
@@ -561,13 +571,17 @@ void cocktailviewerWidget::pushButton5Clicked()
 
 void cocktailviewerWidget::editIngredientsClicked()
 {
+	bool dirty;
 	sqlite3_close(db);
-	ingredientseditorwidget *IngredientsEditor;
-	IngredientsEditor=new ingredientseditorwidget(this, "IngredientsEditor");
-	IngredientsEditor->setCaption( "IngredientsEditor" );
-	IngredientsEditor->exec();
-	delete IngredientsEditor;
+	ingredientseditorwidget *IngredientEditor;
+	IngredientEditor=new ingredientseditorwidget(this, "IngredientEditor");
+	IngredientEditor->setCaption( "IngredientEditor" );
+	IngredientEditor->exec();
+	dirty=IngredientEditor->isDirty();
+	delete IngredientEditor;
 	openDB();
+	if( dirty )
+		LoadData();
 }
 
 void cocktailviewerWidget::exitClicked()

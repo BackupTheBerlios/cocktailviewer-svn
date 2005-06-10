@@ -26,7 +26,7 @@
 int main( int argc, char ** argv ) {
     QApplication a( argc, argv );
     cocktailviewer * mw = new cocktailviewer();
-    mw->setCaption( "cocktailviewer" );
+    mw->setCaption( "CocktailViewer" );
     mw->show();
     a.connect( &a, SIGNAL(lastWindowClosed()), &a, SLOT(quit()) );
     return a.exec();

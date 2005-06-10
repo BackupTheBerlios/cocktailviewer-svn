@@ -31,14 +31,18 @@ public:
     ingredientseditorwidget( QWidget* parent = 0, const char* name = 0, WFlags fl = 0 );
     void saveIngredientsToDB();
     QString getNewIngredientID();
+    bool isDirty();
 
     ~ingredientseditorwidget();
     sqlite3 *db2;
+    int countNew;
+    bool dirty;
 
 public slots:
     void addIngredientClicked();
     void deleteIngredientClicked();
     void OkClicked();
+    void tableChanged();
 
 };
 
