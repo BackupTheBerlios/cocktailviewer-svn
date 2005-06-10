@@ -24,6 +24,7 @@
 #include <qpushbutton.h>
 #include <qmessagebox.h>
 #include <qpixmap.h>
+#include <qimage.h>
 
 #include "ingredientseditorwidget.h"
 
@@ -210,18 +211,13 @@ bool ingredientseditorwidget::isDirty()
 
 void ingredientseditorwidget::tableClicked(int row)
 {
-	/*QPixmap green, red;
-	QIconSet imageRed, imageGreen;
-	green.load( "./green.bmp" );
-	red.load( "./red.bmp" );
-	imageRed=QIconSet(red);
-	imageGreen=QIconSet(green);*/
-	//qDebug(QString::number((int) &imageRed));
-	qDebug(QString::number((int) table1->verticalHeader()->iconSet(row)));
-	/*if(table1->verticalHeader()->iconSet(row)->pixmap()==(const char[]) red[2])
+	QImage image1, image2;
+	image1=table1->verticalHeader()->iconSet(row)->pixmap();
+	image2=red;
+	if(image1==image2)
 		table1->verticalHeader()->setLabel( row, imageGreen, "" );
 	else
-		table1->verticalHeader()->setLabel( row, *(table1->verticalHeader()->iconSet(row+1)), "" );*/
+		table1->verticalHeader()->setLabel( row, imageRed, "" );
 }
 
 ingredientseditorwidget::~ingredientseditorwidget()
