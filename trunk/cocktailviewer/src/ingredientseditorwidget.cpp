@@ -34,8 +34,6 @@ ingredientseditorwidget::ingredientseditorwidget(QWidget* parent, const char* na
 	int rc, nrow, ncolumn;
 	char **Result;
 	QString dbfile;
-	QPixmap green, red;
-	//QIconSet imageRed, imageGreen;
 	green.load( "./green.bmp" );
 	red.load( "./red.bmp" );
 	imageRed=QIconSet(red);
@@ -218,12 +216,12 @@ void ingredientseditorwidget::tableClicked(int row)
 	red.load( "./red.bmp" );
 	imageRed=QIconSet(red);
 	imageGreen=QIconSet(green);*/
-	qDebug(QString::number((int) &imageRed));
+	//qDebug(QString::number((int) &imageRed));
 	qDebug(QString::number((int) table1->verticalHeader()->iconSet(row)));
-	if((table1->verticalHeader()->iconSet(row))==&imageRed)
+	/*if(table1->verticalHeader()->iconSet(row)->pixmap()==(const char[]) red[2])
 		table1->verticalHeader()->setLabel( row, imageGreen, "" );
 	else
-		table1->verticalHeader()->setLabel( row, *(table1->verticalHeader()->iconSet(row+1)), "" );
+		table1->verticalHeader()->setLabel( row, *(table1->verticalHeader()->iconSet(row+1)), "" );*/
 }
 
 ingredientseditorwidget::~ingredientseditorwidget()
