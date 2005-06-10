@@ -24,7 +24,10 @@
                 <cstring>pushButton8</cstring>
             </property>
             <property name="text">
-                <string>OK</string>
+                <string>&amp;OK</string>
+            </property>
+            <property name="accel">
+                <string>Alt+O</string>
             </property>
         </widget>
         <widget class="QPushButton" row="2" column="3" rowspan="1" colspan="2">
@@ -32,7 +35,10 @@
                 <cstring>pushButton9</cstring>
             </property>
             <property name="text">
-                <string>Abbrechen</string>
+                <string>&amp;Cancel</string>
+            </property>
+            <property name="accel">
+                <string>Alt+C</string>
             </property>
         </widget>
         <widget class="QPushButton" row="0" column="1">
@@ -77,74 +83,32 @@
                 <property name="text">
                     <string>available</string>
                 </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
-                </property>
             </column>
             <column>
                 <property name="text">
                     <string>Name</string>
-                </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
                 </property>
             </column>
             <column>
                 <property name="text">
                     <string>Content (ml)</string>
                 </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
-                </property>
             </column>
             <column>
                 <property name="text">
                     <string>Price (€)</string>
-                </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
                 </property>
             </column>
             <column>
                 <property name="text">
                     <string>Alcohol (%)</string>
                 </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
-                </property>
             </column>
             <column>
                 <property name="text">
                     <string>ID</string>
                 </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
-                </property>
             </column>
-            <row>
-                <property name="text">
-                    <string>1</string>
-                </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
-                </property>
-            </row>
-            <row>
-                <property name="text">
-                    <string>2</string>
-                </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
-                </property>
-            </row>
-            <row>
-                <property name="text">
-                    <string>3</string>
-                </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
-                </property>
-            </row>
             <property name="name">
                 <cstring>table1</cstring>
             </property>
@@ -218,6 +182,7 @@
     <slot>deleteIngredientClicked()</slot>
     <slot>OkClicked()</slot>
     <slot>tableChanged()</slot>
+    <slot>tableClicked(int row)</slot>
 </slots>
 <layoutdefaults spacing="4" margin="4"/>
 </UI>

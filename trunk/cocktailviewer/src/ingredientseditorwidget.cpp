@@ -23,6 +23,7 @@
 #include <qstring.h>
 #include <qpushbutton.h>
 #include <qmessagebox.h>
+#include <qpixmap.h>
 
 #include "ingredientseditorwidget.h"
 
@@ -33,6 +34,12 @@ ingredientseditorwidget::ingredientseditorwidget(QWidget* parent, const char* na
 	int rc, nrow, ncolumn;
 	char **Result;
 	QString dbfile;
+	QPixmap green, red;
+	QIconSet imageRed, imageGreen;
+	green.load( "./green.bmp" );
+	red.load( "./red.bmp" );
+	imageRed=QIconSet(red);
+	imageGreen=QIconSet(green);
 	dbfile="cocktail.db";
 	rc = sqlite3_open(dbfile, &db2);
 	if( rc )
@@ -53,18 +60,25 @@ ingredientseditorwidget::ingredientseditorwidget(QWidget* parent, const char* na
 		QCheckTableItem *Item;
 		Item=new QCheckTableItem( table1, "        " );
 		if(QString(Result[7*i+5])!="0")
+		{
 			Item->setChecked(true);
+			table1->verticalHeader()->setLabel( i-1, imageGreen, "" );
+		}
 		else
+		{
 			Item->setChecked(false);
+			table1->verticalHeader()->setLabel( i-1, imageRed, "" );
+		}
 		table1->setItem(i-1, 0, Item );
 		table1->setText(i-1, 2, Result[7*i+2] );
 		table1->setText(i-1, 3, Result[7*i+3] );
 		table1->setText(i-1, 4, Result[7*i+4] );
 		table1->setText(i-1, 5, Result[7*i] );
-		table1->setRowStretchable ( i-1, true );
+		table1->verticalHeader()->setResizeEnabled( FALSE, i-1 );
+		table1->verticalHeader()->setClickEnabled( TRUE , i-1 );
 	}
 	table1->setColumnReadOnly ( 5, true );
-	table1->setColumnWidth ( 0, 50);
+	table1->setColumnWidth ( 0, 70);
 	table1->setColumnWidth ( 1, 250);
 	table1->setColumnWidth ( 2, 80);
 	table1->setColumnWidth ( 3, 70);
@@ -73,6 +87,7 @@ ingredientseditorwidget::ingredientseditorwidget(QWidget* parent, const char* na
 	countNew=0;
 	pushButton8->setEnabled( false );
 	dirty=false;
+	connect( table1->verticalHeader(), SIGNAL(clicked ( int )), this, SLOT(tableClicked(int)) );
 }
 
 void ingredientseditorwidget::addIngredientClicked()
@@ -188,6 +203,21 @@ void ingredientseditorwidget::tableChanged()
 bool ingredientseditorwidget::isDirty()
 {
 	return dirty;
+}
+
+void ingredientseditorwidget::tableClicked(int row)
+{
+	QPixmap green, red;
+	QIconSet imageRed, imageGreen;
+	green.load( "./green.bmp" );
+	red.load( "./red.bmp" );
+	imageRed=QIconSet(red);
+	imageGreen=QIconSet(green);
+
+	if(table1->verticalHeader()->iconSet(row)==&imageRed)
+		table1->verticalHeader()->setLabel( row, imageGreen, "" );
+	else
+		table1->verticalHeader()->setLabel( row, imageRed, "" );
 }
 
 ingredientseditorwidget::~ingredientseditorwidget()

@@ -21,6 +21,7 @@
 #define INGREDIENTSEDITORWIDGET_H
 
 #include "ingredientseditorwidgetbase.h"
+#include <qiconset.h>
 
 
 class ingredientseditorwidget : public ingredientseditorwidgetbase
@@ -38,11 +39,15 @@ public:
     int countNew;
     bool dirty;
 
+protected:
+    //QIconSet imageRed, imageGreen;
+
 public slots:
     void addIngredientClicked();
     void deleteIngredientClicked();
     void OkClicked();
     void tableChanged();
+    void tableClicked(int row);
 
 };
 
