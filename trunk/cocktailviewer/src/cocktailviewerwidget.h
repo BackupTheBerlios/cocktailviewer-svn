@@ -27,6 +27,7 @@
 #include <qlistview.h>
 #include <qpixmap.h>
 
+
 class cocktailviewerWidget : public cocktailviewerWidgetBase
 {
     Q_OBJECT

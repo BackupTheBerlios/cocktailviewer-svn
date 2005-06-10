@@ -20,6 +20,7 @@
 #ifndef INGREDIENTSEDITORWIDGET_H
 #define INGREDIENTSEDITORWIDGET_H
 
+#include "cocktailviewerwidget.h"
 #include "ingredientseditorwidgetbase.h"
 #include <qiconset.h>
 
@@ -40,7 +41,7 @@ public:
     bool dirty;
 
 protected:
-    //QIconSet imageRed, imageGreen;
+    QIconSet imageRed, imageGreen;
 
 public slots:
     void addIngredientClicked();

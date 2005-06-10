@@ -35,7 +35,7 @@ ingredientseditorwidget::ingredientseditorwidget(QWidget* parent, const char* na
 	char **Result;
 	QString dbfile;
 	QPixmap green, red;
-	QIconSet imageRed, imageGreen;
+	//QIconSet imageRed, imageGreen;
 	green.load( "./green.bmp" );
 	red.load( "./red.bmp" );
 	imageRed=QIconSet(red);
@@ -88,6 +88,7 @@ ingredientseditorwidget::ingredientseditorwidget(QWidget* parent, const char* na
 	pushButton8->setEnabled( false );
 	dirty=false;
 	connect( table1->verticalHeader(), SIGNAL(clicked ( int )), this, SLOT(tableClicked(int)) );
+	sqlite3_free_table(Result);
 }
 
 void ingredientseditorwidget::addIngredientClicked()
@@ -113,12 +114,15 @@ QString ingredientseditorwidget::getNewIngredientID()
 	char *zErrMsg = 0;
 	int rc, nrow, ncolumn;
 	char **Result;
+	QString ID;
 	rc = sqlite3_get_table(db2, "SELECT * FROM Ingredients ORDER BY ID", &Result, &nrow, &ncolumn, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
 		fprintf(stderr, "SQL error: %s\n", zErrMsg);
 	}
-	return QString::number(QString(Result[7*nrow]).toInt()+countNew);
+	ID=QString::number(QString(Result[7*nrow]).toInt()+countNew);
+	sqlite3_free_table(Result);
+	return ID;
 }
 
 void ingredientseditorwidget::deleteIngredientClicked()
@@ -150,6 +154,7 @@ void ingredientseditorwidget::deleteIngredientClicked()
 			pushButton8->setEnabled( true );
 			table1->removeRow(table1->currentRow());
 		}
+	sqlite3_free_table(Result);
 }
 
 void ingredientseditorwidget::saveIngredientsToDB()
@@ -207,17 +212,18 @@ bool ingredientseditorwidget::isDirty()
 
 void ingredientseditorwidget::tableClicked(int row)
 {
-	QPixmap green, red;
+	/*QPixmap green, red;
 	QIconSet imageRed, imageGreen;
 	green.load( "./green.bmp" );
 	red.load( "./red.bmp" );
 	imageRed=QIconSet(red);
-	imageGreen=QIconSet(green);
-
-	if(table1->verticalHeader()->iconSet(row)==&imageRed)
+	imageGreen=QIconSet(green);*/
+	qDebug(QString::number((int) &imageRed));
+	qDebug(QString::number((int) table1->verticalHeader()->iconSet(row)));
+	if((table1->verticalHeader()->iconSet(row))==&imageRed)
 		table1->verticalHeader()->setLabel( row, imageGreen, "" );
 	else
-		table1->verticalHeader()->setLabel( row, imageRed, "" );
+		table1->verticalHeader()->setLabel( row, *(table1->verticalHeader()->iconSet(row+1)), "" );
 }
 
 ingredientseditorwidget::~ingredientseditorwidget()
