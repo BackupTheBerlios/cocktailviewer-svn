@@ -30,6 +30,8 @@
 
 #include "cocktailviewerwidget.h"
 #include "ingredientseditorwidget.h"
+#include "green.xpm"
+#include "red.xpm"
 
 cocktailviewerWidget::cocktailviewerWidget(QWidget* parent, const char* name, WFlags fl)
         : cocktailviewerWidgetBase(parent,name,fl)
@@ -43,8 +45,8 @@ void cocktailviewerWidget::initialize()
 	//QString dir=argv[0];
 	//int i=dir.findRev('/',-1);
 	//dir.remove(i+1, dir.length());
-	green.load( "./green.bmp" );
-	red.load( "./red.bmp" );
+	//green.load( "./green.bmp" );
+	//red.load( "./red.bmp" );
 	openDB();
 	nrowFilterResult1=-1;
 	nrowFilterResult2=-1;
@@ -235,9 +237,9 @@ void cocktailviewerWidget::UpdateListView1()
 				item->setText( 5,  absolutAlcohol);
 				item->setText( 6,  ID);
 				if( available=="1")
-					item->setPixmap( 0, green );
+					item->setPixmap( 0, (const char **) green_xpm );
 				else
-					item->setPixmap( 0, red );
+					item->setPixmap( 0, (const char **) red_xpm );
 				counter++;
 			}
 		}
@@ -478,19 +480,19 @@ void cocktailviewerWidget::writeIngredientsIntoComboBoxes()
 	{
 		if(QString(result[2*i+1])!="0")
 		{
-			comboBox1->insertItem( green, result[2*i] );
-			comboBox2->insertItem( green, result[2*i] );
-			comboBox3->insertItem( green, result[2*i] );
-			comboBox4->insertItem( green, result[2*i] );
+			comboBox1->insertItem( (const char **) green_xpm, result[2*i] );
+			comboBox2->insertItem( (const char **) green_xpm, result[2*i] );
+			comboBox3->insertItem( (const char **) green_xpm, result[2*i] );
+			comboBox4->insertItem( (const char **) green_xpm, result[2*i] );
 		}
 		else
 		{
 			if( !checkBox2->isChecked() )
 			{
-				comboBox1->insertItem( red, result[2*i] );
-				comboBox2->insertItem( red, result[2*i] );
-				comboBox3->insertItem( red, result[2*i] );
-				comboBox4->insertItem( red, result[2*i] );
+				comboBox1->insertItem( (const char **) red_xpm, result[2*i] );
+				comboBox2->insertItem( (const char **) red_xpm, result[2*i] );
+				comboBox3->insertItem( (const char **) red_xpm, result[2*i] );
+				comboBox4->insertItem( (const char **) red_xpm, result[2*i] );
 			}
 		}
 

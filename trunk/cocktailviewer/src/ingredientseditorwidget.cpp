@@ -27,6 +27,8 @@
 #include <qimage.h>
 
 #include "ingredientseditorwidget.h"
+#include "red.xpm"
+#include "green.xpm"
 
 ingredientseditorwidget::ingredientseditorwidget(QWidget* parent, const char* name, WFlags fl)
  : ingredientseditorwidgetbase(parent,name,fl)
@@ -35,10 +37,10 @@ ingredientseditorwidget::ingredientseditorwidget(QWidget* parent, const char* na
 	int rc, nrow, ncolumn;
 	char **Result;
 	QString dbfile;
-	green.load( "./green.bmp" );
-	red.load( "./red.bmp" );
-	imageRed=QIconSet(red);
-	imageGreen=QIconSet(green);
+	//green.load( "./green.bmp" );
+	//red.load( "./red.bmp" );
+	imageRed=QIconSet( (const char **) red_xpm );
+	imageGreen=QIconSet( (const char **) green_xpm );
 	dbfile="cocktail.db";
 	rc = sqlite3_open(dbfile, &db2);
 	if( rc )
@@ -181,7 +183,7 @@ void ingredientseditorwidget::saveIngredientsToDB()
 		Ingredient+=","+table1->text( i, 2);
 		Ingredient+=","+table1->text( i, 3);
 		image1=table1->verticalHeader()->iconSet(i)->pixmap();
-		image2=red;
+		image2=red_xpm;
 		if(image1==image2)
 			Ingredient+=",0";
 		else
@@ -222,7 +224,7 @@ void ingredientseditorwidget::tableClicked(int row)
 {
 	QImage image1, image2;
 	image1=table1->verticalHeader()->iconSet(row)->pixmap();
-	image2=red;
+	image2=red_xpm;
 	if(image1==image2)
 		table1->verticalHeader()->setLabel( row, imageGreen, "" );
 	else

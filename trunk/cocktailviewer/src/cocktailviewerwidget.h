@@ -77,7 +77,7 @@ protected:
     void openDB();
 
     sqlite3 *db;
-    QPixmap green, red;
+    //QPixmap green, red;
 
 
 protected slots:

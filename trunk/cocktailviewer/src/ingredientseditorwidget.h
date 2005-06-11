@@ -41,7 +41,7 @@ public:
     bool dirty;
 
 protected:
-    QPixmap green, red;
+    //QPixmap green, red;
     QIconSet imageRed, imageGreen;
 
 public slots:
