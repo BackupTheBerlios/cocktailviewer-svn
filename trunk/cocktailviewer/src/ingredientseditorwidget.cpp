@@ -55,34 +55,34 @@ ingredientseditorwidget::ingredientseditorwidget(QWidget* parent, const char* na
 	table1->setNumRows(nrow);
 	for(int i=1;i<=nrow;i++)
 	{
-		table1->setText(i-1, 1, Result[7*i+1] );
-		QCheckTableItem *Item;
-		Item=new QCheckTableItem( table1, "        " );
+		table1->setText(i-1, 0, Result[7*i+1] );
+		/*QCheckTableItem *Item;
+		Item=new QCheckTableItem( table1, "        " );*/
 		if(QString(Result[7*i+5])!="0")
 		{
-			Item->setChecked(true);
+			//Item->setChecked(true);
 			table1->verticalHeader()->setLabel( i-1, imageGreen, "" );
 		}
 		else
 		{
-			Item->setChecked(false);
+			//Item->setChecked(false);
 			table1->verticalHeader()->setLabel( i-1, imageRed, "" );
 		}
-		table1->setItem(i-1, 0, Item );
-		table1->setText(i-1, 2, Result[7*i+2] );
-		table1->setText(i-1, 3, Result[7*i+3] );
-		table1->setText(i-1, 4, Result[7*i+4] );
-		table1->setText(i-1, 5, Result[7*i] );
+		//table1->setItem(i-1, 0, Item );
+		table1->setText(i-1, 1, Result[7*i+2] );
+		table1->setText(i-1, 2, Result[7*i+3] );
+		table1->setText(i-1, 3, Result[7*i+4] );
+		table1->setText(i-1, 4, Result[7*i] );
 		table1->verticalHeader()->setResizeEnabled( FALSE, i-1 );
 		table1->verticalHeader()->setClickEnabled( TRUE , i-1 );
 	}
-	table1->setColumnReadOnly ( 5, true );
-	table1->setColumnWidth ( 0, 70);
-	table1->setColumnWidth ( 1, 250);
-	table1->setColumnWidth ( 2, 80);
-	table1->setColumnWidth ( 3, 70);
-	table1->setColumnWidth ( 4, 80);
-	table1->setColumnWidth ( 5, 40);
+	table1->setColumnReadOnly ( 4, true );
+	//table1->setColumnWidth ( 0, 70);
+	table1->setColumnWidth ( 0, 250);
+	table1->setColumnWidth ( 1, 80);
+	table1->setColumnWidth ( 2, 70);
+	table1->setColumnWidth ( 3, 80);
+	table1->setColumnWidth ( 4, 40);
 	countNew=0;
 	pushButton8->setEnabled( false );
 	dirty=false;
@@ -95,16 +95,18 @@ void ingredientseditorwidget::addIngredientClicked()
 	int row=table1->numRows();
 	table1->insertRows( row );
 	table1->ensureCellVisible( row, 1 );
-	QCheckTableItem *Item;
+	/*QCheckTableItem *Item;
 	Item=new QCheckTableItem( table1, "        " );
 	Item->setChecked(true);
-	table1->setItem( row, 0, Item );
-	table1->setText( row, 2, "700" );
-	table1->setText( row, 3, "5" );
-	table1->setText( row, 4, "37.5" );
-	table1->setText( row, 5, getNewIngredientID() );
+	table1->setItem( row, 0, Item );*/
+	table1->verticalHeader()->setLabel( row, imageGreen, "" );
+	table1->setText( row, 1, "700" );
+	table1->setText( row, 2, "5" );
+	table1->setText( row, 3, "37.5" );
+	table1->setText( row, 4, getNewIngredientID() );
 	table1->clearSelection();
-	table1->setCurrentCell( row, 1 );
+	table1->setFocus();
+	table1->setCurrentCell( row, 0 );
 }
 
 QString ingredientseditorwidget::getNewIngredientID()
@@ -130,7 +132,7 @@ void ingredientseditorwidget::deleteIngredientClicked()
 	int rc, nrow, ncolumn;
 	char **Result;
 	QString selectedIngredientID;
-	selectedIngredientID = table1->text( table1->currentRow(), 5 );
+	selectedIngredientID = table1->text( table1->currentRow(), 4 );
 	rc = sqlite3_get_table(db2, "SELECT ID FROM CocktailIngredients WHERE IngredientID="+selectedIngredientID, &Result, &nrow, &ncolumn, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
@@ -171,17 +173,24 @@ void ingredientseditorwidget::saveIngredientsToDB()
 	rc = sqlite3_exec(db2, "BEGIN TRANSACTION", 0, 0, &zErrMsg);
 	for(int i=0;i<rows;i++)
 	{
-		QCheckTableItem *Item;
-		Ingredient=table1->text( i, 5);
-		Ingredient+=",\""+table1->text( i, 1);
-		Ingredient+="\","+table1->text( i, 2);
+		QImage image1, image2;
+		//QCheckTableItem *Item;
+		Ingredient=table1->text( i, 4);
+		Ingredient+=",\""+table1->text( i, 0);
+		Ingredient+="\","+table1->text( i, 1);
+		Ingredient+=","+table1->text( i, 2);
 		Ingredient+=","+table1->text( i, 3);
-		Ingredient+=","+table1->text( i, 4);
-		Item=static_cast<QCheckTableItem *>(table1->item(i,0));
+		image1=table1->verticalHeader()->iconSet(i)->pixmap();
+		image2=red;
+		if(image1==image2)
+			Ingredient+=",0";
+		else
+			Ingredient+=",1";
+		/*Item=static_cast<QCheckTableItem *>(table1->item(i,0));
 		if(Item->isChecked())
 			Ingredient+=",1";
 		else
-			Ingredient+=",0";
+			Ingredient+=",0";*/
 		rc = sqlite3_exec(db2, "INSERT INTO Ingredients VALUES("+Ingredient+",\"\" )", 0, 0, &zErrMsg);
 		if( rc!=SQLITE_OK )
 		{
@@ -218,6 +227,7 @@ void ingredientseditorwidget::tableClicked(int row)
 		table1->verticalHeader()->setLabel( row, imageGreen, "" );
 	else
 		table1->verticalHeader()->setLabel( row, imageRed, "" );
+	pushButton8->setEnabled( true );
 }
 
 ingredientseditorwidget::~ingredientseditorwidget()

@@ -81,34 +81,68 @@
         <widget class="QTable" row="1" column="0" rowspan="1" colspan="6">
             <column>
                 <property name="text">
-                    <string>available</string>
-                </property>
-            </column>
-            <column>
-                <property name="text">
                     <string>Name</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
                 </property>
             </column>
             <column>
                 <property name="text">
                     <string>Content (ml)</string>
                 </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
             </column>
             <column>
                 <property name="text">
                     <string>Price (€)</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
                 </property>
             </column>
             <column>
                 <property name="text">
                     <string>Alcohol (%)</string>
                 </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
             </column>
             <column>
                 <property name="text">
                     <string>ID</string>
                 </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
             </column>
+            <row>
+                <property name="text">
+                    <string>1</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </row>
+            <row>
+                <property name="text">
+                    <string>2</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </row>
+            <row>
+                <property name="text">
+                    <string>3</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </row>
             <property name="name">
                 <cstring>table1</cstring>
             </property>
@@ -128,7 +162,7 @@
                 <number>3</number>
             </property>
             <property name="numCols">
-                <number>6</number>
+                <number>5</number>
             </property>
             <property name="showGrid">
                 <bool>true</bool>
