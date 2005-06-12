@@ -45,6 +45,8 @@ void cocktailviewerWidget::initialize()
 	//QString dir=argv[0];
 	//int i=dir.findRev('/',-1);
 	//dir.remove(i+1, dir.length());
+	green=(const char **) green_xpm;
+	red=(const char **) red_xpm;
 	//green.load( "./green.bmp" );
 	//red.load( "./red.bmp" );
 	openDB();
@@ -237,15 +239,15 @@ void cocktailviewerWidget::UpdateListView1()
 				item->setText( 5,  absolutAlcohol);
 				item->setText( 6,  ID);
 				if( available=="1")
-					item->setPixmap( 0, (const char **) green_xpm );
+					item->setPixmap( 0, green );
 				else
-					item->setPixmap( 0, (const char **) red_xpm );
+					item->setPixmap( 0, red );
 				counter++;
+				fprintf(stderr, ".");
 			}
 		}
 		sqlite3_free_table(Result2);
 		textLabel1_5->setText(QString::number(counter)+" Cocktails");
-		fprintf(stderr, ".");
 	}
 	fprintf(stderr, "\n");
 	sqlite3_free_table(Result);
@@ -467,6 +469,8 @@ void cocktailviewerWidget::writeIngredientsIntoComboBoxes()
 	char *zErrMsg = 0;
 	int rc, ncolumn, nrow;
 	char **result;
+	QTime t;
+	t.start();
 	rc = sqlite3_get_table(db, "SELECT name,stock FROM Ingredients ORDER BY name", &result, &nrow, &ncolumn, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
@@ -480,23 +484,24 @@ void cocktailviewerWidget::writeIngredientsIntoComboBoxes()
 	{
 		if(QString(result[2*i+1])!="0")
 		{
-			comboBox1->insertItem( (const char **) green_xpm, result[2*i] );
-			comboBox2->insertItem( (const char **) green_xpm, result[2*i] );
-			comboBox3->insertItem( (const char **) green_xpm, result[2*i] );
-			comboBox4->insertItem( (const char **) green_xpm, result[2*i] );
+			comboBox1->insertItem( green, result[2*i] );
+			comboBox2->insertItem( green, result[2*i] );
+			comboBox3->insertItem( green, result[2*i] );
+			comboBox4->insertItem( green, result[2*i] );
 		}
 		else
 		{
 			if( !checkBox2->isChecked() )
 			{
-				comboBox1->insertItem( (const char **) red_xpm, result[2*i] );
-				comboBox2->insertItem( (const char **) red_xpm, result[2*i] );
-				comboBox3->insertItem( (const char **) red_xpm, result[2*i] );
-				comboBox4->insertItem( (const char **) red_xpm, result[2*i] );
+				comboBox1->insertItem( red, result[2*i] );
+				comboBox2->insertItem( red, result[2*i] );
+				comboBox3->insertItem( red, result[2*i] );
+				comboBox4->insertItem( red, result[2*i] );
 			}
 		}
 
 	}
+	qDebug(QString::number(t.elapsed())+" ms");
 	sqlite3_free_table(result);
 	connect( comboBox1, SIGNAL(textChanged(const QString&)), this, SLOT(ComboBox1Changed()) );
 	connect( comboBox2, SIGNAL(textChanged(const QString&)), this, SLOT(ComboBox2Changed()) );

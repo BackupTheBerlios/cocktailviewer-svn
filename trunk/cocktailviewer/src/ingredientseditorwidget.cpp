@@ -27,8 +27,8 @@
 #include <qimage.h>
 
 #include "ingredientseditorwidget.h"
-#include "red.xpm"
 #include "green.xpm"
+#include "red.xpm"
 
 ingredientseditorwidget::ingredientseditorwidget(QWidget* parent, const char* name, WFlags fl)
  : ingredientseditorwidgetbase(parent,name,fl)
@@ -37,10 +37,12 @@ ingredientseditorwidget::ingredientseditorwidget(QWidget* parent, const char* na
 	int rc, nrow, ncolumn;
 	char **Result;
 	QString dbfile;
+	green=green_xpm;
+	red=red_xpm;
 	//green.load( "./green.bmp" );
 	//red.load( "./red.bmp" );
-	imageRed=QIconSet( (const char **) red_xpm );
-	imageGreen=QIconSet( (const char **) green_xpm );
+	imageRed=QIconSet( red );
+	imageGreen=QIconSet( green );
 	dbfile="cocktail.db";
 	rc = sqlite3_open(dbfile, &db2);
 	if( rc )

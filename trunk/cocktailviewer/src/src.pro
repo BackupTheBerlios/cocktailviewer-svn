@@ -5,6 +5,10 @@
 
 FORMS += cocktailviewerwidgetbase.ui \
          ingredientseditorwidgetbase.ui 
+DISTFILES += green.xpm \
+             red.xpm 
+IMAGES += green.xpm \
+          red.xpm 
 HEADERS += cocktailviewer.h \
            cocktailviewerwidget.h \
            ingredientseditorwidget.h 
