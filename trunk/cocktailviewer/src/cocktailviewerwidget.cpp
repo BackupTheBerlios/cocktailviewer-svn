@@ -58,7 +58,7 @@ void cocktailviewerWidget::initialize()
 
 void cocktailviewerWidget::LoadData()
 {
-	//makeIngredientsSearchList();
+	makeIngredientsSearchList();
 	createTMPCocktailExtras();
 	UpdateListView1();
 	writeIngredientsIntoComboBoxes();
@@ -80,7 +80,7 @@ void cocktailviewerWidget::openDB()
 	}
 }
 
-/*void cocktailviewerWidget::makeIngredientsSearchList()
+void cocktailviewerWidget::makeIngredientsSearchList()
 {
 	char *zErrMsg = 0;
 	int rc;
@@ -102,50 +102,58 @@ void cocktailviewerWidget::searchIngredientsList(QString ID)
 		globalResult2=globalIngredientsResult[5*i+1];
 		globalResult3=globalIngredientsResult[5*i+2];
 		globalResult4=globalIngredientsResult[5*i+3];
+		break;
 		}
 	}
-}*/
+}
 
 void cocktailviewerWidget::createTMPCocktailExtras()
 {
 	QTime t;
 	t.start();
 	char *zErrMsg = 0;
-	int rc, nrow, ncolumn, nrow2, ncolumn2, nrow3, ncolumn3;
-	char **Result, **Result2, **Result3;
+	int rc, nrow, ncolumn, nrow2, ncolumn2;
+	char **Result, **Result2;
 	QString stock;
 	float CocktailPrice, AbsolutAlcohol, CocktailAmount, RelativeAlcohol;
 	float amountInBottle=0, priceOfBottle=0, alcohol=0;
-	
 	fprintf(stderr, "Creating TMPCocktailExtras ");
+	rc = sqlite3_get_table(db, "select ID from units where mlfactor=10", &Result, &nrow, &ncolumn, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	QString CLunitID=Result[1];
 	rc = sqlite3_exec(db, "DROP TABLE TMPCocktailExtras;", 0, 0, &zErrMsg);
 	rc = sqlite3_exec(db, "CREATE TABLE TMPCocktailExtras (ID INTEGER PRIMARY KEY, cocktailID NUMERIC, available NUMERIC, amount NUMERIC, price NUMERIC, absolutAlc NUMERIC, relativeAlc NUMERIC);", 0, 0, &zErrMsg);
-	rc = sqlite3_get_table(db, "SELECT ID FROM Cocktails", &Result, &nrow, &ncolumn, &zErrMsg);
+	rc = sqlite3_get_table(db, "SELECT CocktailID,amount,unitID,IngredientID FROM CocktailIngredients", &Result2, &nrow2, &ncolumn2, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
 		fprintf(stderr, "SQL error: %s\n", zErrMsg);
 	}
 	sqlite3_exec(db, "BEGIN TRANSACTION", 0, 0, &zErrMsg);
-	for(int i=1;i<=nrow;i++)
+	int i=1;
+	while(i<=nrow2)
 	{
+		bool newCocktail=true;
+		QString available="1";
+		QString CocktailID=Result2[4*i];
 		CocktailPrice=0;
 		AbsolutAlcohol=0;
 		CocktailAmount=0;
 		RelativeAlcohol=0;
-		QString CocktailID=Result[i];
-		rc = sqlite3_get_table(db, "SELECT amount,unitID,IngredientID FROM CocktailIngredients WHERE CocktailID="+CocktailID, &Result2, &nrow2, &ncolumn2, &zErrMsg);
-		if( rc!=SQLITE_OK )
+		while( i<=nrow2 && ( QString(Result2[4*i])==QString(Result2[4*(i-1)]) || newCocktail ) )
 		{
-			fprintf(stderr, "SQL error: %s\n", zErrMsg);
-		}
-		QString available="1";
-		for(int k=1;k<=nrow2;k++)
-		{
-			float amountInCocktail=QString(Result2[k*3]).toFloat();
-			QString unitID=Result2[k*3+1];
-			float mlfactor=getitFromID(unitID, "units", "mlfactor").toFloat();
-			QString IngredientID=Result2[k*3+2];
-			rc = sqlite3_get_table(db, "SELECT amount,price,alcohol,stock FROM Ingredients WHERE ID="+IngredientID, &Result3, &nrow3, &ncolumn3, &zErrMsg);
+			float amountInCocktail=QString(Result2[4*i+1]).toFloat();
+			QString unitID=Result2[4*i+2];
+			float mlfactor;
+			if(unitID==CLunitID)
+				mlfactor=10;
+			else
+				mlfactor=getitFromID(unitID, "units", "mlfactor").toFloat();
+			QString IngredientID=Result2[4*i+3];
+			newCocktail=false;
+			/*rc = sqlite3_get_table(db, "SELECT amount,price,alcohol,stock FROM Ingredients WHERE ID="+IngredientID, &Result3, &nrow3, &ncolumn3, &zErrMsg);
 			if( rc!=SQLITE_OK )
 			{
 				fprintf(stderr, "SQL error: %s\n", zErrMsg);
@@ -156,19 +164,20 @@ void cocktailviewerWidget::createTMPCocktailExtras()
 				priceOfBottle=QString(Result3[5]).toFloat();
 				alcohol=QString(Result3[6]).toFloat();
 				stock=Result3[7];
-			}
-			/*searchIngredientsList(IngredientID);
+			}*/
+			searchIngredientsList(IngredientID);
 			amountInBottle=globalResult1.toFloat();
 			priceOfBottle=globalResult2.toFloat();
 			alcohol=globalResult3.toFloat();
-			stock=globalResult4;*/
+			stock=globalResult4;
 			if(amountInBottle!=0)
 				CocktailPrice+=amountInCocktail*mlfactor*(priceOfBottle/amountInBottle);
 			AbsolutAlcohol+=amountInCocktail*mlfactor*(alcohol/100);
 			CocktailAmount+=amountInCocktail*mlfactor;
 			if(stock=="0")
 				available="0";
-			sqlite3_free_table(Result3);
+			//sqlite3_free_table(Result3);
+			i++;
 		}
 		RelativeAlcohol=AbsolutAlcohol/CocktailAmount;
 		rc = sqlite3_exec(db, "INSERT INTO TMPCocktailExtras VALUES(NULL,"+CocktailID+","+available+","+QString::number(CocktailAmount)+","+QString::number(CocktailPrice)+","+QString::number(AbsolutAlcohol)+","+QString::number(RelativeAlcohol)+")", 0, 0, &zErrMsg);
@@ -177,10 +186,9 @@ void cocktailviewerWidget::createTMPCocktailExtras()
 			qDebug("1");
 			fprintf(stderr, "SQL error: %s\n", zErrMsg);
 		}
-		sqlite3_free_table(Result2);
 		fprintf(stderr, ".");
 	}
-	sqlite3_free_table(Result);
+	sqlite3_free_table(Result2);
 	fprintf(stderr, "\n");
 	rc = sqlite3_exec(db, "COMMIT TRANSACTION", 0, 0, &zErrMsg);
 	qDebug(QString::number(t.elapsed())+" ms");
