@@ -200,12 +200,15 @@ void cocktailviewerWidget::UpdateListView1()
 	int rc, nrow, ncolumn, nrow2, ncolumn2;
 	char **Result, **Result2;
 	int counter=0;
+	QTime t;
+	t.start();
 	QString Box1=comboBox1->currentText();
 	QString Box2=comboBox2->currentText();
 	QString Box3=comboBox3->currentText();
 	QString Box4=comboBox4->currentText();
 	QString Box5=comboBox5->currentText();
 	QString Box6=comboBox6->currentText();
+	bool checkBox1Checked=checkBox1->isChecked();
 	
 	fprintf(stderr, "Updating ListView ");
 	rc = sqlite3_get_table(db, "SELECT ID,Name,rating,taste1ID,taste2ID,typeID FROM Cocktails WHERE Name LIKE \"%"+lineEdit1->text()+"%\"", &Result, &nrow, &ncolumn, &zErrMsg);
@@ -234,7 +237,7 @@ void cocktailviewerWidget::UpdateListView1()
 		QString price=QString::number(QString(Result2[11]).toFloat(),'f', 2);
 		QString absolutAlcohol=QString::number(QString(Result2[12]).toFloat(),'f', 2);
 		QString relativeAlcohol=QString::number(QString(Result2[13]).toFloat()*100,'f', 1);
-		if(!checkBox1->isChecked() || available=="1")
+		if(!checkBox1Checked || available=="1")
 		{
 			if( (Box1=="" || checkFilterlist( ID, 1 , nrowFilterResult1)) && (Box2=="" || checkFilterlist( ID, 2 , nrowFilterResult2)) && (Box3=="" || checkFilterlist( ID, 3, nrowFilterResult3)) && (Box4=="" || checkFilterlist( ID, 4, nrowFilterResult4 )) && (Box5=="" || (taste1ID!="-1" && taste1ID==getID("tastes", "taste", Box5)) || (taste2ID!="-1" && taste2ID==getID("tastes", "taste", Box5))) && (Box6=="" || (typeID!="-1" && typeID==getID("types", "type", Box6))) )
 			{
@@ -259,6 +262,7 @@ void cocktailviewerWidget::UpdateListView1()
 	}
 	fprintf(stderr, "\n");
 	sqlite3_free_table(Result);
+	qDebug(QString::number(t.elapsed())+" ms");
 }
 
 void cocktailviewerWidget::ListView1Clicked(QListViewItem *Item)
