@@ -50,6 +50,7 @@ public slots:
     void OkClicked();
     void tableChanged();
     void tableClicked(int row);
+    void lineEdit2Changed();
 
 };
 

@@ -25,6 +25,7 @@
 #include <qmessagebox.h>
 #include <qpixmap.h>
 #include <qimage.h>
+#include <qlineedit.h>
 
 #include "ingredientseditorwidget.h"
 #include "green.xpm"
@@ -92,6 +93,18 @@ ingredientseditorwidget::ingredientseditorwidget(QWidget* parent, const char* na
 	dirty=false;
 	connect( table1->verticalHeader(), SIGNAL(clicked ( int )), this, SLOT(tableClicked(int)) );
 	sqlite3_free_table(Result);
+}
+
+void ingredientseditorwidget::lineEdit2Changed()
+{
+	int rows=table1->numRows();
+	for(int i=0;i<=rows;i++)
+	{
+		if( table1->text(i,0).contains(lineEdit2->text(), FALSE)==0 )
+			table1->setRowHeight( i, 0 );
+		else
+			table1->setRowHeight( i, 20 );
+	}
 }
 
 void ingredientseditorwidget::addIngredientClicked()

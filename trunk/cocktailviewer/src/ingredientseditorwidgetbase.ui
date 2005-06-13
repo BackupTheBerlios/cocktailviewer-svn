@@ -45,6 +45,18 @@
             <property name="name">
                 <cstring>pushButton10</cstring>
             </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>20</width>
+                    <height>32767</height>
+                </size>
+            </property>
             <property name="text">
                 <string>X</string>
             </property>
@@ -57,6 +69,12 @@
         <widget class="QLabel" row="0" column="0">
             <property name="name">
                 <cstring>textLabel1</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>50</width>
+                    <height>32767</height>
+                </size>
             </property>
             <property name="text">
                 <string>Search:</string>
@@ -83,66 +101,27 @@
                 <property name="text">
                     <string>Name</string>
                 </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
-                </property>
             </column>
             <column>
                 <property name="text">
                     <string>Content (ml)</string>
-                </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
                 </property>
             </column>
             <column>
                 <property name="text">
                     <string>Price (€)</string>
                 </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
-                </property>
             </column>
             <column>
                 <property name="text">
                     <string>Alcohol (%)</string>
-                </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
                 </property>
             </column>
             <column>
                 <property name="text">
                     <string>ID</string>
                 </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
-                </property>
             </column>
-            <row>
-                <property name="text">
-                    <string>1</string>
-                </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
-                </property>
-            </row>
-            <row>
-                <property name="text">
-                    <string>2</string>
-                </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
-                </property>
-            </row>
-            <row>
-                <property name="text">
-                    <string>3</string>
-                </property>
-                <property name="pixmap">
-                    <pixmap></pixmap>
-                </property>
-            </row>
             <property name="name">
                 <cstring>table1</cstring>
             </property>
@@ -210,6 +189,18 @@
         <receiver>ingredientseditorwidgetbase</receiver>
         <slot>tableChanged()</slot>
     </connection>
+    <connection>
+        <sender>pushButton10</sender>
+        <signal>clicked()</signal>
+        <receiver>lineEdit2</receiver>
+        <slot>clear()</slot>
+    </connection>
+    <connection>
+        <sender>lineEdit2</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>ingredientseditorwidgetbase</receiver>
+        <slot>lineEdit2Changed()</slot>
+    </connection>
 </connections>
 <slots>
     <slot>addIngredientClicked()</slot>
@@ -217,6 +208,7 @@
     <slot>OkClicked()</slot>
     <slot>tableChanged()</slot>
     <slot>tableClicked(int row)</slot>
+    <slot>lineEdit2Changed()</slot>
 </slots>
 <layoutdefaults spacing="4" margin="4"/>
 </UI>
