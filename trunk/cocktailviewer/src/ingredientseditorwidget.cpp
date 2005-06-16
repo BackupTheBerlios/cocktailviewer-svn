@@ -93,6 +93,8 @@ ingredientseditorwidget::ingredientseditorwidget(QWidget* parent, const char* na
 	dirty=false;
 	connect( table1->verticalHeader(), SIGNAL(clicked ( int )), this, SLOT(tableClicked(int)) );
 	sqlite3_free_table(Result);
+	oldrow=0;
+	oldcol=0;
 }
 
 void ingredientseditorwidget::lineEdit2Changed()
@@ -107,9 +109,33 @@ void ingredientseditorwidget::lineEdit2Changed()
 	}
 }
 
+void ingredientseditorwidget::table1SelectionChanged(int row, int col)
+{
+	bool moveon=false;
+	if(table1->text(oldrow,0)=="" && !table1->isSelected(oldrow,0) )
+	{
+		table1->editCell( oldrow,0 );
+		QMessageBox::information(
+		this,
+		tr("Empty Name"),
+		tr("You did not enter a name."),
+		0, 0, 0 );
+		table1->editCell( oldrow,0 );
+	}
+	else
+		moveon=true;
+	//qDebug(table1->text(row,col));
+	if(moveon)
+	{
+		oldrow=row;
+		oldcol=col;
+	}
+}
+
 void ingredientseditorwidget::addIngredientClicked()
 {
-	int row=table1->numRows();
+	//int row=table1->numRows();
+	int row=0;
 	table1->insertRows( row );
 	table1->ensureCellVisible( row, 1 );
 	/*QCheckTableItem *Item;

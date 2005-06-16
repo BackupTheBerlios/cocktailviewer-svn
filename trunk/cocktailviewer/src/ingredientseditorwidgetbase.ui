@@ -201,6 +201,18 @@
         <receiver>ingredientseditorwidgetbase</receiver>
         <slot>lineEdit2Changed()</slot>
     </connection>
+    <connection>
+        <sender>table1</sender>
+        <signal>currentChanged(int,int)</signal>
+        <receiver>ingredientseditorwidgetbase</receiver>
+        <slot>table1SelectionChanged(int,int)</slot>
+    </connection>
+    <connection>
+        <sender>table1</sender>
+        <signal>pressed(int,int,int,const QPoint&amp;)</signal>
+        <receiver>ingredientseditorwidgetbase</receiver>
+        <slot>table1SelectionChanged(int,int)</slot>
+    </connection>
 </connections>
 <slots>
     <slot>addIngredientClicked()</slot>
@@ -209,6 +221,7 @@
     <slot>tableChanged()</slot>
     <slot>tableClicked(int row)</slot>
     <slot>lineEdit2Changed()</slot>
+    <slot>table1SelectionChanged(int row, int col)</slot>
 </slots>
 <layoutdefaults spacing="4" margin="4"/>
 </UI>

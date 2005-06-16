@@ -39,6 +39,7 @@ public:
     sqlite3 *db2;
     int countNew;
     bool dirty;
+    int oldrow, oldcol;
 
 protected:
     QPixmap green, red;
@@ -51,6 +52,7 @@ public slots:
     void tableChanged();
     void tableClicked(int row);
     void lineEdit2Changed();
+    void table1SelectionChanged(int row, int col);
 
 };
 
