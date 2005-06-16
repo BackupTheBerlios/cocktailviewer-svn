@@ -64,6 +64,9 @@ void cocktailviewerWidget::LoadData()
 	writeIngredientsIntoComboBoxes();
 	writeTastesIntoComboBoxes();
 	writeTypesIntoComboBoxes();
+	listView1->setFocus();
+	listView1->setSelected( listView1->firstChild(), TRUE );
+	ListView1Clicked(listView1->firstChild());
 }
 
 void cocktailviewerWidget::openDB()
