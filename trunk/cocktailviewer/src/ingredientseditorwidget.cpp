@@ -93,8 +93,8 @@ ingredientseditorwidget::ingredientseditorwidget(QWidget* parent, const char* na
 	dirty=false;
 	connect( table1->verticalHeader(), SIGNAL(clicked ( int )), this, SLOT(tableClicked(int)) );
 	sqlite3_free_table(Result);
-	oldrow=0;
-	oldcol=0;
+	oldrow=1;
+	oldcol=1;
 }
 
 void ingredientseditorwidget::lineEdit2Changed()
@@ -112,7 +112,7 @@ void ingredientseditorwidget::lineEdit2Changed()
 void ingredientseditorwidget::table1SelectionChanged(int row, int col)
 {
 	bool moveon=false;
-	if(table1->text(oldrow,0)=="" && !table1->isSelected(oldrow,0) )
+	if( table1->text(oldrow,0)=="" )
 	{
 		table1->editCell( oldrow,0 );
 		QMessageBox::information(
@@ -124,7 +124,9 @@ void ingredientseditorwidget::table1SelectionChanged(int row, int col)
 	}
 	else
 		moveon=true;
-	//qDebug(table1->text(row,col));
+	table1->setText( oldrow, 1, QString::number( table1->text( oldrow, 1).toFloat() ) );
+	table1->setText( oldrow, 2, QString::number( table1->text( oldrow, 2).toFloat() ) );
+	table1->setText( oldrow, 3, QString::number( table1->text( oldrow, 3).toFloat() ) );
 	if(moveon)
 	{
 		oldrow=row;

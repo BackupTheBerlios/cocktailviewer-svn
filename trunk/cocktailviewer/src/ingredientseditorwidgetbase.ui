@@ -207,12 +207,6 @@
         <receiver>ingredientseditorwidgetbase</receiver>
         <slot>table1SelectionChanged(int,int)</slot>
     </connection>
-    <connection>
-        <sender>table1</sender>
-        <signal>pressed(int,int,int,const QPoint&amp;)</signal>
-        <receiver>ingredientseditorwidgetbase</receiver>
-        <slot>table1SelectionChanged(int,int)</slot>
-    </connection>
 </connections>
 <slots>
     <slot>addIngredientClicked()</slot>
