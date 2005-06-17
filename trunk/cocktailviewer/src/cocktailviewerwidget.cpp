@@ -607,10 +607,10 @@ void cocktailviewerWidget::editIngredientsClicked()
 		LoadData();
 }
 
-void cocktailviewerWidget::exitClicked()
+/*void cocktailviewerWidget::exitClicked()
 {
 	exit(0);
-}
+}*/
 
 void cocktailviewerWidget::aboutQt()
 {

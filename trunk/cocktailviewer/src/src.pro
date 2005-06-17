@@ -9,11 +9,9 @@ DISTFILES += green.xpm \
              red.xpm 
 IMAGES += green.xpm \
           red.xpm 
-HEADERS += cocktailviewer.h \
-           cocktailviewerwidget.h \
+HEADERS += cocktailviewerwidget.h \
            ingredientseditorwidget.h 
-SOURCES += cocktailviewer.cpp \
-           main.cpp \
+SOURCES += main.cpp \
            cocktailviewerwidget.cpp \
            ingredientseditorwidget.cpp 
 LIBS += -lsqlite3
