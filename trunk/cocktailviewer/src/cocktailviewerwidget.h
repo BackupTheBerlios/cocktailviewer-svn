@@ -58,6 +58,8 @@ public slots:
     void writeIngredientsIntoComboBoxes();
     void exitClicked();
     void editIngredientsClicked();
+    void about();
+    void aboutQt();
 
 protected:
     /*$PROTECTED_FUNCTIONS$*/

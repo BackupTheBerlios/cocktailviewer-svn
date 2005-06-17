@@ -27,6 +27,7 @@
 #include <qdatetime.h>
 #include <qstringlist.h>
 #include <qregexp.h>
+#include <qmessagebox.h>
 
 #include "cocktailviewerwidget.h"
 #include "ingredientseditorwidget.h"
@@ -610,6 +611,24 @@ void cocktailviewerWidget::exitClicked()
 {
 	exit(0);
 }
+
+void cocktailviewerWidget::aboutQt()
+{
+	QMessageBox::aboutQt( this, tr("About Qt") );
+}
+
+void cocktailviewerWidget::about()
+{
+	extern QString version;
+	QMessageBox::about( this, tr("About CocktailViewer"),
+				tr("This program is free software; you can redistribute it and/or"
+				"\nmodify it under the terms of the GNU General Public License."
+				"\nSee COPYING for more details."
+				"\n\nThis programm uses some icons of the Nuvola icon theme."
+				"\nSee http://www.icon-king.com."
+				"\n\nBenni"));
+}
+
 
 cocktailviewerWidget::~cocktailviewerWidget()
 {

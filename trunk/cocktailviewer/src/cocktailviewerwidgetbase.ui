@@ -14,8 +14,8 @@
     </property>
     <property name="minimumSize">
         <size>
-            <width>710</width>
-            <height>500</height>
+            <width>715</width>
+            <height>526</height>
         </size>
     </property>
     <property name="caption">
@@ -838,6 +838,7 @@
         <action name="editPreferences_Action"/>
     </item>
     <item text="&amp;Help" name="helpMenu">
+        <action name="helpAbout_QtAction"/>
         <action name="helpAboutAction"/>
     </item>
 </menubar>
@@ -892,6 +893,17 @@
         </property>
         <property name="menuText">
             <string>Edit ingredients ...</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpAbout_QtAction</cstring>
+        </property>
+        <property name="text">
+            <string>About Qt</string>
+        </property>
+        <property name="menuText">
+            <string>About Qt</string>
         </property>
     </action>
 </actions>
@@ -1016,6 +1028,18 @@
         <receiver>cocktailviewerwidgetbase</receiver>
         <slot>editIngredientsClicked()</slot>
     </connection>
+    <connection>
+        <sender>helpAboutAction</sender>
+        <signal>activated()</signal>
+        <receiver>cocktailviewerwidgetbase</receiver>
+        <slot>about()</slot>
+    </connection>
+    <connection>
+        <sender>helpAbout_QtAction</sender>
+        <signal>activated()</signal>
+        <receiver>cocktailviewerwidgetbase</receiver>
+        <slot>aboutQt()</slot>
+    </connection>
 </connections>
 <slots>
     <slot>ListView1Clicked(QListViewItem *Item)</slot>
@@ -1032,6 +1056,8 @@
     <slot>writeIngredientsIntoComboBoxes()</slot>
     <slot>exitClicked()</slot>
     <slot>editIngredientsClicked()</slot>
+    <slot>about()</slot>
+    <slot>aboutQt()</slot>
 </slots>
 <layoutdefaults spacing="2" margin="2"/>
 </UI>
