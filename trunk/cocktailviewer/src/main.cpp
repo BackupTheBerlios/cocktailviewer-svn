@@ -23,10 +23,14 @@
 #include <qsettings.h>
 #include "cocktailviewerwidget.h"
 
+QString dir;
 
 int main( int argc, char ** argv ) {
     QApplication a( argc, argv );
     int returnvalue;
+    dir=argv[0];
+    int i=dir.findRev('/',-1);
+    dir.remove(i+1, dir.length());
     QSettings settings;
     settings.setPath("Benni", "CocktailViewer");
     QPoint p( settings.readNumEntry( "/cocktailviewer/xPos", 0 ), settings.readNumEntry( "/cocktailviewer/yPos", 0 ) );

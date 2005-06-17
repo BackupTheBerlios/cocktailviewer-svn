@@ -38,13 +38,14 @@ ingredientseditorwidget::ingredientseditorwidget(QWidget* parent, const char* na
 	int rc, nrow, ncolumn;
 	char **Result;
 	QString dbfile;
+	extern QString dir;
 	green=green_xpm;
 	red=red_xpm;
 	//green.load( "./green.bmp" );
 	//red.load( "./red.bmp" );
 	imageRed=QIconSet( red );
 	imageGreen=QIconSet( green );
-	dbfile="cocktail.db";
+	dbfile = dir + "cocktail.db";
 	rc = sqlite3_open(dbfile, &db2);
 	if( rc )
 	{

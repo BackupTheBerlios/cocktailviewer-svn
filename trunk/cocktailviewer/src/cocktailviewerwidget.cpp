@@ -72,8 +72,9 @@ void cocktailviewerWidget::LoadData()
 
 void cocktailviewerWidget::openDB()
 {
+	extern QString dir;
 	QString dbfile;
-	dbfile="cocktail.db";
+	dbfile = dir + "cocktail.db";
 	int rc;
 	rc = sqlite3_open(dbfile, &db);
 	if( rc )
@@ -485,8 +486,6 @@ void cocktailviewerWidget::writeIngredientsIntoComboBoxes()
 	char *zErrMsg = 0;
 	int rc, ncolumn, nrow;
 	char **result;
-	QTime t;
-	t.start();
 	rc = sqlite3_get_table(db, "SELECT name,stock FROM Ingredients ORDER BY name", &result, &nrow, &ncolumn, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
@@ -517,7 +516,6 @@ void cocktailviewerWidget::writeIngredientsIntoComboBoxes()
 		}
 
 	}
-	qDebug(QString::number(t.elapsed())+" ms");
 	sqlite3_free_table(result);
 	connect( comboBox1, SIGNAL(textChanged(const QString&)), this, SLOT(ComboBox1Changed()) );
 	connect( comboBox2, SIGNAL(textChanged(const QString&)), this, SLOT(ComboBox2Changed()) );
