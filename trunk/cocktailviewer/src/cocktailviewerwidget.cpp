@@ -619,7 +619,6 @@ void cocktailviewerWidget::aboutQt()
 
 void cocktailviewerWidget::about()
 {
-	extern QString version;
 	QMessageBox::about( this, tr("About CocktailViewer"),
 				tr("This program is free software; you can redistribute it and/or"
 				"\nmodify it under the terms of the GNU General Public License."
@@ -628,7 +627,6 @@ void cocktailviewerWidget::about()
 				"\nSee http://www.icon-king.com."
 				"\n\nBenni"));
 }
-
 
 cocktailviewerWidget::~cocktailviewerWidget()
 {
