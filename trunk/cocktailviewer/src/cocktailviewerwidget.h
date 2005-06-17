@@ -56,7 +56,6 @@ public slots:
     void pushButton4Clicked();
     void pushButton5Clicked();
     void writeIngredientsIntoComboBoxes();
-    //void exitClicked();
     void editIngredientsClicked();
     void about();
     void aboutQt();

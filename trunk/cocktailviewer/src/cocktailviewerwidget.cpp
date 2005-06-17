@@ -607,11 +607,6 @@ void cocktailviewerWidget::editIngredientsClicked()
 		LoadData();
 }
 
-/*void cocktailviewerWidget::exitClicked()
-{
-	exit(0);
-}*/
-
 void cocktailviewerWidget::aboutQt()
 {
 	QMessageBox::aboutQt( this, tr("About Qt") );
