@@ -364,6 +364,7 @@ bool ReadWriteTastes(QString file, QString dbfile)
 bool ImportUnits(QString file, QString dbfile)
 {
 	QString filename=dir+file;
+	QFile f( filename );
 	char *zErrMsg = 0;
 	int rc;
 	rc = sqlite3_open(dbfile, &db);
@@ -379,16 +380,44 @@ bool ImportUnits(QString file, QString dbfile)
 	{
 		fprintf(stderr, "SQL error: %s\n", zErrMsg);
 	}
-	rc = sqlite3_exec(db, ".separator ;", 0, 0, &zErrMsg);
-	if( rc!=SQLITE_OK )
+	if ( !f.open( IO_ReadOnly ) )
 	{
-		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+		qDebug("Could not open list of units.");
+		return false;
 	}
-	rc = sqlite3_exec(db, ".import Einheiten.txt units", 0, 0, &zErrMsg);
-	if( rc!=SQLITE_OK )
+	qDebug("Opened list of units. Reading ...");
+	QTextStream t( &f );
+	rc = sqlite3_exec(db, "BEGIN TRANSACTION", 0, 0, &zErrMsg);
+	while ( !t.atEnd() )
 	{
-		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+		QString line( t.readLine() );
+		QString Data, line2;
+		for(int k=0;k<4;k++)
+		{
+			int i = line.find( ";", 0 );
+			Data=line.left(i);
+			switch (k)
+			{
+				case 0:	line2=Data;
+					break;
+				case 1:	line2+=",\""+Data+"\"";
+					break;
+				case 2:	line2+=","+Data;
+					break;
+				case 3:	line2+=",\""+Data+"\"";
+					break;
+			}
+			line.remove(0,i+1);
+		}
+		//qDebug(line2);
+		rc = sqlite3_exec(db, "INSERT INTO units VALUES("+line2+");", 0, 0, &zErrMsg);
+		if( rc!=SQLITE_OK )
+		{
+			fprintf(stderr, "SQL error: %s\n", zErrMsg);
+		}
 	}
+	rc = sqlite3_exec(db, "COMMIT TRANSACTION", 0, 0, &zErrMsg);
 	sqlite3_close(db);
+	f.close();
 	return true;
 }

@@ -1,4 +1,4 @@
-1;cl;10;cl
+1;l;10;cl
 2;ml;1;ml
 3;Barlöffel;5;BL
 4;l;1000;l
