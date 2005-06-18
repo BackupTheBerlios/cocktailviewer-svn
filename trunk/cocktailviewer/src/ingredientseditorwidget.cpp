@@ -229,7 +229,7 @@ void ingredientseditorwidget::saveIngredientsToDB()
 		Ingredient+=","+table1->text( i, 2);
 		Ingredient+=","+table1->text( i, 3);
 		image1=table1->verticalHeader()->iconSet(i)->pixmap();
-		image2=red_xpm;
+		image2=red;
 		if(image1==image2)
 			Ingredient+=",0";
 		else
@@ -281,7 +281,7 @@ void ingredientseditorwidget::tableClicked(int row)
 {
 	QImage image1, image2;
 	image1=table1->verticalHeader()->iconSet(row)->pixmap();
-	image2=red_xpm;
+	image2=red;
 	if(image1==image2)
 		table1->verticalHeader()->setLabel( row, imageGreen, "" );
 	else
