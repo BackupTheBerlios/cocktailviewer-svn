@@ -76,6 +76,7 @@ protected:
     void writeTastesIntoComboBoxes();
     void writeTypesIntoComboBoxes();
     void openDB();
+    bool newChanges();
 
     sqlite3 *db;
     QPixmap green, red;

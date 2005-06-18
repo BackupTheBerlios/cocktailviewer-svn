@@ -60,7 +60,8 @@ void cocktailviewerWidget::initialize()
 void cocktailviewerWidget::LoadData()
 {
 	makeIngredientsSearchList();
-	createTMPCocktailExtras();
+	if( newChanges() )
+		createTMPCocktailExtras();
 	UpdateListView1();
 	writeIngredientsIntoComboBoxes();
 	writeTastesIntoComboBoxes();
@@ -114,12 +115,13 @@ void cocktailviewerWidget::searchIngredientsList(QString ID)
 
 void cocktailviewerWidget::createTMPCocktailExtras()
 {
+	QDateTime d;
 	QTime t;
 	t.start();
 	char *zErrMsg = 0;
 	int rc, nrow, ncolumn, nrow2, ncolumn2;
 	char **Result, **Result2;
-	QString stock;
+	QString stock, Date;
 	float CocktailPrice, AbsolutAlcohol, CocktailAmount, RelativeAlcohol;
 	float amountInBottle=0, priceOfBottle=0, alcohol=0;
 	fprintf(stderr, "Creating TMPCocktailExtras ");
@@ -195,6 +197,17 @@ void cocktailviewerWidget::createTMPCocktailExtras()
 	}
 	sqlite3_free_table(Result2);
 	fprintf(stderr, "\n");
+	rc = sqlite3_exec(db, "DELETE FROM timestamps WHERE operation=\"TMPCocktailExtras_created\";", 0, 0, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	Date=d.currentDateTime().toString("yyyyMMddhhmmss");
+	rc = sqlite3_exec(db, "INSERT INTO timestamps VALUES( NULL,\"TMPCocktailExtras_created\","+Date+");", 0, 0, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
 	rc = sqlite3_exec(db, "COMMIT TRANSACTION", 0, 0, &zErrMsg);
 	qDebug(QString::number(t.elapsed())+" ms");
 }
@@ -619,6 +632,29 @@ void cocktailviewerWidget::about()
 				"\n\nThis programm uses some icons of the Nuvola icon theme."
 				"\nSee http://www.icon-king.com."
 				"\n\nBenni"));
+}
+
+bool cocktailviewerWidget::newChanges()
+{
+	char *zErrMsg = 0;
+	int rc, nrow, ncolumn, nrow2, ncolumn2;
+	char **Result, **Result2;
+	rc = sqlite3_get_table(db, "SELECT date FROM timestamps Where operation=\"LastChanges\"", &Result, &nrow, &ncolumn, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	rc = sqlite3_get_table(db, "SELECT date FROM timestamps Where operation=\"TMPCocktailExtras_created\"", &Result2, &nrow2, &ncolumn2, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	if(nrow<1 || nrow2<1)
+		return true;
+	if(QString(Result[1]).toDouble()<=QString(Result2[1]).toDouble())
+		return false;
+	else
+		return true;
 }
 
 cocktailviewerWidget::~cocktailviewerWidget()

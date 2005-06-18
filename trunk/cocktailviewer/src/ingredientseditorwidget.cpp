@@ -26,6 +26,7 @@
 #include <qpixmap.h>
 #include <qimage.h>
 #include <qlineedit.h>
+#include <qdatetime.h>
 
 #include "ingredientseditorwidget.h"
 #include "green.xpm"
@@ -206,8 +207,9 @@ void ingredientseditorwidget::deleteIngredientClicked()
 
 void ingredientseditorwidget::saveIngredientsToDB()
 {
+	QDateTime d;
 	int rows=table1->numRows();
-	QString Ingredient;
+	QString Ingredient, Date;
 	char *zErrMsg = 0;
 	int rc;
 	rc = sqlite3_exec(db2, "DROP TABLE Ingredients", 0, 0, &zErrMsg);
@@ -242,6 +244,17 @@ void ingredientseditorwidget::saveIngredientsToDB()
 		{
 			fprintf(stderr, "SQL error: %s\n", zErrMsg);
 		}
+	}
+	rc = sqlite3_exec(db2, "DELETE FROM timestamps WHERE operation=\"LastChanges\";", 0, 0, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	Date=d.currentDateTime().toString("yyyyMMddhhmmss");
+	rc = sqlite3_exec(db2, "INSERT INTO timestamps VALUES( NULL,\"LastChanges\","+Date+");", 0, 0, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
 	}
 	rc = sqlite3_exec(db2, "COMMIT TRANSACTION", 0, 0, &zErrMsg);
 }
