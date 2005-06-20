@@ -41,83 +41,6 @@
                 <string>Alt+C</string>
             </property>
         </widget>
-        <widget class="QPushButton" row="0" column="1">
-            <property name="name">
-                <cstring>pushButton10</cstring>
-            </property>
-            <property name="minimumSize">
-                <size>
-                    <width>0</width>
-                    <height>20</height>
-                </size>
-            </property>
-            <property name="maximumSize">
-                <size>
-                    <width>20</width>
-                    <height>32767</height>
-                </size>
-            </property>
-            <property name="paletteBackgroundColor">
-                <color>
-                    <red>255</red>
-                    <green>255</green>
-                    <blue>255</blue>
-                </color>
-            </property>
-            <property name="text">
-                <string></string>
-            </property>
-            <property name="pixmap">
-                <pixmap>image0</pixmap>
-            </property>
-            <property name="toggleButton">
-                <bool>false</bool>
-            </property>
-            <property name="flat">
-                <bool>false</bool>
-            </property>
-        </widget>
-        <widget class="QLineEdit" row="0" column="2" rowspan="1" colspan="2">
-            <property name="name">
-                <cstring>lineEdit2</cstring>
-            </property>
-        </widget>
-        <widget class="QLabel" row="0" column="0">
-            <property name="name">
-                <cstring>textLabel1</cstring>
-            </property>
-            <property name="maximumSize">
-                <size>
-                    <width>50</width>
-                    <height>32767</height>
-                </size>
-            </property>
-            <property name="text">
-                <string>Search:</string>
-            </property>
-        </widget>
-        <widget class="QPushButton" row="0" column="5">
-            <property name="name">
-                <cstring>pushButton12</cstring>
-            </property>
-            <property name="text">
-                <string>delete Ingredient</string>
-            </property>
-            <property name="iconSet">
-                <iconset>image1</iconset>
-            </property>
-        </widget>
-        <widget class="QPushButton" row="0" column="4">
-            <property name="name">
-                <cstring>pushButton11</cstring>
-            </property>
-            <property name="text">
-                <string>add Ingredient</string>
-            </property>
-            <property name="iconSet">
-                <iconset>image2</iconset>
-            </property>
-        </widget>
         <widget class="QTable" row="1" column="0" rowspan="1" colspan="6">
             <column>
                 <property name="text">
@@ -178,17 +101,102 @@
                 <enum>SpreadSheet</enum>
             </property>
         </widget>
+        <widget class="QPushButton" row="0" column="4">
+            <property name="name">
+                <cstring>pushButton11</cstring>
+            </property>
+            <property name="text">
+                <string>add Ingredient</string>
+            </property>
+            <property name="iconSet">
+                <iconset>image0</iconset>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="0" column="5">
+            <property name="name">
+                <cstring>pushButton12</cstring>
+            </property>
+            <property name="text">
+                <string>delete Ingredient</string>
+            </property>
+            <property name="iconSet">
+                <iconset>image1</iconset>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="0" column="3">
+            <property name="name">
+                <cstring>checkBox1</cstring>
+            </property>
+            <property name="text">
+                <string>list only available ingredients</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="0" column="2">
+            <property name="name">
+                <cstring>lineEdit2</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="0">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>50</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>Search:</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="0" column="1">
+            <property name="name">
+                <cstring>pushButton10</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>25</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="paletteBackgroundColor">
+                <color>
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+            <property name="pixmap">
+                <pixmap>image2</pixmap>
+            </property>
+            <property name="toggleButton">
+                <bool>false</bool>
+            </property>
+            <property name="flat">
+                <bool>false</bool>
+            </property>
+        </widget>
     </grid>
 </widget>
 <images>
     <image name="image0">
-        <data format="PNG" length="679">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000026e49444154388d95934b48945118869f73fe716e66a6e285acc4452d5a64200885150845548b085a14648b944483342210b4852074237151c40c1159d1ae0ca255172848c75a4617a8702cb4d4c6fbe8cc7ffe735afcbf93a59bbed53907dee73beff79e238c316c3a7ce1e9c1fdd5bb84315a6b562c63c008776d59967cf22cf6f6dd9d966d186368bef1429bffacf6fb6f8c31061f80c1d8807f5957afb3030801291b94033941d05a2b0009a0b5c98894520cc762a4934904e00850e914c3fd03a4540a255ca031ae462eeda8d269e2d128939d9d0c4623d85ae300dfeede2375334aa2e7165a2da0804492e58099f171ec4884cdf5f5647ff8c8a7ee6e3e47228462fd6c3c7a04fff397cc0cc631c0aff91500ab4b4a08b5b4f0bda383d2dc5c727a7b09f7dc667d6101a35dddcceddb4ba0bc9cb406e925e25b0a9052b2aeb6962f42126f6ba3acb810100c3f7accd8e9660a6a8fa167054abbc35d06700c6801567e3ed389044343714c5616f34545c855393842a01dd0da4d280310de75348691070f1127ea289e9d6148481c6151e693d8572e322dc07fe010caf8320009607baf6f72740cfb64031b26279802ac4b97095ced622ab940513844def56b24bf0ee204c0e825809fb3ee269cb706d3d4485c0852ede7293c7b86bca60652e75af93132c244cd6eacb5a5a8857f2c28cf93c6cfead63612357bc8dd5a819e73fd06eb1a19df5289afa20a491065f3b705e10dc17100e5a360c77684c8c649834e032a40b87a275204d18b624fe3f3f2cb124038045283a3802058da4d4639ee991574e3f38701cbf26500fd7d037dc7a3b955c268ad1c030616bf87c6fbcae64f676149197bf5fa3da72af90db9124876e3411e500000000049454e44ae426082</data>
+        <data format="PNG" length="864">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000032749444154388d55934b6c54651cc57fdfe3de7975a0511128f6918e6d3a413b3a442c5b4c89d1852e5c91e8c6471a8d1b634c541668c4689a96c4ba312e88ec5da8090b08466b45a1d88c45b0b69d3ed294165a2b7dcc0cbd73bfefefa22cf46c4f72925fce398a5734d40db810f0e0dc8bb907da870eeecb67bc43f06054a0669617e23f66273f106d3e452b21d2101bd44e8082ba05ef1eecd89b9bfee69d6fb3f9a64efeaba57f6ef3c2472f71e9da2f87d0760c97006fb0a0403cf86d70dcdfb5bf2b936feae4c40fef7375e92a26303cb4bb99cf7b8778327f844b63c32d881a430b28b000783980a7936ddab76a5bbeeeebfaa7f91186cbc39080f63ded54dc16b5bb35a8d51e2191b883738b58336571ee784753e7978fb71453f1ddba3cd1765807dad21036609286300cc926b2208a9ece22b77b8f7f18267731313fed7e2f4f9ca0f5add65b37166f8888482475111159abad49efd95eb1a7aca4fa5352385390c9b54911f1e2c48b88c8e2ea2d39f4eab1c8b6efc9edca37e53979e12417272e625316a71de5f532993083b69a95ea0a7d17fa48255254a9f2d8de02833da7e96ac92b2bde3b80d2cd122353239001152a32e90c8920814613b9882bcb57c04255aa88f6783ccec562e55e4d4a29d0a0b4c22883420120080a85d61a1468d1f73c41006bb431001df77550d8df8dc958bcf12c5597d8f6db68ad49ea246d8d6d046140d557c9edcea131586b150fbf9d5b9b5d9d132f5e36eb1bb2196dc8c2fa821c3d7b54825381a4fbd3d27da65bc657c66533de908a6c492c91dcd9da909ebe67ebb6fcf7ccbbcf9d7efeb3c3b923611cc5149b0bbcf9cc1b246d128fdf41508a96c666cefdfc23e72e9f27914c73bdfca71f9d2c7d6245ab2fc6e74ae7c7a74addd4689b2b3e35d0f7f46ba65aafe0b61d356a54a20a1ecff7e3c37cf5f5d0c724b2bf22e10c26bcbeb344cd2c9a59927465d30d03810e28ee2b5277313a50b436b691b6691a525948a52ee3f90e6340292c08280dda82b8f5f2f27434bfba901a3836484c8c426130ac5736f96d72146cb08c36e0147850bcacfe7767e5dceb070f3cdadfdd5c08bd43c42bacb24cdf9c61f4afd2a0f7ea3db4f2440a62c3bf574d7afb849625d00000000049454e44ae426082</data>
     </image>
     <image name="image1">
         <data format="PNG" length="480">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000001a749444154388dd5933d6b544114869f7366769355886143fc8882203689060b890811b411044923586b0a113bf56fe437682376122b4da760238841086227b88adf822072f7eede3bf35aec26ae85556c7c8787c314333c9c396392d84e7c5ba7ffc505c63227271b93770f4d1d9e4124654132109003c8201b6487ec188ecb43e7e387e2eb8f9f5798b83af1fcd693db2afb3df5ab5a65afaf6e39a45ba9dbed0f28faea1695caa256af4c5a7bf65833178ebd8f73fb8f1eb9bc78898dcf1b74be77188b4d70030373c00c33c330704824a65a6dce2d9ce1c4dcc2ded88ae3d9dd5979b4c2ea8b55e2ce084d20804523848007c7e3804205a70e2cf2e0fc435acd568a594900952a4a9534d5c493e3eeb89cacfc47d3b2328904889cd3c82bd800db541e51370debc8da4c747303b06c58329444f244ca899003ced0260f8cea5c93c880133c107ba97201374e5f67697e89f1c61898810b77df321934d5a85533ddda8d63f4ead2695f6bbfbcb77e5f7f4d1e210d91f4f4d5ba0e5e3cfecd58e6ecf48e3d7766f7cdee92484a6c0d0dd9403e1ca6dffbe80d7ffdf64df5eecba79bf6ff7fa65f5ceef20ab1bcd9830000000049454e44ae426082</data>
     </image>
     <image name="image2">
-        <data format="PNG" length="864">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000032749444154388d55934b6c54651cc57fdfe3de7975a0511128f6918e6d3a413b3a442c5b4c89d1852e5c91e8c6471a8d1b634c541668c4689a96c4ba312e88ec5da8090b08466b45a1d88c45b0b69d3ed294165a2b7dcc0cbd73bfefefa22cf46c4f72925fce398a5734d40db810f0e0dc8bb907da870eeecb67bc43f06054a0669617e23f66273f106d3e452b21d2101bd44e8082ba05ef1eecd89b9bfee69d6fb3f9a64efeaba57f6ef3c2472f71e9da2f87d0760c97006fb0a0403cf86d70dcdfb5bf2b936feae4c40fef7375e92a26303cb4bb99cf7b8778327f844b63c32d881a430b28b000783980a7936ddab76a5bbeeeebfaa7f91186cbc39080f63ded54dc16b5bb35a8d51e2191b883738b58336571ee784753e7978fb71453f1ddba3cd1765807dad21036609286300cc926b2208a9ece22b77b8f7f18267731313fed7e2f4f9ca0f5add65b37166f8888482475111159abad49efd95eb1a7aca4fa5352385390c9b54911f1e2c48b88c8e2ea2d39f4eab1c8b6efc9edca37e53979e12417272e625316a71de5f532993083b69a95ea0a7d17fa48255254a9f2d8de02833da7e96ac92b2bde3b80d2cd122353239001152a32e90c8920814613b9882bcb57c04255aa88f6783ccec562e55e4d4a29d0a0b4c22883420120080a85d61a1468d1f73c41006bb431001df77550d8df8dc958bcf12c5597d8f6db68ad49ea246d8d6d046140d557c9edcea131586b150fbf9d5b9b5d9d132f5e36eb1bb2196dc8c2fa821c3d7b54825381a4fbd3d27da65bc657c66533de908a6c492c91dcd9da909ebe67ebb6fcf7ccbbcf9d7efeb3c3b923611cc5149b0bbcf9cc1b246d128fdf41508a96c666cefdfc23e72e9f27914c73bdfca71f9d2c7d6245ab2fc6e74ae7c7a74addd4689b2b3e35d0f7f46ba65aafe0b61d356a54a20a1ecff7e3c37cf5f5d0c724b2bf22e10c26bcbeb344cd2c9a59927465d30d03810e28ee2b5277313a50b436b691b6691a525948a52ee3f90e6340292c08280dda82b8f5f2f27434bfba901a3836484c8c426130ac5736f96d72146cb08c36e0147850bcacfe7767e5dceb070f3cdadfdd5c08bd43c42bacb24cdf9c61f4afd2a0f7ea3db4f2440a62c3bf574d7afb849625d00000000049454e44ae426082</data>
+        <data format="PNG" length="679">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000026e49444154388d95934b48945118869f73fe716e66a6e285acc4452d5a64200885150845548b085a14648b944483342210b4852074237151c40c1159d1ae0ca255172848c75a4617a8702cb4d4c6fbe8cc7ffe735afcbf93a59bbed53907dee73beff79e238c316c3a7ce1e9c1fdd5bb84315a6b562c63c008776d59967cf22cf6f6dd9d966d186368bef1429bffacf6fb6f8c31061f80c1d8807f5957afb3030801291b94033941d05a2b0009a0b5c98894520cc762a4934904e00850e914c3fd03a4540a255ca031ae462eeda8d269e2d128939d9d0c4623d85ae300dfeede2375334aa2e7165a2da0804492e58099f171ec4884cdf5f5647ff8c8a7ee6e3e47228462fd6c3c7a04fff397cc0cc631c0aff91500ab4b4a08b5b4f0bda383d2dc5c727a7b09f7dc667d6101a35dddcceddb4ba0bc9cb406e925e25b0a9052b2aeb6962f42126f6ba3acb810100c3f7accd8e9660a6a8fa167054abbc35d06700c6801567e3ed389044343714c5616f34545c855393842a01dd0da4d280310de75348691070f1127ea289e9d6148481c6151e693d8572e322dc07fe010caf8320009607baf6f72740cfb64031b26279802ac4b97095ced622ab940513844def56b24bf0ee204c0e825809fb3ee269cb706d3d4485c0852ede7293c7b86bca60652e75af93132c244cd6eacb5a5a8857f2c28cf93c6cfead63612357bc8dd5a819e73fd06eb1a19df5289afa20a491065f3b705e10dc17100e5a360c77684c8c649834e032a40b87a275204d18b624fe3f3f2cb124038045283a3802058da4d4639ee991574e3f38701cbf26500fd7d037dc7a3b955c268ad1c030616bf87c6fbcae64f676149197bf5fa3da72af90db9124876e3411e500000000049454e44ae426082</data>
     </image>
 </images>
 <connections>
@@ -232,13 +240,19 @@
         <sender>lineEdit2</sender>
         <signal>textChanged(const QString&amp;)</signal>
         <receiver>ingredientseditorwidgetbase</receiver>
-        <slot>lineEdit2Changed()</slot>
+        <slot>refilterTable()</slot>
     </connection>
     <connection>
         <sender>table1</sender>
         <signal>currentChanged(int,int)</signal>
         <receiver>ingredientseditorwidgetbase</receiver>
         <slot>table1SelectionChanged(int,int)</slot>
+    </connection>
+    <connection>
+        <sender>checkBox1</sender>
+        <signal>clicked()</signal>
+        <receiver>ingredientseditorwidgetbase</receiver>
+        <slot>refilterTable()</slot>
     </connection>
 </connections>
 <slots>
@@ -247,7 +261,7 @@
     <slot>OkClicked()</slot>
     <slot>tableChanged()</slot>
     <slot>tableClicked(int row)</slot>
-    <slot>lineEdit2Changed()</slot>
+    <slot>refilterTable()</slot>
     <slot>table1SelectionChanged(int row, int col)</slot>
 </slots>
 <layoutdefaults spacing="4" margin="4"/>

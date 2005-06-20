@@ -27,6 +27,7 @@
 #include <qimage.h>
 #include <qlineedit.h>
 #include <qdatetime.h>
+#include <qcheckbox.h>
 
 #include "ingredientseditorwidget.h"
 #include "green.xpm"
@@ -99,15 +100,18 @@ ingredientseditorwidget::ingredientseditorwidget(QWidget* parent, const char* na
 	oldcol=1;
 }
 
-void ingredientseditorwidget::lineEdit2Changed()
+void ingredientseditorwidget::refilterTable()
 {
+	QImage image1, image2;
+	image2=red;
 	int rows=table1->numRows();
-	for(int i=0;i<=rows;i++)
+	for(int i=0;i<rows;i++)
 	{
-		if( table1->text(i,0).contains(lineEdit2->text(), FALSE)==0 )
-			table1->setRowHeight( i, 0 );
-		else
+		image1=table1->verticalHeader()->iconSet(i)->pixmap();
+		if( table1->text(i,0).contains(lineEdit2->text(), FALSE)!=0 && ( !checkBox1->isChecked() || image1!=image2 ) )
 			table1->setRowHeight( i, 20 );
+		else
+			table1->setRowHeight( i, 0 );
 	}
 }
 

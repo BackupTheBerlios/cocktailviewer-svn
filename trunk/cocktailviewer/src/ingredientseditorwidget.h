@@ -51,7 +51,7 @@ public slots:
     void OkClicked();
     void tableChanged();
     void tableClicked(int row);
-    void lineEdit2Changed();
+    void refilterTable();
     void table1SelectionChanged(int row, int col);
 
 };
