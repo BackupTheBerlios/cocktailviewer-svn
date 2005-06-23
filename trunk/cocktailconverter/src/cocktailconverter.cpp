@@ -29,6 +29,7 @@
 
 #include <qfile.h>
 #include <qtextstream.h>
+#include <qdatetime.h>
 
 #include "cocktailconverter.h"
 
@@ -46,6 +47,7 @@ int main(int argc, char *argv[])
 	ReadWriteCocktailTypes("Cocktailart.txt", db);
 	ReadWriteTastes("Cocktailgeschmack.txt", db);
 	WriteCocktailsToSQL(db);
+	timeStamp(db);
 	qDebug("Copied "+QString::number(counter)+" cocktails to the database ("+db+").");
 	return EXIT_SUCCESS;
 }
@@ -419,5 +421,63 @@ bool ImportUnits(QString file, QString dbfile)
 	rc = sqlite3_exec(db, "COMMIT TRANSACTION", 0, 0, &zErrMsg);
 	sqlite3_close(db);
 	f.close();
+	return true;
+}
+
+bool timeStamp(QString dbfile)
+{
+	QDateTime d;
+	QString Date;
+	char *zErrMsg = 0;
+	int rc;
+	rc = sqlite3_open(dbfile, &db);
+	if( rc )
+	{
+		fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+		sqlite3_close(db);
+		return false;
+	}
+	rc = sqlite3_exec(db, "DROP TABLE timestamps;", 0, 0, &zErrMsg);
+	rc = sqlite3_exec(db, "CREATE TABLE timestamps (ID INTEGER PRIMARY KEY, operation TEXT, date NUMERIC);", 0, 0, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+	fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	Date=d.currentDateTime().toString("yyyyMMddhhmmss");
+	rc = sqlite3_exec(db, "INSERT INTO timestamps VALUES( NULL,\"LastChange\","+Date+");", 0, 0, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	/*rc = sqlite3_exec(db, "INSERT INTO timestamps VALUES( NULL,\"Ingredients_LastWrite\","+Date+");", 0, 0, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	rc = sqlite3_exec(db, "INSERT INTO timestamps VALUES( NULL,\"Cocktails_LastWrite\","+Date+");", 0, 0, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	rc = sqlite3_exec(db, "INSERT INTO timestamps VALUES( NULL,\"CocktailIngredients_LastWrite\","+Date+");", 0, 0, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	rc = sqlite3_exec(db, "INSERT INTO timestamps VALUES( NULL,\"Units_LastWrite\","+Date+");", 0, 0, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	rc = sqlite3_exec(db, "INSERT INTO timestamps VALUES( NULL,\"Tastes_LastWrite\","+Date+");", 0, 0, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	rc = sqlite3_exec(db, "INSERT INTO timestamps VALUES( NULL,\"Types_LastWrite\","+Date+");", 0, 0, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}*/
 	return true;
 }

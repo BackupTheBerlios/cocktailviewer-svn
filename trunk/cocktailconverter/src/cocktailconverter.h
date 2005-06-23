@@ -94,3 +94,4 @@ QString getID(QString table, QString value, QString string);
 bool ReadWriteCocktailTypes(QString file, QString dbfile);
 bool ReadWriteTastes(QString file, QString dbfile);
 bool ImportUnits(QString file, QString dbfile);
+bool timeStamp(QString dbfile);
