@@ -15,8 +15,15 @@
     <property name="minimumSize">
         <size>
             <width>406</width>
-            <height>526</height>
+            <height>522</height>
         </size>
+    </property>
+    <property name="paletteBackgroundColor">
+        <color>
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+        </color>
     </property>
     <property name="caption">
         <string>cocktailviewerwidgetbase</string>
@@ -752,9 +759,9 @@
                                             </property>
                                             <property name="paletteBackgroundColor">
                                                 <color>
-                                                    <red>248</red>
+                                                    <red>255</red>
                                                     <green>255</green>
-                                                    <blue>57</blue>
+                                                    <blue>114</blue>
                                                 </color>
                                             </property>
                                             <property name="font">
@@ -794,9 +801,9 @@
                                             </property>
                                             <property name="paletteBackgroundColor">
                                                 <color>
-                                                    <red>96</red>
-                                                    <green>183</green>
-                                                    <blue>255</blue>
+                                                    <red>255</red>
+                                                    <green>255</green>
+                                                    <blue>114</blue>
                                                 </color>
                                             </property>
                                             <property name="font">
@@ -877,6 +884,9 @@
         <action name="fileExitAction"/>
     </item>
     <item text="&amp;Edit" name="editMenu">
+        <action name="editadd_cocktailAction"/>
+        <action name="editedit_cocktailAction"/>
+        <action name="editdelete_cocktailAction"/>
         <separator/>
         <action name="editEdit_ingredients_Action"/>
         <separator/>
@@ -955,6 +965,39 @@
         </property>
         <property name="menuText">
             <string>About Qt</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editdelete_cocktailAction</cstring>
+        </property>
+        <property name="text">
+            <string>Delete cocktail</string>
+        </property>
+        <property name="menuText">
+            <string>Delete cocktail</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editedit_cocktailAction</cstring>
+        </property>
+        <property name="text">
+            <string>Edit cocktail ...</string>
+        </property>
+        <property name="menuText">
+            <string>Edit cocktail ...</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editadd_cocktailAction</cstring>
+        </property>
+        <property name="text">
+            <string>Add cocktail ...</string>
+        </property>
+        <property name="menuText">
+            <string>Add cocktail ...</string>
         </property>
     </action>
 </actions>
