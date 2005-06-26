@@ -59,6 +59,9 @@ public slots:
     void editIngredientsClicked();
     void about();
     void aboutQt();
+    void deleteCocktailClicked();
+    void addCocktailClicked();
+    void editCocktailClicked();
 
 protected:
     /*$PROTECTED_FUNCTIONS$*/
@@ -77,6 +80,7 @@ protected:
     void writeTypesIntoComboBoxes();
     void openDB();
     bool newChanges();
+    void deleteCocktail( QString ID );
 
     sqlite3 *db;
     QPixmap green, red;

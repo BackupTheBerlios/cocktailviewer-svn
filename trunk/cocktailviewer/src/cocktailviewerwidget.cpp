@@ -657,6 +657,53 @@ bool cocktailviewerWidget::newChanges()
 		return true;
 }
 
+void cocktailviewerWidget::deleteCocktailClicked()
+{
+	QListViewItem *Item=listView1->currentItem();
+	if(Item)
+	{
+		QString ID=Item->text(6);
+		QString Name=Item->text(0);
+		deleteCocktail( ID );
+	}
+
+}
+
+void cocktailviewerWidget::deleteCocktail( QString ID )
+{
+	if( QMessageBox::question(
+		this,
+		tr("Delete Cocktail"),
+		tr("Do you really want to delete this Cocktail?"),
+		tr("&Yes"), tr("&No"),
+		QString::null, 0, 1 )==0 )
+	{
+		char *zErrMsg = 0;
+		int rc;
+		rc = sqlite3_exec(db, "DELETE FROM Cocktails WHERE ID=\""+ID+"\";", 0, 0, &zErrMsg);
+		if( rc!=SQLITE_OK )
+		{
+			fprintf(stderr, "SQL error: %s\n", zErrMsg);
+		}
+		rc = sqlite3_exec(db, "DELETE FROM CocktailIngredients WHERE CocktailID=\""+ID+"\";", 0, 0, &zErrMsg);
+		if( rc!=SQLITE_OK )
+		{
+			fprintf(stderr, "SQL error: %s\n", zErrMsg);
+		}
+		UpdateListView1();
+	}
+}
+
+void cocktailviewerWidget::addCocktailClicked()
+{
+
+}
+
+void cocktailviewerWidget::editCocktailClicked()
+{
+
+}
+
 cocktailviewerWidget::~cocktailviewerWidget()
 {
 	sqlite3_close(db);
