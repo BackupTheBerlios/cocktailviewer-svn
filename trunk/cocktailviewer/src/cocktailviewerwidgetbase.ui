@@ -15,7 +15,7 @@
     <property name="minimumSize">
         <size>
             <width>406</width>
-            <height>522</height>
+            <height>526</height>
         </size>
     </property>
     <property name="paletteBackgroundColor">
@@ -983,21 +983,24 @@
             <cstring>editedit_cocktailAction</cstring>
         </property>
         <property name="text">
-            <string>Edit cocktail ...</string>
+            <string>Edit cocktail...</string>
         </property>
         <property name="menuText">
-            <string>Edit cocktail ...</string>
+            <string>Edit cocktail...</string>
         </property>
     </action>
     <action>
         <property name="name">
             <cstring>editadd_cocktailAction</cstring>
         </property>
+        <property name="iconSet">
+            <iconset></iconset>
+        </property>
         <property name="text">
-            <string>Add cocktail ...</string>
+            <string>Add cocktail...</string>
         </property>
         <property name="menuText">
-            <string>Add cocktail ...</string>
+            <string>Add cocktail...</string>
         </property>
     </action>
 </actions>
@@ -1148,6 +1151,24 @@
         <receiver>cocktailviewerwidgetbase</receiver>
         <slot>aboutQt()</slot>
     </connection>
+    <connection>
+        <sender>editdelete_cocktailAction</sender>
+        <signal>activated()</signal>
+        <receiver>cocktailviewerwidgetbase</receiver>
+        <slot>deleteCocktailClicked()</slot>
+    </connection>
+    <connection>
+        <sender>editadd_cocktailAction</sender>
+        <signal>activated()</signal>
+        <receiver>cocktailviewerwidgetbase</receiver>
+        <slot>addCocktailClicked()</slot>
+    </connection>
+    <connection>
+        <sender>editedit_cocktailAction</sender>
+        <signal>activated()</signal>
+        <receiver>cocktailviewerwidgetbase</receiver>
+        <slot>editCocktailClicked()</slot>
+    </connection>
 </connections>
 <slots>
     <slot>ListView1Clicked(QListViewItem *Item)</slot>
@@ -1166,6 +1187,9 @@
     <slot>editIngredientsClicked()</slot>
     <slot>about()</slot>
     <slot>aboutQt()</slot>
+    <slot>deleteCocktailClicked()</slot>
+    <slot>addCocktailClicked()</slot>
+    <slot>editCocktailClicked()</slot>
 </slots>
 <layoutdefaults spacing="2" margin="2"/>
 </UI>
