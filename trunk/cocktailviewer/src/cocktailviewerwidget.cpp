@@ -690,6 +690,12 @@ void cocktailviewerWidget::deleteCocktail( QString ID )
 		{
 			fprintf(stderr, "SQL error: %s\n", zErrMsg);
 		}
+		rc = sqlite3_exec(db, "DELETE FROM TMPCocktailExtras WHERE CocktailID=\""+ID+"\";", 0, 0, &zErrMsg);
+		if( rc!=SQLITE_OK )
+		{
+			fprintf(stderr, "SQL error: %s\n", zErrMsg);
+		}
+
 		UpdateListView1();
 	}
 }
