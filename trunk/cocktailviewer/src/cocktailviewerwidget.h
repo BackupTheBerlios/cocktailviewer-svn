@@ -80,7 +80,7 @@ protected:
     void writeTypesIntoComboBoxes();
     void openDB();
     bool newChanges();
-    void deleteCocktail( QString ID );
+    void deleteCocktail( QString ID, QString Name );
 
     sqlite3 *db;
     QPixmap green, red;

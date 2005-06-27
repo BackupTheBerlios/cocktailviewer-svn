@@ -664,17 +664,17 @@ void cocktailviewerWidget::deleteCocktailClicked()
 	{
 		QString ID=Item->text(6);
 		QString Name=Item->text(0);
-		deleteCocktail( ID );
+		deleteCocktail( ID, Name );
 	}
 
 }
 
-void cocktailviewerWidget::deleteCocktail( QString ID )
+void cocktailviewerWidget::deleteCocktail( QString ID, QString Name )
 {
 	if( QMessageBox::question(
 		this,
-		tr("Delete Cocktail"),
-		tr("Do you really want to delete this Cocktail?"),
+		tr("Delete Cocktail?"),
+		tr("<qt><p align=\"center\">Do you really want to delete the following Cocktail?<br><br><b>"+Name+"</b></p></qt>"),
 		tr("&Yes"), tr("&No"),
 		QString::null, 0, 1 )==0 )
 	{
@@ -695,7 +695,6 @@ void cocktailviewerWidget::deleteCocktail( QString ID )
 		{
 			fprintf(stderr, "SQL error: %s\n", zErrMsg);
 		}
-
 		UpdateListView1();
 	}
 }
