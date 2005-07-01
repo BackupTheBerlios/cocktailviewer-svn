@@ -520,31 +520,6 @@
                                     <bool>true</bool>
                                 </property>
                             </widget>
-                            <widget class="QLabel">
-                                <property name="name">
-                                    <cstring>textLabel1_5</cstring>
-                                </property>
-                                <property name="geometry">
-                                    <rect>
-                                        <x>5</x>
-                                        <y>276</y>
-                                        <width>240</width>
-                                        <height>20</height>
-                                    </rect>
-                                </property>
-                                <property name="font">
-                                    <font>
-                                        <pointsize>12</pointsize>
-                                        <bold>1</bold>
-                                    </font>
-                                </property>
-                                <property name="text">
-                                    <string>1000 Cocktails</string>
-                                </property>
-                                <property name="alignment">
-                                    <set>AlignCenter</set>
-                                </property>
-                            </widget>
                             <widget class="QPushButton">
                                 <property name="name">
                                     <cstring>pushButton2</cstring>
@@ -700,6 +675,31 @@
                                 </property>
                                 <property name="flat">
                                     <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_5</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>20</x>
+                                        <y>276</y>
+                                        <width>215</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <pointsize>12</pointsize>
+                                        <bold>1</bold>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>1000 Cocktails</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
                                 </property>
                             </widget>
                         </widget>

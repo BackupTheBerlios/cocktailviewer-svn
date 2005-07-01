@@ -625,7 +625,8 @@ void cocktailviewerWidget::aboutQt()
 
 void cocktailviewerWidget::about()
 {
-	QMessageBox::about( this, tr("About CocktailViewer"),
+	extern QString version;
+	QMessageBox::about( this, tr("About "+ version),
 				tr("This program is free software; you can redistribute it and/or"
 				"\nmodify it under the terms of the GNU General Public License."
 				"\nSee COPYING for more details."

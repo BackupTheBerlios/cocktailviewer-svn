@@ -23,28 +23,30 @@
 #include <qsettings.h>
 #include "cocktailviewerwidget.h"
 
-QString dir;
+QString dir, version;
 
-int main( int argc, char ** argv ) {
-    QApplication a( argc, argv );
-    int returnvalue;
-    dir=argv[0];
-    int i=dir.findRev('/',-1);
-    dir.remove(i+1, dir.length());
-    QSettings settings;
-    settings.setPath("Benni", "CocktailViewer");
-    QPoint p( settings.readNumEntry( "/cocktailviewer/xPos", 0 ), settings.readNumEntry( "/cocktailviewer/yPos", 0 ) );
-    QSize s( settings.readNumEntry( "/cocktailviewer/width", 750 ), settings.readNumEntry( "/cocktailviewer/height", 530 ) );
-    cocktailviewerWidget * mw = new cocktailviewerWidget();
-    mw->setCaption( "CocktailViewer" );
-    mw->resize( s );
-    mw->move( p ); 
-    mw->show();
-    a.connect( &a, SIGNAL(lastWindowClosed()), &a, SLOT(quit()) );
-    returnvalue=a.exec();
-    settings.writeEntry( "/cocktailviewer/width", mw->width() );
-    settings.writeEntry( "/cocktailviewer/height", mw->height() );
-    settings.writeEntry( "/cocktailviewer/xPos", mw->x() );
-    settings.writeEntry( "/cocktailviewer/yPos", mw->y() );
-    return returnvalue;
+int main( int argc, char ** argv )
+{
+	QApplication a( argc, argv );
+	int returnvalue;
+	QSettings settings;
+	dir=argv[0];
+	int i=dir.findRev('/',-1);
+	dir.remove(i+1, dir.length());
+	version="CocktailViewer 0.1";
+	settings.setPath("Benni", "CocktailViewer");
+	QPoint p( settings.readNumEntry( "/cocktailviewer/xPos", 0 ), settings.readNumEntry( "/cocktailviewer/yPos", 0 ) );
+	QSize s( settings.readNumEntry( "/cocktailviewer/width", 750 ), settings.readNumEntry( "/cocktailviewer/height", 530 ) );
+	cocktailviewerWidget * mw = new cocktailviewerWidget();
+	mw->setCaption( version );
+	mw->resize( s );
+	mw->move( p ); 
+	mw->show();
+	a.connect( &a, SIGNAL(lastWindowClosed()), &a, SLOT(quit()) );
+	returnvalue=a.exec();
+	settings.writeEntry( "/cocktailviewer/width", mw->width() );
+	settings.writeEntry( "/cocktailviewer/height", mw->height() );
+	settings.writeEntry( "/cocktailviewer/xPos", mw->x() );
+	settings.writeEntry( "/cocktailviewer/yPos", mw->y() );
+	return returnvalue;
 }
