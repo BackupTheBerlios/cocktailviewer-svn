@@ -1,0 +1,299 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>Form1</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>Form1</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>470</width>
+            <height>480</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>15</y>
+                <width>70</width>
+                <height>25</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Name:</string>
+        </property>
+    </widget>
+    <widget class="QLineEdit">
+        <property name="name">
+            <cstring>lineEdit3</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>95</x>
+                <y>15</y>
+                <width>336</width>
+                <height>25</height>
+            </rect>
+        </property>
+    </widget>
+    <widget class="QComboBox">
+        <property name="name">
+            <cstring>comboBox8</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>280</x>
+                <y>45</y>
+                <width>151</width>
+                <height>25</height>
+            </rect>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel3</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>45</y>
+                <width>70</width>
+                <height>25</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Taste:</string>
+        </property>
+    </widget>
+    <widget class="QComboBox">
+        <property name="name">
+            <cstring>comboBox7</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>95</x>
+                <y>45</y>
+                <width>156</width>
+                <height>25</height>
+            </rect>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel4</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>75</y>
+                <width>70</width>
+                <height>25</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Type:</string>
+        </property>
+    </widget>
+    <widget class="QComboBox">
+        <property name="name">
+            <cstring>comboBox9</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>95</x>
+                <y>75</y>
+                <width>161</width>
+                <height>25</height>
+            </rect>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel5</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>105</y>
+                <width>70</width>
+                <height>25</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Rating:</string>
+        </property>
+    </widget>
+    <widget class="QSpinBox">
+        <property name="name">
+            <cstring>spinBox2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>95</x>
+                <y>105</y>
+                <width>40</width>
+                <height>25</height>
+            </rect>
+        </property>
+        <property name="maxValue">
+            <number>5</number>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>135</y>
+                <width>90</width>
+                <height>25</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Ingredients:</string>
+        </property>
+    </widget>
+    <widget class="QTextEdit">
+        <property name="name">
+            <cstring>textEdit1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>15</x>
+                <y>360</y>
+                <width>426</width>
+                <height>66</height>
+            </rect>
+        </property>
+    </widget>
+    <widget class="QTable">
+        <column>
+            <property name="text">
+                <string>amount</string>
+            </property>
+            <property name="pixmap">
+                <pixmap></pixmap>
+            </property>
+        </column>
+        <column>
+            <property name="text">
+                <string>unit</string>
+            </property>
+            <property name="pixmap">
+                <pixmap></pixmap>
+            </property>
+        </column>
+        <column>
+            <property name="text">
+                <string>ingredient</string>
+            </property>
+            <property name="pixmap">
+                <pixmap></pixmap>
+            </property>
+        </column>
+        <row>
+            <property name="text">
+                <string>1</string>
+            </property>
+            <property name="pixmap">
+                <pixmap></pixmap>
+            </property>
+        </row>
+        <property name="name">
+            <cstring>table3</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>15</x>
+                <y>160</y>
+                <width>426</width>
+                <height>171</height>
+            </rect>
+        </property>
+        <property name="numRows">
+            <number>1</number>
+        </property>
+        <property name="numCols">
+            <number>3</number>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel6</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>15</x>
+                <y>335</y>
+                <width>75</width>
+                <height>25</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Description:</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>pushButton13</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>15</x>
+                <y>440</y>
+                <width>186</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>OK</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>pushButton14</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>265</x>
+                <y>440</y>
+                <width>176</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Cancel</string>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButton14</sender>
+        <signal>clicked()</signal>
+        <receiver>Form1</receiver>
+        <slot>close()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>lineEdit3</tabstop>
+    <tabstop>comboBox7</tabstop>
+    <tabstop>comboBox8</tabstop>
+    <tabstop>comboBox9</tabstop>
+    <tabstop>spinBox2</tabstop>
+    <tabstop>table3</tabstop>
+    <tabstop>textEdit1</tabstop>
+    <tabstop>pushButton13</tabstop>
+    <tabstop>pushButton14</tabstop>
+</tabstops>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
