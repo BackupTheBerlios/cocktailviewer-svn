@@ -19,8 +19,8 @@
  ***************************************************************************/
 #include "cocktaileditorwidget.h"
 
-cocktaileditorwidget::cocktaileditorwidget()
- : cocktaileditorwidgetbase()
+cocktaileditorwidget::cocktaileditorwidget( QWidget* parent, const char* name, WFlags fl )
+ : cocktaileditorwidgetbase( parent,name,fl )
 {
 }
 

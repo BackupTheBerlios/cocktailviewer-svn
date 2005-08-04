@@ -29,7 +29,7 @@
 class cocktaileditorwidget : public cocktaileditorwidgetbase
 {
 public:
-    cocktaileditorwidget();
+    cocktaileditorwidget( QWidget* parent = 0, const char* name = 0, WFlags fl = 0 );
 
     ~cocktaileditorwidget();
 

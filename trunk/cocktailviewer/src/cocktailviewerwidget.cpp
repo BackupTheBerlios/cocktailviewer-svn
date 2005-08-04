@@ -31,6 +31,7 @@
 
 #include "cocktailviewerwidget.h"
 #include "ingredientseditorwidget.h"
+#include "cocktaileditorwidget.h"
 #include "green.xpm"
 #include "red.xpm"
 
@@ -702,7 +703,17 @@ void cocktailviewerWidget::deleteCocktail( QString ID, QString Name )
 
 void cocktailviewerWidget::addCocktailClicked()
 {
-
+	bool dirty;
+	sqlite3_close(db);
+	cocktaileditorwidget *CocktailEditor;
+	CocktailEditor=new cocktaileditorwidget(this, "Cocktail Editor");
+	CocktailEditor->setCaption( "Cocktail Editor" );
+	CocktailEditor->exec();
+	//dirty=CocktailEditor->isDirty();
+	delete CocktailEditor;
+	openDB();
+	/*if( dirty )
+		LoadData();*/
 }
 
 void cocktailviewerWidget::editCocktailClicked()
