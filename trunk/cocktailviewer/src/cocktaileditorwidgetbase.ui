@@ -1,8 +1,8 @@
 <!DOCTYPE UI><UI version="3.3" stdsetdef="1">
-<class>Form1</class>
+<class>cocktaileditorwidgetbase</class>
 <widget class="QDialog">
     <property name="name">
-        <cstring>Form1</cstring>
+        <cstring>cocktaileditorwidgetbase</cstring>
     </property>
     <property name="geometry">
         <rect>
@@ -291,7 +291,7 @@
     <connection>
         <sender>pushButton14</sender>
         <signal>clicked()</signal>
-        <receiver>Form1</receiver>
+        <receiver>cocktaileditorwidgetbase</receiver>
         <slot>close()</slot>
     </connection>
 </connections>
