@@ -4,7 +4,8 @@
 # Das Target ist eine Anwendung:  ../cocktailviewer
 
 FORMS += cocktailviewerwidgetbase.ui \
-         ingredientseditorwidgetbase.ui 
+         ingredientseditorwidgetbase.ui \
+         cocktaileditorwidgetbase.ui 
 DISTFILES += green.xpm \
              red.xpm 
 IMAGES += green.xpm \
