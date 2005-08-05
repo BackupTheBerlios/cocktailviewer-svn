@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2005 by Benni   *
- *   benjamin.loewe@freenet.de   *
+ *   Copyright (C) 2005 by Benni                                           *
+ *   benjamin.loewe@freenet.de                                             *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -30,8 +30,16 @@ class cocktaileditorwidget : public cocktaileditorwidgetbase
 {
 public:
     cocktaileditorwidget( QWidget* parent = 0, const char* name = 0, WFlags fl = 0 );
-
+    void init();
+    void writeTastes();
+    void writeTypes();
+    void writeUnits();
+    void writeIngredients();
+    
     ~cocktaileditorwidget();
+    
+    sqlite3 *db3;
+
 
 };
 

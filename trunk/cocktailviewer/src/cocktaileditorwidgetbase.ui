@@ -8,8 +8,8 @@
         <rect>
             <x>0</x>
             <y>0</y>
-            <width>434</width>
-            <height>491</height>
+            <width>447</width>
+            <height>528</height>
         </rect>
     </property>
     <property name="caption">
@@ -79,14 +79,6 @@
                 <number>5</number>
             </property>
         </widget>
-        <widget class="QLabel" row="4" column="0" rowspan="1" colspan="2">
-            <property name="name">
-                <cstring>textLabel2</cstring>
-            </property>
-            <property name="text">
-                <string>Ingredients:</string>
-            </property>
-        </widget>
         <widget class="QFrame" row="5" column="0" rowspan="1" colspan="3">
             <property name="name">
                 <cstring>frame3</cstring>
@@ -153,20 +145,44 @@
                     <property name="name">
                         <cstring>comboBox4_2</cstring>
                     </property>
+                    <property name="editable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="autoCompletion">
+                        <bool>true</bool>
+                    </property>
                 </widget>
                 <widget class="QComboBox" row="2" column="2">
                     <property name="name">
                         <cstring>comboBox4_3</cstring>
+                    </property>
+                    <property name="editable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="autoCompletion">
+                        <bool>true</bool>
                     </property>
                 </widget>
                 <widget class="QComboBox" row="3" column="2">
                     <property name="name">
                         <cstring>comboBox4_4</cstring>
                     </property>
+                    <property name="editable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="autoCompletion">
+                        <bool>true</bool>
+                    </property>
                 </widget>
                 <widget class="QComboBox" row="4" column="2">
                     <property name="name">
                         <cstring>comboBox4_5</cstring>
+                    </property>
+                    <property name="editable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="autoCompletion">
+                        <bool>true</bool>
                     </property>
                 </widget>
                 <widget class="QLineEdit" row="3" column="0">
@@ -184,10 +200,22 @@
                     <property name="name">
                         <cstring>comboBox4_6</cstring>
                     </property>
+                    <property name="editable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="autoCompletion">
+                        <bool>true</bool>
+                    </property>
                 </widget>
                 <widget class="QComboBox" row="6" column="2">
                     <property name="name">
                         <cstring>comboBox4_7</cstring>
+                    </property>
+                    <property name="editable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="autoCompletion">
+                        <bool>true</bool>
                     </property>
                 </widget>
                 <widget class="QComboBox" row="4" column="1">
@@ -259,16 +287,14 @@
                             <height>0</height>
                         </size>
                     </property>
+                    <property name="editable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="autoCompletion">
+                        <bool>true</bool>
+                    </property>
                 </widget>
             </grid>
-        </widget>
-        <widget class="QPushButton" row="8" column="0" rowspan="1" colspan="2">
-            <property name="name">
-                <cstring>pushButton13</cstring>
-            </property>
-            <property name="text">
-                <string>OK</string>
-            </property>
         </widget>
         <widget class="QLabel" row="6" column="0">
             <property name="name">
@@ -278,7 +304,43 @@
                 <string>Description:</string>
             </property>
         </widget>
-        <widget class="QPushButton" row="8" column="2">
+        <widget class="QTextEdit" row="7" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>textEdit1</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="4" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textLabel2</cstring>
+            </property>
+            <property name="text">
+                <string>Ingredients:</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="8" column="0">
+            <property name="name">
+                <cstring>textLabel1_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>40</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>&lt;qt&gt;Alcohol:&lt;br&gt;
+&lt;b&gt;Price:&lt;/b&gt;&lt;/qt&gt;</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="9" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>pushButton13</cstring>
+            </property>
+            <property name="text">
+                <string>OK</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="9" column="2">
             <property name="name">
                 <cstring>pushButton14</cstring>
             </property>
@@ -286,9 +348,13 @@
                 <string>Cancel</string>
             </property>
         </widget>
-        <widget class="QTextEdit" row="7" column="0" rowspan="1" colspan="3">
+        <widget class="QLabel" row="8" column="1" rowspan="1" colspan="2">
             <property name="name">
-                <cstring>textEdit1</cstring>
+                <cstring>textLabel2_2</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;qt&gt;20%, 40ml&lt;br&gt;
+&lt;b&gt;1.40 €&lt;/b&gt;&lt;/qt&gt;</string>
             </property>
         </widget>
     </grid>
@@ -307,9 +373,30 @@
     <tabstop>comboBox8</tabstop>
     <tabstop>comboBox9</tabstop>
     <tabstop>spinBox2</tabstop>
-    <tabstop>textEdit1</tabstop>
+    <tabstop>lineEdit2</tabstop>
+    <tabstop>comboBox5</tabstop>
+    <tabstop>comboBox4</tabstop>
+    <tabstop>lineEdit2_2</tabstop>
+    <tabstop>comboBox5_2</tabstop>
+    <tabstop>comboBox4_2</tabstop>
+    <tabstop>lineEdit2_3</tabstop>
+    <tabstop>comboBox5_3</tabstop>
+    <tabstop>comboBox4_3</tabstop>
+    <tabstop>lineEdit2_4</tabstop>
+    <tabstop>comboBox5_4</tabstop>
+    <tabstop>comboBox4_4</tabstop>
+    <tabstop>lineEdit2_5</tabstop>
+    <tabstop>comboBox5_5</tabstop>
+    <tabstop>comboBox4_5</tabstop>
+    <tabstop>lineEdit2_6</tabstop>
+    <tabstop>comboBox5_6</tabstop>
+    <tabstop>comboBox4_6</tabstop>
+    <tabstop>lineEdit2_7</tabstop>
+    <tabstop>comboBox5_7</tabstop>
+    <tabstop>comboBox4_7</tabstop>
     <tabstop>pushButton13</tabstop>
     <tabstop>pushButton14</tabstop>
+    <tabstop>textEdit1</tabstop>
 </tabstops>
 <layoutdefaults spacing="6" margin="11"/>
 </UI>
