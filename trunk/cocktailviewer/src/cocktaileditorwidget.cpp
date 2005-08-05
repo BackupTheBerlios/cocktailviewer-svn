@@ -20,6 +20,8 @@
 #include <sqlite3.h>
 #include <qlabel.h>
 #include <qcombobox.h>
+#include <qcheckbox.h>
+#include <qstring.h>
 
 #include "cocktaileditorwidget.h"
 
@@ -126,20 +128,15 @@ void cocktaileditorwidget::writeIngredients()
 	char *zErrMsg = 0;
 	int rc, nrow, ncolumn;
 	char **Result;
-	comboBox4->clear();
-	comboBox4_2->clear();
-	comboBox4_3->clear();
-	comboBox4_4->clear();
-	comboBox4_5->clear();
-	comboBox4_6->clear();
-	comboBox4_7->clear();
-	comboBox4->insertItem("");
-	comboBox4_2->insertItem("");
-	comboBox4_3->insertItem("");
-	comboBox4_4->insertItem("");
-	comboBox4_5->insertItem("");
-	comboBox4_6->insertItem("");
-	comboBox4_7->insertItem("");
+	QString Text1=comboBox4->currentText();
+	QString Text2=comboBox4_2->currentText();
+	QString Text3=comboBox4_3->currentText();
+	QString Text4=comboBox4_4->currentText();
+	QString Text5=comboBox4_5->currentText();
+	QString Text6=comboBox4_6->currentText();
+	QString Text7=comboBox4_7->currentText();
+	comboBox4->clear(); comboBox4_2->clear(); comboBox4_3->clear(); comboBox4_4->clear(); comboBox4_5->clear(); comboBox4_6->clear(); comboBox4_7->clear();
+	comboBox4->insertItem(""); comboBox4_2->insertItem(""); comboBox4_3->insertItem(""); comboBox4_4->insertItem(""); comboBox4_5->insertItem(""); comboBox4_6->insertItem(""); comboBox4_7->insertItem("");
 	rc = sqlite3_get_table(db3, "select name,stock from ingredients", &Result, &nrow, &ncolumn, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
@@ -147,7 +144,7 @@ void cocktaileditorwidget::writeIngredients()
 	}
 	for(int i=1;i<=nrow;i++)
 	{
-		if(QString(Result[ncolumn*i+1])!="0")
+		if(QString(Result[ncolumn*i+1])!="0" || !checkBox1->isChecked())
 		{
 			comboBox4->insertItem(Result[ncolumn*i]);
 			comboBox4_2->insertItem(Result[ncolumn*i]);
@@ -158,6 +155,13 @@ void cocktaileditorwidget::writeIngredients()
 			comboBox4_7->insertItem(Result[ncolumn*i]);
 		}
 	}
+	comboBox4->setCurrentText(Text1);
+	comboBox4_2->setCurrentText(Text2);
+	comboBox4_3->setCurrentText(Text3);
+	comboBox4_4->setCurrentText(Text4);
+	comboBox4_5->setCurrentText(Text5);
+	comboBox4_6->setCurrentText(Text6);
+	comboBox4_7->setCurrentText(Text7);
 }
 
 cocktaileditorwidget::~cocktaileditorwidget()

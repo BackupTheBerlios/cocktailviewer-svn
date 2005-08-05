@@ -63,14 +63,6 @@
                 <cstring>comboBox9</cstring>
             </property>
         </widget>
-        <widget class="QLabel" row="3" column="0">
-            <property name="name">
-                <cstring>textLabel5</cstring>
-            </property>
-            <property name="text">
-                <string>Rating:</string>
-            </property>
-        </widget>
         <widget class="QSpinBox" row="3" column="1">
             <property name="name">
                 <cstring>spinBox2</cstring>
@@ -309,14 +301,6 @@
                 <cstring>textEdit1</cstring>
             </property>
         </widget>
-        <widget class="QLabel" row="4" column="0" rowspan="1" colspan="2">
-            <property name="name">
-                <cstring>textLabel2</cstring>
-            </property>
-            <property name="text">
-                <string>Ingredients:</string>
-            </property>
-        </widget>
         <widget class="QLabel" row="8" column="0">
             <property name="name">
                 <cstring>textLabel1_2</cstring>
@@ -357,6 +341,30 @@
 &lt;b&gt;1.40 €&lt;/b&gt;&lt;/qt&gt;</string>
             </property>
         </widget>
+        <widget class="QLabel" row="3" column="0">
+            <property name="name">
+                <cstring>textLabel5</cstring>
+            </property>
+            <property name="text">
+                <string>Rating:</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="4" column="0">
+            <property name="name">
+                <cstring>textLabel2</cstring>
+            </property>
+            <property name="text">
+                <string>Ingredients:</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="4" column="1">
+            <property name="name">
+                <cstring>checkBox1</cstring>
+            </property>
+            <property name="text">
+                <string>show only available</string>
+            </property>
+        </widget>
     </grid>
 </widget>
 <connections>
@@ -365,6 +373,12 @@
         <signal>clicked()</signal>
         <receiver>cocktaileditorwidgetbase</receiver>
         <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>checkBox1</sender>
+        <signal>clicked()</signal>
+        <receiver>cocktaileditorwidgetbase</receiver>
+        <slot>writeIngredients()</slot>
     </connection>
 </connections>
 <tabstops>
@@ -398,5 +412,8 @@
     <tabstop>pushButton14</tabstop>
     <tabstop>textEdit1</tabstop>
 </tabstops>
+<slots>
+    <slot>writeIngredients()</slot>
+</slots>
 <layoutdefaults spacing="6" margin="11"/>
 </UI>

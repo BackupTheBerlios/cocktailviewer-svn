@@ -34,12 +34,13 @@ public:
     void writeTastes();
     void writeTypes();
     void writeUnits();
-    void writeIngredients();
     
     ~cocktaileditorwidget();
     
     sqlite3 *db3;
-
+    
+public slots:
+    void writeIngredients();
 
 };
 
