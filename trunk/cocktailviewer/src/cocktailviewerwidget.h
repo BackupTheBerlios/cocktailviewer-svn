@@ -82,6 +82,7 @@ protected:
     bool newChanges();
     void deleteCocktail( QString ID, QString Name );
 
+    int ColumnOfID;
     sqlite3 *db;
     QPixmap green, red;
 

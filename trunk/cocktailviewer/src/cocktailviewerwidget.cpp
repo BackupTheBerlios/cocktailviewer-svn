@@ -38,6 +38,7 @@
 cocktailviewerWidget::cocktailviewerWidget(QWidget* parent, const char* name, WFlags fl)
         : cocktailviewerWidgetBase(parent,name,fl)
 {
+	ColumnOfID=6;
 	initialize();
 	LoadData();
 }
@@ -288,7 +289,7 @@ void cocktailviewerWidget::ListView1Clicked(QListViewItem *Item)
 {
 	if(Item)
 	{
-		QString ID=Item->text(6);
+		QString ID=Item->text(ColumnOfID);
 		QString Name=Item->text(0);
 		loadCocktail( ID, Name);
 	}
@@ -664,7 +665,7 @@ void cocktailviewerWidget::deleteCocktailClicked()
 	QListViewItem *Item=listView1->currentItem();
 	if(Item)
 	{
-		QString ID=Item->text(6);
+		QString ID=Item->text(ColumnOfID);
 		QString Name=Item->text(0);
 		deleteCocktail( ID, Name );
 	}
@@ -706,7 +707,7 @@ void cocktailviewerWidget::addCocktailClicked()
 	bool dirty;
 	sqlite3_close(db);
 	cocktaileditorwidget *CocktailEditor;
-	CocktailEditor=new cocktaileditorwidget(this, "Cocktail Editor");
+	CocktailEditor=new cocktaileditorwidget(this, "Cocktail Editor", "");
 	CocktailEditor->setCaption( "Cocktail Editor" );
 	CocktailEditor->exec();
 	//dirty=CocktailEditor->isDirty();
@@ -718,7 +719,19 @@ void cocktailviewerWidget::addCocktailClicked()
 
 void cocktailviewerWidget::editCocktailClicked()
 {
-
+	bool dirty;
+	QListViewItem *Item=listView1->currentItem();
+	if(Item)
+	{
+		QString ID=Item->text(ColumnOfID);
+		sqlite3_close(db);
+		cocktaileditorwidget *CocktailEditor;
+		CocktailEditor=new cocktaileditorwidget(this, "Cocktail Editor", ID);
+		CocktailEditor->setCaption( "Cocktail Editor" );
+		CocktailEditor->exec();
+		delete CocktailEditor;
+		openDB();
+	}
 }
 
 cocktailviewerWidget::~cocktailviewerWidget()

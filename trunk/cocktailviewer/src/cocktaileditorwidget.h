@@ -29,11 +29,12 @@
 class cocktaileditorwidget : public cocktaileditorwidgetbase
 {
 public:
-    cocktaileditorwidget( QWidget* parent = 0, const char* name = 0, WFlags fl = 0 );
+    cocktaileditorwidget( QWidget* parent = 0, const char* name = 0, QString editID="", WFlags fl = 0 );
     void init();
     void writeTastes();
     void writeTypes();
     void writeUnits();
+    void loadCocktail( QString ID );
     
     ~cocktaileditorwidget();
     

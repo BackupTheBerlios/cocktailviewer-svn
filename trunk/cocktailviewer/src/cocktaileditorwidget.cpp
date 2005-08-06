@@ -22,10 +22,13 @@
 #include <qcombobox.h>
 #include <qcheckbox.h>
 #include <qstring.h>
+#include <qlineedit.h>
+#include <qtextedit.h>
+#include <qspinbox.h>
 
 #include "cocktaileditorwidget.h"
 
-cocktaileditorwidget::cocktaileditorwidget( QWidget* parent, const char* name, WFlags fl )
+cocktaileditorwidget::cocktaileditorwidget( QWidget* parent, const char* name, QString editID, WFlags fl )
  : cocktaileditorwidgetbase( parent,name,fl )
 {
 	int rc;
@@ -45,6 +48,8 @@ cocktaileditorwidget::cocktaileditorwidget( QWidget* parent, const char* name, W
 		return;
 	}
 	init();
+	if( editID!="" )
+		loadCocktail( editID );
 }
 
 void cocktaileditorwidget::init()
@@ -162,6 +167,21 @@ void cocktaileditorwidget::writeIngredients()
 	comboBox4_5->setCurrentText(Text5);
 	comboBox4_6->setCurrentText(Text6);
 	comboBox4_7->setCurrentText(Text7);
+}
+
+void cocktaileditorwidget::loadCocktail( QString ID)
+{
+	char *zErrMsg = 0;
+	int rc, nrow, ncolumn;
+	char **Result;
+	rc = sqlite3_get_table(db3, "SELECT name,description,rating,typeID,taste1ID,taste2ID FROM Cocktails WHERE ID=\""+ID+"\"", &Result, &nrow, &ncolumn, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	lineEdit3->setText(Result[6]);
+	textEdit1->setText(Result[7]);
+	spinBox2->setValue(QString(Result[8]).toInt());
 }
 
 cocktaileditorwidget::~cocktaileditorwidget()
