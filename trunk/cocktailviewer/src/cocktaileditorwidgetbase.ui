@@ -49,6 +49,9 @@
             <property name="name">
                 <cstring>comboBox7</cstring>
             </property>
+            <property name="autoCompletion">
+                <bool>false</bool>
+            </property>
         </widget>
         <widget class="QLabel" row="2" column="0">
             <property name="name">

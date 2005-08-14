@@ -162,18 +162,6 @@ void cocktailviewerWidget::createTMPCocktailExtras()
 				mlfactor=getitFromID(unitID, "units", "mlfactor").toFloat();
 			QString IngredientID=Result2[4*i+3];
 			newCocktail=false;
-			/*rc = sqlite3_get_table(db, "SELECT amount,price,alcohol,stock FROM Ingredients WHERE ID="+IngredientID, &Result3, &nrow3, &ncolumn3, &zErrMsg);
-			if( rc!=SQLITE_OK )
-			{
-				fprintf(stderr, "SQL error: %s\n", zErrMsg);
-			}
-			if(nrow3>0)
-			{
-				amountInBottle=QString(Result3[4]).toFloat();
-				priceOfBottle=QString(Result3[5]).toFloat();
-				alcohol=QString(Result3[6]).toFloat();
-				stock=Result3[7];
-			}*/
 			searchIngredientsList(IngredientID);
 			amountInBottle=globalResult1.toFloat();
 			priceOfBottle=globalResult2.toFloat();
@@ -185,7 +173,6 @@ void cocktailviewerWidget::createTMPCocktailExtras()
 			CocktailAmount+=amountInCocktail*mlfactor;
 			if(stock=="0")
 				available="0";
-			//sqlite3_free_table(Result3);
 			i++;
 		}
 		RelativeAlcohol=AbsolutAlcohol/CocktailAmount;

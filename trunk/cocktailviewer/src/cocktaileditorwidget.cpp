@@ -182,6 +182,8 @@ void cocktaileditorwidget::loadCocktail( QString ID)
 	lineEdit3->setText(Result[6]);
 	textEdit1->setText(Result[7]);
 	spinBox2->setValue(QString(Result[8]).toInt());
+	comboBox8->setCurrentText("bittersüß");
+	comboBox4->setCurrentText("Cola");
 }
 
 cocktaileditorwidget::~cocktaileditorwidget()

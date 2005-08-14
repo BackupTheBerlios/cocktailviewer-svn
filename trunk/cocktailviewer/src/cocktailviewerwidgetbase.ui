@@ -15,7 +15,7 @@
     <property name="minimumSize">
         <size>
             <width>406</width>
-            <height>526</height>
+            <height>525</height>
         </size>
     </property>
     <property name="paletteBackgroundColor">
@@ -1166,6 +1166,12 @@
     <connection>
         <sender>editedit_cocktailAction</sender>
         <signal>activated()</signal>
+        <receiver>cocktailviewerwidgetbase</receiver>
+        <slot>editCocktailClicked()</slot>
+    </connection>
+    <connection>
+        <sender>listView1</sender>
+        <signal>doubleClicked(QListViewItem*)</signal>
         <receiver>cocktailviewerwidgetbase</receiver>
         <slot>editCocktailClicked()</slot>
     </connection>
