@@ -283,27 +283,6 @@
                             </widget>
                             <widget class="QLabel">
                                 <property name="name">
-                                    <cstring>textLabel1_2</cstring>
-                                </property>
-                                <property name="geometry">
-                                    <rect>
-                                        <x>15</x>
-                                        <y>20</y>
-                                        <width>95</width>
-                                        <height>20</height>
-                                    </rect>
-                                </property>
-                                <property name="font">
-                                    <font>
-                                        <bold>1</bold>
-                                    </font>
-                                </property>
-                                <property name="text">
-                                    <string>Cocktail search:</string>
-                                </property>
-                            </widget>
-                            <widget class="QLabel">
-                                <property name="name">
                                     <cstring>textLabel1_2_3_2</cstring>
                                 </property>
                                 <property name="geometry">
@@ -700,6 +679,27 @@
                                 </property>
                                 <property name="alignment">
                                     <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_2</cstring>
+                                </property>
+                                <property name="geometry">
+                                    <rect>
+                                        <x>15</x>
+                                        <y>20</y>
+                                        <width>115</width>
+                                        <height>20</height>
+                                    </rect>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <bold>1</bold>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Cocktail search:</string>
                                 </property>
                             </widget>
                         </widget>

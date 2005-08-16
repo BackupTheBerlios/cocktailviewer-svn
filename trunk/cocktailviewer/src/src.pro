@@ -12,11 +12,13 @@ IMAGES += green.xpm \
           red.xpm 
 HEADERS += cocktailviewerwidget.h \
            ingredientseditorwidget.h \
-           cocktaileditorwidget.h 
+           cocktaileditorwidget.h \
+           cocktail.h 
 SOURCES += main.cpp \
            cocktailviewerwidget.cpp \
            ingredientseditorwidget.cpp \
-           cocktaileditorwidget.cpp 
+           cocktaileditorwidget.cpp \
+           cocktail.cpp 
 LIBS += -lsqlite3
 TARGET = ../cocktailviewer
 CONFIG += release \
