@@ -20,6 +20,7 @@
 #ifndef COCKTAILEDITORWIDGET_H
 #define COCKTAILEDITORWIDGET_H
 
+#include "cocktail.h"
 #include "cocktailviewerwidget.h"
 #include <cocktaileditorwidgetbase.h>
 
@@ -39,6 +40,8 @@ public:
     ~cocktaileditorwidget();
     
     sqlite3 *db3;
+    
+    Cocktail * cocktail;
     
 public slots:
     void writeIngredients();

@@ -31,6 +31,7 @@
 cocktaileditorwidget::cocktaileditorwidget( QWidget* parent, const char* name, QString editID, WFlags fl )
  : cocktaileditorwidgetbase( parent,name,fl )
 {
+	cocktail = new Cocktail ( "1" );
 	int rc;
 	QString dbfile;
 	extern QString dir;

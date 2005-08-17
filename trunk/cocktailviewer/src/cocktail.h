@@ -25,6 +25,26 @@ class Cocktail
 public:
     Cocktail( QString loadID );
     Cocktail(  );
+
+    QString getName();
+    void setName( QString Name );
+
+    QString getTaste1();
+    void setTaste1( QString Taste );
+
+    QString getTaste2();
+    void setTaste2( QString Taste );
+
+    QString getType();
+    void setType( QString Type );
+
+    int getRating();
+    void setRating( int Rating );
+
+    QString getDescription();
+    void setDescription( QString Description );
+
+
     //void loadCocktail( QString ID );
     
 
