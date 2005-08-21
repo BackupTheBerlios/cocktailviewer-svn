@@ -26,27 +26,26 @@ public:
     Cocktail( QString loadID );
     Cocktail(  );
 
-    QString getName();
+    QString Name();
     void setName( QString Name );
 
-    QString getTaste1();
+    QString Taste1();
+    QString Taste1ID();
     void setTaste1( QString Taste );
 
-    QString getTaste2();
+    QString Taste2();
+    QString Taste2ID();
     void setTaste2( QString Taste );
 
-    QString getType();
+    QString Type();
+    QString TypeID();
     void setType( QString Type );
 
-    int getRating();
+    int Rating();
     void setRating( int Rating );
 
-    QString getDescription();
+    QString Description();
     void setDescription( QString Description );
-
-
-    //void loadCocktail( QString ID );
-    
 
     ~Cocktail();
 
