@@ -31,7 +31,19 @@
 cocktaileditorwidget::cocktaileditorwidget( QWidget* parent, const char* name, QString editID, WFlags fl )
  : cocktaileditorwidgetbase( parent,name,fl )
 {
-	cocktail = new Cocktail ( "1" );
+	cocktail = new Cocktail ( editID );
+	/*qDebug("Name: "+cocktail->getName());
+	qDebug("Typ: "+cocktail->getType());
+	qDebug("Geschmack: "+cocktail->getTaste1()+", "+cocktail->getTaste2());
+	qDebug("Beschreibung: "+cocktail->getDescription());
+	qDebug("Bewertung: "+QString::number(cocktail->getRating()));
+	qDebug("Anzahl der Zutaten: "+QString::number(cocktail->getNumberOfIngredients()));
+	QString machbar=(cocktail->getAvailable() ? "ja" : "nein");
+	qDebug("Machbar: "+machbar);
+	qDebug("Cocktailmenge: "+QString::number(cocktail->getAmount())+"ml");
+	qDebug("Preis: "+QString::number(cocktail->getPrice())+"EUR");
+	qDebug("Alkohol: "+QString::number(100*cocktail->getRelativeAlc())+"%, "+QString::number(cocktail->getAbsolutAlc())+"ml");
+	qDebug( QString::number( cocktail->getIngredientAmount(1) ) + " "+cocktail->getIngredientUnit(1)+ " "+cocktail->getIngredientName(1));*/
 	int rc;
 	QString dbfile;
 	extern QString dir;
@@ -172,23 +184,41 @@ void cocktaileditorwidget::writeIngredients()
 
 void cocktaileditorwidget::loadCocktail( QString ID)
 {
-	char *zErrMsg = 0;
-	int rc, nrow, ncolumn;
-	char **Result;
-	rc = sqlite3_get_table(db3, "SELECT name,description,rating,typeID,taste1ID,taste2ID FROM Cocktails WHERE ID=\""+ID+"\"", &Result, &nrow, &ncolumn, &zErrMsg);
-	if( rc!=SQLITE_OK )
-	{
-		fprintf(stderr, "SQL error: %s\n", zErrMsg);
-	}
-	lineEdit3->setText(Result[6]);
-	textEdit1->setText(Result[7]);
-	spinBox2->setValue(QString(Result[8]).toInt());
-	comboBox8->setCurrentText("bittersüß");
-	comboBox4->setCurrentText("Cola");
+	lineEdit3->setText( cocktail->getName() );
+	comboBox7->setCurrentText( cocktail->getTaste1() );
+	comboBox8->setCurrentText( cocktail->getTaste2() );
+	comboBox9->setCurrentText( cocktail->getType() );
+	spinBox2->setValue( cocktail->getRating() );
+	textEdit1->setText( cocktail->getDescription() );
+	
+	lineEdit2->setText( QString::number( cocktail->getIngredientAmount(1) ) );
+	lineEdit2_2->setText( QString::number( cocktail->getIngredientAmount(2) ) );
+	lineEdit2_3->setText( QString::number( cocktail->getIngredientAmount(3) ) );
+	lineEdit2_4->setText( QString::number( cocktail->getIngredientAmount(4) ) );
+	lineEdit2_5->setText( QString::number( cocktail->getIngredientAmount(5) ) );
+	lineEdit2_6->setText( QString::number( cocktail->getIngredientAmount(6) ) );
+	lineEdit2_7->setText( QString::number( cocktail->getIngredientAmount(7) ) );
+	
+	comboBox5->setCurrentText( cocktail->getIngredientUnit(1) );
+	comboBox5_2->setCurrentText( cocktail->getIngredientUnit(2) );
+	comboBox5_3->setCurrentText( cocktail->getIngredientUnit(3) );
+	comboBox5_4->setCurrentText( cocktail->getIngredientUnit(4) );
+	comboBox5_5->setCurrentText( cocktail->getIngredientUnit(5) );
+	comboBox5_6->setCurrentText( cocktail->getIngredientUnit(6) );
+	comboBox5_7->setCurrentText( cocktail->getIngredientUnit(7) );
+	
+	comboBox4->setCurrentText( cocktail->getIngredientName(1) );
+	comboBox4_2->setCurrentText( cocktail->getIngredientName(2) );
+	comboBox4_3->setCurrentText( cocktail->getIngredientName(3) );
+	comboBox4_4->setCurrentText( cocktail->getIngredientName(4) );
+	comboBox4_5->setCurrentText( cocktail->getIngredientName(5) );
+	comboBox4_6->setCurrentText( cocktail->getIngredientName(6) );
+	comboBox4_7->setCurrentText( cocktail->getIngredientName(7) );
 }
 
 cocktaileditorwidget::~cocktaileditorwidget()
 {
+	delete cocktail;
 }
 
 

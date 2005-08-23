@@ -29,6 +29,7 @@
 #include <qregexp.h>
 #include <qmessagebox.h>
 
+#include "cocktail.h"
 #include "cocktailviewerwidget.h"
 #include "ingredientseditorwidget.h"
 #include "cocktaileditorwidget.h"
