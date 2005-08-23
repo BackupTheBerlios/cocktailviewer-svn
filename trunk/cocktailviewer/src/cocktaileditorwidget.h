@@ -36,6 +36,8 @@ public:
     void writeTypes();
     void writeUnits();
     void loadCocktail( QString ID );
+    void parseIngredients();
+    void recalculateExtras();
     
     ~cocktaileditorwidget();
     
@@ -45,6 +47,7 @@ public:
     
 public slots:
     void writeIngredients();
+    void IngredientsChanged();
 
 };
 

@@ -56,19 +56,23 @@ public:
 	int getNumberOfIngredients() { return NumberOfIngredients; };
 	
 	float getIngredientAmount( int index );
-	void setIngredientAmount( int index, QString Amount );
+	void setIngredientAmounts( list<float> AmountList );
 	
 	QString getIngredientUnit( int index );
-	void setIngredientUnit( int index, QString Unit );
+	void setIngredientUnits( list<QString> UnitList );
 	
 	QString getIngredientName( int index );
-	void setIngredientName( int index, QString Name );
+	void setIngredientNames( list<QString> NameList );
 	
 	bool getAvailable() { return Available; };
 	float getAmount() { return Amount; };
 	float getPrice() { return Price; };
 	float getAbsolutAlc() { return AbsolutAlc; };
 	float getRelativeAlc() { return RelativeAlc; };
+	
+	void recalculateExtras();
+	
+	void saveCocktail();
 	
 	~Cocktail();
 
@@ -92,8 +96,6 @@ private:
 	UnitList IngredientUnits;
 	NameList IngredientNames;
 	AmountList IngredientAmounts;
-	
-	//QStringList IngredientAmounts, IngredientUnits, IngredientNames;
 };
 
 #endif

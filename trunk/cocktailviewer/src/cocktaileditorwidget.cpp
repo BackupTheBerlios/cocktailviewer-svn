@@ -48,10 +48,6 @@ cocktaileditorwidget::cocktaileditorwidget( QWidget* parent, const char* name, Q
 	QString dbfile;
 	extern QString dir;
 	textLabel2_2->setText("");
-	//green=green_xpm;
-	//red=red_xpm;
-	//imageRed=QIconSet( red );
-	//imageGreen=QIconSet( green );
 	dbfile = dir + "cocktail.db";
 	rc = sqlite3_open(dbfile, &db3);
 	if( rc )
@@ -214,6 +210,34 @@ void cocktaileditorwidget::loadCocktail( QString ID)
 	comboBox4_5->setCurrentText( cocktail->getIngredientName(5) );
 	comboBox4_6->setCurrentText( cocktail->getIngredientName(6) );
 	comboBox4_7->setCurrentText( cocktail->getIngredientName(7) );
+	
+	textLabel2_2->setText( "<qt>"+QString::number( cocktail->getRelativeAlc()*100,'f', 0 )+"% ("+QString::number( cocktail->getAbsolutAlc(),'f', 0 )+"ml)<br><b>"+QString::number( cocktail->getPrice(),'f', 2 )+" EUR</b></qt>" );
+}
+
+void cocktaileditorwidget::IngredientsChanged()
+{
+	parseIngredients();
+	recalculateExtras();
+}
+
+void cocktaileditorwidget::parseIngredients()
+{
+	typedef list<float> FloatList;
+	FloatList AmountList;
+	AmountList.clear();
+	AmountList.push_back( lineEdit2->text().toFloat() );
+	AmountList.push_back( lineEdit2_2->text().toFloat() );
+	AmountList.push_back( lineEdit2_3->text().toFloat() );
+	AmountList.push_back( lineEdit2_4->text().toFloat() );
+	AmountList.push_back( lineEdit2_5->text().toFloat() );
+	AmountList.push_back( lineEdit2_6->text().toFloat() );
+	AmountList.push_back( lineEdit2_7->text().toFloat() );
+	cocktail->setIngredientAmounts( AmountList );
+}
+
+void cocktaileditorwidget::recalculateExtras()
+{
+
 }
 
 cocktaileditorwidget::~cocktaileditorwidget()

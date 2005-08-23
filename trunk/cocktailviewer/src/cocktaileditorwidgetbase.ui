@@ -383,6 +383,48 @@
         <receiver>cocktaileditorwidgetbase</receiver>
         <slot>writeIngredients()</slot>
     </connection>
+    <connection>
+        <sender>lineEdit2</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>cocktaileditorwidgetbase</receiver>
+        <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+        <sender>lineEdit2_2</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>cocktaileditorwidgetbase</receiver>
+        <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+        <sender>lineEdit2_3</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>cocktaileditorwidgetbase</receiver>
+        <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+        <sender>lineEdit2_4</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>cocktaileditorwidgetbase</receiver>
+        <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+        <sender>lineEdit2_5</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>cocktaileditorwidgetbase</receiver>
+        <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+        <sender>lineEdit2_6</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>cocktaileditorwidgetbase</receiver>
+        <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+        <sender>lineEdit2_7</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>cocktaileditorwidgetbase</receiver>
+        <slot>IngredientsChanged()</slot>
+    </connection>
 </connections>
 <tabstops>
     <tabstop>lineEdit3</tabstop>
@@ -417,6 +459,7 @@
 </tabstops>
 <slots>
     <slot>writeIngredients()</slot>
+    <slot>IngredientsChanged()</slot>
 </slots>
 <layoutdefaults spacing="6" margin="11"/>
 </UI>

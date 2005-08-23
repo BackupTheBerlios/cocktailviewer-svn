@@ -108,6 +108,11 @@ float Cocktail::getIngredientAmount( int index )
 	return *iterator;
 }
 
+void Cocktail::setIngredientAmounts( list<float> AmountList )
+{
+	IngredientAmounts=AmountList;
+}
+
 QString Cocktail::getIngredientUnit( int index )
 {
 	if( index > NumberOfIngredients )
@@ -121,6 +126,11 @@ QString Cocktail::getIngredientUnit( int index )
 	return *iterator;
 }
 
+void Cocktail::setIngredientUnits( list<QString> UnitList )
+{
+	IngredientUnits=UnitList;
+}
+
 QString Cocktail::getIngredientName( int index )
 {
 	if( index > NumberOfIngredients )
@@ -132,6 +142,11 @@ QString Cocktail::getIngredientName( int index )
 		iterator++;
 	}
 	return *iterator;
+}
+
+void Cocktail::setIngredientNames( list<QString> NameList)
+{
+	IngredientNames=NameList;
 }
 
 void Cocktail::loadTMPCocktailExtras( QString ID)
@@ -188,6 +203,23 @@ QString Cocktail::getID(QString table, QString value, QString string)
 		ID=Result[1];
 	sqlite3_free_table(Result);
 	return ID;
+}
+
+void Cocktail::recalculateExtras()
+{
+	AmountList::iterator AmountIterator;
+	UnitList::iterator UnitIterator;
+	NameList::iterator NameIterator;
+	AmountIterator=IngredientAmounts.begin();
+	UnitIterator=IngredientUnits.begin();
+	NameIterator=IngredientNames.begin();
+
+
+}
+
+void Cocktail::saveCocktail()
+{
+
 }
 
 void Cocktail::newCocktail()
