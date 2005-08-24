@@ -22,7 +22,7 @@
 Cocktail::Cocktail( QString loadID )
 {
 	openDB();
-	loadCocktail( loadID );
+	loadCocktailBasics( loadID );
 	loadCocktailIngredients( loadID );
 	loadTMPCocktailExtras( loadID );
 }
@@ -48,7 +48,7 @@ Cocktail::Cocktail()
 	newCocktail();
 }
 
-void Cocktail::loadCocktail( QString ID)
+void Cocktail::loadCocktailBasics( QString ID)
 {
 	char *zErrMsg = 0;
 	int rc, nrow, ncolumn;
@@ -247,7 +247,54 @@ void Cocktail::calculateExtras( FloatList AmountList , StringList UnitList, Stri
 	qDebug("Machbar: "+machbar);*/
 }
 
+void Cocktail::setName( QString newName )
+{
+	Name=newName;
+}
+
+void Cocktail::setTaste1( QString newTaste )
+{
+	Taste1=newTaste;
+}
+
+void Cocktail::setTaste2( QString newTaste )
+{
+	Taste2=newTaste;
+}
+
+void Cocktail::setType( QString newType )
+{
+	Type=newType;
+}
+
+void Cocktail::setRating( int newRating )
+{
+	Rating=newRating;
+}
+
+void Cocktail::setDescription( QString newDescription )
+{
+	Description=newDescription;
+}
+
 void Cocktail::saveCocktail()
+{
+	saveCocktailBasics();
+	saveCocktailIngredients();
+	saveTMPCocktailExtras();
+}
+
+void Cocktail::saveCocktailBasics()
+{
+
+}
+
+void Cocktail::saveCocktailIngredients()
+{
+
+}
+
+void Cocktail::saveTMPCocktailExtras()
 {
 
 }

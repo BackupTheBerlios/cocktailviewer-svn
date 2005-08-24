@@ -211,23 +211,20 @@ void cocktaileditorwidget::loadCocktail( QString ID)
 	comboBox4_6->setCurrentText( cocktail->getIngredientName(6) );
 	comboBox4_7->setCurrentText( cocktail->getIngredientName(7) );
 	
-	parseIngredients();
+	IngredientsChanged();
 }
 
 void cocktaileditorwidget::IngredientsChanged()
 {
-	parseIngredients();
+	cocktail->calculateExtras( parseIngredientAmounts(), parseIngredientUnits(), parseIngredientNames() );
+	textLabel2_2->setText( "<qt>"+QString::number( cocktail->getRelativeAlc()*100,'f', 0 )+"% ("+QString::number( cocktail->getAbsolutAlc(),'f', 0 )+"ml)<br><b>"+QString::number( cocktail->getPrice(),'f', 2 )+" EUR</b></qt>" );
 }
 
-void cocktaileditorwidget::parseIngredients()
+list<float> cocktaileditorwidget::parseIngredientAmounts()
 {
 	typedef list<float> FloatList;
-	typedef list<QString> StringList;
 	FloatList AmountList;
-	StringList UnitList, NameList;
 	AmountList.clear();
-	UnitList.clear();
-	NameList.clear();
 	AmountList.push_back( lineEdit2->text().toFloat() );
 	AmountList.push_back( lineEdit2_2->text().toFloat() );
 	AmountList.push_back( lineEdit2_3->text().toFloat() );
@@ -235,7 +232,14 @@ void cocktaileditorwidget::parseIngredients()
 	AmountList.push_back( lineEdit2_5->text().toFloat() );
 	AmountList.push_back( lineEdit2_6->text().toFloat() );
 	AmountList.push_back( lineEdit2_7->text().toFloat() );
-	
+	return AmountList;
+}
+
+list<QString> cocktaileditorwidget::parseIngredientUnits()
+{
+	typedef list<QString> StringList;
+	StringList UnitList;
+	UnitList.clear();
 	UnitList.push_back( comboBox5->currentText() );
 	UnitList.push_back( comboBox5_2->currentText() );
 	UnitList.push_back( comboBox5_3->currentText() );
@@ -243,7 +247,14 @@ void cocktaileditorwidget::parseIngredients()
 	UnitList.push_back( comboBox5_5->currentText() );
 	UnitList.push_back( comboBox5_6->currentText() );
 	UnitList.push_back( comboBox5_7->currentText() );
-	
+	return UnitList;
+}
+
+list<QString> cocktaileditorwidget::parseIngredientNames()
+{
+	typedef list<QString> StringList;
+	StringList NameList;
+	NameList.clear();
 	NameList.push_back( comboBox4->currentText() );
 	NameList.push_back( comboBox4_2->currentText() );
 	NameList.push_back( comboBox4_3->currentText() );
@@ -251,9 +262,22 @@ void cocktaileditorwidget::parseIngredients()
 	NameList.push_back( comboBox4_5->currentText() );
 	NameList.push_back( comboBox4_6->currentText() );
 	NameList.push_back( comboBox4_7->currentText() );
-	
-	cocktail->calculateExtras( AmountList, UnitList, NameList );
-	textLabel2_2->setText( "<qt>"+QString::number( cocktail->getRelativeAlc()*100,'f', 0 )+"% ("+QString::number( cocktail->getAbsolutAlc(),'f', 0 )+"ml)<br><b>"+QString::number( cocktail->getPrice(),'f', 2 )+" EUR</b></qt>" );
+	return NameList;
+}
+
+void cocktaileditorwidget::OkClicked()
+{
+	cocktail->setName( lineEdit3->text() );
+	cocktail->setTaste1( comboBox7->currentText() );
+	cocktail->setTaste2( comboBox8->currentText() );
+	cocktail->setType( comboBox9->currentText() );
+	cocktail->setRating( spinBox2->value() );
+	cocktail->setDescription( textEdit1->text() );
+	cocktail->setIngredientAmounts( parseIngredientAmounts() );
+	cocktail->setIngredientUnits( parseIngredientUnits() );
+	cocktail->setIngredientNames( parseIngredientNames() );
+	cocktail->saveCocktail();
+	close();
 }
 
 cocktaileditorwidget::~cocktaileditorwidget()

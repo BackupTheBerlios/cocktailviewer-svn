@@ -33,25 +33,25 @@ public:
 	Cocktail(  );
 	
 	QString getName() { return Name; };
-	void setName( QString Name );
+	void setName( QString newName );
 	
 	QString getTaste1() { return Taste1; };
 	QString getTaste1ID() { return Taste1ID; };
-	void setTaste1( QString Taste );
+	void setTaste1( QString newTaste );
 	
 	QString getTaste2() { return Taste2; };
 	QString getTaste2ID() { return Taste2ID; };
-	void setTaste2( QString Taste );
+	void setTaste2( QString newTaste );
 	
 	QString getType() { return Type; };
 	QString getTypeID() { return TypeID; };
-	void setType( QString Type );
+	void setType( QString newType );
 	
 	int getRating() { return Rating; };
-	void setRating( int Rating );
+	void setRating( int newRating );
 	
 	QString getDescription() { return Description; };
-	void setDescription( QString Description );
+	void setDescription( QString newDescription );
 	
 	int getNumberOfIngredients() { return NumberOfIngredients; };
 	
@@ -78,12 +78,15 @@ public:
 
 private:
 	void openDB();
-	void loadCocktail( QString ID );
+	void loadCocktailBasics( QString ID );
 	void loadCocktailIngredients( QString ID );
 	void loadTMPCocktailExtras( QString ID );
 	void newCocktail();
 	QString getitFromID(QString ID, QString table, QString value);
 	QString getID(QString table, QString value, QString string);
+	void saveCocktailBasics();
+	void saveCocktailIngredients();
+	void saveTMPCocktailExtras();
 	
 	sqlite3 *db;
 	QString Name, Taste1, Taste1ID, Taste2, Taste2ID, Type, TypeID, Description;

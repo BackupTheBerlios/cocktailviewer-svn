@@ -36,7 +36,9 @@ public:
     void writeTypes();
     void writeUnits();
     void loadCocktail( QString ID );
-    void parseIngredients();
+    list<float> parseIngredientAmounts();
+    list<QString> parseIngredientUnits();
+    list<QString> parseIngredientNames();
     
     ~cocktaileditorwidget();
     
@@ -47,6 +49,7 @@ public:
 public slots:
     void writeIngredients();
     void IngredientsChanged();
+    void OkClicked();
 
 };
 

@@ -509,6 +509,12 @@
         <receiver>cocktaileditorwidgetbase</receiver>
         <slot>IngredientsChanged()</slot>
     </connection>
+    <connection>
+        <sender>pushButton13</sender>
+        <signal>clicked()</signal>
+        <receiver>cocktaileditorwidgetbase</receiver>
+        <slot>OkClicked()</slot>
+    </connection>
 </connections>
 <tabstops>
     <tabstop>lineEdit3</tabstop>
@@ -544,6 +550,7 @@
 <slots>
     <slot>writeIngredients()</slot>
     <slot>IngredientsChanged()</slot>
+    <slot>OkClicked()</slot>
 </slots>
 <layoutdefaults spacing="6" margin="11"/>
 </UI>
