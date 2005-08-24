@@ -211,9 +211,40 @@ void Cocktail::calculateExtras( FloatList AmountList , StringList UnitList, Stri
 	StringList::iterator UnitIterator, NameIterator;
 	AmountIterator=AmountList.begin();
 	UnitIterator=UnitList.begin();
-	NameIterator=NameList.begin();
-
-
+	Available=TRUE;
+	Amount=0;
+	Price=0;
+	AbsolutAlc=0;
+	RelativeAlc=0;
+	for(NameIterator=NameList.begin();NameIterator!=NameList.end();NameIterator++)
+	{
+		QString UnitID=getID( "units", "unit", *UnitIterator );
+		float UnitFactor=getitFromID( UnitID, "units", "mlfactor" ).toFloat();
+		Amount+=*AmountIterator*UnitFactor;
+		
+		QString IngredientID=getID( "ingredients", "name", *NameIterator );
+		float IngredientAmount=getitFromID( IngredientID, "ingredients", "amount" ).toFloat();
+		float IngredientPrice=getitFromID( IngredientID, "ingredients", "price" ).toFloat();
+		float IngredientAlcohol=getitFromID( IngredientID, "ingredients", "alcohol" ).toFloat();
+		
+		if(IngredientAmount!=0)
+			Price+=(*AmountIterator*UnitFactor/IngredientAmount)*IngredientPrice;
+			
+		AbsolutAlc+=*AmountIterator*UnitFactor*IngredientAlcohol/100;
+		
+		bool IngredientAvailable=( IngredientID=="-1" || getitFromID( IngredientID, "ingredients", "stock" )!="0" ? true : false );
+		if( IngredientAvailable == FALSE )
+			Available=FALSE;
+		
+		UnitIterator++;
+		AmountIterator++;
+	}
+	RelativeAlc=AbsolutAlc/Amount;
+	/*qDebug("Cocktailmenge: "+QString::number(Amount)+"ml");
+	qDebug("Alkohol: "+QString::number(RelativeAlc)+"%, "+QString::number(AbsolutAlc)+"ml");
+	qDebug("Preis: "+QString::number(Price)+" EUR");
+	QString machbar=(Available ? "ja" : "nein");
+	qDebug("Machbar: "+machbar);*/
 }
 
 void Cocktail::saveCocktail()

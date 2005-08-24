@@ -425,6 +425,90 @@
         <receiver>cocktaileditorwidgetbase</receiver>
         <slot>IngredientsChanged()</slot>
     </connection>
+    <connection>
+        <sender>comboBox4</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>cocktaileditorwidgetbase</receiver>
+        <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+	    <sender>comboBox4_2</sender>
+	    <signal>textChanged(const QString&amp;)</signal>
+	    <receiver>cocktaileditorwidgetbase</receiver>
+	    <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+	    <sender>comboBox4_3</sender>
+	    <signal>textChanged(const QString&amp;)</signal>
+	    <receiver>cocktaileditorwidgetbase</receiver>
+	    <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+	    <sender>comboBox4_4</sender>
+	    <signal>textChanged(const QString&amp;)</signal>
+	    <receiver>cocktaileditorwidgetbase</receiver>
+	    <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+	    <sender>comboBox4_5</sender>
+	    <signal>textChanged(const QString&amp;)</signal>
+	    <receiver>cocktaileditorwidgetbase</receiver>
+	    <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+	    <sender>comboBox4_6</sender>
+	    <signal>textChanged(const QString&amp;)</signal>
+	    <receiver>cocktaileditorwidgetbase</receiver>
+	    <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+	    <sender>comboBox4_7</sender>
+	    <signal>textChanged(const QString&amp;)</signal>
+	    <receiver>cocktaileditorwidgetbase</receiver>
+	    <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+        <sender>comboBox5</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>cocktaileditorwidgetbase</receiver>
+        <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+	    <sender>comboBox5_2</sender>
+	    <signal>textChanged(const QString&amp;)</signal>
+	    <receiver>cocktaileditorwidgetbase</receiver>
+	    <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+	    <sender>comboBox5_3</sender>
+	    <signal>textChanged(const QString&amp;)</signal>
+	    <receiver>cocktaileditorwidgetbase</receiver>
+	    <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+	    <sender>comboBox5_4</sender>
+	    <signal>textChanged(const QString&amp;)</signal>
+	    <receiver>cocktaileditorwidgetbase</receiver>
+	    <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+	    <sender>comboBox5_5</sender>
+	    <signal>textChanged(const QString&amp;)</signal>
+	    <receiver>cocktaileditorwidgetbase</receiver>
+	    <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+	    <sender>comboBox5_6</sender>
+	    <signal>textChanged(const QString&amp;)</signal>
+	    <receiver>cocktaileditorwidgetbase</receiver>
+	    <slot>IngredientsChanged()</slot>
+    </connection>
+    <connection>
+	    <sender>comboBox5_7</sender>
+	    <signal>textChanged(const QString&amp;)</signal>
+	    <receiver>cocktaileditorwidgetbase</receiver>
+	    <slot>IngredientsChanged()</slot>
+    </connection>
 </connections>
 <tabstops>
     <tabstop>lineEdit3</tabstop>

@@ -211,7 +211,7 @@ void cocktaileditorwidget::loadCocktail( QString ID)
 	comboBox4_6->setCurrentText( cocktail->getIngredientName(6) );
 	comboBox4_7->setCurrentText( cocktail->getIngredientName(7) );
 	
-	textLabel2_2->setText( "<qt>"+QString::number( cocktail->getRelativeAlc()*100,'f', 0 )+"% ("+QString::number( cocktail->getAbsolutAlc(),'f', 0 )+"ml)<br><b>"+QString::number( cocktail->getPrice(),'f', 2 )+" EUR</b></qt>" );
+	parseIngredients();
 }
 
 void cocktaileditorwidget::IngredientsChanged()
@@ -253,6 +253,7 @@ void cocktaileditorwidget::parseIngredients()
 	NameList.push_back( comboBox4_7->currentText() );
 	
 	cocktail->calculateExtras( AmountList, UnitList, NameList );
+	textLabel2_2->setText( "<qt>"+QString::number( cocktail->getRelativeAlc()*100,'f', 0 )+"% ("+QString::number( cocktail->getAbsolutAlc(),'f', 0 )+"ml)<br><b>"+QString::number( cocktail->getPrice(),'f', 2 )+" EUR</b></qt>" );
 }
 
 cocktaileditorwidget::~cocktaileditorwidget()
