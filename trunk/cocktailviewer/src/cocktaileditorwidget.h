@@ -37,7 +37,6 @@ public:
     void writeUnits();
     void loadCocktail( QString ID );
     void parseIngredients();
-    void recalculateExtras();
     
     ~cocktaileditorwidget();
     

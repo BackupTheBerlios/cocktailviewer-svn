@@ -99,7 +99,7 @@ float Cocktail::getIngredientAmount( int index )
 {
 	if( index > NumberOfIngredients )
 		return 0;
-	AmountList::iterator iterator;
+	FloatList::iterator iterator;
 	iterator=IngredientAmounts.begin();
 	for(int i=1;i<index;i++)
 	{
@@ -117,7 +117,7 @@ QString Cocktail::getIngredientUnit( int index )
 {
 	if( index > NumberOfIngredients )
 		return "";
-	UnitList::iterator iterator;
+	StringList::iterator iterator;
 	iterator=IngredientUnits.begin();
 	for(int i=1;i<index;i++)
 	{
@@ -135,7 +135,7 @@ QString Cocktail::getIngredientName( int index )
 {
 	if( index > NumberOfIngredients )
 		return "";
-	NameList::iterator iterator;
+	StringList::iterator iterator;
 	iterator=IngredientNames.begin();
 	for(int i=1;i<index;i++)
 	{
@@ -205,14 +205,13 @@ QString Cocktail::getID(QString table, QString value, QString string)
 	return ID;
 }
 
-void Cocktail::recalculateExtras()
+void Cocktail::calculateExtras( FloatList AmountList , StringList UnitList, StringList NameList )
 {
-	AmountList::iterator AmountIterator;
-	UnitList::iterator UnitIterator;
-	NameList::iterator NameIterator;
-	AmountIterator=IngredientAmounts.begin();
-	UnitIterator=IngredientUnits.begin();
-	NameIterator=IngredientNames.begin();
+	FloatList::iterator AmountIterator;
+	StringList::iterator UnitIterator, NameIterator;
+	AmountIterator=AmountList.begin();
+	UnitIterator=UnitList.begin();
+	NameIterator=NameList.begin();
 
 
 }

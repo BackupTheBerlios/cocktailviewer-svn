@@ -70,7 +70,7 @@ public:
 	float getAbsolutAlc() { return AbsolutAlc; };
 	float getRelativeAlc() { return RelativeAlc; };
 	
-	void recalculateExtras();
+	void calculateExtras( list<float> AmountList , list<QString> UnitList, list<QString> NameList );
 	
 	void saveCocktail();
 	
@@ -91,11 +91,10 @@ private:
 	bool Available;
 	float Amount, Price, AbsolutAlc, RelativeAlc;
 	
-	typedef list<QString> UnitList, NameList;
-	typedef list<float> AmountList;
-	UnitList IngredientUnits;
-	NameList IngredientNames;
-	AmountList IngredientAmounts;
+	typedef list<QString> StringList;
+	typedef list<float> FloatList;
+	StringList IngredientUnits, IngredientNames;
+	FloatList IngredientAmounts;
 };
 
 #endif

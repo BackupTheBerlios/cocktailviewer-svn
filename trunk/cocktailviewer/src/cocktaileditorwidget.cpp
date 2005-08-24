@@ -217,14 +217,17 @@ void cocktaileditorwidget::loadCocktail( QString ID)
 void cocktaileditorwidget::IngredientsChanged()
 {
 	parseIngredients();
-	recalculateExtras();
 }
 
 void cocktaileditorwidget::parseIngredients()
 {
 	typedef list<float> FloatList;
+	typedef list<QString> StringList;
 	FloatList AmountList;
+	StringList UnitList, NameList;
 	AmountList.clear();
+	UnitList.clear();
+	NameList.clear();
 	AmountList.push_back( lineEdit2->text().toFloat() );
 	AmountList.push_back( lineEdit2_2->text().toFloat() );
 	AmountList.push_back( lineEdit2_3->text().toFloat() );
@@ -232,12 +235,24 @@ void cocktaileditorwidget::parseIngredients()
 	AmountList.push_back( lineEdit2_5->text().toFloat() );
 	AmountList.push_back( lineEdit2_6->text().toFloat() );
 	AmountList.push_back( lineEdit2_7->text().toFloat() );
-	cocktail->setIngredientAmounts( AmountList );
-}
-
-void cocktaileditorwidget::recalculateExtras()
-{
-
+	
+	UnitList.push_back( comboBox5->currentText() );
+	UnitList.push_back( comboBox5_2->currentText() );
+	UnitList.push_back( comboBox5_3->currentText() );
+	UnitList.push_back( comboBox5_4->currentText() );
+	UnitList.push_back( comboBox5_5->currentText() );
+	UnitList.push_back( comboBox5_6->currentText() );
+	UnitList.push_back( comboBox5_7->currentText() );
+	
+	NameList.push_back( comboBox4->currentText() );
+	NameList.push_back( comboBox4_2->currentText() );
+	NameList.push_back( comboBox4_3->currentText() );
+	NameList.push_back( comboBox4_4->currentText() );
+	NameList.push_back( comboBox4_5->currentText() );
+	NameList.push_back( comboBox4_6->currentText() );
+	NameList.push_back( comboBox4_7->currentText() );
+	
+	cocktail->calculateExtras( AmountList, UnitList, NameList );
 }
 
 cocktaileditorwidget::~cocktaileditorwidget()
