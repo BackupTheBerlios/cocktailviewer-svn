@@ -698,11 +698,11 @@ void cocktailviewerWidget::addCocktailClicked()
 	CocktailEditor=new cocktaileditorwidget(this, "Cocktail Editor", "");
 	CocktailEditor->setCaption( "Cocktail Editor" );
 	CocktailEditor->exec();
-	//dirty=CocktailEditor->isDirty();
+	dirty=CocktailEditor->isDirty();
 	delete CocktailEditor;
 	openDB();
-	/*if( dirty )
-		LoadData();*/
+	if( dirty )
+		UpdateListView1();
 }
 
 void cocktailviewerWidget::editCocktailClicked()
@@ -721,7 +721,7 @@ void cocktailviewerWidget::editCocktailClicked()
 		delete CocktailEditor;
 		openDB();
 	}
-	if(dirty)
+	if( dirty )
 		UpdateListView1();
 }
 
