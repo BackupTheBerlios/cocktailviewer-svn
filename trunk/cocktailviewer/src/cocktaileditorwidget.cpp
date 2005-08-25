@@ -32,7 +32,10 @@ cocktaileditorwidget::cocktaileditorwidget( QWidget* parent, const char* name, Q
  : cocktaileditorwidgetbase( parent,name,fl )
 {
 	dirty=FALSE;
-	cocktail = new Cocktail ( editID );
+	if(editID!="")
+		cocktail = new Cocktail( editID );
+	else
+		cocktail = new Cocktail();
 	/*qDebug("Name: "+cocktail->getName());
 	qDebug("Typ: "+cocktail->getType());
 	qDebug("Geschmack: "+cocktail->getTaste1()+", "+cocktail->getTaste2());

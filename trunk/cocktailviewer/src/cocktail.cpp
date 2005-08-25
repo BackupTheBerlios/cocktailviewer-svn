@@ -355,10 +355,17 @@ void Cocktail::saveTMPCocktailExtras()
 
 void Cocktail::newCocktail()
 {
-
+	char *zErrMsg = 0;
+	int rc, nrow, ncolumn;
+	char **Result;
+	rc = sqlite3_get_table(db, "SELECT ID FROM Cocktails ORDER BY ID", &Result, &nrow, &ncolumn, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	if(nrow>0)
+		ID=( QString::number( QString( Result[nrow] ).toInt()+1 ) );
 }
-
-
 
 Cocktail::~Cocktail()
 {
