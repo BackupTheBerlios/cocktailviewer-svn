@@ -31,6 +31,7 @@
 cocktaileditorwidget::cocktaileditorwidget( QWidget* parent, const char* name, QString editID, WFlags fl )
  : cocktaileditorwidgetbase( parent,name,fl )
 {
+	dirty=FALSE;
 	cocktail = new Cocktail ( editID );
 	/*qDebug("Name: "+cocktail->getName());
 	qDebug("Typ: "+cocktail->getType());
@@ -267,6 +268,7 @@ list<QString> cocktaileditorwidget::parseIngredientNames()
 
 void cocktaileditorwidget::OkClicked()
 {
+	dirty=TRUE;
 	cocktail->setName( lineEdit3->text() );
 	cocktail->setTaste1( comboBox7->currentText() );
 	cocktail->setTaste2( comboBox8->currentText() );
@@ -278,6 +280,11 @@ void cocktaileditorwidget::OkClicked()
 	cocktail->setIngredientNames( parseIngredientNames() );
 	cocktail->saveCocktail();
 	close();
+}
+
+bool cocktaileditorwidget::isDirty()
+{
+	return dirty;
 }
 
 cocktaileditorwidget::~cocktaileditorwidget()

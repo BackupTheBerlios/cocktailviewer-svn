@@ -234,7 +234,7 @@ void cocktailviewerWidget::UpdateListView1()
 		QString taste1ID=Result[ncolumn*i+3];
 		QString taste2ID=Result[ncolumn*i+4];
 		QString typeID=Result[ncolumn*i+5];
-		rc = sqlite3_get_table(db, "SELECT * FROM TMPCocktailExtras WHERE ID="+ID, &Result2, &nrow2, &ncolumn2, &zErrMsg);
+		rc = sqlite3_get_table(db, "SELECT * FROM TMPCocktailExtras WHERE CocktailID="+ID, &Result2, &nrow2, &ncolumn2, &zErrMsg);
 		if( rc!=SQLITE_OK )
 		{
 			qDebug("1");
@@ -707,7 +707,7 @@ void cocktailviewerWidget::addCocktailClicked()
 
 void cocktailviewerWidget::editCocktailClicked()
 {
-	bool dirty;
+	bool dirty=false;
 	QListViewItem *Item=listView1->currentItem();
 	if(Item)
 	{
@@ -717,9 +717,12 @@ void cocktailviewerWidget::editCocktailClicked()
 		CocktailEditor=new cocktaileditorwidget(this, "Cocktail Editor", ID);
 		CocktailEditor->setCaption( "Cocktail Editor" );
 		CocktailEditor->exec();
+		dirty=CocktailEditor->isDirty();
 		delete CocktailEditor;
 		openDB();
 	}
+	if(dirty)
+		UpdateListView1();
 }
 
 cocktailviewerWidget::~cocktailviewerWidget()

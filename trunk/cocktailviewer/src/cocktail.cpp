@@ -21,6 +21,7 @@
 
 Cocktail::Cocktail( QString loadID )
 {
+	ID = loadID;
 	openDB();
 	loadCocktailBasics( loadID );
 	loadCocktailIngredients( loadID );
@@ -286,17 +287,70 @@ void Cocktail::saveCocktail()
 
 void Cocktail::saveCocktailBasics()
 {
-
+	char *zErrMsg = 0;
+	int rc;
+	rc = sqlite3_exec(db, "DELETE FROM Cocktails WHERE ID=\""+ID+"\"", 0, 0, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	rc = sqlite3_exec(db, "INSERT INTO Cocktails VALUES("+ID+",\""+Name+"\",\""+Description+"\","+QString::number(Rating)+","+getID("types", "type", Type)+","+getID("tastes", "taste", Taste1)+","+getID("tastes", "taste", Taste2)+")", 0, 0, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
 }
 
 void Cocktail::saveCocktailIngredients()
 {
-
+	FloatList::iterator AmountIterator;
+	StringList::iterator UnitIterator, NameIterator;
+	AmountIterator = IngredientAmounts.begin();
+	UnitIterator = IngredientUnits.begin();
+	NameIterator = IngredientNames.begin();
+	char *zErrMsg = 0;
+	int rc;
+	rc = sqlite3_exec(db, "DELETE FROM CocktailIngredients WHERE CocktailID=\""+ID+"\"", 0, 0, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	sqlite3_exec(db, "BEGIN TRANSACTION", 0, 0, &zErrMsg);
+	while( AmountIterator!=IngredientAmounts.end() && NameIterator!=IngredientNames.end() )
+	{
+		QString Amount=QString::number( *AmountIterator );
+		QString UnitID=getID( "units", "unit", *UnitIterator );
+		QString IngredientID=getID( "Ingredients", "Name", *NameIterator );
+		if( Amount!="0" && IngredientID!="-1" )
+		{
+			rc = sqlite3_exec(db, "INSERT INTO CocktailIngredients VALUES(NULL,"+ID+","+Amount+","+UnitID+","+IngredientID+")", 0, 0, &zErrMsg);
+			if( rc!=SQLITE_OK )
+			{
+				fprintf(stderr, "SQL error: %s\n", zErrMsg);
+			}
+		}
+		AmountIterator++;
+		UnitIterator++;
+		NameIterator++;
+	}
+	sqlite3_exec(db, "COMMIT TRANSACTION", 0, 0, &zErrMsg);
 }
 
 void Cocktail::saveTMPCocktailExtras()
 {
-
+	char *zErrMsg = 0;
+	int rc;
+	rc = sqlite3_exec(db, "DELETE FROM TMPCocktailExtras WHERE CocktailID=\""+ID+"\"", 0, 0, &zErrMsg);
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
+	rc = sqlite3_exec(db, "INSERT INTO TMPCocktailExtras VALUES(NULL,"+ID+","+(Available ? "1" : "0")+","+QString::number(Amount)+","+QString::number(Price)+","+QString::number(AbsolutAlc)+","+QString::number(RelativeAlc)+")", 0, 0, &zErrMsg);
+	//qDebug(ID+","+(Available ? "1" : "0")+","+QString::number(Amount)+","+QString::number(Price)+","+QString::number(AbsolutAlc)+","+QString::number(RelativeAlc));
+	if( rc!=SQLITE_OK )
+	{
+		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}
 }
 
 void Cocktail::newCocktail()
@@ -308,5 +362,5 @@ void Cocktail::newCocktail()
 
 Cocktail::~Cocktail()
 {
-
+	sqlite3_close(db);
 }

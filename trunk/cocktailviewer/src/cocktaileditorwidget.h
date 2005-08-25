@@ -36,6 +36,7 @@ public:
     void writeTypes();
     void writeUnits();
     void loadCocktail( QString ID );
+    bool isDirty();
     list<float> parseIngredientAmounts();
     list<QString> parseIngredientUnits();
     list<QString> parseIngredientNames();
@@ -43,6 +44,7 @@ public:
     ~cocktaileditorwidget();
     
     sqlite3 *db3;
+    bool dirty;
     
     Cocktail * cocktail;
     

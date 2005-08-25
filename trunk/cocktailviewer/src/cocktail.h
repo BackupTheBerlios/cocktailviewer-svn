@@ -36,15 +36,15 @@ public:
 	void setName( QString newName );
 	
 	QString getTaste1() { return Taste1; };
-	QString getTaste1ID() { return Taste1ID; };
+	//QString getTaste1ID() { return Taste1ID; };
 	void setTaste1( QString newTaste );
 	
 	QString getTaste2() { return Taste2; };
-	QString getTaste2ID() { return Taste2ID; };
+	//QString getTaste2ID() { return Taste2ID; };
 	void setTaste2( QString newTaste );
 	
 	QString getType() { return Type; };
-	QString getTypeID() { return TypeID; };
+	//QString getTypeID() { return TypeID; };
 	void setType( QString newType );
 	
 	int getRating() { return Rating; };
@@ -89,7 +89,7 @@ private:
 	void saveTMPCocktailExtras();
 	
 	sqlite3 *db;
-	QString Name, Taste1, Taste1ID, Taste2, Taste2ID, Type, TypeID, Description;
+	QString ID, Name, Taste1, Taste1ID, Taste2, Taste2ID, Type, TypeID, Description;
 	int Rating, NumberOfIngredients;
 	bool Available;
 	float Amount, Price, AbsolutAlc, RelativeAlc;
