@@ -302,7 +302,7 @@ void cocktailviewerWidget::loadCocktail( QString ID )
 		Text2+=Amount+" "+Unit+" <br>";//" "+Ingredient+"<br>";
 		Text3+=Ingredient+"<br>";
 	}
-	Text="<font size=\"+2\">"+Name+"</font>";
+	Text="<font color=\"#e72300\" size=\"+2\">"+Name+"</font>";
 	QString Stars=printStars( cocktail->getRating() );
 	if(Stars!="")
 		Text+="<br><font face=\"Wingdings\">"+Stars+"</font>";

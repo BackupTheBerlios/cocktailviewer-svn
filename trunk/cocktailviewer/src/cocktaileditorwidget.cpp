@@ -82,7 +82,7 @@ void cocktaileditorwidget::writeTastes()
 	comboBox8->clear();
 	comboBox7->insertItem("");
 	comboBox8->insertItem("");
-	rc = sqlite3_get_table(db3, "select taste from tastes", &Result, &nrow, &ncolumn, &zErrMsg);
+	rc = sqlite3_get_table(db3, "select taste from tastes ORDER BY taste", &Result, &nrow, &ncolumn, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
 		fprintf(stderr, "SQL error: %s\n", zErrMsg);
@@ -101,7 +101,7 @@ void cocktaileditorwidget::writeTypes()
 	char **Result;
 	comboBox9->clear();
 	comboBox9->insertItem("");
-	rc = sqlite3_get_table(db3, "select type from types", &Result, &nrow, &ncolumn, &zErrMsg);
+	rc = sqlite3_get_table(db3, "select type from types ORDER BY type", &Result, &nrow, &ncolumn, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
 		fprintf(stderr, "SQL error: %s\n", zErrMsg);
@@ -155,7 +155,7 @@ void cocktaileditorwidget::writeIngredients()
 	QString Text7=comboBox4_7->currentText();
 	comboBox4->clear(); comboBox4_2->clear(); comboBox4_3->clear(); comboBox4_4->clear(); comboBox4_5->clear(); comboBox4_6->clear(); comboBox4_7->clear();
 	comboBox4->insertItem(""); comboBox4_2->insertItem(""); comboBox4_3->insertItem(""); comboBox4_4->insertItem(""); comboBox4_5->insertItem(""); comboBox4_6->insertItem(""); comboBox4_7->insertItem("");
-	rc = sqlite3_get_table(db3, "select name,stock from ingredients", &Result, &nrow, &ncolumn, &zErrMsg);
+	rc = sqlite3_get_table(db3, "select name,stock from ingredients ORDER BY name", &Result, &nrow, &ncolumn, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
 		fprintf(stderr, "SQL error: %s\n", zErrMsg);
