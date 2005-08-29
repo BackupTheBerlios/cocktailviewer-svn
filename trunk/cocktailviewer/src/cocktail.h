@@ -21,7 +21,7 @@
 #define COCKTAIL_H
 
 #include <qstring.h>
-#include <qstringlist.h>
+#include <list>
 #include <sqlite3.h>
 
 using namespace std;

@@ -92,6 +92,7 @@ void cocktaileditorwidget::writeTastes()
 		comboBox7->insertItem(Result[i]);
 		comboBox8->insertItem(Result[i]);
 	}
+	sqlite3_free_table(Result);
 }
 
 void cocktaileditorwidget::writeTypes()
@@ -110,6 +111,7 @@ void cocktaileditorwidget::writeTypes()
 	{
 		comboBox9->insertItem(Result[i]);
 	}
+	sqlite3_free_table(Result);
 }
 
 void cocktaileditorwidget::writeUnits()
@@ -139,6 +141,7 @@ void cocktaileditorwidget::writeUnits()
 		comboBox5_6->insertItem(Result[i]);
 		comboBox5_7->insertItem(Result[i]);
 	}
+	sqlite3_free_table(Result);
 }
 
 void cocktaileditorwidget::writeIngredients()
@@ -155,23 +158,36 @@ void cocktaileditorwidget::writeIngredients()
 	QString Text7=comboBox4_7->currentText();
 	comboBox4->clear(); comboBox4_2->clear(); comboBox4_3->clear(); comboBox4_4->clear(); comboBox4_5->clear(); comboBox4_6->clear(); comboBox4_7->clear();
 	comboBox4->insertItem(""); comboBox4_2->insertItem(""); comboBox4_3->insertItem(""); comboBox4_4->insertItem(""); comboBox4_5->insertItem(""); comboBox4_6->insertItem(""); comboBox4_7->insertItem("");
-	rc = sqlite3_get_table(db3, "select name,stock from ingredients ORDER BY name", &Result, &nrow, &ncolumn, &zErrMsg);
+	rc = sqlite3_get_table(db3, "select name,stock from ingredients ORDER BY Name", &Result, &nrow, &ncolumn, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
 		fprintf(stderr, "SQL error: %s\n", zErrMsg);
 	}
+	IngredientList MyIngredientList;
 	for(int i=1;i<=nrow;i++)
 	{
-		if(QString(Result[ncolumn*i+1])!="0" || !checkBox1->isChecked())
+		QStringBool Ingredient;
+		if(QString(Result[ncolumn*i+1])!="0")
+			Ingredient.available=true;
+		Ingredient.Name=Result[ncolumn*i];
+		MyIngredientList.push_back( Ingredient );
+	}
+	sqlite3_free_table(Result);
+	MyIngredientList.sort( &sortByNaturalName );
+	IngredientList::iterator ingredient;
+	for(ingredient=MyIngredientList.begin();ingredient!=MyIngredientList.end();ingredient++)
+	{
+		if(ingredient->available || !checkBox1->isChecked())
 		{
-			comboBox4->insertItem(Result[ncolumn*i]);
-			comboBox4_2->insertItem(Result[ncolumn*i]);
-			comboBox4_3->insertItem(Result[ncolumn*i]);
-			comboBox4_4->insertItem(Result[ncolumn*i]);
-			comboBox4_5->insertItem(Result[ncolumn*i]);
-			comboBox4_6->insertItem(Result[ncolumn*i]);
-			comboBox4_7->insertItem(Result[ncolumn*i]);
+			comboBox4->insertItem( ingredient->Name );
+			comboBox4_2->insertItem( ingredient->Name );
+			comboBox4_3->insertItem( ingredient->Name );
+			comboBox4_4->insertItem( ingredient->Name );
+			comboBox4_5->insertItem( ingredient->Name );
+			comboBox4_6->insertItem( ingredient->Name );
+			comboBox4_7->insertItem( ingredient->Name );
 		}
+	
 	}
 	comboBox4->setCurrentText(Text1);
 	comboBox4_2->setCurrentText(Text2);
@@ -181,6 +197,13 @@ void cocktaileditorwidget::writeIngredients()
 	comboBox4_6->setCurrentText(Text6);
 	comboBox4_7->setCurrentText(Text7);
 }
+
+bool cocktaileditorwidget::sortByNaturalName( QStringBool Ingredient1, QStringBool Ingredient2 )
+{
+	if(QString::localeAwareCompare( Ingredient1.Name, Ingredient2.Name )<0) return(true);
+	else return(false);
+}
+
 
 void cocktaileditorwidget::loadCocktail( QString ID)
 {
@@ -294,5 +317,3 @@ cocktaileditorwidget::~cocktaileditorwidget()
 {
 	delete cocktail;
 }
-
-

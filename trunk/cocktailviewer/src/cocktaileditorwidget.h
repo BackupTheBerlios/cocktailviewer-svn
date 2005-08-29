@@ -23,6 +23,8 @@
 #include "cocktail.h"
 #include "cocktailviewerwidget.h"
 #include <cocktaileditorwidgetbase.h>
+#include <list>
+using namespace std;
 
 /**
 @author Benni
@@ -30,28 +32,37 @@
 class cocktaileditorwidget : public cocktaileditorwidgetbase
 {
 public:
-    cocktaileditorwidget( QWidget* parent = 0, const char* name = 0, QString editID="", WFlags fl = 0 );
-    void init();
-    void writeTastes();
-    void writeTypes();
-    void writeUnits();
-    void loadCocktail( QString ID );
-    bool isDirty();
-    list<float> parseIngredientAmounts();
-    list<QString> parseIngredientUnits();
-    list<QString> parseIngredientNames();
-    
-    ~cocktaileditorwidget();
-    
-    sqlite3 *db3;
-    bool dirty;
-    
-    Cocktail * cocktail;
-    
+	cocktaileditorwidget( QWidget* parent = 0, const char* name = 0, QString editID="", WFlags fl = 0 );
+	void init();
+	void writeTastes();
+	void writeTypes();
+	void writeUnits();
+	void loadCocktail( QString ID );
+	bool isDirty();
+	
+	list<float> parseIngredientAmounts();
+	list<QString> parseIngredientUnits();
+	list<QString> parseIngredientNames();
+	
+	~cocktaileditorwidget();
+	
+	sqlite3 *db3;
+	bool dirty;
+	
+	Cocktail * cocktail;
+	
+	struct QStringBool
+	{
+		QString Name;
+		bool available;
+	};
+	typedef list<QStringBool> IngredientList;
+	static bool sortByNaturalName( QStringBool Ingredient1, QStringBool Ingredient2 );
+
 public slots:
-    void writeIngredients();
-    void IngredientsChanged();
-    void OkClicked();
+	void writeIngredients();
+	void IngredientsChanged();
+	void OkClicked();
 
 };
 

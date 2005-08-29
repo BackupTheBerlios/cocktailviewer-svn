@@ -132,6 +132,9 @@
                     <blue>255</blue>
                 </color>
             </property>
+            <property name="frameShadow">
+                <enum>Raised</enum>
+            </property>
             <property name="allColumnsShowFocus">
                 <bool>true</bool>
             </property>
@@ -758,8 +761,8 @@
                                 <enum>Raised</enum>
                             </property>
                             <property name="text">
-                                <string>&lt;font color="#e72300"&gt;Cuba Libre (weißer Rum)&lt;br&gt;
-&lt;font face="Wingdings"&gt;´&lt;/font&gt;&lt;/font&gt;&lt;br&gt;
+                                <string>&lt;font color="#e72300" size="+1"&gt;Cuba Libre (weißer Rum)&lt;br&gt;&lt;/font&gt;
+&lt;font face="Wingdings"&gt;´&lt;/font&gt;&lt;br&gt;
 &lt;font size="-4"&gt;Longdrink fruchtig würzig&lt;/font&gt;</string>
                             </property>
                             <property name="alignment">
