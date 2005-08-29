@@ -170,6 +170,12 @@
                     <property name="name">
                         <cstring>frame4</cstring>
                     </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>250</width>
+                            <height>0</height>
+                        </size>
+                    </property>
                     <property name="maximumSize">
                         <size>
                             <width>250</width>
@@ -764,6 +770,12 @@
                                     <horstretch>0</horstretch>
                                     <verstretch>0</verstretch>
                                 </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>60</width>
+                                    <height>0</height>
+                                </size>
                             </property>
                             <property name="maximumSize">
                                 <size>
