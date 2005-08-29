@@ -23,6 +23,8 @@
 #define _COCKTAILVIEWERWIDGET_H_
 
 #include "cocktailviewerwidgetbase.h"
+#include "cocktail.h"
+
 #include <sqlite3.h>
 #include <qlistview.h>
 #include <qpixmap.h>
@@ -70,7 +72,7 @@ protected:
     void initialize();
     void LoadData();
     void createTMPCocktailExtras();
-    void loadCocktail(QString ID, QString Name);
+    void loadCocktail( QString ID );
     QString getitFromID(QString ID, QString table, QString value);
     QString getID(QString table, QString value, QString string);
     QString printStars(int rating);
@@ -85,7 +87,7 @@ protected:
     int ColumnOfID;
     sqlite3 *db;
     QPixmap green, red;
-
+    Cocktail * cocktail;
 
 protected slots:
     /*$PROTECTED_SLOTS$*/

@@ -29,7 +29,6 @@
 #include <qregexp.h>
 #include <qmessagebox.h>
 
-#include "cocktail.h"
 #include "cocktailviewerwidget.h"
 #include "ingredientseditorwidget.h"
 #include "cocktaileditorwidget.h"
@@ -279,62 +278,45 @@ void cocktailviewerWidget::ListView1Clicked(QListViewItem *Item)
 	{
 		QString ID=Item->text(ColumnOfID);
 		QString Name=Item->text(0);
-		loadCocktail( ID, Name);
+		loadCocktail( ID );
 	}
 }
 
-void cocktailviewerWidget::loadCocktail(QString ID, QString Name)
+void cocktailviewerWidget::loadCocktail( QString ID )
 {
-	QString description, rating, type, taste1, taste2;
-	char *zErrMsg = 0;
-	int rc, nrow, ncolumn, nrow2, ncolumn2;
-	char **Result, **Result2;
-	QString Text="", Text2="";
-	rc = sqlite3_get_table(db, "SELECT * FROM Cocktails WHERE ID="+ID, &Result, &nrow, &ncolumn, &zErrMsg);
-	if( rc!=SQLITE_OK )
+	cocktail = new Cocktail( ID );
+	QString Description, Rating, Type, Taste1, Taste2, Name;
+	QString Text="", Text2="", Text3="",Text4="";
+	Name=cocktail->getName();
+	Type=cocktail->getType();
+	Taste1=cocktail->getTaste1();
+	Taste2=cocktail->getTaste2();
+	Description=cocktail->getDescription();
+	int NumberOfIngredients=cocktail->getNumberOfIngredients();
+	for(int i=1;i<=NumberOfIngredients;i++)
 	{
-		qDebug("2");
-		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+		QString Amount, Unit, Ingredient;
+		Amount=QString::number( cocktail->getIngredientAmount( i ) );
+		Unit=cocktail->getIngredientUnit( i );
+		Ingredient=cocktail->getIngredientName( i );
+		Text2+=Amount+" "+Unit+" <br>";//" "+Ingredient+"<br>";
+		Text3+=Ingredient+"<br>";
 	}
-	rating=Result[10];
-	description=Result[9];
-	type=getitFromID(Result[11], "types", "type");
-	taste1=getitFromID(Result[12], "tastes", "taste");
-	taste2=getitFromID(Result[13], "tastes", "taste");
-	sqlite3_free_table(Result);
-	rc = sqlite3_get_table(db, "SELECT * FROM CocktailIngredients WHERE cocktailID="+ID, &Result, &nrow, &ncolumn, &zErrMsg);
-	if( rc!=SQLITE_OK )
-	{
-		qDebug("3");
-		fprintf(stderr, "SQL error: %s\n", zErrMsg);
-	}
-	for(int i=1;i<=nrow;i++)
-	{
-		QString amount, unit,ingredient;
-		amount=Result[5*i+2];
-		unit=getitFromID(Result[5*i+3], "units", "unit");
-		ingredient=getitFromID(Result[5*i+4], "ingredients", "name");
-		Text2+=amount+" "+unit+" "+ingredient+"<br>";
-	}
-	sqlite3_free_table(Result);
-	rc = sqlite3_get_table(db, "SELECT * FROM TMPCocktailExtras WHERE cocktailID="+ID, &Result2, &nrow2, &ncolumn2, &zErrMsg);
-	if( rc!=SQLITE_OK )
-	{
-		qDebug("4");
-		fprintf(stderr, "SQL error: %s\n", zErrMsg);
-	}
-	if(description!="")
-		Text2+="<br><font size=\"-1\">"+description+"</font>";
-	textLabel1_3->setText(Text2);
-	Text="<font size=\"+1\">"+Name+"</font>";
-	QString Stars=printStars(rating.toInt());
+	Text="<font size=\"+2\">"+Name+"</font>";
+	QString Stars=printStars( cocktail->getRating() );
 	if(Stars!="")
-		Text+="<br>"+Stars;
-	if(type!="" || taste1!="" || taste2!="")
-		Text+="<br><font size=\"-4\">"+type+" "+taste1+" "+taste2+"</font>";
-	textLabel1_4->setText(Text);
-	textLabel1_6->setText("<b>"+QString::number(QString(Result2[11]).toFloat(),'f', 2)+" EUR</b>");
-	sqlite3_free_table(Result2);
+		Text+="<br><font face=\"Wingdings\">"+Stars+"</font>";
+	if(Type!="" || Taste1!="" || Taste2!="")
+		Text+="<br><font size=\"-4\">"+Type+" "+Taste1+" "+Taste2+"</font>";
+	Text4="<qt>";
+	if(Description!="")
+		Text4+=Description+"<br>";
+	Text4+=QString::number( cocktail->getPrice(),'f', 2)+" EUR</qt>";
+	textLabel1_4->setText( Text );
+	textLabel1_3->setText( Text2 );
+	textLabel1_3_2->setText( Text3 );
+	textLabel1_7->setText( Text4 );
+	delete cocktail;
 }
 
 QString cocktailviewerWidget::getitFromID(QString ID, QString table, QString value)
@@ -380,7 +362,7 @@ QString cocktailviewerWidget::printStars(int rating)
 	if(rating<1 || rating>5)
 		stars="";
 	else
-		stars="*"+printStars(rating-1);
+		stars="´"+printStars(rating-1);
 	return stars;
 }
 
