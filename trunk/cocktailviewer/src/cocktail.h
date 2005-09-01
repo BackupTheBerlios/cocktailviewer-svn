@@ -89,6 +89,7 @@ private:
 	void saveTMPCocktailExtras();
 	
 	sqlite3 *db;
+	bool newID;
 	QString ID, Name, Taste1, Taste1ID, Taste2, Taste2ID, Type, TypeID, Description;
 	int Rating, NumberOfIngredients;
 	bool Available;

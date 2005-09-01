@@ -21,6 +21,7 @@
 
 Cocktail::Cocktail( QString loadID )
 {
+	newID = false;
 	ID = loadID;
 	openDB();
 	loadCocktailBasics( loadID );
@@ -45,6 +46,7 @@ void Cocktail::openDB()
 
 Cocktail::Cocktail()
 {
+	newID = true;
 	openDB();
 	newCocktail();
 }
@@ -287,14 +289,26 @@ void Cocktail::saveCocktail()
 
 void Cocktail::saveCocktailBasics()
 {
+	QString Data;
 	char *zErrMsg = 0;
 	int rc;
-	rc = sqlite3_exec(db, "DELETE FROM Cocktails WHERE ID=\""+ID+"\"", 0, 0, &zErrMsg);
+	/*rc = sqlite3_exec(db, "DELETE FROM Cocktails WHERE ID=\""+ID+"\"", 0, 0, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
 		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+	}*/
+	Data=ID+",\""+Name+"\",\""+Description+"\","+QString::number(Rating)+","+getID("types", "type", Type)+","+getID("tastes", "taste", Taste1)+","+getID("tastes", "taste", Taste2);
+	if( newID )
+		rc = sqlite3_exec(db, "INSERT INTO Cocktails VALUES("+Data+")", 0, 0, &zErrMsg);
+	else
+	{
+		rc = sqlite3_exec(db, "UPDATE Cocktails SET name=\""+Name+"\" WHERE ID="+ID, 0, 0, &zErrMsg);
+		rc = sqlite3_exec(db, "UPDATE Cocktails SET description=\""+Description+"\" WHERE ID="+ID, 0, 0, &zErrMsg);
+		rc = sqlite3_exec(db, "UPDATE Cocktails SET rating="+QString::number(Rating)+" WHERE ID="+ID, 0, 0, &zErrMsg);
+		rc = sqlite3_exec(db, "UPDATE Cocktails SET typeID="+getID("types", "type", Type)+" WHERE ID="+ID, 0, 0, &zErrMsg);
+		rc = sqlite3_exec(db, "UPDATE Cocktails SET taste1ID="+getID("tastes", "taste", Taste1)+" WHERE ID="+ID, 0, 0, &zErrMsg);
+		rc = sqlite3_exec(db, "UPDATE Cocktails SET taste2ID="+getID("tastes", "taste", Taste2)+" WHERE ID="+ID, 0, 0, &zErrMsg);
 	}
-	rc = sqlite3_exec(db, "INSERT INTO Cocktails VALUES("+ID+",\""+Name+"\",\""+Description+"\","+QString::number(Rating)+","+getID("types", "type", Type)+","+getID("tastes", "taste", Taste1)+","+getID("tastes", "taste", Taste2)+")", 0, 0, &zErrMsg);
 	if( rc!=SQLITE_OK )
 	{
 		fprintf(stderr, "SQL error: %s\n", zErrMsg);
