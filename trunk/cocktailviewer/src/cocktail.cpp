@@ -297,9 +297,8 @@ void Cocktail::saveCocktailBasics()
 	{
 		fprintf(stderr, "SQL error: %s\n", zErrMsg);
 	}*/
-	Data=ID+",\""+Name+"\",\""+Description+"\","+QString::number(Rating)+","+getID("types", "type", Type)+","+getID("tastes", "taste", Taste1)+","+getID("tastes", "taste", Taste2);
 	if( newID )
-		rc = sqlite3_exec(db, "INSERT INTO Cocktails VALUES("+Data+")", 0, 0, &zErrMsg);
+		rc = sqlite3_exec(db, "INSERT INTO Cocktails VALUES("+ID+",\""+Name+"\",\""+Description+"\","+QString::number(Rating)+","+getID("types", "type", Type)+","+getID("tastes", "taste", Taste1)+","+getID("tastes", "taste", Taste2)+")", 0, 0, &zErrMsg);
 	else
 	{
 		rc = sqlite3_exec(db, "UPDATE Cocktails SET name=\""+Name+"\" WHERE ID="+ID, 0, 0, &zErrMsg);
