@@ -277,7 +277,7 @@ void cocktailviewerWidget::ListView1Clicked(QListViewItem *Item)
 	if(Item)
 	{
 		QString ID=Item->text(ColumnOfID);
-		QString Name=Item->text(0);
+		//QString Name=Item->text(0);
 		loadCocktail( ID );
 	}
 }
