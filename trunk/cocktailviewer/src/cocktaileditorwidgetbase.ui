@@ -8,8 +8,8 @@
         <rect>
             <x>0</x>
             <y>0</y>
-            <width>447</width>
-            <height>528</height>
+            <width>435</width>
+            <height>521</height>
         </rect>
     </property>
     <property name="caption">
@@ -73,223 +73,6 @@
             <property name="maxValue">
                 <number>5</number>
             </property>
-        </widget>
-        <widget class="QFrame" row="5" column="0" rowspan="1" colspan="3">
-            <property name="name">
-                <cstring>frame3</cstring>
-            </property>
-            <property name="frameShape">
-                <enum>StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-                <enum>Raised</enum>
-            </property>
-            <grid>
-                <property name="name">
-                    <cstring>unnamed</cstring>
-                </property>
-                <widget class="QLineEdit" row="1" column="0">
-                    <property name="name">
-                        <cstring>lineEdit2_2</cstring>
-                    </property>
-                    <property name="maximumSize">
-                        <size>
-                            <width>50</width>
-                            <height>32767</height>
-                        </size>
-                    </property>
-                </widget>
-                <widget class="QLineEdit" row="2" column="0">
-                    <property name="name">
-                        <cstring>lineEdit2_3</cstring>
-                    </property>
-                    <property name="maximumSize">
-                        <size>
-                            <width>50</width>
-                            <height>32767</height>
-                        </size>
-                    </property>
-                </widget>
-                <widget class="QLineEdit" row="4" column="0">
-                    <property name="name">
-                        <cstring>lineEdit2_5</cstring>
-                    </property>
-                    <property name="maximumSize">
-                        <size>
-                            <width>50</width>
-                            <height>32767</height>
-                        </size>
-                    </property>
-                </widget>
-                <widget class="QComboBox" row="1" column="1">
-                    <property name="name">
-                        <cstring>comboBox5_2</cstring>
-                    </property>
-                </widget>
-                <widget class="QComboBox" row="2" column="1">
-                    <property name="name">
-                        <cstring>comboBox5_3</cstring>
-                    </property>
-                </widget>
-                <widget class="QComboBox" row="3" column="1">
-                    <property name="name">
-                        <cstring>comboBox5_4</cstring>
-                    </property>
-                </widget>
-                <widget class="QComboBox" row="1" column="2">
-                    <property name="name">
-                        <cstring>comboBox4_2</cstring>
-                    </property>
-                    <property name="editable">
-                        <bool>true</bool>
-                    </property>
-                    <property name="autoCompletion">
-                        <bool>true</bool>
-                    </property>
-                </widget>
-                <widget class="QComboBox" row="2" column="2">
-                    <property name="name">
-                        <cstring>comboBox4_3</cstring>
-                    </property>
-                    <property name="editable">
-                        <bool>true</bool>
-                    </property>
-                    <property name="autoCompletion">
-                        <bool>true</bool>
-                    </property>
-                </widget>
-                <widget class="QComboBox" row="3" column="2">
-                    <property name="name">
-                        <cstring>comboBox4_4</cstring>
-                    </property>
-                    <property name="editable">
-                        <bool>true</bool>
-                    </property>
-                    <property name="autoCompletion">
-                        <bool>true</bool>
-                    </property>
-                </widget>
-                <widget class="QComboBox" row="4" column="2">
-                    <property name="name">
-                        <cstring>comboBox4_5</cstring>
-                    </property>
-                    <property name="editable">
-                        <bool>true</bool>
-                    </property>
-                    <property name="autoCompletion">
-                        <bool>true</bool>
-                    </property>
-                </widget>
-                <widget class="QLineEdit" row="3" column="0">
-                    <property name="name">
-                        <cstring>lineEdit2_4</cstring>
-                    </property>
-                    <property name="maximumSize">
-                        <size>
-                            <width>50</width>
-                            <height>32767</height>
-                        </size>
-                    </property>
-                </widget>
-                <widget class="QComboBox" row="5" column="2">
-                    <property name="name">
-                        <cstring>comboBox4_6</cstring>
-                    </property>
-                    <property name="editable">
-                        <bool>true</bool>
-                    </property>
-                    <property name="autoCompletion">
-                        <bool>true</bool>
-                    </property>
-                </widget>
-                <widget class="QComboBox" row="6" column="2">
-                    <property name="name">
-                        <cstring>comboBox4_7</cstring>
-                    </property>
-                    <property name="editable">
-                        <bool>true</bool>
-                    </property>
-                    <property name="autoCompletion">
-                        <bool>true</bool>
-                    </property>
-                </widget>
-                <widget class="QComboBox" row="4" column="1">
-                    <property name="name">
-                        <cstring>comboBox5_5</cstring>
-                    </property>
-                </widget>
-                <widget class="QComboBox" row="5" column="1">
-                    <property name="name">
-                        <cstring>comboBox5_6</cstring>
-                    </property>
-                </widget>
-                <widget class="QComboBox" row="6" column="1">
-                    <property name="name">
-                        <cstring>comboBox5_7</cstring>
-                    </property>
-                </widget>
-                <widget class="QLineEdit" row="5" column="0">
-                    <property name="name">
-                        <cstring>lineEdit2_6</cstring>
-                    </property>
-                    <property name="maximumSize">
-                        <size>
-                            <width>50</width>
-                            <height>32767</height>
-                        </size>
-                    </property>
-                </widget>
-                <widget class="QLineEdit" row="6" column="0">
-                    <property name="name">
-                        <cstring>lineEdit2_7</cstring>
-                    </property>
-                    <property name="maximumSize">
-                        <size>
-                            <width>50</width>
-                            <height>32767</height>
-                        </size>
-                    </property>
-                </widget>
-                <widget class="QLineEdit" row="0" column="0">
-                    <property name="name">
-                        <cstring>lineEdit2</cstring>
-                    </property>
-                    <property name="minimumSize">
-                        <size>
-                            <width>45</width>
-                            <height>0</height>
-                        </size>
-                    </property>
-                    <property name="maximumSize">
-                        <size>
-                            <width>50</width>
-                            <height>32767</height>
-                        </size>
-                    </property>
-                </widget>
-                <widget class="QComboBox" row="0" column="1">
-                    <property name="name">
-                        <cstring>comboBox5</cstring>
-                    </property>
-                </widget>
-                <widget class="QComboBox" row="0" column="2">
-                    <property name="name">
-                        <cstring>comboBox4</cstring>
-                    </property>
-                    <property name="minimumSize">
-                        <size>
-                            <width>248</width>
-                            <height>0</height>
-                        </size>
-                    </property>
-                    <property name="editable">
-                        <bool>true</bool>
-                    </property>
-                    <property name="autoCompletion">
-                        <bool>true</bool>
-                    </property>
-                </widget>
-            </grid>
         </widget>
         <widget class="QLabel" row="6" column="0">
             <property name="name">
@@ -368,8 +151,349 @@
                 <string>show only available</string>
             </property>
         </widget>
+        <widget class="QFrame" row="5" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>frame3</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Raised</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLineEdit" row="1" column="0">
+                    <property name="name">
+                        <cstring>lineEdit2_2</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>50</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="2" column="0">
+                    <property name="name">
+                        <cstring>lineEdit2_3</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>50</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="4" column="0">
+                    <property name="name">
+                        <cstring>lineEdit2_5</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>50</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="1" column="1">
+                    <property name="name">
+                        <cstring>comboBox5_2</cstring>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="2" column="1">
+                    <property name="name">
+                        <cstring>comboBox5_3</cstring>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="3" column="1">
+                    <property name="name">
+                        <cstring>comboBox5_4</cstring>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="3" column="0">
+                    <property name="name">
+                        <cstring>lineEdit2_4</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>50</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="4" column="1">
+                    <property name="name">
+                        <cstring>comboBox5_5</cstring>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="5" column="1">
+                    <property name="name">
+                        <cstring>comboBox5_6</cstring>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="6" column="1">
+                    <property name="name">
+                        <cstring>comboBox5_7</cstring>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="5" column="0">
+                    <property name="name">
+                        <cstring>lineEdit2_6</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>50</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="6" column="0">
+                    <property name="name">
+                        <cstring>lineEdit2_7</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>50</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="0" column="0">
+                    <property name="name">
+                        <cstring>lineEdit2</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>45</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>50</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="0" column="1">
+                    <property name="name">
+                        <cstring>comboBox5</cstring>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="0" column="2">
+                    <property name="name">
+                        <cstring>comboBox4</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>200</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="editable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="autoCompletion">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="2" column="2">
+                    <property name="name">
+                        <cstring>comboBox4_3</cstring>
+                    </property>
+                    <property name="editable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="autoCompletion">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="6" column="3">
+                    <property name="name">
+                        <cstring>pushButton3_7</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>image0</pixmap>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="5" column="3">
+                    <property name="name">
+                        <cstring>pushButton3_6</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>image0</pixmap>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="4" column="3">
+                    <property name="name">
+                        <cstring>pushButton3_5</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>image0</pixmap>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="3" column="3">
+                    <property name="name">
+                        <cstring>pushButton3_4</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>image0</pixmap>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="2" column="3">
+                    <property name="name">
+                        <cstring>pushButton3_3</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>image0</pixmap>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="1" column="3">
+                    <property name="name">
+                        <cstring>pushButton3_2</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>image0</pixmap>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="0" column="3">
+                    <property name="name">
+                        <cstring>pushButton3</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>image0</pixmap>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="3" column="2">
+                    <property name="name">
+                        <cstring>comboBox4_4</cstring>
+                    </property>
+                    <property name="editable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="autoCompletion">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="4" column="2">
+                    <property name="name">
+                        <cstring>comboBox4_5</cstring>
+                    </property>
+                    <property name="editable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="autoCompletion">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="5" column="2">
+                    <property name="name">
+                        <cstring>comboBox4_6</cstring>
+                    </property>
+                    <property name="editable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="autoCompletion">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="6" column="2">
+                    <property name="name">
+                        <cstring>comboBox4_7</cstring>
+                    </property>
+                    <property name="editable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="autoCompletion">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="1" column="2">
+                    <property name="name">
+                        <cstring>comboBox4_2</cstring>
+                    </property>
+                    <property name="editable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="autoCompletion">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
     </grid>
 </widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="343">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000011e49444154388ded95418a843010457f0d8d07d059c44b08f65c40b2ca19bc41cee3696c10dc0b0371219ec05e88177053b3e996a831e3c65d7f0858189f9f9f4a42cc8c2bf47509f503b675b30b2272cdb99f647d33f363a99879190ec500f8e4b8dbac9b8b664187aaaa0000f33c03008220583d876188344d771f1f651c03188aa240d3349052422905630cbaae8331064a2948295196a59be0882206c05a6bd65a739ee76ccb55bba2203b5b228a010c5996ad7e3e4d13dab6dd994a92045114a1ae6b00f861e6dff7bb6dc68310027ddfef2044848d090821308ea333891598998f5a6ed735beb9c066f18888b6802dd486f90eb05d571cc16da8cfe95bce3e7ec1d907fa0f7e7856f89c9f916fe72dcecf8088e8b9aa3f37c8e5e03ff384b4b13ee26c3c0000000049454e44ae426082</data>
+    </image>
+</images>
 <connections>
     <connection>
         <sender>pushButton14</sender>
