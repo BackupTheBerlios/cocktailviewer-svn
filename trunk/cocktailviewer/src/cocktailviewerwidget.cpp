@@ -286,7 +286,7 @@ void cocktailviewerWidget::loadCocktail( QString ID )
 {
 	cocktail = new Cocktail( ID );
 	QString Description, Rating, Type, Taste1, Taste2, Name;
-	QString Text="", Text2="", Text3="",Text4="";
+	QString Text="", Text3="",Text4="";
 	Name=cocktail->getName();
 	Type=cocktail->getType();
 	Taste1=cocktail->getTaste1();
@@ -299,21 +299,20 @@ void cocktailviewerWidget::loadCocktail( QString ID )
 		Amount=QString::number( cocktail->getIngredientAmount( i ) );
 		Unit=cocktail->getIngredientUnit( i );
 		Ingredient=cocktail->getIngredientName( i );
-		Text2+=Amount+" "+Unit+" <br>";//" "+Ingredient+"<br>";
-		Text3+=Ingredient+"<br>";
+		Text3+=Amount+" "+Unit+" "+Ingredient+"<br>";
+		//Text3+=Ingredient+"<br>";
 	}
+	Text3.remove( Text3.length()-4, 4 );
 	Text="<font color=\"#e72300\" size=\"+2\">"+Name+"</font>";
 	QString Stars=printStars( cocktail->getRating() );
 	if(Stars!="")
 		Text+="<br><font face=\"Wingdings\">"+Stars+"</font>";
 	if(Type!="" || Taste1!="" || Taste2!="")
 		Text+="<br><font size=\"-4\">"+Type+" "+Taste1+" "+Taste2+"</font>";
-	Text4="<qt>";
+	Text+="<br><font size=\"-1\">"+QString::number( cocktail->getPrice(),'f', 2)+" EUR</font>";
 	if(Description!="")
-		Text4+=Description+"<br>";
-	Text4+=QString::number( cocktail->getPrice(),'f', 2)+" EUR</qt>";
+		Text4=Description;
 	textLabel1_4->setText( Text );
-	textLabel1_3->setText( Text2 );
 	textLabel1_3_2->setText( Text3 );
 	textLabel1_7->setText( Text4 );
 	delete cocktail;

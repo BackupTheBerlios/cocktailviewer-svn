@@ -15,7 +15,7 @@
     <property name="minimumSize">
         <size>
             <width>404</width>
-            <height>520</height>
+            <height>519</height>
         </size>
     </property>
     <property name="paletteBackgroundColor">
@@ -783,13 +783,13 @@
                             </property>
                             <property name="minimumSize">
                                 <size>
-                                    <width>60</width>
+                                    <width>50</width>
                                     <height>0</height>
                                 </size>
                             </property>
                             <property name="maximumSize">
                                 <size>
-                                    <width>200</width>
+                                    <width>50</width>
                                     <height>32767</height>
                                 </size>
                             </property>
@@ -813,9 +813,7 @@
                                 <enum>Raised</enum>
                             </property>
                             <property name="text">
-                                <string>1 cl 
-2 cl 
--</string>
+                                <string></string>
                             </property>
                             <property name="alignment">
                                 <set>AlignTop|AlignRight</set>
@@ -879,9 +877,12 @@ Wodka</string>
                             </property>
                             <property name="font">
                                 <font>
-                                    <pointsize>20</pointsize>
+                                    <pointsize>16</pointsize>
                                     <bold>1</bold>
                                 </font>
+                            </property>
+                            <property name="frameShape">
+                                <enum>NoFrame</enum>
                             </property>
                             <property name="text">
                                 <string>sdfsdfsd</string>
