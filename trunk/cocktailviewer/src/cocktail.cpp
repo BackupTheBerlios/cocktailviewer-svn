@@ -242,7 +242,8 @@ void Cocktail::calculateExtras( FloatList AmountList , StringList UnitList, Stri
 		UnitIterator++;
 		AmountIterator++;
 	}
-	RelativeAlc=AbsolutAlc/Amount;
+	if( Amount!=0 )
+		RelativeAlc=AbsolutAlc/Amount;
 	/*qDebug("Cocktailmenge: "+QString::number(Amount)+"ml");
 	qDebug("Alkohol: "+QString::number(RelativeAlc)+"%, "+QString::number(AbsolutAlc)+"ml");
 	qDebug("Preis: "+QString::number(Price)+" EUR");
@@ -305,7 +306,7 @@ void Cocktail::saveCocktailBasics()
 	}
 	if( rc!=SQLITE_OK )
 	{
-		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+		fprintf(stderr, "saving CocktailBasics: SQL error: %s\n", zErrMsg);
 	}
 }
 
@@ -334,7 +335,7 @@ void Cocktail::saveCocktailIngredients()
 			rc = sqlite3_exec(db, "INSERT INTO CocktailIngredients VALUES(NULL,"+ID+","+Amount+","+UnitID+","+IngredientID+")", 0, 0, &zErrMsg);
 			if( rc!=SQLITE_OK )
 			{
-				fprintf(stderr, "SQL error: %s\n", zErrMsg);
+				fprintf(stderr, "saving CocktailIngredients: SQL error: %s\n", zErrMsg);
 			}
 		}
 		AmountIterator++;
@@ -357,7 +358,7 @@ void Cocktail::saveTMPCocktailExtras()
 	//qDebug(ID+","+(Available ? "1" : "0")+","+QString::number(Amount)+","+QString::number(Price)+","+QString::number(AbsolutAlc)+","+QString::number(RelativeAlc));
 	if( rc!=SQLITE_OK )
 	{
-		fprintf(stderr, "SQL error: %s\n", zErrMsg);
+		fprintf(stderr, "saving CocktailExtras: SQL error: %s\n", zErrMsg);
 	}
 }
 
@@ -373,6 +374,19 @@ void Cocktail::newCocktail()
 	}
 	if(nrow>0)
 		ID=( QString::number( QString( Result[nrow] ).toInt()+1 ) );
+	else
+		ID="0";
+	Name="";
+	Taste1="";
+	Taste2="";
+	Type="";
+	Rating=0;
+	Description="";
+	NumberOfIngredients=0;
+	Amount=0;
+	Price=0;
+	AbsolutAlc=0;
+	RelativeAlc=0;
 }
 
 Cocktail::~Cocktail()

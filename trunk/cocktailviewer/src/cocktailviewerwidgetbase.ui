@@ -299,76 +299,75 @@
                             <string>Taste:</string>
                         </property>
                     </widget>
-                    <widget class="QLineEdit">
+                    <widget class="QLabel">
                         <property name="name">
-                            <cstring>lineEdit1</cstring>
+                            <cstring>textLabel1_5</cstring>
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>15</x>
-                                <y>40</y>
-                                <width>195</width>
-                                <height>21</height>
-                            </rect>
-                        </property>
-                        <property name="paletteBackgroundColor">
-                            <color>
-                                <red>255</red>
-                                <green>255</green>
-                                <blue>255</blue>
-                            </color>
-                        </property>
-                    </widget>
-                    <widget class="QComboBox">
-                        <property name="name">
-                            <cstring>comboBox1</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>15</x>
-                                <y>100</y>
-                                <width>195</width>
+                                <x>20</x>
+                                <y>276</y>
+                                <width>215</width>
                                 <height>20</height>
                             </rect>
                         </property>
-                        <property name="paletteBackgroundColor">
-                            <color>
-                                <red>255</red>
-                                <green>255</green>
-                                <blue>255</blue>
-                            </color>
+                        <property name="font">
+                            <font>
+                                <pointsize>12</pointsize>
+                                <bold>1</bold>
+                            </font>
                         </property>
-                        <property name="editable">
-                            <bool>true</bool>
+                        <property name="text">
+                            <string>1000 Cocktails</string>
                         </property>
-                        <property name="autoCompletion">
-                            <bool>true</bool>
+                        <property name="alignment">
+                            <set>AlignCenter</set>
                         </property>
                     </widget>
-                    <widget class="QComboBox">
+                    <widget class="QLabel">
                         <property name="name">
-                            <cstring>comboBox2</cstring>
+                            <cstring>textLabel1_2</cstring>
                         </property>
                         <property name="geometry">
                             <rect>
                                 <x>15</x>
-                                <y>125</y>
-                                <width>195</width>
+                                <y>20</y>
+                                <width>115</width>
                                 <height>20</height>
                             </rect>
                         </property>
-                        <property name="paletteBackgroundColor">
-                            <color>
-                                <red>255</red>
-                                <green>255</green>
-                                <blue>255</blue>
-                            </color>
+                        <property name="font">
+                            <font>
+                                <bold>1</bold>
+                            </font>
                         </property>
-                        <property name="editable">
-                            <bool>true</bool>
+                        <property name="text">
+                            <string>Cocktail search:</string>
                         </property>
-                        <property name="autoCompletion">
-                            <bool>true</bool>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabel1</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>5</x>
+                                <y>5</y>
+                                <width>235</width>
+                                <height>16</height>
+                            </rect>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <pointsize>12</pointsize>
+                                <bold>1</bold>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>Filters</string>
+                        </property>
+                        <property name="alignment">
+                            <set>AlignCenter</set>
                         </property>
                     </widget>
                     <widget class="QComboBox">
@@ -475,17 +474,215 @@
                             <bool>true</bool>
                         </property>
                     </widget>
+                    <widget class="QComboBox">
+                        <property name="name">
+                            <cstring>comboBox1</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>15</x>
+                                <y>100</y>
+                                <width>195</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="paletteBackgroundColor">
+                            <color>
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                            </color>
+                        </property>
+                        <property name="editable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="autoCompletion">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <property name="name">
+                            <cstring>comboBox2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>15</x>
+                                <y>125</y>
+                                <width>195</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="paletteBackgroundColor">
+                            <color>
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                            </color>
+                        </property>
+                        <property name="editable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="autoCompletion">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>pushButton7</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>215</x>
+                                <y>245</y>
+                                <width>25</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>25</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                        <property name="text">
+                            <string></string>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap>image1</pixmap>
+                        </property>
+                        <property name="flat">
+                            <bool>false</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>pushButton6</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>215</x>
+                                <y>220</y>
+                                <width>25</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>21</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                        <property name="text">
+                            <string></string>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap>image1</pixmap>
+                        </property>
+                        <property name="flat">
+                            <bool>false</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>pushButton5</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>215</x>
+                                <y>175</y>
+                                <width>25</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>21</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                        <property name="text">
+                            <string></string>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap>image1</pixmap>
+                        </property>
+                        <property name="flat">
+                            <bool>false</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>pushButton4</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>215</x>
+                                <y>150</y>
+                                <width>25</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>21</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                        <property name="text">
+                            <string></string>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap>image1</pixmap>
+                        </property>
+                        <property name="flat">
+                            <bool>false</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>pushButton3</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>215</x>
+                                <y>125</y>
+                                <width>25</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>20</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                        <property name="text">
+                            <string></string>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap>image1</pixmap>
+                        </property>
+                        <property name="flat">
+                            <bool>false</bool>
+                        </property>
+                    </widget>
                     <widget class="QPushButton">
                         <property name="name">
                             <cstring>pushButton2</cstring>
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>220</x>
+                                <x>215</x>
                                 <y>100</y>
-                                <width>20</width>
+                                <width>25</width>
                                 <height>20</height>
                             </rect>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>21</width>
+                                <height>20</height>
+                            </size>
                         </property>
                         <property name="text">
                             <string></string>
@@ -497,7 +694,27 @@
                             <string></string>
                         </property>
                         <property name="flat">
-                            <bool>true</bool>
+                            <bool>false</bool>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>lineEdit1</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>15</x>
+                                <y>40</y>
+                                <width>195</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="paletteBackgroundColor">
+                            <color>
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                            </color>
                         </property>
                     </widget>
                     <widget class="QPushButton">
@@ -506,11 +723,17 @@
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>220</x>
+                                <x>215</x>
                                 <y>40</y>
-                                <width>20</width>
+                                <width>25</width>
                                 <height>20</height>
                             </rect>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>21</width>
+                                <height>20</height>
+                            </size>
                         </property>
                         <property name="text">
                             <string></string>
@@ -519,188 +742,7 @@
                             <pixmap>image1</pixmap>
                         </property>
                         <property name="flat">
-                            <bool>true</bool>
-                        </property>
-                    </widget>
-                    <widget class="QPushButton">
-                        <property name="name">
-                            <cstring>pushButton3</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>220</x>
-                                <y>125</y>
-                                <width>20</width>
-                                <height>20</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string></string>
-                        </property>
-                        <property name="pixmap">
-                            <pixmap>image1</pixmap>
-                        </property>
-                        <property name="flat">
-                            <bool>true</bool>
-                        </property>
-                    </widget>
-                    <widget class="QPushButton">
-                        <property name="name">
-                            <cstring>pushButton4</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>220</x>
-                                <y>150</y>
-                                <width>20</width>
-                                <height>20</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string></string>
-                        </property>
-                        <property name="pixmap">
-                            <pixmap>image1</pixmap>
-                        </property>
-                        <property name="flat">
-                            <bool>true</bool>
-                        </property>
-                    </widget>
-                    <widget class="QPushButton">
-                        <property name="name">
-                            <cstring>pushButton5</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>220</x>
-                                <y>175</y>
-                                <width>20</width>
-                                <height>20</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string></string>
-                        </property>
-                        <property name="pixmap">
-                            <pixmap>image1</pixmap>
-                        </property>
-                        <property name="flat">
-                            <bool>true</bool>
-                        </property>
-                    </widget>
-                    <widget class="QPushButton">
-                        <property name="name">
-                            <cstring>pushButton6</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>220</x>
-                                <y>220</y>
-                                <width>20</width>
-                                <height>20</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string></string>
-                        </property>
-                        <property name="pixmap">
-                            <pixmap>image1</pixmap>
-                        </property>
-                        <property name="flat">
-                            <bool>true</bool>
-                        </property>
-                    </widget>
-                    <widget class="QPushButton">
-                        <property name="name">
-                            <cstring>pushButton7</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>220</x>
-                                <y>245</y>
-                                <width>20</width>
-                                <height>20</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string></string>
-                        </property>
-                        <property name="pixmap">
-                            <pixmap>image1</pixmap>
-                        </property>
-                        <property name="flat">
-                            <bool>true</bool>
-                        </property>
-                    </widget>
-                    <widget class="QLabel">
-                        <property name="name">
-                            <cstring>textLabel1_5</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>20</x>
-                                <y>276</y>
-                                <width>215</width>
-                                <height>20</height>
-                            </rect>
-                        </property>
-                        <property name="font">
-                            <font>
-                                <pointsize>12</pointsize>
-                                <bold>1</bold>
-                            </font>
-                        </property>
-                        <property name="text">
-                            <string>1000 Cocktails</string>
-                        </property>
-                        <property name="alignment">
-                            <set>AlignCenter</set>
-                        </property>
-                    </widget>
-                    <widget class="QLabel">
-                        <property name="name">
-                            <cstring>textLabel1_2</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>15</x>
-                                <y>20</y>
-                                <width>115</width>
-                                <height>20</height>
-                            </rect>
-                        </property>
-                        <property name="font">
-                            <font>
-                                <bold>1</bold>
-                            </font>
-                        </property>
-                        <property name="text">
-                            <string>Cocktail search:</string>
-                        </property>
-                    </widget>
-                    <widget class="QLabel">
-                        <property name="name">
-                            <cstring>textLabel1</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>5</x>
-                                <y>5</y>
-                                <width>235</width>
-                                <height>16</height>
-                            </rect>
-                        </property>
-                        <property name="font">
-                            <font>
-                                <pointsize>12</pointsize>
-                                <bold>1</bold>
-                            </font>
-                        </property>
-                        <property name="text">
-                            <string>Filters</string>
-                        </property>
-                        <property name="alignment">
-                            <set>AlignCenter</set>
+                            <bool>false</bool>
                         </property>
                     </widget>
                 </widget>
@@ -1031,7 +1073,7 @@ Wodka</string>
         <data format="PNG" length="864">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000032749444154388d5dcc4d6b5c550080e1f7dc7bee3de77ecc4c669a4e19930689f8dd141304454a77426becc65d312e1405c9de3fe1aa3b455da85b51b476a136e8a692d44e2425b655842a6992369926339399b9df738f0bc185cf0f78048b532013d07df00b459fb3746bef349dd9b34dbf551596109dc3ee607fbfbb56167c8cb05770ec18ed803188ff02d59b468fdf9f3bf9ccc5d75f7c93f373e768d55b0860afd761a57d8dcfbfbeccaf6b7f7e8574df2374ef521a60710a2e3466c445b9fada678b66f5e135139b91f9bfd48ccc7af7ba59bab46ce473a76f716afe311616b079bcaa21bef4c24b73afbcb5f8360d6792244b29cb1283212b33fa599f075187a88c997abac25eba7dfcef8d87b358f28ac47046d6e452ee65748607b8a5a6f00a0c86d17804405aa674932e7bf11ef7d343b2d61ece74f66abeef9f938e6dbd5b69b9dceedd617d771d3da529c725511ea16d8db0044991d04b7b74b32e1b0f6eb271b041e5a913443db92c83aa7d464e0b12997165f732a94838553fcda47b0c253500599171901f70abb7c9d59def190529de6c8c7f47cc4bab4635af25b88e4529537eeeadb055fcc1949ea1226b000c8b01bbe916f7865be47682aada64798a0c8d9242e748cf21b434755dc5570ea9d3675bdcc6410230b60a52a7a01af828e9d24b071869535a9690100febce84173b05a15654b447a015da5548dbfa3718972479c648a60c444c6625b8c904ddc8cae4a097acb58ed405f7d110df5684be4745297cad51d2010cd9784c944a2c21181b43a153ec7b4d76f68b4d2bebc98f8e6e4a1aaa8ef26c7c47117a1e35dfa711f834c2909ae7112a8de72a94b638e63618fee21325e98716b6f9e9fe8df4cb7cf504f56a88eb1bb494044a530b02ea4148a83db4ebe06a417dc287f64976daf18fc8f25b9b99665e1eb9edc34df972b3d23cde7ad6219c1004be4b35f0705d8b5c6418b740942e9dab35da9ff6ff1a8de32594bd6d537902a4d3cda3e4bbed763a1bdd0d9e0c558d7a23403a16e55890765d76aedbac7f9271e38b831f46e9e80d02fb778c40f0fc3c082006f2718011e7b5d6cb938f040b61c3d158101d16696777f85b1c251f60cc37287b80166004ff00e8a46ea7529ddee00000000049454e44ae426082</data>
     </image>
     <image name="image1">
-        <data format="PNG" length="679">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000026e49444154388d95934b48945118869f73fe716e66a6e285acc4452d5a64200885150845548b085a14648b944483342210b4852074237151c40c1159d1ae0ca255172848c75a4617a8702cb4d4c6fbe8cc7ffe735afcbf93a59bbed53907dee73beff79e238c316c3a7ce1e9c1fdd5bb84315a6b562c63c008776d59967cf22cf6f6dd9d966d186368bef1429bffacf6fb6f8c31061f80c1d8807f5957afb3030801291b94033941d05a2b0009a0b5c98894520cc762a4934904e00850e914c3fd03a4540a255ca031ae462eeda8d269e2d128939d9d0c4623d85ae300dfeede2375334aa2e7165a2da0804492e58099f171ec4884cdf5f5647ff8c8a7ee6e3e47228462fd6c3c7a04fff397cc0cc631c0aff91500ab4b4a08b5b4f0bda383d2dc5c727a7b09f7dc667d6101a35dddcceddb4ba0bc9cb406e925e25b0a9052b2aeb6962f42126f6ba3acb810100c3f7accd8e9660a6a8fa167054abbc35d06700c6801567e3ed389044343714c5616f34545c855393842a01dd0da4d280310de75348691070f1127ea289e9d6148481c6151e693d8572e322dc07fe010caf8320009607baf6f72740cfb64031b26279802ac4b97095ced622ab940513844def56b24bf0ee204c0e825809fb3ee269cb706d3d4485c0852ede7293c7b86bca60652e75af93132c244cd6eacb5a5a8857f2c28cf93c6cfead63612357bc8dd5a819e73fd06eb1a19df5289afa20a491065f3b705e10dc17100e5a360c77684c8c649834e032a40b87a275204d18b624fe3f3f2cb124038045283a3802058da4d4639ee991574e3f38701cbf26500fd7d037dc7a3b955c268ad1c030616bf87c6fbcae64f676149197bf5fa3da72af90db9124876e3411e500000000049454e44ae426082</data>
+        <data format="PNG" length="343">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000011e49444154388ded95418a843010457f0d8d07d059c44b08f65c40b2ca19bc41cee3696c10dc0b0371219ec05e88177053b3e996a831e3c65d7f0858189f9f9f4a42cc8c2bf47509f503b675b30b2272cdb99f647d33f363a99879190ec500f8e4b8dbac9b8b664187aaaa0000f33c03008220583d876188344d771f1f651c03188aa240d3349052422905630cbaae8331064a2948295196a59be0882206c05a6bd65a739ee76ccb55bba2203b5b228a010c5996ad7e3e4d13dab6dd994a92045114a1ae6b00f861e6dff7bb6dc68310027ddfef2044848d090821308ea333891598998f5a6ed735beb9c066f18888b6802dd486f90eb05d571cc16da8cfe95bce3e7ec1d907fa0f7e7856f89c9f916fe72dcecf8088e8b9aa3f37c8e5e03ff384b4b13ee26c3c0000000049454e44ae426082</data>
     </image>
     <image name="image2">
         <data format="PNG" length="805">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000002ec49444154388da592df6f536518c73fef396f7fd8b5731b2b653fccea34829a48141d861f6a1443428c68e2ad175e2837068dd144e3a511074da677eaa58962447098c512c2c5d4109833c5adba392a1b63ae5bbb1eca603da7ede979cfebc566f903f8de3dc993cff37dbecf23b4d6dc8924c07742a0010578b04d9ac65bb164dfc1685f5fa7ef7994af5d2b179696d376c3fb54c19fb58dde4fb45e07fc2f05877a07760c6d3d7c38b2e5d9e7b00a05fc158bb8f612f99f475f1b1f3efdea746ef64360687dd68603bd5e1ddaf6ca4b5f3cf6f997c8cecddc5a58e06a760ae5d6918100c99dbbe8bebb5dc6be3f71f4d73fb200c70084d69aaf8578a86be71399a74746c2329ea03c3949757e1e1d8fa30167789816ad89f99ac8cd32df9c39a3b2cbc58121ad2f19004288371f7ce7edb08c27b872ea14f3990cf9f17184e761b82ea57c1e6bfb76aecccda28a16bbba7b4c691a1f001800b1dec4cb09b7c48dd1b3f886c9fdfbf6417e111a0d8452e8c545927bf6d0fefa1bccfd9545fa35daa2d1e79b1944babb36f9e99314aeaeb1e5f439ac9327e8d9144786c3609a74556c8a4707e93d96e2625b07917fe7880564b409f07d4dbd5245848368d745fd3e86a17dea7f5f0634dab9456d6c0c5575082693d47353a870e4f61fac96576fd4efbd67b3992f61b6b7e1596516cea651e77ec46b807ddda663f75e64b4155d2ca285c1aadb709a1994f285b4654491d75770cf5f20f1f12081440fb5651bc7b269e9e8a43f95a23e338d337909e7ae104bb5fa2fcd33a6847824f9f0d6cceefbe2b2925ba2eb87342a16c11e1e412b45eb8b2f10080699387080fafc3ffc86e14faed97b8f6b7dc1d8d8233b3375f9fdcc528540670b8583fb718f7f4bcb8e47893d3940f5a711a69f798ac66c8e9c219958b38f48b8d874f09910d8201d78b7bfbfefc803d1a0685db190cac7f7146b76955220c08c3098a838831a3e0a81f395d6b7010ee0005578dc0c85deeb0887f687f0a34a29569576561a8dd19b9e4a19705e0001a009b813fd07d6c163178b3f5d5b0000000049454e44ae426082</data>
