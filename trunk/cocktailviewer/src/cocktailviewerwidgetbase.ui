@@ -9,7 +9,7 @@
             <x>0</x>
             <y>0</y>
             <width>715</width>
-            <height>526</height>
+            <height>559</height>
         </rect>
     </property>
     <property name="minimumSize">
@@ -767,20 +767,14 @@
                         <property name="name">
                             <cstring>unnamed</cstring>
                         </property>
-                        <widget class="QLabel" row="0" column="0" rowspan="1" colspan="2">
+                        <widget class="QLabel" row="3" column="1">
                             <property name="name">
-                                <cstring>textLabel1_4</cstring>
-                            </property>
-                            <property name="minimumSize">
-                                <size>
-                                    <width>0</width>
-                                    <height>100</height>
-                                </size>
+                                <cstring>textLabel1_7</cstring>
                             </property>
                             <property name="maximumSize">
                                 <size>
                                     <width>32767</width>
-                                    <height>100</height>
+                                    <height>32767</height>
                                 </size>
                             </property>
                             <property name="paletteBackgroundColor">
@@ -792,7 +786,44 @@
                             </property>
                             <property name="font">
                                 <font>
+                                    <family>Arial</family>
                                     <pointsize>18</pointsize>
+                                    <bold>1</bold>
+                                </font>
+                            </property>
+                            <property name="frameShape">
+                                <enum>NoFrame</enum>
+                            </property>
+                            <property name="text">
+                                <string>sdfsdfsd</string>
+                            </property>
+                            <property name="alignment">
+                                <set>WordBreak|AlignVCenter|AlignLeft</set>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="2" column="1">
+                            <property name="name">
+                                <cstring>textLabel1_3_2</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>5</hsizetype>
+                                    <vsizetype>5</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="paletteBackgroundColor">
+                                <color>
+                                    <red>255</red>
+                                    <green>233</green>
+                                    <blue>68</blue>
+                                </color>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <family>Arial</family>
+                                    <pointsize>24</pointsize>
                                     <bold>1</bold>
                                 </font>
                             </property>
@@ -803,15 +834,34 @@
                                 <enum>Raised</enum>
                             </property>
                             <property name="text">
-                                <string>&lt;font color="#e72300" size="+1"&gt;Cuba Libre (weißer Rum)&lt;br&gt;&lt;/font&gt;
-&lt;font face="Wingdings"&gt;´&lt;/font&gt;&lt;br&gt;
-&lt;font size="-4"&gt;Longdrink fruchtig würzig&lt;/font&gt;</string>
+                                <string>Rum
+Wodka</string>
                             </property>
                             <property name="alignment">
-                                <set>WordBreak|AlignCenter</set>
+                                <set>AlignTop|AlignLeft</set>
                             </property>
                         </widget>
-                        <widget class="QLabel" row="1" column="0">
+                        <widget class="QLabel" row="0" column="1">
+                            <property name="name">
+                                <cstring>textLabel1_6</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>0</width>
+                                    <height>10</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>32767</width>
+                                    <height>10</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="0" column="0" rowspan="4" colspan="1">
                             <property name="name">
                                 <cstring>textLabel1_3</cstring>
                             </property>
@@ -825,7 +875,7 @@
                             </property>
                             <property name="minimumSize">
                                 <size>
-                                    <width>50</width>
+                                    <width>20</width>
                                     <height>0</height>
                                 </size>
                             </property>
@@ -863,46 +913,13 @@
                         </widget>
                         <widget class="QLabel" row="1" column="1">
                             <property name="name">
-                                <cstring>textLabel1_3_2</cstring>
+                                <cstring>textLabel1_4</cstring>
                             </property>
-                            <property name="sizePolicy">
-                                <sizepolicy>
-                                    <hsizetype>5</hsizetype>
-                                    <vsizetype>5</vsizetype>
-                                    <horstretch>0</horstretch>
-                                    <verstretch>0</verstretch>
-                                </sizepolicy>
-                            </property>
-                            <property name="paletteBackgroundColor">
-                                <color>
-                                    <red>255</red>
-                                    <green>233</green>
-                                    <blue>68</blue>
-                                </color>
-                            </property>
-                            <property name="font">
-                                <font>
-                                    <pointsize>22</pointsize>
-                                    <bold>1</bold>
-                                </font>
-                            </property>
-                            <property name="frameShape">
-                                <enum>NoFrame</enum>
-                            </property>
-                            <property name="frameShadow">
-                                <enum>Raised</enum>
-                            </property>
-                            <property name="text">
-                                <string>Rum
-Wodka</string>
-                            </property>
-                            <property name="alignment">
-                                <set>AlignTop|AlignLeft</set>
-                            </property>
-                        </widget>
-                        <widget class="QLabel" row="2" column="0" rowspan="1" colspan="2">
-                            <property name="name">
-                                <cstring>textLabel1_7</cstring>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>20</width>
+                                    <height>0</height>
+                                </size>
                             </property>
                             <property name="maximumSize">
                                 <size>
@@ -919,18 +936,25 @@ Wodka</string>
                             </property>
                             <property name="font">
                                 <font>
-                                    <pointsize>16</pointsize>
+                                    <family>Arial</family>
+                                    <pointsize>20</pointsize>
                                     <bold>1</bold>
                                 </font>
                             </property>
                             <property name="frameShape">
                                 <enum>NoFrame</enum>
                             </property>
+                            <property name="frameShadow">
+                                <enum>Raised</enum>
+                            </property>
                             <property name="text">
-                                <string>sdfsdfsd</string>
+                                <string>&lt;font color="#e72300" size="+1"&gt;Cuba Libre (weißer Rum)&lt;br&gt;&lt;/font&gt;
+&lt;font face="Wingdings"&gt;´&lt;/font&gt;&lt;br&gt;
+&lt;font size="-4"&gt;Longdrink fruchtig würzig&lt;/font&gt;&lt;br&gt;
+&lt;font size="0"&gt;&lt;b&gt;0,80€&lt;/b&gt;&lt;/font&gt;</string>
                             </property>
                             <property name="alignment">
-                                <set>WordBreak|AlignCenter</set>
+                                <set>WordBreak|AlignTop|AlignLeft</set>
                             </property>
                         </widget>
                     </grid>

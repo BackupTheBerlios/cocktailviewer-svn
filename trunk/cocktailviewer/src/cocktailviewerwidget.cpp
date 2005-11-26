@@ -303,13 +303,13 @@ void cocktailviewerWidget::loadCocktail( QString ID )
 		//Text3+=Ingredient+"<br>";
 	}
 	Text3.remove( Text3.length()-4, 4 );
-	Text="<font color=\"#e72300\" size=\"+2\">"+Name+"</font>";
 	QString Stars=printStars( cocktail->getRating() );
-	if(Stars!="")
-		Text+="<br><font face=\"Wingdings\">"+Stars+"</font>";
-	if(Type!="" || Taste1!="" || Taste2!="")
-		Text+="<br><font size=\"-4\">"+Type+" "+Taste1+" "+Taste2+"</font>";
+	Text="<font color=\"#e72300\" size=\"+2\">"+Name+"</font>";
 	Text+="<br><font size=\"-1\">"+QString::number( cocktail->getPrice(),'f', 2)+" EUR</font>";
+	//if(Stars!="")
+		Text+="<br><font face=\"Wingdings\">"+Stars+"</font>";
+	//if(Type!="" || Taste1!="" || Taste2!="")
+		Text+="<br><font size=\"-4\">"+Type+" "+Taste1+" "+Taste2+"</font>";
 	if(Description!="")
 		Text4=Description;
 	textLabel1_4->setText( Text );
